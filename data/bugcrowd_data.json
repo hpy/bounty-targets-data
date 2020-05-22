@@ -1297,41 +1297,6 @@
     }
   },
   {
-    "name": "Cloudways",
-    "url": "https://bugcrowd.com/cloudways",
-    "allows_disclosure": false,
-    "managed_by_bugcrowd": true,
-    "safe_harbor": "partial",
-    "max_payout": 2500,
-    "targets": {
-      "in_scope": [
-        {
-          "type": "website",
-          "target": "Support.cloudways.com"
-        },
-        {
-          "type": "api",
-          "target": "api.cloudways.com"
-        },
-        {
-          "type": "api",
-          "target": "developers.cloudways.com"
-        },
-        {
-          "type": "website",
-          "target": "platform.cloudways.com"
-        },
-        {
-          "type": "website",
-          "target": "www.cloudways.com"
-        }
-      ],
-      "out_of_scope": [
-
-      ]
-    }
-  },
-  {
     "name": "Comcast Xfinity Vulnerability Disclosure Program",
     "url": "https://bugcrowd.com/comcastvdp",
     "allows_disclosure": false,
@@ -1397,11 +1362,11 @@
         },
         {
           "type": "android",
-          "target": "Tripit Mobile Application: Android"
+          "target": "Tripit Mobile Application: Android (https://play.google.com/store/apps/details?id=com.tripit)"
         },
         {
           "type": "ios",
-          "target": "Tripit Mobile Application: iOS"
+          "target": "Tripit Mobile Application: iOS (https://apps.apple.com/us/app/tripit-travel-planner/id311035142)"
         },
         {
           "type": "api",
@@ -1502,48 +1467,6 @@
         {
           "type": "website",
           "target": "Any asset not explicitly listed as 'In Scope' above is explicitly out of scope"
-        }
-      ]
-    }
-  },
-  {
-    "name": "ConvertKit Vulnerability Disclosure Program",
-    "url": "https://bugcrowd.com/convertkit-vdp",
-    "allows_disclosure": false,
-    "managed_by_bugcrowd": true,
-    "safe_harbor": "full",
-    "max_payout": 0,
-    "targets": {
-      "in_scope": [
-        {
-          "type": "api",
-          "target": "api.convertkit.com"
-        },
-        {
-          "type": "website",
-          "target": "app.convertkit.com"
-        },
-        {
-          "type": "website",
-          "target": "el2.convertkit.com"
-        },
-        {
-          "type": "website",
-          "target": "pages.convertkit.com"
-        }
-      ],
-      "out_of_scope": [
-        {
-          "type": "website",
-          "target": "convertkit.com"
-        },
-        {
-          "type": "website",
-          "target": "developers.convertkit.com"
-        },
-        {
-          "type": "website",
-          "target": "help.convertkit.com"
         }
       ]
     }
@@ -2162,7 +2085,7 @@
     "allows_disclosure": false,
     "managed_by_bugcrowd": true,
     "safe_harbor": "full",
-    "max_payout": 3000,
+    "max_payout": 5000,
     "targets": {
       "in_scope": [
         {
@@ -2171,7 +2094,7 @@
         },
         {
           "type": "website",
-          "target": "https://gusto-demo.com"
+          "target": "graphql.gusto-demo.com"
         },
         {
           "type": "website",
@@ -2182,6 +2105,10 @@
         {
           "type": "website",
           "target": "*.gusto.com"
+        },
+        {
+          "type": "website",
+          "target": "https://gusto-demo.com"
         }
       ]
     }
@@ -2902,64 +2829,6 @@
     }
   },
   {
-    "name": "Magic Leap One - Cloud Ecosystem",
-    "url": "https://bugcrowd.com/magicleapcloud",
-    "allows_disclosure": false,
-    "managed_by_bugcrowd": true,
-    "safe_harbor": "partial",
-    "max_payout": 8192,
-    "targets": {
-      "in_scope": [
-        {
-          "type": "website",
-          "target": "*.magicleap.com"
-        },
-        {
-          "type": "api",
-          "target": "api.magicleap.com"
-        },
-        {
-          "type": "website",
-          "target": "auth.magicleap.com"
-        },
-        {
-          "type": "website",
-          "target": "creator.magicleap.com"
-        },
-        {
-          "type": "website",
-          "target": "developer-content.magicleap.com"
-        },
-        {
-          "type": "website",
-          "target": "developer-documentation.magicleap.com"
-        },
-        {
-          "type": "website",
-          "target": "developer-static-1.magicleap.com"
-        },
-        {
-          "type": "website",
-          "target": "id-static-1.magicleap.com"
-        },
-        {
-          "type": "website",
-          "target": "id.magicleap.com"
-        },
-        {
-          "type": "website",
-          "target": "www.magicleap.com"
-        }
-      ],
-      "out_of_scope": [
-        {
-          "type": "website",
-          "target": "https://enterprise.magicleap.com/en/post-login#/signup"
-        }
-      ]
-    }
-  },
-  {
     "name": "Magic Leap One - Device",
     "url": "https://bugcrowd.com/magicleapdevice",
     "allows_disclosure": false,
@@ -3611,7 +3480,23 @@
         },
         {
           "type": "website",
+          "target": "*.nflxso.net"
+        },
+        {
+          "type": "website",
           "target": "*.nflxvideo.net"
+        },
+        {
+          "type": "api",
+          "target": "*.prod.cloud.netflix.com"
+        },
+        {
+          "type": "api",
+          "target": "*.prod.dradis.netflix.com"
+        },
+        {
+          "type": "api",
+          "target": "*.prod.ftl.netflix.com"
         },
         {
           "type": "android",
@@ -4159,6 +4044,10 @@
         },
         {
           "type": "website",
+          "target": "https://mg.n0c.com/"
+        },
+        {
+          "type": "website",
           "target": "my.planethoster.com"
         },
         {
@@ -4182,6 +4071,22 @@
     "managed_by_bugcrowd": true,
     "safe_harbor": "full",
     "max_payout": 4500,
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
+    "name": "Financial Services Provider",
+    "url": "https://bugcrowd.com/programs/teasers/2QPzmcExC5eNu2VF1K3BpWEw",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "full",
+    "max_payout": 3500,
     "targets": {
       "in_scope": [
 
@@ -4320,6 +4225,22 @@
     }
   },
   {
+    "name": "Vulnerabilities on isle 5!",
+    "url": "https://bugcrowd.com/programs/teasers/CmAFeA8hWbJsUE5S6RTMzAqZ",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "full",
+    "max_payout": 3000,
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
     "name": "Mesh Wifi ecosystem and mobile application",
     "url": "https://bugcrowd.com/programs/teasers/EBSoTcRSRLTzWa1CKoZoFLjV",
     "allows_disclosure": true,
@@ -4384,6 +4305,22 @@
     }
   },
   {
+    "name": "Leading Travel Company",
+    "url": "https://bugcrowd.com/programs/teasers/LLxRJ9BynmzRBJFGVbZTQKxa",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "partial",
+    "max_payout": 0,
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
     "name": "Web app testing for this privacy company's ongoing private bug bounty program.",
     "url": "https://bugcrowd.com/programs/teasers/LUeJM1LXfmsYNdorcJY3KmU2",
     "allows_disclosure": true,
@@ -4400,12 +4337,44 @@
     }
   },
   {
+    "name": "End to End Payment Solution",
+    "url": "https://bugcrowd.com/programs/teasers/NN5Yd45gNJZdnVaEDPuqkmKH",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "partial",
+    "max_payout": 3500,
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
     "name": "Private program for web data visualizer plug-ins",
     "url": "https://bugcrowd.com/programs/teasers/NqPBZv1FQntcnjGu2ejXfeZR",
     "allows_disclosure": true,
     "managed_by_bugcrowd": true,
     "safe_harbor": "partial",
     "max_payout": 1500,
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
+    "name": "UK FinTech business banking mobile application",
+    "url": "https://bugcrowd.com/programs/teasers/NrkF3VgMxU9gFeFEpysYzGc2",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "full",
+    "max_payout": 3000,
     "targets": {
       "in_scope": [
 
@@ -4464,22 +4433,6 @@
     }
   },
   {
-    "name": "Education Technologies Company",
-    "url": "https://bugcrowd.com/programs/teasers/YK5nXaopAaHwCST3Ce3sRoE8",
-    "allows_disclosure": true,
-    "managed_by_bugcrowd": true,
-    "safe_harbor": "partial",
-    "max_payout": 1500,
-    "targets": {
-      "in_scope": [
-
-      ],
-      "out_of_scope": [
-
-      ]
-    }
-  },
-  {
     "name": "Operationalized Inspections Platform",
     "url": "https://bugcrowd.com/programs/teasers/YSbv7bW9maxXGL6m1dFrz4rw",
     "allows_disclosure": true,
@@ -4512,6 +4465,22 @@
     }
   },
   {
+    "name": "Online Form Builder",
+    "url": "https://bugcrowd.com/programs/teasers/Z5Um4X5BE7FTXZTuVYjHEmgJ",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "partial",
+    "max_payout": 1500,
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
     "name": "Payment platform looking for bug hunters!",
     "url": "https://bugcrowd.com/programs/teasers/ZFU5tCmZVAJJc3W3y66eWdfb",
     "allows_disclosure": true,
@@ -4534,6 +4503,22 @@
     "managed_by_bugcrowd": true,
     "safe_harbor": "partial",
     "max_payout": 2000,
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
+    "name": "Do CI/CD pipelines excite you?",
+    "url": "https://bugcrowd.com/programs/teasers/beQkwYhAeEk3zKAxZBwPZwJN",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "full",
+    "max_payout": 2500,
     "targets": {
       "in_scope": [
 
@@ -4597,7 +4582,7 @@
     "allows_disclosure": true,
     "managed_by_bugcrowd": true,
     "safe_harbor": "partial",
-    "max_payout": 10000,
+    "max_payout": 12500,
     "targets": {
       "in_scope": [
 
@@ -4736,6 +4721,22 @@
     }
   },
   {
+    "name": "Customer Experience and Resource Planning Applications",
+    "url": "https://bugcrowd.com/programs/teasers/igumKmiWyvnL3qBXJeaFevFF",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "partial",
+    "max_payout": 5000,
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
     "name": "A payroll company is looking to the crowd to help maintain its security posture",
     "url": "https://bugcrowd.com/programs/teasers/jW2fWkt6rFnheo8PDCAd9d13",
     "allows_disclosure": true,
@@ -4768,12 +4769,44 @@
     }
   },
   {
+    "name": "Leading BioTech firm",
+    "url": "https://bugcrowd.com/programs/teasers/mJuqBbrajVZMck72L2teD1Km",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "full",
+    "max_payout": 2500,
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
     "name": "A leading web hosting provider",
     "url": "https://bugcrowd.com/programs/teasers/n17gKf24rZNDjs5MZPg2CvkQ",
     "allows_disclosure": true,
     "managed_by_bugcrowd": true,
     "safe_harbor": "full",
     "max_payout": 0,
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
+    "name": "Online Survey Software tool",
+    "url": "https://bugcrowd.com/programs/teasers/opjaCTB6DU8FZphycw1jmB1L",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "full",
+    "max_payout": 5000,
     "targets": {
       "in_scope": [
 
@@ -4806,6 +4839,22 @@
     "managed_by_bugcrowd": true,
     "safe_harbor": "partial",
     "max_payout": 1500,
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
+    "name": "Customer Feedback Platform",
+    "url": "https://bugcrowd.com/programs/teasers/pSbLHw5kitMU4As1DcAyDqeo",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "full",
+    "max_payout": 5000,
     "targets": {
       "in_scope": [
 
@@ -4864,6 +4913,22 @@
     }
   },
   {
+    "name": "Private program for cloud-based news platform",
+    "url": "https://bugcrowd.com/programs/teasers/qNtAFjB4wvSjrtXsEsase6VF",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "partial",
+    "max_payout": 2500,
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
     "name": "A Leading Learning Platform",
     "url": "https://bugcrowd.com/programs/teasers/qffLu4EbCbHbMpirYQMCGWut",
     "allows_disclosure": true,
@@ -4902,22 +4967,6 @@
     "managed_by_bugcrowd": true,
     "safe_harbor": "partial",
     "max_payout": 4000,
-    "targets": {
-      "in_scope": [
-
-      ],
-      "out_of_scope": [
-
-      ]
-    }
-  },
-  {
-    "name": "Medical Software Company",
-    "url": "https://bugcrowd.com/programs/teasers/sSReuReU3e8Sq92o86azkDhv",
-    "allows_disclosure": true,
-    "managed_by_bugcrowd": true,
-    "safe_harbor": "full",
-    "max_payout": 2000,
     "targets": {
       "in_scope": [
 
@@ -5501,10 +5550,6 @@
       "in_scope": [
         {
           "type": "other",
-          "target": "*.astaro-tech.com"
-        },
-        {
-          "type": "other",
           "target": "*.astaro.at"
         },
         {
@@ -5566,10 +5611,6 @@
         {
           "type": "other",
           "target": "*.surfright.nl"
-        },
-        {
-          "type": "other",
-          "target": "*.who-is-using-me.com"
         },
         {
           "type": "other",
@@ -6648,7 +6689,7 @@
         },
         {
           "type": "website",
-          "target": "All Third party hosted services, such as support.twilio.com, s.signal.com are explicitly out of scope."
+          "target": "All Third party hosted services, such as support.twilio.com, s.signal.twilio.com, ahoy-eloqua.twilio.com are explicitly out of scope."
         },
         {
           "type": "other",
@@ -6847,6 +6888,10 @@
         {
           "type": "hardware",
           "target": "Upwork Dash Messenger Desktop Version (www.upwork.com/downloads)"
+        },
+        {
+          "type": "ios",
+          "target": "api.upwork.com/graphql"
         },
         {
           "type": "api",
@@ -7192,10 +7237,6 @@
           "target": "https://www.westernunion.se"
         },
         {
-          "type": "website",
-          "target": "https://www.wuprepaid.at/"
-        },
-        {
           "type": "other",
           "target": "https://www2.westernunion.com"
         },
@@ -7246,10 +7287,6 @@
         {
           "type": "website",
           "target": "www.wuedge.com"
-        },
-        {
-          "type": "website",
-          "target": "www.wuprepaid.de"
         }
       ],
       "out_of_scope": [
@@ -7259,19 +7296,11 @@
         },
         {
           "type": "website",
-          "target": "https://paynow40.speedpay.com"
-        },
-        {
-          "type": "website",
-          "target": "https://paynow7.speedpay.com/"
-        },
-        {
-          "type": "website",
           "target": "https://rewardcircle.westernunion.com"
         },
         {
-          "type": "other",
-          "target": "https://www.inmateservices.westernunion.com"
+          "type": "website",
+          "target": "https://www.wuprepaid.at/"
         },
         {
           "type": "website",
@@ -7279,7 +7308,7 @@
         },
         {
           "type": "website",
-          "target": "www.speedpay.com"
+          "target": "www.wuprepaid.de"
         }
       ]
     }

@@ -60,6 +60,7 @@ pit.*.blockchain.info
 *.withairbnb.com
 *.vhx.tv
 *.shopify.com
+*.shopifykloud.com
 *.grab.co
 *.grab.com
 *.grabpay.com
@@ -130,6 +131,11 @@ www.paypal-*.com
 *.berush.com
 *.labs-semrush.com
 *.semrush.com
+*.mi.com
+*.miui.com
+*.miwifi.com
+*.xiaomi.com
+*.xiaomiyoupin.com
 *.lyst.co
 *.lyst.com
 *.lystit.com
@@ -176,6 +182,13 @@ www.paypal-*.com
 *.dev.lifeomic.com
 *.infra.lifeomic.com
 *.bitmex.com
+*.betfair.com
+*.betfair.es
+*.betfair.it
+*.betfair.ro
+*.betfair.se
+*.paddypower.com
+*.paddypower.it
 *.railto.com
 *.ratelimited.me
 *.ncsc.gov.uk
@@ -273,6 +286,7 @@ vcc-*.8x8.com
 *.dingtalk.com
 *.taobao.com
 *.tmall.com
+*.bountypay.h1ctf.com
 *.digitalocean.com
 *.digitaloceanspaces.com
 *.better.com
@@ -307,7 +321,6 @@ vcc-*.8x8.com
 *.indeed.com
 *.lime.bike
 *.limeinternal.com
-*.magicleap.com
 *.naspers.co
 *.naspers.co.in
 *.naspers.com
@@ -317,7 +330,11 @@ vcc-*.8x8.com
 *.prosus.com
 *.nflxext.com
 *.nflximg.net
+*.nflxso.net
 *.nflxvideo.net
+*.prod.cloud.netflix.com
+*.prod.dradis.netflix.com
+*.prod.ftl.netflix.com
 api*.netflix.com
 *.opsgeni.us
 *.handmade.com
@@ -337,7 +354,6 @@ api*.netflix.com
 *.skinfra.xyz
 *.sol-data.com
 *.simple.com
-*.astaro-tech.com
 *.astaro.at
 *.astaro.ch
 *.astaro.com
@@ -354,7 +370,6 @@ api*.netflix.com
 *.reflexion.net
 *.sophos.com
 *.surfright.nl
-*.who-is-using-me.com
 *.repostnetwork.com
 api*.soundcloud.com
 *.cash.me
