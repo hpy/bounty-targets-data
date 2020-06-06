@@ -116,8 +116,12 @@ ws.prod.blockchain.info
 www.blockchain.com
 www.blockchain.info
 www.algolia.com
+api.hellosign.com
+api.helloworks.com
+app.hellosign.com
 dropboxforum.com
 paper.dropbox.com
+portal.helloworks.com
 showcase.dropbox.com
 www.dropbox.com
 accounts.snapchat.com
@@ -150,6 +154,7 @@ logs.dashlane.com
 ws1.dashlane.com
 www.dashlane.com
 api.instacart.com
+shoppers.instacart.com
 www.instacart.com
 blog.ui.com
 community.ui.com
@@ -168,6 +173,7 @@ demo.urbandoor.com
 luckey.app
 luckey.fr
 luckey.in
+luckey.partners
 luckeyhomes.com
 m.airbnb.com
 next.airbnb.com
@@ -183,11 +189,13 @@ vhx.tv
 moneybird.com
 moneybirdstorage.com
 api.mapbox.com
+docs.mapbox.com
 www.mapbox.com
 accounts.shopify.com
 exchangemarketplace.com
 partners.shopify.com
 your-store.myshopify.com
+d18papeh5u7ohm.cloudfront.net
 www.coursera.org
 www.udemy.com
 api.grabpay.com
@@ -256,7 +264,6 @@ www.teavana.com
 api.spotify.com
 assets.spotify.com
 backstage.io
-com.spotify.kids
 lifeinvader.com
 prod.ros.rockstargames.com
 rockstarnorth.com
@@ -268,7 +275,6 @@ maximum.nl
 mijn.werkenbijdefensie.nl
 werkenbijdefensie.nl
 werkenbijderet.nl
-werkenbijmcdonalds.nl
 www.werkenbijbakertilly.nl
 about.postmates.com
 buyer-prod.postmates.com
@@ -299,10 +305,10 @@ marquee.gs.com
 research.gs.com
 www.rocaton.com
 assets.hyatt.com
-www.hyatt.com
 hyatt.com
 newsroom.images.hyatt.com
 world.hyatt.com
+www.hyatt.com
 donations.livestream.com
 www.livestream.com
 rubygems.org
@@ -384,12 +390,17 @@ secure.showmax.com
 www.showmax.com
 cdna.lystit.com
 mobileapi.lystit.com
+beam.nutanix.com
 bootcamp.nutanix.com
+cpq.nutanix.com
 developer.nutanix.com
 events.nutanix.com
+frame.nutanix.com
 gp.nutanix.com
+idp.nutanix.com
 install.nutanix.com
-jira-dc-prod.nutanix.com
+iot.nutanix.com
+jira.nutanix.com
 mops.nutanix.com
 my.nutanix.com
 next.nutanix.com
@@ -397,6 +408,7 @@ nutanix.com
 productsizer.nutanix.com
 stage-billing.nutanix.com
 support.nutanix.com
+testdrive.nutanix.com
 ticket.nutanix.com
 webex.nutanix.com
 alerts.eu.newrelic.com
@@ -595,6 +607,7 @@ api.ratelimited.me
 ratelimited.me
 app.passit.io
 app.mona.co
+auth.crypto.com
 crypto.com
 www.crypto.com
 address-autocomplete.lob.com
@@ -645,7 +658,6 @@ get8x8.com
 sso.8x8.com
 support.8x8.com
 www.8x8.com
-account.magento.com
 imagine.magento.com
 magento.com
 magentocommerce.com
@@ -699,6 +711,8 @@ web.cw-dev.ecobee.com
 www.ecobee.com
 fanduel.design
 fdbox.net
+www.myomnipod.com
+www.poddercentral.com
 api.fortmatic.com
 dashboard.fortmatic.com
 fortmatic.com
@@ -727,6 +741,7 @@ support.makerdao.com
 api.production.tkn.zone
 card-onboarding.production.tkn.zone
 kyc-events.production.tkn.zone
+admin.smartsheet.com
 api.smartsheet.com
 app.smartsheet.com
 airflow-prod.coda.io
@@ -886,7 +901,6 @@ remb.sharepoint.com
 bibliotheek.myndr.nl
 osd.myndr.nl
 www.myndr.nl
-rghost.net
 slots.io
 www.celo.org
 accountsettings.connect.identity.stagaws.visma.com
@@ -920,6 +934,19 @@ credstore.yahoo.com
 developer.yahoo.com
 molo.ch
 s.yimg.com
+ncp-gw-abu.media.yahoo.com
+news-app.abumedia.yql.yahoo.com
+tw.news.yahoo.com
+stock-app.abumedia.yql.yahoo.com
+tw-finance-yql.media.yahoo.com
+tw.bid.yahoo.com
+tw.api.bid.yahoo.com
+tw.buy.yahoo.com
+m.tw.buy.yahoo.com
+tw.mapi.shp.yahoo.com
+tw.mall.yahoo.com
+m.tw.mall.yahoo.com
+tw.ews.mall.yahooapis.com
 techcrunch.com
 calendar.yahoo.com
 caldav.calendar.yahoo.com
@@ -964,9 +991,7 @@ surveys.spotify.com
 extraordinariesonthemic.com
 geistguest.com
 gimlet.design
-gimlet.fm
 gimletmedia.com
-gimstaging.com
 gophergripes.com
 surprisinglyawesome.com
 thenodbuysblack.com
@@ -1041,7 +1066,6 @@ spotify-everywhere.com
 spotify-library.com
 spotify.design
 spotify.dev
-spotify.me
 spotify.stackenterprise.co
 spotify.xxx
 spotifyawards.com
@@ -1464,6 +1488,5 @@ renofi.com
 estimate.renofi.com
 login.renofi.com
 secure.renofi.com
-sylaps.com
 undoze.com
 hackenproof.com

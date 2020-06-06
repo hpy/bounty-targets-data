@@ -671,6 +671,14 @@
           "target": "Binance macOS Application"
         },
         {
+          "type": "android",
+          "target": "Trustwallet Android App"
+        },
+        {
+          "type": "ios",
+          "target": "Trustwallet iOS App"
+        },
+        {
           "type": "api",
           "target": "api.binance.com"
         },
@@ -705,9 +713,21 @@
         {
           "type": "other",
           "target": "https://github.com/binance-chain/tss-lib"
+        },
+        {
+          "type": "other",
+          "target": "https://github.com/trustwallet/wallet-core/"
         }
       ],
       "out_of_scope": [
+        {
+          "type": "website",
+          "target": "*.trustwallet.com"
+        },
+        {
+          "type": "website",
+          "target": "*.trustwalletapp.com"
+        },
         {
           "type": "website",
           "target": "community.binance.org"
@@ -1821,7 +1841,7 @@
     "allows_disclosure": false,
     "managed_by_bugcrowd": true,
     "safe_harbor": "full",
-    "max_payout": 2500,
+    "max_payout": 4500,
     "targets": {
       "in_scope": [
         {
@@ -2125,6 +2145,10 @@
         {
           "type": "website",
           "target": "*.bugcrowd.com"
+        },
+        {
+          "type": "other",
+          "target": "All IT-Managed Third-Party Services and Infrastructure"
         },
         {
           "type": "other",
@@ -4129,22 +4153,6 @@
     }
   },
   {
-    "name": "Private program with web and mobile targets",
-    "url": "https://bugcrowd.com/programs/teasers/3NJ3Z1TunH8oAFmohXwXQbgg",
-    "allows_disclosure": true,
-    "managed_by_bugcrowd": true,
-    "safe_harbor": "full",
-    "max_payout": 2500,
-    "targets": {
-      "in_scope": [
-
-      ],
-      "out_of_scope": [
-
-      ]
-    }
-  },
-  {
     "name": "A Customer Experience Management Platform",
     "url": "https://bugcrowd.com/programs/teasers/5DevCUcovN6B4tcte4uSiYcK",
     "allows_disclosure": true,
@@ -4193,12 +4201,44 @@
     }
   },
   {
+    "name": "A Network Access Control Provider",
+    "url": "https://bugcrowd.com/programs/teasers/7VFmYw1mboDRKHXJYUhWvrmc",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "full",
+    "max_payout": 1500,
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
     "name": "No hardware, no problem! Route your submissions here!",
     "url": "https://bugcrowd.com/programs/teasers/85QHLUn4xVHNMXnm5RnTXi5i",
     "allows_disclosure": true,
     "managed_by_bugcrowd": true,
     "safe_harbor": "full",
     "max_payout": 2500,
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
+    "name": "Help secure a shocking new eCommerce platform",
+    "url": "https://bugcrowd.com/programs/teasers/BRTLEC2brLWovrqfpFoF7V3R",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "partial",
+    "max_payout": 1000,
     "targets": {
       "in_scope": [
 
@@ -4263,6 +4303,22 @@
     "managed_by_bugcrowd": true,
     "safe_harbor": "partial",
     "max_payout": 2400,
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
+    "name": "Access Points, Controllers, and Gateway Products",
+    "url": "https://bugcrowd.com/programs/teasers/JbEmSR2TS4dsh5buWePqFS5x",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "full",
+    "max_payout": 1500,
     "targets": {
       "in_scope": [
 
@@ -4407,6 +4463,22 @@
     "managed_by_bugcrowd": true,
     "safe_harbor": "full",
     "max_payout": 4500,
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
+    "name": "Mobile Network Monitoring at it's finest",
+    "url": "https://bugcrowd.com/programs/teasers/UVoLcy2ragXwrS2ifYJq55oe",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "full",
+    "max_payout": 1500,
     "targets": {
       "in_scope": [
 
@@ -4599,6 +4671,22 @@
     "managed_by_bugcrowd": true,
     "safe_harbor": "partial",
     "max_payout": 2500,
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
+    "name": "Click here to submit a support ticket!",
+    "url": "https://bugcrowd.com/programs/teasers/dzLdTDyKibS7sbLurifaVrGk",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "full",
+    "max_payout": 0,
     "targets": {
       "in_scope": [
 
@@ -5009,22 +5097,6 @@
     }
   },
   {
-    "name": "Today I Learned...",
-    "url": "https://bugcrowd.com/programs/teasers/vzN6J6WNBTcH8wKrNPy2qJNc",
-    "allows_disclosure": true,
-    "managed_by_bugcrowd": true,
-    "safe_harbor": "full",
-    "max_payout": 2500,
-    "targets": {
-      "in_scope": [
-
-      ],
-      "out_of_scope": [
-
-      ]
-    }
-  },
-  {
     "name": "Let's go secure this private program!",
     "url": "https://bugcrowd.com/programs/teasers/wz2XjLbMbdSSVadU4sTkDAgJ",
     "allows_disclosure": true,
@@ -5394,48 +5466,6 @@
     }
   },
   {
-    "name": "Simple",
-    "url": "https://bugcrowd.com/simple",
-    "allows_disclosure": false,
-    "managed_by_bugcrowd": true,
-    "safe_harbor": "partial",
-    "max_payout": 3000,
-    "targets": {
-      "in_scope": [
-        {
-          "type": "other",
-          "target": "*.simple.com"
-        },
-        {
-          "type": "android",
-          "target": "Simple for Android"
-        },
-        {
-          "type": "ios",
-          "target": "Simple for iOS"
-        }
-      ],
-      "out_of_scope": [
-        {
-          "type": "website",
-          "target": "All third party applications not under Simple's control."
-        },
-        {
-          "type": "website",
-          "target": "cmail.simple.com"
-        },
-        {
-          "type": "website",
-          "target": "email.simple.com"
-        },
-        {
-          "type": "website",
-          "target": "links.simple.com"
-        }
-      ]
-    }
-  },
-  {
     "name": "Skyscanner",
     "url": "https://bugcrowd.com/skyscanner",
     "allows_disclosure": true,
@@ -5473,10 +5503,6 @@
         {
           "type": "other",
           "target": "Corporate Email (*@skyscanner.net)"
-        },
-        {
-          "type": "website",
-          "target": "Subdomains (*.skyscanner.net/*)"
         }
       ]
     }
@@ -5888,23 +5914,11 @@
       "in_scope": [
         {
           "type": "website",
-          "target": "*.cash.me"
-        },
-        {
-          "type": "website",
           "target": "*.square.com"
         },
         {
           "type": "other",
           "target": "*.squareup.com"
-        },
-        {
-          "type": "android",
-          "target": "Cash App Mobile Application for Android"
-        },
-        {
-          "type": "ios",
-          "target": "Cash App Mobile Application for iOS"
         },
         {
           "type": "android",
@@ -5918,7 +5932,19 @@
       "out_of_scope": [
         {
           "type": "website",
+          "target": "*.cash.me"
+        },
+        {
+          "type": "website",
           "target": "Any vulnerabilities found in Third-party software"
+        },
+        {
+          "type": "android",
+          "target": "Cash App Mobile Application for Android"
+        },
+        {
+          "type": "ios",
+          "target": "Cash App Mobile Application for iOS"
         }
       ]
     }
@@ -7545,14 +7571,6 @@
       "in_scope": [
         {
           "type": "other",
-          "target": "Moonlet wallet Chrome extension (https://github.com/cryptolandtech/moonlet/releases)"
-        },
-        {
-          "type": "other",
-          "target": "Moonlet-core JS library (https://github.com/cryptolandtech/moonlet-core/releases/tag/v0.0.1)"
-        },
-        {
-          "type": "other",
           "target": "The Zilliqa codebase and local testnet (https://github.com/Zilliqa/Zilliqa)"
         },
         {
@@ -7589,12 +7607,19 @@
         }
       ],
       "out_of_scope": [
-
+        {
+          "type": "other",
+          "target": "Moonlet wallet Chrome extension (https://github.com/cryptolandtech/moonlet/releases)"
+        },
+        {
+          "type": "other",
+          "target": "Moonlet-core JS library (https://github.com/cryptolandtech/moonlet-core/releases/tag/v0.0.1)"
+        }
       ]
     }
   },
   {
-    "name": "Zynga Whitehat",
+    "name": "Zynga - Whitehat Points",
     "url": "https://bugcrowd.com/zynga-vdp",
     "allows_disclosure": false,
     "managed_by_bugcrowd": true,

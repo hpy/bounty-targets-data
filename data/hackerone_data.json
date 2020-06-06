@@ -408,6 +408,83 @@
           "max_severity": "critical"
         },
         {
+          "asset_identifier": "TW Media: Front Page",
+          "asset_type": "OTHER",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "## In Scope\n* tw.mobi.yahoo.com\n* tw.yahoo.com\n* Content API: https://ncp-gw-abu.media.yahoo.com/\n\n## Out of Scope\n* *.yahoo.com.tw",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "TW Media: News",
+          "asset_type": "OTHER",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "## In Scope\n* [Yahoo TW News Android](https://play.google.com/store/apps/details?id=com.yahoo.mobile.client.android.newstw)\n* [Yahoo TW News iOS](https://itunes.apple.com/tw/app/yahoo%E5%A5%87%E6%91%A9-%E7%9B%B4%E6%92%ADlive-%E5%8D%B3%E6%99%82%E6%96%B0%E8%81%9E/id864844562?mt=8)\n* Yahoo TW News \n  * *.tw.news.yahoo.com\n  * Backend API: https://news-app.abumedia.yql.yahoo.com:443/ \n  * Web: https://tw.news.yahoo.com\n  * Content API: https://ncp-gw-abu.media.yahoo.com/\n\n## Out of Scope\n* news.campaign.yahoo.com.tw\n* *.yahoo.com.tw",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "TW Media: Stock",
+          "asset_type": "OTHER",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "## In Scope\n* [Yahoo TW Stock Android](https://play.google.com/store/apps/details?id=com.yahoo.mobile.client.android.TWStock)\n* [Yahoo TW Stock iOS](https://itunes.apple.com/tw/app/yahoo%E5%A5%87%E6%91%A9%E8%82%A1%E5%B8%82/id790214428?mt=8)\n* Yahoo TW Stock\n  * tw.stock.yahoo.com\n  * API: https://stock-app.abumedia.yql.yahoo.com\n  * API: https://tw-finance-yql.media.yahoo.com\n\n## Notes\n* `stock.yahoo.com` and `finance.yahoo.com` are identical; Reports will NOT be credited same-bug-different-host bonuses when issues are found on both domains.\n* TW Stock Apps have a strong dependency with third party SDK(s) for receiving the real-time quote data in the market. Every page containing values (volume, prices, up/down flag, …) of index, tickers, etfs, …, ticker information, line chart, notifications setting are all from the SDK. And the connection with the SDK service is established when the app launches and lasts the app's whole lifetime. **These SDK service(s) are out of scope.**\n\n## Out of Scope\n* *.yahoo.com.tw\n* tw.finance.yahoo.com\n* Quote SDK (from Systex inc.)\n",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "TW eCommerce: Auctions",
+          "asset_type": "OTHER",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "## In Scope\n* [Yahoo TW Auctions Android](https://play.google.com/store/apps/details?id=com.yahoo.mobile.client.android.ecauction)\n* [Yahoo TW Auctions iOS](https://itunes.apple.com/tw/app/yahoo%E6%8B%8D%E8%B3%A3-%E5%88%8A%E7%99%BB%E5%85%8D%E8%B2%BB/id1033771352?mt=8)\n* Yahoo TW Auctions: \n  * *.bid.yahoo.com\n  * https://tw.bid.yahoo.com\n* Yahoo TW Auctions APIs:\n  * https://tw.bid.yahoo.com/api/\n  * https://tw.api.bid.yahoo.com:4443\n* Search API: tw.search.ec.yahoo.com\n\n## Notes\n* Access to the Taiwan sites from some countries in Europe may be blocked. \n* `Buyer` accounts can be set up for any Yahoo user.\n* `Seller` accounts require a TW phone number and 2FA.\n* **Do not** use fake data (like nid) when operating the cash functions, it may cause real money to be stuck; **we will hold you accountable for broken workflows.**\n* You are required to clean up all the testing data related to posting new products. \n* You **must** include the following “test” label in **ALL** posts (in the most visible location)  to prevent regular users from interacting with hacker-created content: `[PARANOIDS-勿下標][TEST]` -- *Any reports identified that are missing this label, will not receive a bounty.*\n\n## Out of Scope\n* *.yahoo.com.tw\n* ismarus-ap-94600.tw.juiker.net\n* *.tw.juiker.net\n*  auth.tw.juiker.net/oauth2/getUserTokenByTurnkey\n* *.straas.net\n* iOS: JuikerIMSDK.framework, StraaS-iOS-SDK\n* Android: io.straas.android.sdk\n* ecfme.famiport.com.tw (Third Party)\n",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "TW eCommerce: Shopping",
+          "asset_type": "OTHER",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "## In Scope\n* [Yahoo TW Shopping Android](https://play.google.com/store/apps/details?id=com.yahoo.mobile.client.android.ecshopping)\n* [Yahoo TW Shopping iOS](https://itunes.apple.com/tw/app/yahoo%E5%A5%87%E6%91%A9%E8%B3%BC%E7%89%A9%E4%B8%AD%E5%BF%83/id1061577845?mt=8)\n* Yahoo TW Shopping\n  * twpay.buy.yahoo.com \n  * Web: https://tw.buy.yahoo.com/\n  * Mobile Web: https://m.tw.buy.yahoo.com/\n  * API: https://tw.mapi.shp.yahoo.com\n* Search API: tw.search.ec.yahoo.com\n* Rushbuy API: rushbuy.buy.yahoo.com\n\n## Out of Scope\n* *.yahoo.com.tw\n* iOS: TPDirect.framework\n* Android: tech.cherri.tpdirect.api\n",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "TW eCommerce: Store",
+          "asset_type": "OTHER",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "## In Scope\n* [Yahoo TW Store Android](https://play.google.com/store/apps/details?id=com.yahoo.mobile.client.android.ecstore)\n* [Yahoo TW Store iOS](https://itunes.apple.com/tw/app/yahoo%E5%A5%87%E6%91%A9%E8%B6%85%E7%B4%9A%E5%95%86%E5%9F%8E/id778296354?mt=8)\n* Yahoo TW Store\n  * *.tw.mall.yahoo.com\n  * m.mall.yahoo.com\n  * Web: https://tw.mall.yahoo.com/\n  * Mobile Web: https://m.tw.mall.yahoo.com/\n  * API: https://tw.ews.mall.yahooapis.com/\n* Search API: tw.search.ec.yahoo.com\n\n## Out of Scope\n* *.yahoo.com.tw",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "TW eCommerce: Used Car",
+          "asset_type": "OTHER",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "## In Scope\n* tw.usedcar.yahoo.com\n\n## Notes\nRefer to the **Notes** section in the `TW eCommerce: Auctions` listing.\n\n## Out of Scope\n* *.yahoo.com.tw\n* autos.yahoo.com.tw\n* tw.serviceplus.yahoo.com",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
           "asset_identifier": "TechCrunch",
           "asset_type": "OTHER",
           "availability_requirement": null,
@@ -478,7 +555,7 @@
           "asset_type": "OTHER",
           "availability_requirement": null,
           "confidentiality_requirement": null,
-          "eligible_for_bounty": true,
+          "eligible_for_bounty": false,
           "eligible_for_submission": true,
           "instruction": "* *.groups.yahoo.com (main site)\n* *.rtn.groups.yahoodns.net (returned bounced email)\n* *.xa.yimg.com (images)\n* *.yahoogroups.com (smtp - mail relay)",
           "integrity_requirement": null,
@@ -672,61 +749,6 @@
           "max_severity": "critical"
         },
         {
-          "asset_identifier": "Yahoo TW Auction",
-          "asset_type": "OTHER",
-          "availability_requirement": null,
-          "confidentiality_requirement": null,
-          "eligible_for_bounty": true,
-          "eligible_for_submission": true,
-          "instruction": "* [Yahoo TW Auction Android](https://play.google.com/store/apps/details?id=com.yahoo.mobile.client.android.ecauction)\n* [Yahoo TW Auction iOS](https://itunes.apple.com/tw/app/yahoo%E6%8B%8D%E8%B3%A3-%E5%88%8A%E7%99%BB%E5%85%8D%E8%B2%BB/id1033771352?mt=8)\n* Yahoo TW Auction (web)",
-          "integrity_requirement": null,
-          "max_severity": "critical"
-        },
-        {
-          "asset_identifier": "Yahoo TW News",
-          "asset_type": "OTHER",
-          "availability_requirement": null,
-          "confidentiality_requirement": null,
-          "eligible_for_bounty": true,
-          "eligible_for_submission": true,
-          "instruction": "* [Yahoo TW News Android](https://play.google.com/store/apps/details?id=com.yahoo.mobile.client.android.newstw)\n* [Yahoo TW News iOS](https://itunes.apple.com/tw/app/yahoo%E5%A5%87%E6%91%A9-%E7%9B%B4%E6%92%ADlive-%E5%8D%B3%E6%99%82%E6%96%B0%E8%81%9E/id864844562?mt=8)\n* Yahoo TW News (web)",
-          "integrity_requirement": null,
-          "max_severity": "critical"
-        },
-        {
-          "asset_identifier": "Yahoo TW Shopping",
-          "asset_type": "OTHER",
-          "availability_requirement": null,
-          "confidentiality_requirement": null,
-          "eligible_for_bounty": true,
-          "eligible_for_submission": true,
-          "instruction": "* [Yahoo TW Shopping Android](https://play.google.com/store/apps/details?id=com.yahoo.mobile.client.android.ecshopping)\n* [Yahoo TW Shopping iOS](https://itunes.apple.com/tw/app/yahoo%E5%A5%87%E6%91%A9%E8%B3%BC%E7%89%A9%E4%B8%AD%E5%BF%83/id1061577845?mt=8)\n* Yahoo TW Shopping (web)",
-          "integrity_requirement": null,
-          "max_severity": "critical"
-        },
-        {
-          "asset_identifier": "Yahoo TW Stock",
-          "asset_type": "OTHER",
-          "availability_requirement": null,
-          "confidentiality_requirement": null,
-          "eligible_for_bounty": true,
-          "eligible_for_submission": true,
-          "instruction": "* [Yahoo TW Stock Android](https://play.google.com/store/apps/details?id=com.yahoo.mobile.client.android.TWStock)\n* [Yahoo TW Stock iOS](https://itunes.apple.com/tw/app/yahoo%E5%A5%87%E6%91%A9%E8%82%A1%E5%B8%82/id790214428?mt=8)\n* tw.stock.yahoo.com\n* *.stock.yahoo.com",
-          "integrity_requirement": null,
-          "max_severity": "critical"
-        },
-        {
-          "asset_identifier": "Yahoo TW Store",
-          "asset_type": "OTHER",
-          "availability_requirement": null,
-          "confidentiality_requirement": null,
-          "eligible_for_bounty": true,
-          "eligible_for_submission": true,
-          "instruction": "* [Yahoo TW Store](https://play.google.com/store/apps/details?id=com.yahoo.mobile.client.android.ecstore)\n* [Yahoo TW Store](https://itunes.apple.com/tw/app/yahoo%E5%A5%87%E6%91%A9%E8%B6%85%E7%B4%9A%E5%95%86%E5%9F%8E/id778296354?mt=8)\n* Yahoo TW Store (web)",
-          "integrity_requirement": null,
-          "max_severity": "critical"
-        },
-        {
           "asset_identifier": "Yahoo Video",
           "asset_type": "OTHER",
           "availability_requirement": null,
@@ -878,7 +900,7 @@
           "confidentiality_requirement": null,
           "eligible_for_bounty": false,
           "eligible_for_submission": false,
-          "instruction": "These are just for fun.\n* [H1-213-2019](https://forms.gle/jG7uRzS6k7BWjAeUA)\n* [H1-415-2020(coming soon)\n",
+          "instruction": "These are just for fun.\n* [H1-213-2019](https://forms.gle/jG7uRzS6k7BWjAeUA)\n* [H1-415-2020](coming soon)\n* [H1-2004-2020](coming soon)\n",
           "integrity_requirement": null,
           "max_severity": "none"
         },
@@ -2306,13 +2328,24 @@
           "max_severity": "critical"
         },
         {
+          "asset_identifier": "DonationAlerts",
+          "asset_type": "OTHER",
+          "availability_requirement": "medium",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "`donationalerts.com`, `*.donationalerts.com`, `donationalerts.ru`, `*.donationalerts.ru` except delegated and externally hosted domains and branded partner services.\n\n==MitM and local attacks, user enumeration on registration/recovery, open redirections, insufficient session expiration, cookies working after logout etc are not accepted== unless there are additional vectors identified (e.g. ability to steal the session token via remote vector for open redirection)",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
           "asset_identifier": "Ext. A Scope",
           "asset_type": "OTHER",
           "availability_requirement": "high",
           "confidentiality_requirement": "high",
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
-          "instruction": "Video conferencing ```calls.mail.ru```, productivity, e-commerce, B2B and content/news projects at ```*.mail.ru```,  ```*.my.com``` and dedicated project domains (```*.pandao.ru```, ```*.am.ru```, ```*.youla.ru```, ```*.vseapteki.ru```, ```*.relap.io```) except delegated and externally hosted domains and branded partner services.\n\n==Extended scope only awards critical serverside vulnerabilities, if vulnerability compromises the infrastructure (e.g. RCE, SQLi, LFR, SSRF, etc) or data outside of project's scope (e.g. personal information).==\n\nClientside vulnerabilities (XSS, CSRF) and business logic specific bugs, including privilege escalations within the product are accepted without bounty. \n==MitM and local attacks, user enumeration on registration/recovery, open redirections, insufficient session expiration, cookies working after logout etc are not accepted== unless there are additional vectors identified (e.g. ability to steal the session token via remote vector).",
+          "instruction": "Video conferencing ```calls.mail.ru```, productivity, e-commerce, B2B and content/news projects at ```*.mail.ru```,  ```*.my.com``` and dedicated project domains (```*.pandao.ru```, ```*.am.ru```, ```*.youla.ru```, ```*.vseapteki.ru```, ```*.relap.io```) except delegated and externally hosted domains and branded partner services.\n\n==Extended scope only awards critical serverside vulnerabilities, if vulnerability compromises the infrastructure (e.g. RCE, SQLi, LFR, SSRF, etc) or data outside of project's scope (e.g. personal information)  via serverside vector.==\n\nClientside vulnerabilities (XSS, CSRF) and business logic specific bugs, including privilege escalations within the product are accepted without bounty. \n==MitM and local attacks, user enumeration on registration/recovery, open redirections, insufficient session expiration, cookies working after logout etc are not accepted== unless there are additional vectors identified (e.g. ability to steal the session token via remote vector for open redirection).",
           "integrity_requirement": "high",
           "max_severity": "critical"
         },
@@ -2323,7 +2356,7 @@
           "confidentiality_requirement": "high",
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
-          "instruction": "Gaming, entertainment, recruitment, educational projects, realty services and unlisted projects\n``` *.mail.ru```, ```*.my.com```, ```*.my.games``` unlisted in different scopes and dedicated project domains (```worki.ru```, ```geekbrains.ru```, ```33slona.ru```, ```bit.games``` and  game domains within Mail.Ru infrastructure) except delegated domains, externally hosted projects, acquirements not integrated to Mail.Ru infrastructure and branded partner services. Reports for user introduced vulnerabilities in hosted systems or hosted student projects are considered as informative.\n\n\n==Extended scope only awards critical serverside vulnerabilities, if vulnerability compromises the infrastructure (e.g. RCE, SQLi, LFR, SSRF, etc) or data outside of project's scope (e.g. personal information).==\n\nClientside vulnerabilities (XSS, CSRF) and business logic specific bugs, including privilege escalations within the product are accepted without bounty. \n==MitM and local attacks, user enumeration on registration/recovery, open redirections, insufficient session expiration, cookies working after logout etc are not accepted== unless there are additional vectors identified (e.g. ability to steal the session token via remote vector).",
+          "instruction": "Gaming, entertainment, recruitment, educational projects, realty services and unlisted projects\n``` *.mail.ru```, ```*.my.com```, ```*.my.games``` unlisted in different scopes and dedicated project domains (```worki.ru```, ```geekbrains.ru```, ```33slona.ru```, ```bit.games``` and  game domains within Mail.Ru infrastructure) except delegated domains, externally hosted projects, acquirements not integrated to Mail.Ru infrastructure and branded partner services. Reports for user introduced vulnerabilities in hosted systems or hosted student projects are considered as informative.\n\n\n==Extended scope only awards critical serverside vulnerabilities, if vulnerability compromises the infrastructure (e.g. RCE, SQLi, LFR, SSRF, etc) or data outside of project's scope (e.g. personal information) via serverside vector.==\n\nClientside vulnerabilities (XSS, CSRF) and business logic specific bugs, including privilege escalations within the product are accepted without bounty. \n\n==MitM and local attacks, user enumeration on registration/recovery, open redirections, insufficient session expiration, cookies working after logout etc are not accepted== unless there are additional vectors identified (e.g. ability to steal the session token via remote vector for open redirection)",
           "integrity_requirement": "high",
           "max_severity": "critical"
         },
@@ -2334,7 +2367,7 @@
           "confidentiality_requirement": "high",
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
-          "instruction": "This scope covers services and products related or operated by Mail.ru but hosted outside of Mail.ru infrastructure: fresh and non-integrated acquisitions not mentioned for different scopes, different cloud services and externally hosted solutions. It also covers non-production hosts (e.g. staging and demo installations) of Mail.ru projects in MCS cloud hosting.\n\n==Extended scope only awards critical serverside vulnerabilities, if vulnerability compromises the infrastructure (e.g. RCE, SQLi, LFR, SSRF, etc) or data outside of project's scope (e.g. personal information).==\n\nClientside vulnerabilities (XSS, CSRF) and business logic specific bugs, including privilege escalations within the product are accepted without bounty. \n==MitM and local attacks, user enumeration on registration/recovery, open redirections, insufficient session expiration, cookies working after logout, information disclosure without sensitive data etc are not accepted== unless there are additional vectors identified (e.g. ability to steal the session token via remote vector).\n",
+          "instruction": "This scope covers services and products related or operated by Mail.ru but hosted outside of Mail.ru infrastructure: fresh and non-integrated acquisitions not mentioned for different scopes, different cloud services and externally hosted solutions. It also covers non-production hosts (e.g. staging and demo installations) of Mail.ru projects in MCS cloud hosting.\n\n==Extended scope only awards critical serverside vulnerabilities, if vulnerability compromises the infrastructure (e.g. RCE, SQLi, LFR, SSRF, etc) or data outside of project's scope (e.g. personal information) via serverside vector.==\n\nClientside vulnerabilities (XSS, CSRF) and business logic specific bugs, including privilege escalations within the product are accepted without bounty. \n\n==MitM and local attacks, user enumeration on registration/recovery, open redirections, insufficient session expiration, cookies working after logout etc are not accepted== unless there are additional vectors identified (e.g. ability to steal the session token via remote vector for open redirection)\n",
           "integrity_requirement": "medium",
           "max_severity": "critical"
         },
@@ -2345,7 +2378,7 @@
           "confidentiality_requirement": "low",
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
-          "instruction": "This scope covers Mail.ru related subdomains operated by Mail.ru partners outside of Mail.ru infrastructure.\n\n3rd party projects and services are not covered by bug bounty terms and rules. Researchers must follow rules and service agreement published by resource being investigated.  Mail.Ru does not authorize researcher or provide him permissions in any form to research third party resources for vulnerabilities, all permissions must be acquired by researcher directly from third party or partner.\n\nOnly reports affecting Mail.ru services or customers are accepted. \n\nVulnerability information for third party product or service can not be disclosed within Mail.Ru bug bounty program.\n\n==Extended scope only awards critical serverside vulnerabilities, if vulnerability compromises the infrastructure (e.g. RCE, SQLi, LFR, SSRF, etc) or data outside of project's scope (e.g. personal information).==\n\nClientside vulnerabilities (XSS, CSRF) and business logic specific bugs, including privilege escalations within the product are accepted without bounty. \n==MitM and local attacks, user enumeration on registration/recovery, open redirections, insufficient session expiration, cookies working after logout, information disclosure without sensitive data etc are not accepted== unless there are additional vectors identified (e.g. ability to steal the session token via remote vector).\n",
+          "instruction": "This scope covers Mail.ru related subdomains operated by Mail.ru partners outside of Mail.ru infrastructure.\n\n3rd party projects and services are not covered by bug bounty terms and rules. Researchers must follow rules and service agreement published by resource being investigated.  Mail.Ru does not authorize researcher or provide him permissions in any form to research third party resources for vulnerabilities, all permissions must be acquired by researcher directly from third party or partner.\n\nOnly reports affecting Mail.ru services or customers are accepted. \n\nVulnerability information for third party product or service can not be disclosed within Mail.Ru bug bounty program.\n\n==Extended scope only awards critical serverside vulnerabilities, if vulnerability compromises the infrastructure (e.g. RCE, SQLi, LFR, SSRF, etc) or data outside of project's scope (e.g. personal information) via serverside vector.==\n\nClientside vulnerabilities (XSS, CSRF) and business logic specific bugs, including privilege escalations within the product are accepted without bounty. \n\n==MitM and local attacks, user enumeration on registration/recovery, open redirections, insufficient session expiration, cookies working after logout etc are not accepted== unless there are additional vectors identified (e.g. ability to steal the session token via remote vector for open redirection)\n",
           "integrity_requirement": "low",
           "max_severity": "medium"
         },
@@ -2367,7 +2400,7 @@
           "confidentiality_requirement": "high",
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
-          "instruction": "**ICQ web client**:  ```web.icq.com ```\n**ICQ web portal**: ```icq.com```, ```*.icq.com```, ```icq.im```, ```agent.mail.ru```\n**ICQ API Sandbox**: ```*.icq.net``` (==ICQ API relies on tokens rather than cookies and HTTP  auth and is generally resistant to crossite attacks, check the real impact for crossite access before reporting==).\n**ICQ Application (mobile)**: [ICQ for Android](https://play.google.com/store/apps/details?id=com.icq.mobile.client&hl=en), [ICQ for IOS](https://apps.apple.com/us/app/icq-messenger-video-calls/id302707408). Reports for Mail.Ru Agent are only accepted if the report is specific to this branded version.\n**ICQ Application (desktop)**: [ICQ for Mac](https://icq.com/mac/en), [ICQ for Windows](https://icq.com/windows/en), [Source code](https://github.com/mail-ru-im/im-desktop) (*source code is not published with every ICQ version and may contain vulnerabilities already patched in version distributed via ICQ site. Only reports for vulnerabilities in latest version distributed via the ICQ site are accepted*). Reports for Mail.Ru Agent are only accepted if the report is specific to this branded version.",
+          "instruction": "**ICQ web client**:  ```web.icq.com ```\n**ICQ web portal**: ```icq.com```, ```*.icq.com```, ```icq.im```, ```agent.mail.ru```\n**ICQ API Sandbox**: ```*.icq.net``` (==ICQ API relies on tokens rather than cookies and HTTP  auth and is generally resistant to crossite attacks, check the real impact for crossite access before reporting==).\n**ICQ Application (mobile)**: [ICQ for Android](https://play.google.com/store/apps/details?id=com.icq.mobile.client&hl=en), [ICQ for IOS](https://apps.apple.com/us/app/icq-messenger-video-calls/id302707408). Reports for Mail.Ru Agent are only accepted if the report is specific to this branded version.\n**ICQ Application (desktop)**: [ICQ for Mac](https://icq.com/mac/en), [ICQ for Windows](https://icq.com/windows/en), [Source code](https://github.com/mail-ru-im/im-desktop) (*source code is not published with every ICQ version and may contain vulnerabilities already patched in version distributed via ICQ site. Only reports for vulnerabilities in latest version distributed via the ICQ site are accepted*). \nMail.Ru Agent and MyTeam are derived from ICQ code. Reports for these messengers are only accepted if vulnerability is messenger-specific and does not affect ICQ of the same release version.",
           "integrity_requirement": "high",
           "max_severity": "critical"
         },
@@ -2389,7 +2422,7 @@
           "confidentiality_requirement": null,
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
-          "instruction": "MY.GAMES core services: ```my.games``` (without subdomains), ```account.my.games```, ```community.my.games```, ```profile.my.games```, ```store.my.games```, ```market.my.games```, ```api.my.games```, ```ac.my.games```, ```*-ac.my.games```, ```auth.my.games```, ```c.my.games```, ```o2.my.games```, ```acint.my.games```, ```dummy.my.games``` \n\nGame subdomains do not belong to this scope.\n\n==My.Games scope only awards critical serverside vulnerabilities, if vulnerability compromises the infrastructure (e.g. RCE, SQLi, LFR, SSRF, etc) or data outside of project's scope (e.g. personal information).==\n\nClientside vulnerabilities (XSS, CSRF) and business logic specific bugs including privilege escalations are accepted without bounty.\n\n==MitM and local attacks, user enumeration on registration/recovery, open redirections, insufficient session expiration, cookies working after logout etc are not accepted== unless there are additional vectors identified (e.g. ability to steal the session token via remote vector).",
+          "instruction": "MY.GAMES core services: ```my.games``` (without subdomains), ```account.my.games```, ```community.my.games```, ```profile.my.games```, ```store.my.games```, ```market.my.games```, ```api.my.games```, ```ac.my.games```, ```*-ac.my.games```, ```auth.my.games```, ```c.my.games```, ```o2.my.games```, ```acint.my.games```, ```dummy.my.games``` \n\nGame subdomains do not belong to this scope.\n\n==MY.GAMES scope only awards critical serverside vulnerabilities, if vulnerability compromises the infrastructure (e.g. RCE, SQLi, LFR, SSRF, etc) or data outside of project's scope (e.g. personal information) via serverside vector.==\n\nClientside vulnerabilities (XSS, CSRF) and business logic specific bugs, including privilege escalations within the product are accepted without bounty. \n\n==MitM and local attacks, user enumeration on registration/recovery, open redirections, insufficient session expiration, cookies working after logout etc are not accepted== unless there are additional vectors identified (e.g. ability to steal the session token via remote vector for open redirection)",
           "integrity_requirement": null,
           "max_severity": "critical"
         },
@@ -2412,6 +2445,17 @@
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
           "instruction": "```mail.ru``` (without subdomains), ```e.mail.ru```, ```*.e.mail.ru```, ```touch.mail.ru```, ```*.touch.mail.ru```, ```m.mail.ru```, ```*.m.mail.ru```, ```tel.mail.ru```, ```*.tel.mail.ru```, ```light.mail.ru```, ```*.light.mail.ru```, ```octavius.mail.ru```, ```*.octavius.mail.ru```, ```smtp.mail.ru```, ```mxs.mail.ru```, ```pop.mail.ru```, ```imap.mail.ru```, ```cloud.mail.ru```, ```*.cloud.mail.ru```, ```calendar.mail.ru```, ```*.calendar.mail.ru```, ```biz.mail.ru```, ```*.biz.mail.ru```, ```edu.mail.ru```, ```*.edu.mail.ru```, ```auth.mail.ru```, ```*.auth.mail.ru```, ```o2.mail.ru```, ```*.o2.mail.ru```, ```account.mail.ru```, ```*.account.mail.ru```, ```swa.mail.ru```, ```*.swa.mail.ru``` except delegated and externally hosted domains and branded partner services.\n\n[Main portal page](https://mail.ru/), [Mail.Ru Mail](https://e.mail.ru/), My.Com MyMail, [Cloud](https://cloud.mail.ru/), [Calendar](https://calendar.mail.ru), [Mail for Business](https://biz.mail.ru), Portal authorization center, [Mail.ru Mail for iOS](https://itunes.apple.com/en/app/pocta-mail.ru/id511310430), [Mail.ru Mail for Android](https://play.google.com/store/apps/details?id=ru.mail.mailapp), [Mail.ru Cloud for iOS](https://itunes.apple.com/en/app/oblako-mail.ru/id696551382), [Mail.ru Cloud for Android](https://play.google.com/store/apps/details?id=ru.mail.cloud), [Mail.ru Calendar for Android](https://play.google.com/store/apps/details?id=ru.mail.calendar), [Код Доступа Mail.Ru for Android](https://play.google.com/store/apps/details?id=ru.mail.auth.totp), [Код Доступа Mail.Ru for iOS](https://itunes.apple.com/us/app/id1158940459) , [MyMail for iOS](https://itunes.apple.com/us/app/mymail-email-for-hotmail-gmail/id722120997?mt=8),  [MyMail for Android](https://play.google.com/store/apps/details?id=com.my.mail&hl=en)\n\nBugs common for both Mail.Ru and MyMail application / serverside are usually accepted as a single bug.",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "SberMarket",
+          "asset_type": "OTHER",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "SberMarket applications, `sbermarket.ru`, `*.sbermarket.ru`, `instamart.ru`, `*.instamart.ru` except delegated and externally hosted domains and branded partner services.\n\n==SberMarket scope only awards critical serverside vulnerabilities, if vulnerability compromises the infrastructure (e.g. RCE, SQLi, LFR, SSRF, etc) or data outside of project's scope (e.g. personal information) via serverside vector.==\n\nClientside vulnerabilities (XSS, CSRF) and business logic specific bugs, including privilege escalations within the product are accepted without bounty.\n\nMitM and local attacks, user enumeration on registration/recovery, open redirections, insufficient session expiration, cookies working after logout etc are not accepted unless there are additional vectors identified (e.g. ability to steal the session token via remote vector for open redirection)\n",
           "integrity_requirement": "high",
           "max_severity": "critical"
         }
@@ -5541,7 +5585,7 @@
     "handle": "dropbox",
     "url": "https://hackerone.com/dropbox",
     "offers_bounties": true,
-    "quick_to_bounty": true,
+    "quick_to_bounty": false,
     "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
@@ -5555,6 +5599,39 @@
           "eligible_for_submission": true,
           "instruction": "[Dropbox for Desktop](https://www.dropbox.com/install)",
           "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "api.hellosign.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "api.helloworks.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "app.hellosign.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
           "max_severity": "critical"
         },
         {
@@ -5624,6 +5701,17 @@
           "max_severity": "high"
         },
         {
+          "asset_identifier": "https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3A00000EFmGIUA1 ",
+          "asset_type": "OTHER",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
           "asset_identifier": "paper.dropbox.com",
           "asset_type": "URL",
           "availability_requirement": "high",
@@ -5632,6 +5720,17 @@
           "eligible_for_submission": true,
           "instruction": "",
           "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "portal.helloworks.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
           "max_severity": "critical"
         },
         {
@@ -5940,7 +6039,7 @@
     "url": "https://hackerone.com/yelp",
     "offers_bounties": false,
     "quick_to_bounty": false,
-    "quick_to_first_response": true,
+    "quick_to_first_response": false,
     "submission_state": "open",
     "targets": {
       "in_scope": [
@@ -6187,7 +6286,7 @@
     "url": "https://hackerone.com/dashlane",
     "offers_bounties": true,
     "quick_to_bounty": false,
-    "quick_to_first_response": false,
+    "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
       "in_scope": [
@@ -6330,6 +6429,17 @@
     "targets": {
       "in_scope": [
         {
+          "asset_identifier": "1454056744",
+          "asset_type": "APPLE_STORE_APP_ID",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "[Shoppers iOS Application] (https://apps.apple.com/us/app/instacart-shopper-earn-money/id1454056744)",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
           "asset_identifier": "api.instacart.com",
           "asset_type": "URL",
           "availability_requirement": "high",
@@ -6347,13 +6457,35 @@
           "confidentiality_requirement": "high",
           "eligible_for_bounty": false,
           "eligible_for_submission": true,
-          "instruction": "",
+          "instruction": "[Customers iOS Application] (https://apps.apple.com/us/app/instacart/id545599256)",
           "integrity_requirement": "high",
           "max_severity": "critical"
         },
         {
           "asset_identifier": "com.instacart.client",
           "asset_type": "GOOGLE_PLAY_APP_ID",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "[Customers Android App] (https://play.google.com/store/apps/details?id=com.instacart.client&hl=en_US)",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "com.instacart.shopper",
+          "asset_type": "GOOGLE_PLAY_APP_ID",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "[Shoppers Android Application](https://play.google.com/store/apps/details?id=com.instacart.shopper&hl=en_US)",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "shoppers.instacart.com",
+          "asset_type": "URL",
           "availability_requirement": "high",
           "confidentiality_requirement": "high",
           "eligible_for_bounty": false,
@@ -6582,6 +6714,17 @@
           "max_severity": "critical"
         },
         {
+          "asset_identifier": "Cloudkey",
+          "asset_type": "HARDWARE",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
           "asset_identifier": "EdgeMAX",
           "asset_type": "HARDWARE",
           "availability_requirement": "medium",
@@ -6637,6 +6780,17 @@
           "max_severity": "critical"
         },
         {
+          "asset_identifier": "UniFi Access",
+          "asset_type": "HARDWARE",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
           "asset_identifier": "UniFi Cloud",
           "asset_type": "OTHER",
           "availability_requirement": "medium",
@@ -6648,7 +6802,29 @@
           "max_severity": "critical"
         },
         {
-          "asset_identifier": "UniFi Server",
+          "asset_identifier": "UniFi Gateways (UDM, UXG, USG)",
+          "asset_type": "HARDWARE",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "UniFi LED",
+          "asset_type": "HARDWARE",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "UniFi Network Controller",
           "asset_type": "DOWNLOADABLE_EXECUTABLES",
           "availability_requirement": "medium",
           "confidentiality_requirement": "medium",
@@ -6659,11 +6835,33 @@
           "max_severity": "critical"
         },
         {
+          "asset_identifier": "UniFi Protect",
+          "asset_type": "HARDWARE",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "UniFi Switches",
+          "asset_type": "HARDWARE",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
           "asset_identifier": "UniFi Talk",
           "asset_type": "HARDWARE",
           "availability_requirement": "high",
           "confidentiality_requirement": "high",
-          "eligible_for_bounty": false,
+          "eligible_for_bounty": true,
           "eligible_for_submission": true,
           "instruction": "",
           "integrity_requirement": "high",
@@ -6700,6 +6898,17 @@
           "eligible_for_submission": true,
           "instruction": "",
           "integrity_requirement": "medium",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "UniFi Wireless Access Points",
+          "asset_type": "HARDWARE",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": "high",
           "max_severity": "critical"
         },
         {
@@ -6795,7 +7004,7 @@
           "asset_type": "URL",
           "availability_requirement": "low",
           "confidentiality_requirement": "medium",
-          "eligible_for_bounty": false,
+          "eligible_for_bounty": true,
           "eligible_for_submission": true,
           "instruction": "",
           "integrity_requirement": "medium",
@@ -7391,6 +7600,17 @@
           "max_severity": "critical"
         },
         {
+          "asset_identifier": "luckey.partners",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
           "asset_identifier": "luckeyhomes.com",
           "asset_type": "URL",
           "availability_requirement": null,
@@ -7723,46 +7943,46 @@
           "max_severity": "critical"
         },
         {
+          "asset_identifier": "https://docs.mapbox.com/android/",
+          "asset_type": "SOURCE_CODE",
+          "availability_requirement": "medium",
+          "confidentiality_requirement": "medium",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "[Maps SDK for Android](https://docs.mapbox.com/android/maps/overview/)\n[Navigation SDK for Android](https://docs.mapbox.com/android/navigation/overview/)",
+          "integrity_requirement": "medium",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "https://docs.mapbox.com/api/",
+          "asset_type": "URL",
+          "availability_requirement": "medium",
+          "confidentiality_requirement": "medium",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "The Mapbox web services APIs allow for programmatic access to Mapbox tools and services.\n- [Accounts Service APIs](https://docs.mapbox.com/api/accounts/)\n- [Maps Service APIs](https://docs.mapbox.com/api/maps/)\n- [Navigation Service APIs](https://docs.mapbox.com/api/navigation/)\n- [Search Service APIs](https://docs.mapbox.com/api/search/)",
+          "integrity_requirement": "medium",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "https://docs.mapbox.com/ios/maps/overview/",
+          "asset_type": "SOURCE_CODE",
+          "availability_requirement": "medium",
+          "confidentiality_requirement": "medium",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "[Maps SDK for iOS](https://docs.mapbox.com/ios/maps/overview/)",
+          "integrity_requirement": "medium",
+          "max_severity": "critical"
+        },
+        {
           "asset_identifier": "https://github.com/mapbox",
           "asset_type": "SOURCE_CODE",
           "availability_requirement": "medium",
           "confidentiality_requirement": "medium",
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
-          "instruction": "Mapbox has 700+ public Github repositories that are within scope, though only reports that can be actively exploited on Mapbox infrastructure will be eligible for a monetary bounty. \n\nSubmissions on assets containing the \"Mapbox\" name but not owned by Mapbox are not eligible for bounty. \nSome repositories in the Mapbox GitHub organization may contain experimental code and are not eligible for a bounty. \n\n* Please submit any open source security issues directly to HackerOne, do not open security-related issues on public Github repositories.\n* Please send any questions about the eligibility of an open source repository to security@mapbox.com. \n\nA few of our popular open-source repositories: \n[node-sqlite3](https://github.com/mapbox/node-sqlite3)     |     [node-pre-gyp](https://github.com/mapbox/node-pre-gyp)     |     [carmen](https://github.com/mapbox/carmen)     |     [tilelive](https://github.com/mapbox/tilelive)",
-          "integrity_requirement": "medium",
-          "max_severity": "critical"
-        },
-        {
-          "asset_identifier": "https://www.mapbox.com/android-docs/maps/overview/",
-          "asset_type": "SOURCE_CODE",
-          "availability_requirement": "medium",
-          "confidentiality_requirement": "medium",
-          "eligible_for_bounty": true,
-          "eligible_for_submission": true,
-          "instruction": "Maps SDK for Android",
-          "integrity_requirement": "medium",
-          "max_severity": "critical"
-        },
-        {
-          "asset_identifier": "https://www.mapbox.com/api-documentation",
-          "asset_type": "URL",
-          "availability_requirement": "medium",
-          "confidentiality_requirement": "medium",
-          "eligible_for_bounty": true,
-          "eligible_for_submission": true,
-          "instruction": "The Mapbox web services APIs allow for programmatic access to Mapbox tools and services.\n- [Maps API](https://www.mapbox.com/api-documentation/#maps) \n- [Styles API](https://www.mapbox.com/api-documentation/#styles)\n- [Geocoding API](https://www.mapbox.com/api-documentation/#geocoding)\n- [Uploads API](https://www.mapbox.com/api-documentation/#uploads)\n- [Surface API](https://www.mapbox.com/api-documentation/surface.html)\n- [Static API](https://www.mapbox.com/api-documentation/#static)\n- [Static Classic API](https://www.mapbox.com/api-documentation/#static-classic) \n- [Map Matching API](https://www.mapbox.com/api-documentation/#map-matching) \n- [Directions API (developer preview)](https://www.mapbox.com/api-documentation/#directions)\n- [Datasets API (developer preview)](https://www.mapbox.com/api-documentation/#datasets)",
-          "integrity_requirement": "medium",
-          "max_severity": "critical"
-        },
-        {
-          "asset_identifier": "https://www.mapbox.com/ios-sdk/maps/overview/",
-          "asset_type": "SOURCE_CODE",
-          "availability_requirement": "medium",
-          "confidentiality_requirement": "medium",
-          "eligible_for_bounty": true,
-          "eligible_for_submission": true,
-          "instruction": "Maps SDK for iOS ",
+          "instruction": "Mapbox has 700+ public Github repositories that are within scope, though only reports that can be actively exploited on Mapbox infrastructure will be eligible for a monetary bounty. \n\nSubmissions on assets containing the \"Mapbox\" name but not owned by Mapbox are not eligible for bounty. \nSome repositories in the Mapbox GitHub organization may contain experimental code and are not eligible for a bounty. \n\n* Please submit any open source security issues directly to HackerOne, do not open security-related issues on public Github repositories.\n* Please send any questions about the eligibility of an open source repository to security@mapbox.com. \n\nA few of our popular open-source repositories: \n[node-sqlite3](https://github.com/mapbox/node-sqlite3)     |     [node-pre-gyp](https://github.com/mapbox/node-pre-gyp)     |     [carmen](https://github.com/mapbox/carmen)",
           "integrity_requirement": "medium",
           "max_severity": "critical"
         },
@@ -7795,7 +8015,7 @@
           "confidentiality_requirement": "medium",
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
-          "instruction": "- https://mapbox.com\n- https://www.mapbox.com/studio/ \n- https://www.mapbox.com/editor/\n",
+          "instruction": "- https://mapbox.com\n- https://studio.mapbox.com/\n- https://account.mapbox.com/",
           "integrity_requirement": "medium",
           "max_severity": "critical"
         }
@@ -7808,7 +8028,7 @@
           "confidentiality_requirement": null,
           "eligible_for_bounty": false,
           "eligible_for_submission": false,
-          "instruction": "- `status.mapbox.com` - please instead report to the [StatusPage.io bug bounty program](https://bugcrowd.com/statuspage)\n- `email.mapbox.com`\n- [Mapbox Studio Classic](https://www.mapbox.com/mapbox-studio-classic/)\n- [Tilemill](https://www.mapbox.com/tilemill/)\n- [Legacy iOS SDK](https://github.com/mapbox/mapbox-ios-sdk-legacy)\n- [Legacy Android SDK](https://github.com/mapbox/mapbox-android-sdk-legacy)\n- [osm-navigation-map](https://github.com/mapbox/osm-navigation-map)(deprecated)",
+          "instruction": "- `status.mapbox.com` - please instead report to the [StatusPage.io bug bounty program](https://bugcrowd.com/statuspage)\n- `email.mapbox.com`\n- [Mapbox Studio Classic](https://docs.mapbox.com/help/glossary/mapbox-studio-classic/)\n- [Tilemill](https://www.mapbox.com/tilemill/)\n- [Legacy iOS SDK](https://github.com/mapbox/mapbox-ios-sdk-legacy)\n- [Legacy Android SDK](https://github.com/mapbox/mapbox-android-sdk-legacy)\n- [decrypt-kms-env](https://github.com/mapbox/decrypt-kms-env) - not actively maintained\n- [tilelive](https://github.com/mapbox/tilelive) - not actively maintained\n- [osm-navigation-map](https://github.com/mapbox/osm-navigation-map)(deprecated)",
           "integrity_requirement": null,
           "max_severity": "none"
         },
@@ -8092,6 +8312,34 @@
           "integrity_requirement": "none",
           "max_severity": "none"
         }
+      ]
+    }
+  },
+  {
+    "id": 1387,
+    "name": "Invision Power Services, Inc.",
+    "handle": "ips",
+    "url": "https://hackerone.com/ips",
+    "offers_bounties": true,
+    "quick_to_bounty": true,
+    "quick_to_first_response": true,
+    "submission_state": "open",
+    "targets": {
+      "in_scope": [
+        {
+          "asset_identifier": "https://d18papeh5u7ohm.cloudfront.net",
+          "asset_type": "URL",
+          "availability_requirement": "low",
+          "confidentiality_requirement": "none",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "We are in the alpha testing phase of the latest release of our community platform: Invision Community 4.5. \n\nWe are launching this campaign for penetration and vulnerability testing. \n\nWe ask that the scope of your testing be focused on the following: \n\n- The AdminCP area of the software. This version removes session IDs from URLs and instead utilizes cookie and database based session management. Every actionable link in the AdminCP should be protected by CSRF tokenization. The scope would involve bypassing CSRF protection which could allow for an unsuspecting administrator to follow a destructive link. \n\n- Platform and infrastructure security. It should not be possible to execute any arbitrary code that would access the infrastructure or permit \"breaking out\" of the test environment, which is housed in /var/www/html - Please alert us if you have found a way to circumvent these protections. \n\n- GraphQL \nThis version includes a GraphQL API, accessible by guests (via Basic authentication with an API key) and members (via an OAuth2 authorization code). It should not be possible to access any data or system settings to which the authenticated user (or guest) does not have access normally, or to perform any mutation/action for which the authenticated user (or guest) does not have permission normally. In addition, GraphQL requests should not have the ability to impact the integrity or stability of the site in general.\n\nGraphQL requests are only accepted at the https://d18papeh5u7ohm.cloudfront.net/api/graphql/ endpoint. An API key has been set up to access the site as a guest user: 21b746f7d5411ddc112636e8df6eb59f\n\nYou may exclusively use https://d18papeh5u7ohm.cloudfront.net for the purpose of your testing. \nAdmin username: admin\nPassword: password123\n\nAll other URLs are considered out of scope. \n",
+          "integrity_requirement": "medium",
+          "max_severity": "high"
+        }
+      ],
+      "out_of_scope": [
+
       ]
     }
   },
@@ -8819,28 +9067,6 @@
           "max_severity": "none"
         },
         {
-          "asset_identifier": "remote.goodrx.com",
-          "asset_type": "OTHER",
-          "availability_requirement": null,
-          "confidentiality_requirement": null,
-          "eligible_for_bounty": false,
-          "eligible_for_submission": false,
-          "instruction": "Please do not conduct research on this hostname.",
-          "integrity_requirement": null,
-          "max_severity": "none"
-        },
-        {
-          "asset_identifier": "remote2.goodrx.com",
-          "asset_type": "URL",
-          "availability_requirement": null,
-          "confidentiality_requirement": null,
-          "eligible_for_bounty": false,
-          "eligible_for_submission": false,
-          "instruction": "Please do not conduct research on this hostname.",
-          "integrity_requirement": null,
-          "max_severity": "none"
-        },
-        {
           "asset_identifier": "sso.identity.goodrx.com",
           "asset_type": "URL",
           "availability_requirement": "high",
@@ -9397,7 +9623,7 @@
     "handle": "paypal",
     "url": "https://hackerone.com/paypal",
     "offers_bounties": false,
-    "quick_to_bounty": false,
+    "quick_to_bounty": true,
     "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
@@ -9832,7 +10058,7 @@
     "handle": "matomo",
     "url": "https://hackerone.com/matomo",
     "offers_bounties": true,
-    "quick_to_bounty": true,
+    "quick_to_bounty": false,
     "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
@@ -10257,13 +10483,13 @@
           "max_severity": "critical"
         },
         {
-          "asset_identifier": "login.starbucks.co.jp/login",
+          "asset_identifier": "login.starbucks.co.jp",
           "asset_type": "URL",
           "availability_requirement": "high",
           "confidentiality_requirement": "high",
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
-          "instruction": "Starbucks Japan Login page\nhttps://login.starbucks.co.jp/login",
+          "instruction": "Starbucks Japan Login page\nhttps://login.starbucks.co.jp/",
           "integrity_requirement": "high",
           "max_severity": "critical"
         },
@@ -10489,7 +10715,7 @@
           "confidentiality_requirement": "high",
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
-          "instruction": "Spotify acquired Gimlet Media in February 2019\n\nFind below a list of in-scope targets. Note that it is continuously updated:\n~~~\nextraordinariesonthemic.com\ngeistguest.com\ngimlet.design\ngimlet.fm\ngimletmedia.com\ngimstaging.com\ngophergripes.com\nsurprisinglyawesome.com\nthenodbuysblack.com\nthesecrettovictory.com",
+          "instruction": "Spotify acquired Gimlet Media in February 2019\n\nFind below a list of in-scope targets. Note that it is continuously updated:\n~~~\nextraordinariesonthemic.com\ngeistguest.com\ngimlet.design\ngimletmedia.com\ngophergripes.com\nsurprisinglyawesome.com\nthenodbuysblack.com\nthesecrettovictory.com",
           "integrity_requirement": "high",
           "max_severity": "critical"
         },
@@ -10522,7 +10748,7 @@
           "confidentiality_requirement": null,
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
-          "instruction": "Please use this asset for non *.spotify.com websites. This includes sites in the domans forspotify.com, tospotify.com, fromspotify.com and atspotify.com.\n\nFind below a list of in-scope targets. Note that it is continuously updated:\n~~~\na1live.withspotify.com\nadidas-nitejogger.withspotify.com\nadidasoriginals.withspotify.com\namstelultra.withspotify.com\naudiohub.byspotify.com\nblackhistoryisnow.com\nboniver.withspotify.com\ncaliforniaalmonds.withspotify.com\ncaliforniaroadtrips.withspotify.com\nchurchill.withspotify.com\nclosetheplaygap.com\ncontra-algoritmo-itau.withspotify.com\ncovid19musicrelief.byspotify.com\ncrowdalbum.com\ndewars-disfruta-el-doble.withspotify.com\ndirectory.byspotify.com\ndoesmydogmissme.com\ndreamworkstrollsworldtour.withspotify.com\nequalizerproject.com\nescutaaasminas.byspotify.com\nesteelauder.withspotify.com\nextraction.withspotify.com\nfonter.withspotify.com\nforglowinghearts.withspotify.com\nfrontleftlive.withspotify.com\nfrozen2.withspotify.com\ngaragegigs.withspotify.com\ngroupm.withspotify.com\ngruppocap.withspotify.com\nhazrewind.withspotify.com\nhowamistillhungover.com\nhowdoikeepthekidsbusy.com\nhowdoimakethisroadtripbetter.com\nimabandi.to\nissa.website\njackdaniels.withspotify.com\njustaddspotify.com\nlisteningtogether.atspotify.com\nlistenlocal.byspotify.com\nmasmexa.com\nmichelobultra.withspotify.com\nmillion-nation.withspotify.com\nmimusica2019.com\nmodusmio.de\nmusicadeestimacao.byspotify.com\nnetflixthevictimsgame.withspotify.com\nninemusesfestival.com\no2.withspotify.com\noffthewallwednesday.withspotify.com\npets.byspotify.com\nplay-portraits.com\npoddamnthatsfunny.com\npoweradejapan.withspotify.com\nqueereye.withspotify.com\nrenaultclio.withspotify.com\nreviewvault.com\nseat-diadelamusica.withspotify.com\nseat-tarraco.withspotify.com\nsecretgenius.com\nsergegainsbourg.byspotify.com\nsimplemobile.withspotify.com\nsixthemusical.withspotify.com\nskybulletproof2.withspotify.com\nsonalytic.com\nsoundtrackyourride.byspotify.com\nspotify-countrymatch.com\nspotify-everywhere.com\nspotify-library.com\nspotify.design\nspotify.dev\nspotify.me\nspotify.stackenterprise.co\nspotify.xxx\nspotifyawards.com\nspotifycharts.com\nspotifycodes.com\nspotifycs.my.salesforce.com\nspotifyforcreatives.com\nspotifyforpartners.com\nspotifyforpodcasterssummit.com.br\nspotifyforvendors.com\nspotifyjobs.com\nspotifyonstage.com\nspotifypodcastsummit.com\nspotifyresonate.com\nspotifysoundcheck.com\nspotifystories.com\nspotifyvault.com\ntakisintensometro.withspotify.com\nthanksgiving.withspotify.com\nthisisesprit.withspotify.com\ntictacmusic.withspotify.com\ntimetoplayfair.com\ntridentactitudfresca.withspotify.com\nvauxhall-corsa-e.withspotify.com\nwhatisapushplaylist.com\nwhatsgoingonintheworld.com\nwhatsthedealwithasmr.com\nwhatswrongwithmysucculent.com\nwhowebe.com\nwhycantigettosleep.com\nzodiaco.enspotify.com",
+          "instruction": "Please use this asset for non *.spotify.com websites. This includes sites in the domans forspotify.com, tospotify.com, fromspotify.com and atspotify.com.\n\nFind below a list of in-scope targets. Note that it is continuously updated:\n~~~\na1live.withspotify.com\nadidas-nitejogger.withspotify.com\nadidasoriginals.withspotify.com\namstelultra.withspotify.com\naudiohub.byspotify.com\nblackhistoryisnow.com\nboniver.withspotify.com\ncaliforniaalmonds.withspotify.com\ncaliforniaroadtrips.withspotify.com\nchurchill.withspotify.com\nclosetheplaygap.com\ncontra-algoritmo-itau.withspotify.com\ncovid19musicrelief.byspotify.com\ncrowdalbum.com\ndewars-disfruta-el-doble.withspotify.com\ndirectory.byspotify.com\ndoesmydogmissme.com\ndreamworkstrollsworldtour.withspotify.com\nequalizerproject.com\nescutaaasminas.byspotify.com\nesteelauder.withspotify.com\nextraction.withspotify.com\nfonter.withspotify.com\nforglowinghearts.withspotify.com\nfrontleftlive.withspotify.com\nfrozen2.withspotify.com\ngaragegigs.withspotify.com\ngroupm.withspotify.com\ngruppocap.withspotify.com\nhazrewind.withspotify.com\nhowamistillhungover.com\nhowdoikeepthekidsbusy.com\nhowdoimakethisroadtripbetter.com\nimabandi.to\nissa.website\njackdaniels.withspotify.com\njustaddspotify.com\nlisteningtogether.atspotify.com\nlistenlocal.byspotify.com\nmasmexa.com\nmichelobultra.withspotify.com\nmillion-nation.withspotify.com\nmimusica2019.com\nmodusmio.de\nmusicadeestimacao.byspotify.com\nnetflixthevictimsgame.withspotify.com\nninemusesfestival.com\no2.withspotify.com\noffthewallwednesday.withspotify.com\npets.byspotify.com\nplay-portraits.com\npoddamnthatsfunny.com\npoweradejapan.withspotify.com\nqueereye.withspotify.com\nrenaultclio.withspotify.com\nreviewvault.com\nseat-diadelamusica.withspotify.com\nseat-tarraco.withspotify.com\nsecretgenius.com\nsergegainsbourg.byspotify.com\nsimplemobile.withspotify.com\nsixthemusical.withspotify.com\nskybulletproof2.withspotify.com\nsonalytic.com\nsoundtrackyourride.byspotify.com\nspotify-countrymatch.com\nspotify-everywhere.com\nspotify-library.com\nspotify.design\nspotify.dev\nspotify.stackenterprise.co\nspotify.xxx\nspotifyawards.com\nspotifycharts.com\nspotifycodes.com\nspotifycs.my.salesforce.com\nspotifyforcreatives.com\nspotifyforpartners.com\nspotifyforpodcasterssummit.com.br\nspotifyforvendors.com\nspotifyjobs.com\nspotifyonstage.com\nspotifypodcastsummit.com\nspotifyresonate.com\nspotifysoundcheck.com\nspotifystories.com\nspotifyvault.com\ntakisintensometro.withspotify.com\nthanksgiving.withspotify.com\nthisisesprit.withspotify.com\ntictacmusic.withspotify.com\ntimetoplayfair.com\ntridentactitudfresca.withspotify.com\nvauxhall-corsa-e.withspotify.com\nwhatisapushplaylist.com\nwhatsgoingonintheworld.com\nwhatsthedealwithasmr.com\nwhatswrongwithmysucculent.com\nwhowebe.com\nwhycantigettosleep.com\nzodiaco.enspotify.com",
           "integrity_requirement": null,
           "max_severity": "critical"
         },
@@ -10671,7 +10897,7 @@
         },
         {
           "asset_identifier": "com.spotify.kids",
-          "asset_type": "URL",
+          "asset_type": "GOOGLE_PLAY_APP_ID",
           "availability_requirement": "high",
           "confidentiality_requirement": "high",
           "eligible_for_bounty": true,
@@ -11146,17 +11372,6 @@
         },
         {
           "asset_identifier": "werkenbijderet.nl",
-          "asset_type": "URL",
-          "availability_requirement": null,
-          "confidentiality_requirement": null,
-          "eligible_for_bounty": true,
-          "eligible_for_submission": true,
-          "instruction": "",
-          "integrity_requirement": null,
-          "max_severity": "critical"
-        },
-        {
-          "asset_identifier": "werkenbijmcdonalds.nl",
           "asset_type": "URL",
           "availability_requirement": null,
           "confidentiality_requirement": null,
@@ -11695,7 +11910,7 @@
     "handle": "keybase",
     "url": "https://hackerone.com/keybase",
     "offers_bounties": true,
-    "quick_to_bounty": true,
+    "quick_to_bounty": false,
     "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
@@ -12768,17 +12983,6 @@
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
           "instruction": "",
-          "integrity_requirement": "high",
-          "max_severity": "critical"
-        },
-        {
-          "asset_identifier": "https://www.hyatt.com/en-US/payment/details",
-          "asset_type": "URL",
-          "availability_requirement": "high",
-          "confidentiality_requirement": "high",
-          "eligible_for_bounty": true,
-          "eligible_for_submission": true,
-          "instruction": "#To test the dark deployed payment page, follow these instructions:\n\n##1. Test Account Requirements\n###Create World of Hyatt test accounts or complete reservations to these specifications:\n* First name: <HackerOne handle> (for multiple accounts - <handle>one, <handle>two, etc.).\n* Last name: \"**Test**\".\n\n##2. Reservation Requirements\n###All testing reservations must follow these rules:\n* Test bookings should be made **four months** into the future at a minimum.\n* All test bookings should be canceled **as soon as possible**.\n* Do not book New York City or Chicago properties for testing purposes.\n* If possible, add \"HackerOne\" to the comments of bookings.\n\n##3. Access the dark deployed payment page\n###Add a cookie to your page by running this command in your JavaScript development console of the browser:\n* document.cookie = \"bookPaymentVrid=true; path=/; domain=hyatt.com\".\n* Run a search and continue to the payment page, where you are able to enter new credit cards.\n* You can verify you are on the correct page because the URL will contain /payment/details (the old page has /book/payment).",
           "integrity_requirement": "high",
           "max_severity": "critical"
         },
@@ -14583,7 +14787,7 @@
           "confidentiality_requirement": "medium",
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
-          "instruction": "The scope of the Console application is limited to the following:\n\n## Qualifying Vulnerabilities\n\n* Cross Site Request Forgery (CSRF)\n* Server-Side Request Forgery\n* Remote Code Execution\n* SQL Injection\n* View or modify database records outside of your organization scope\n\n## Non-Qualifying Vulnerabilities\n\n* console CLI is out of scope: https://github.com/helium/helium-console-cli\n* Clickjacking on static websites\n* Cross Site Scripting (XSS)\n* Missing HTTP Headers which do not directly lead to a vulnerability\n* Phishing and social engineering (of users and Helium employees)\n* Reports for out-of-date software (lacking a proof-of-concept)\n* SPF and DKIM records\n* SSL/TLS protocol vulnerabilities\n* Security best practice concerns\n* Overly permissions Google API keys\n\n",
+          "instruction": "The scope of the Console application is limited to the following:\n\n## Qualifying Vulnerabilities\n\n* Cross Site Request Forgery (CSRF)\n* Server-Side Request Forgery\n* Remote Code Execution\n* SQL Injection\n* View or modify database records outside of your organization scope\n\n## Non-Qualifying Vulnerabilities\n\n* auth.helium.com\n* Intercom chat feature\n* HTTP request Smuggling\n* console CLI is out of scope: https://github.com/helium/helium-console-cli\n* Clickjacking on static websites\n* Cross Site Scripting (XSS)\n* Missing HTTP Headers which do not directly lead to a vulnerability\n* Phishing and social engineering (of users and Helium employees)\n* Reports for out-of-date software (lacking a proof-of-concept)\n* SPF and DKIM records\n* SSL/TLS protocol vulnerabilities\n* Security best practice concerns\n* Overly permissions Google API keys\n\n",
           "integrity_requirement": "low",
           "max_severity": "high"
         },
@@ -14668,6 +14872,17 @@
         },
         {
           "asset_identifier": "network.helium.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": false,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "none"
+        },
+        {
+          "asset_identifier": "www.helium.com/store",
           "asset_type": "URL",
           "availability_requirement": null,
           "confidentiality_requirement": null,
@@ -17794,7 +18009,7 @@
     "handle": "lyst",
     "url": "https://hackerone.com/lyst",
     "offers_bounties": true,
-    "quick_to_bounty": false,
+    "quick_to_bounty": true,
     "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
@@ -18014,6 +18229,28 @@
     "targets": {
       "in_scope": [
         {
+          "asset_identifier": "*.nutanix.com",
+          "asset_type": "URL",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "Any web property belonging to Nutanix and not specifically listed (catch all category)",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "beam.nutanix.com",
+          "asset_type": "URL",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
           "asset_identifier": "bootcamp.nutanix.com",
           "asset_type": "URL",
           "availability_requirement": null,
@@ -18022,6 +18259,17 @@
           "eligible_for_submission": true,
           "instruction": "",
           "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "cpq.nutanix.com",
+          "asset_type": "URL",
+          "availability_requirement": "medium",
+          "confidentiality_requirement": "medium",
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": "medium",
           "max_severity": "critical"
         },
         {
@@ -18047,6 +18295,17 @@
           "max_severity": "critical"
         },
         {
+          "asset_identifier": "frame.nutanix.com",
+          "asset_type": "URL",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
           "asset_identifier": "gp.nutanix.com",
           "asset_type": "URL",
           "availability_requirement": null,
@@ -18055,6 +18314,17 @@
           "eligible_for_submission": true,
           "instruction": "",
           "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "idp.nutanix.com",
+          "asset_type": "URL",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": "high",
           "max_severity": "critical"
         },
         {
@@ -18069,7 +18339,18 @@
           "max_severity": "critical"
         },
         {
-          "asset_identifier": "jira-dc-prod.nutanix.com",
+          "asset_identifier": "iot.nutanix.com",
+          "asset_type": "URL",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "jira.nutanix.com",
           "asset_type": "URL",
           "availability_requirement": null,
           "confidentiality_requirement": null,
@@ -18155,6 +18436,17 @@
           "instruction": "",
           "integrity_requirement": null,
           "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "testdrive.nutanix.com",
+          "asset_type": "URL",
+          "availability_requirement": "medium",
+          "confidentiality_requirement": "low",
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": "low",
+          "max_severity": "high"
         },
         {
           "asset_identifier": "ticket.nutanix.com",
@@ -19178,7 +19470,7 @@
     "offers_bounties": false,
     "quick_to_bounty": false,
     "quick_to_first_response": false,
-    "submission_state": "paused",
+    "submission_state": "open",
     "targets": {
       "in_scope": [
 
@@ -22026,7 +22318,7 @@
     "url": "https://hackerone.com/hyperledger",
     "offers_bounties": true,
     "quick_to_bounty": false,
-    "quick_to_first_response": true,
+    "quick_to_first_response": false,
     "submission_state": "open",
     "targets": {
       "in_scope": [
@@ -23138,7 +23430,7 @@
     "url": "https://hackerone.com/kartpay",
     "offers_bounties": false,
     "quick_to_bounty": false,
-    "quick_to_first_response": true,
+    "quick_to_first_response": false,
     "submission_state": "open",
     "targets": {
       "in_scope": [
@@ -26608,6 +26900,72 @@
       ],
       "out_of_scope": [
         {
+          "asset_identifier": "*.ads.betfair.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": false,
+          "instruction": "This domain is temporarily out of scope.",
+          "integrity_requirement": null,
+          "max_severity": "none"
+        },
+        {
+          "asset_identifier": "*.betting.betfair.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": false,
+          "instruction": "This domain is temporarily out of scope.",
+          "integrity_requirement": null,
+          "max_severity": "none"
+        },
+        {
+          "asset_identifier": "*.content-cache.betfair.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": false,
+          "instruction": "This domain is temporarily out of scope.",
+          "integrity_requirement": null,
+          "max_severity": "none"
+        },
+        {
+          "asset_identifier": "*.content.betfair.*",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": false,
+          "instruction": "This domain is temporarily out of scope.",
+          "integrity_requirement": null,
+          "max_severity": "none"
+        },
+        {
+          "asset_identifier": "*.identitysso.*",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": false,
+          "instruction": "This domain is temporarily out of scope.",
+          "integrity_requirement": null,
+          "max_severity": "none"
+        },
+        {
+          "asset_identifier": "*.promos.betfair.*",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": false,
+          "instruction": "This domain is temporarily out of scope.",
+          "integrity_requirement": null,
+          "max_severity": "none"
+        },
+        {
           "asset_identifier": "*.sports.betfair.*",
           "asset_type": "URL",
           "availability_requirement": null,
@@ -26637,6 +26995,28 @@
           "eligible_for_bounty": false,
           "eligible_for_submission": false,
           "instruction": "Betfair US is not part of PPB group",
+          "integrity_requirement": null,
+          "max_severity": "none"
+        },
+        {
+          "asset_identifier": "*asp.betfair.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": false,
+          "instruction": "This domain is temporarily out of scope.",
+          "integrity_requirement": null,
+          "max_severity": "none"
+        },
+        {
+          "asset_identifier": "community.betfair.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": false,
+          "instruction": "This domain is temporarily out of scope.",
           "integrity_requirement": null,
           "max_severity": "none"
         }
@@ -28107,6 +28487,28 @@
           "max_severity": "critical"
         },
         {
+          "asset_identifier": "com.defi.wallet",
+          "asset_type": "APPLE_STORE_APP_ID",
+          "availability_requirement": "medium",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "https://apps.apple.com/app/crypto-com-wallet/id1512048310",
+          "integrity_requirement": "medium",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "com.defi.wallet",
+          "asset_type": "GOOGLE_PLAY_APP_ID",
+          "availability_requirement": "medium",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "https://play.google.com/store/apps/details?id=com.defi.wallet",
+          "integrity_requirement": "medium",
+          "max_severity": "critical"
+        },
+        {
           "asset_identifier": "com.monaco.mobile",
           "asset_type": "APPLE_STORE_APP_ID",
           "availability_requirement": "high",
@@ -28114,6 +28516,17 @@
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
           "instruction": "Get the app here - https://itunes.apple.com/us/app/monaco-card/id1262148500?ls=1&mt=8\n\nYou won’t need test accounts for this as it will be public facing sites for now.\n\nGet the MCO Cryptocurrency Card app for iOS in the link above this app should allow you to create an account and start using the Monaco services.",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "https://auth.crypto.com/",
+          "asset_type": "URL",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
           "integrity_requirement": "high",
           "max_severity": "critical"
         },
@@ -28194,7 +28607,7 @@
     "handle": "lob",
     "url": "https://hackerone.com/lob",
     "offers_bounties": true,
-    "quick_to_bounty": true,
+    "quick_to_bounty": false,
     "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
@@ -30880,17 +31293,6 @@
           "max_severity": "critical"
         },
         {
-          "asset_identifier": "account.magento.com",
-          "asset_type": "URL",
-          "availability_requirement": null,
-          "confidentiality_requirement": null,
-          "eligible_for_bounty": true,
-          "eligible_for_submission": true,
-          "instruction": "",
-          "integrity_requirement": null,
-          "max_severity": "critical"
-        },
-        {
           "asset_identifier": "imagine.magento.com",
           "asset_type": "URL",
           "availability_requirement": "medium",
@@ -31597,6 +31999,28 @@
           "max_severity": "critical"
         },
         {
+          "asset_identifier": "ecobee SmartCamera",
+          "asset_type": "HARDWARE",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "ecobee SmartSensor",
+          "asset_type": "HARDWARE",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
           "asset_identifier": "ecobee Switch+ Smart Light Switch",
           "asset_type": "HARDWARE",
           "availability_requirement": null,
@@ -32163,7 +32587,7 @@
     "handle": "fanduel",
     "url": "https://hackerone.com/fanduel",
     "offers_bounties": true,
-    "quick_to_bounty": false,
+    "quick_to_bounty": true,
     "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
@@ -32313,7 +32737,7 @@
     "offers_bounties": false,
     "quick_to_bounty": false,
     "quick_to_first_response": false,
-    "submission_state": "paused",
+    "submission_state": "open",
     "targets": {
       "in_scope": [
         {
@@ -32505,7 +32929,7 @@
     "handle": "curl",
     "url": "https://hackerone.com/curl",
     "offers_bounties": true,
-    "quick_to_bounty": false,
+    "quick_to_bounty": true,
     "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
@@ -32995,7 +33419,7 @@
     "handle": "innogames",
     "url": "https://hackerone.com/innogames",
     "offers_bounties": true,
-    "quick_to_bounty": false,
+    "quick_to_bounty": true,
     "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
@@ -33671,7 +34095,7 @@
     "handle": "filezilla",
     "url": "https://hackerone.com/filezilla",
     "offers_bounties": true,
-    "quick_to_bounty": true,
+    "quick_to_bounty": false,
     "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
@@ -34576,11 +35000,22 @@
     "handle": "smartsheet",
     "url": "https://hackerone.com/smartsheet",
     "offers_bounties": true,
-    "quick_to_bounty": true,
+    "quick_to_bounty": false,
     "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
       "in_scope": [
+        {
+          "asset_identifier": "admin.smartsheet.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "Admin Center allows System Admins and Group Admins to administer and govern their Smartsheet account.\n\nAccess to this endpoint requires a login for app.smartsheet.com.\n\nAdditional information can be found [here](https://help.smartsheet.com/articles/2481889-admin-center-overview). ",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
         {
           "asset_identifier": "api.smartsheet.com/2.0",
           "asset_type": "URL",
@@ -34870,14 +35305,14 @@
           "max_severity": "critical"
         },
         {
-          "asset_identifier": "*.zeit.sh",
+          "asset_identifier": "*.vercel.sh",
           "asset_type": "URL",
-          "availability_requirement": "low",
-          "confidentiality_requirement": "medium",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
           "eligible_for_bounty": false,
           "eligible_for_submission": true,
           "instruction": "Some of the services that keep Vercel running are hosted under this domain.",
-          "integrity_requirement": "medium",
+          "integrity_requirement": null,
           "max_severity": "critical"
         },
         {
@@ -36953,7 +37388,7 @@
     "url": "https://hackerone.com/worklytics",
     "offers_bounties": false,
     "quick_to_bounty": false,
-    "quick_to_first_response": false,
+    "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
       "in_scope": [
@@ -38094,7 +38529,7 @@
           "confidentiality_requirement": "medium",
           "eligible_for_bounty": false,
           "eligible_for_submission": true,
-          "instruction": "This is an environment specific for hackerone. It has almost the same setup from the production environment, so any vulnerability found here, will probably be affecting both.\n\nGet in touch if you need test credentials to login to explore the app.\n\nPlease do not report issues for our website www.qulture.rocks, only for the app on https://hackerone.qulture.rocks\n\n# Login strategy\n\n1. We do not block or limit login attempts with invalid emails;\n2. For valid emails, if the password is incorrect, we activate recaptcha after 2 wrong attempts (only in production env);\n3. In order to avoid DDoS, valid users are never blocked due to failed login attempts.\n\n# Credentials\n\nRequire the credentials by creating a report with title \"Credentials request\". We'll reply asap :)\nAfter we reply, you should close the report in two days, otherwise, we'll close it as informative.\n\n# TLS\n\nWe are already aware that the environment is not running with the latest TLS* version, and that should stay out of scope. Our production environment is using the latest version.\n\n# Contacting us\n\nWe kindly ask not to send us messages on emails that you may find on our website for issues related to this forum, and also not to send chat messages for credentials, prefer to send messages via hackerone platform. \n",
+          "instruction": "This is an environment specific for hackerone. It has almost the same setup from the production environment, so any vulnerability found here, will probably be affecting both.\n\nGet in touch if you need test credentials to login to explore the app.\n\nPlease do not report issues for our website www.qulture.rocks, only for the app on https://hackerone.qulture.rocks\n\n# Login strategy\n\n1. We do not block or limit login attempts with invalid emails;\n2. For valid emails, if the password is incorrect, we activate recaptcha after 2 wrong attempts (only in production env);\n3. In order to avoid DDoS, valid users are never blocked due to failed login attempts.\n\n# Credentials\n\nRequire the credentials by creating a report with title \"Credentials request\". We'll reply asap :)\nAfter we reply, you should close the report in seven days, otherwise, we'll close it as informative.\n\n# TLS\n\nWe are already aware that the environment is not running with the latest TLS* version, and that should stay out of scope. Our production environment is using the latest version.\n\n# Contacting us\n\nWe kindly ask not to send us messages on emails that you may find on our website for issues related to this forum, and also not to send chat messages for credentials, prefer to send messages via hackerone platform. \n",
           "integrity_requirement": "high",
           "max_severity": "critical"
         }
@@ -38727,7 +39162,7 @@
     "url": "https://hackerone.com/prospect_io_gjk6b",
     "offers_bounties": false,
     "quick_to_bounty": false,
-    "quick_to_first_response": true,
+    "quick_to_first_response": false,
     "submission_state": "open",
     "targets": {
       "in_scope": [
@@ -39807,7 +40242,7 @@
     "url": "https://hackerone.com/polymail_inc",
     "offers_bounties": false,
     "quick_to_bounty": false,
-    "quick_to_first_response": true,
+    "quick_to_first_response": false,
     "submission_state": "open",
     "targets": {
       "in_scope": [
@@ -40894,7 +41329,7 @@
     "offers_bounties": false,
     "quick_to_bounty": false,
     "quick_to_first_response": true,
-    "submission_state": "open",
+    "submission_state": "paused",
     "targets": {
       "in_scope": [
         {
@@ -41299,7 +41734,7 @@
           "confidentiality_requirement": "high",
           "eligible_for_bounty": false,
           "eligible_for_submission": true,
-          "instruction": "* `*.gale.com`",
+          "instruction": "* `*.gale.com`\n\n**do not submit forms on these assets**\n\nhttps://www.gale.com/public/small-library-support-program/form\nhttps://www.gale.com/public/small-library-support-program/form\nhttps://www.gale.com/primary-sources/digital-humanities-webinar\nhttps://www.gale.com/primary-sources/need-to-know/trial-request\nhttps://www.gale.com/primary-sources/digital-humanities-webinar\nhttps://www.gale.com/databases/gale-analytics",
           "integrity_requirement": "high",
           "max_severity": "critical"
         },
@@ -41475,6 +41910,17 @@
           "max_severity": "critical"
         },
         {
+          "asset_identifier": "*.lazada.sg",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "Lazada scope has a given subdomain lists. Only the following subdomains are in scope:\n- www.lazada.sg\n- pages.lazada.sg\n- checkout.lazada.sg\n- store.lazada.sg\n- cart.lazada.sg\n- member.lazada.sg\n- member-m.lazada.sg\n- my.lazada.sg\n- my-m.lazada.sg\n\nAll other lazada.sg subdomains and other country sites *.lazada.[vn|co.id|co.th|com.ph|com.my] are out of scope and will not be rewarded.",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
           "asset_identifier": "*.taobao.com",
           "asset_type": "URL",
           "availability_requirement": null,
@@ -41509,17 +41955,7 @@
         }
       ],
       "out_of_scope": [
-        {
-          "asset_identifier": "*.lazada.com",
-          "asset_type": "URL",
-          "availability_requirement": null,
-          "confidentiality_requirement": null,
-          "eligible_for_bounty": false,
-          "eligible_for_submission": false,
-          "instruction": "Hi, *.lazada.[six countries] has been removed from this BBP program temporarily. Thanks.",
-          "integrity_requirement": null,
-          "max_severity": "none"
-        }
+
       ]
     }
   },
@@ -41530,7 +41966,7 @@
     "url": "https://hackerone.com/h1-ctf",
     "offers_bounties": false,
     "quick_to_bounty": false,
-    "quick_to_first_response": false,
+    "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
       "in_scope": [
@@ -41541,7 +41977,7 @@
           "confidentiality_requirement": "high",
           "eligible_for_bounty": false,
           "eligible_for_submission": true,
-          "instruction": "h1-2008 CTF",
+          "instruction": "h1-2006 CTF",
           "integrity_requirement": "high",
           "max_severity": "critical"
         }
@@ -41681,6 +42117,99 @@
       ],
       "out_of_scope": [
 
+      ]
+    }
+  },
+  {
+    "id": 49048,
+    "name": "Matic Network",
+    "handle": "matic-network",
+    "url": "https://hackerone.com/matic-network",
+    "offers_bounties": true,
+    "quick_to_bounty": false,
+    "quick_to_first_response": true,
+    "submission_state": "open",
+    "targets": {
+      "in_scope": [
+        {
+          "asset_identifier": "https://github.com/maticnetwork/bor",
+          "asset_type": "SOURCE_CODE",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "#Bor\nThe Bor node or the Block Producer implementation is basically the sidechain operator. The sidechain VM is EVM-compatible. ",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "https://github.com/maticnetwork/contracts",
+          "asset_type": "SOURCE_CODE",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "#Contracts\nThis repository contains the smart contracts that power Matic Network",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "https://github.com/maticnetwork/heimdall",
+          "asset_type": "SOURCE_CODE",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "#Heimdall \nThis github repository contains the source code for one of the core components of Matic. Heimdall is the heart of the Matic system. It manages validators, block producer selection, spans, the state-sync mechanism between Ethereum and Matic and other essential aspects of the system.",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        }
+      ],
+      "out_of_scope": [
+        {
+          "asset_identifier": "*.matic.network",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": false,
+          "instruction": "Web Assets of Matic is not in scope",
+          "integrity_requirement": null,
+          "max_severity": "none"
+        },
+        {
+          "asset_identifier": "https://github.com/maticnetwork/*",
+          "asset_type": "SOURCE_CODE",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": false,
+          "instruction": "Any other repositories that are not explicitly mentioned \"In Scope\" will be considered as out of scope. ",
+          "integrity_requirement": null,
+          "max_severity": "none"
+        },
+        {
+          "asset_identifier": "https://github.com/maticnetwork/matic-scabbards",
+          "asset_type": "SOURCE_CODE",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": false,
+          "instruction": "This repository contains source code for Matic Website",
+          "integrity_requirement": null,
+          "max_severity": "none"
+        },
+        {
+          "asset_identifier": "https://github.com/maticnetwork/matic.js",
+          "asset_type": "SOURCE_CODE",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": false,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "none"
+        }
       ]
     }
   }
