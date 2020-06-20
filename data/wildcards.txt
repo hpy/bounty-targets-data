@@ -190,7 +190,6 @@ www.paypal-*.com
 *.betfair.se
 *.paddypower.com
 *.paddypower.it
-*.railto.com
 *.ratelimited.me
 *.ncsc.gov.uk
 *.liberapay.com
@@ -244,6 +243,7 @@ vcc-*.8x8.com
 *.teamstercardnow.com
 *.theunioncard.com
 *.unitedincome.com
+*.usejewel.com
 *.wikibuy.com
 (*).endlcdn.site
 (*).theendlessweb.com
@@ -269,6 +269,7 @@ vcc-*.8x8.com
 *.lhcapital-matrix.com
 *.lhcapitalmanagement.com
 *.testnet.oasiscloud.io
+*.magisto.com
 *.evernote.com
 *.pubg.com
 *.pubgesports.com
@@ -288,13 +289,14 @@ vcc-*.8x8.com
 *.lazada.sg
 *.taobao.com
 *.tmall.com
-*.bountypay.h1ctf.com
 *.digitalocean.com
 *.digitaloceanspaces.com
 *.better.com
 *.binance.com
 *.binance.org
 *dex.binance.org
+*.bitdefender.com
+*.bitdefender.net
 *.bitdiscovery.com
 *.boozt.com
 *.booztlet.com
@@ -355,6 +357,7 @@ api*.netflix.com
 *.seek.com.au
 *.skinfra.xyz
 *.sol-data.com
+*.skyscanner.net
 *.astaro.at
 *.astaro.ch
 *.astaro.com

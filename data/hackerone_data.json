@@ -916,6 +916,17 @@
           "max_severity": "none"
         },
         {
+          "asset_identifier": "Master Out of Scope List",
+          "asset_type": "OTHER",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": false,
+          "instruction": "**Any other reference to out of scope items in this policy or scope still apply. Verizon Media reserves the right to award or not award on assets that may not yet be on this list or in this policy.**\n\n## ALL THE FOLLOWING ASSETS ARE OUT OF SCOPE\n* AOL Mail\n     * AOL iOS\n     * AOL Android\n     * AOL FireOS\n     * AOL Desktop Gold\n     * apis.mail.aol.com\n     * test-apis.mail.aol.com\n     * *.aolmail.com\n     * mail.aol.com/classicab\n     * mail.aol.com/getmydata\n     * mail.aol.com/ws\n*.aol.com\n* Athenz Source Code\n     * yahoo/athenz/ui \n     * yahoo/athenz/contributions\n     *  yahoo/athenz/docker\n* Autoblog\n     * *.spot.im (3rd party, Spot.IM)\n     * Development-like environments for autoblog.com exist, but should not be tested; keep the testing in Production (www.).\n* Built By Girls\n     * jobs.builtbygirls.com (3rd party, Jobboard.io)\n* Engadget\n     * *.spot.im (3rd party, Spot.IM)\n     * *.cn.engadget.com (Engadget International Edition)\n     * *.chinese.engadget.com (Engadget International Edition)\n     * *.japanese.engadget.com (Engadget International Edition)\n     * jobs.engadget.com (3rd party, Jobboard.io)\n* Historical & Divestitures\n     * About.me\n     * Flickr\n     * Go90\n     * MovieFone\n     * Patch Media\n     * PawNation\n     * Polyvore\n     * Shoutcast\n     * Style Me Pretty\n     * Winamp\n     * Yahoo Together (Squirrel)\n     * Yahoo Play\n     * Yahoo TW eSports\n* The Huffington Post\n     * news.huffingtonpost.com (3rd party, CampaignMonitor)\n     * coupons.huffpost.com (3rd party, Groupon)\n     * huffpost.atlassian.net (3rd party, Atlassian)\n     * huffpoststuff.com (3rd party, StackCommerce)\n     * subscribe.huffpost.com (3rd party, Epsilon)\n* Miscellaneous\n     * *.aolcdn.com\n     * *.yahoo.com.hk\n     * Media Group One\n     * Movies Hong Kong\n     * Onwander\n     * Volicon\n     * Volicloud\n     * Yahoo Operated WordPress blogs\n     * Files.molo.ch\n* Moloch Source Code\n     * Known unauthenticated endpoints such as parliament.json & eshealth.json\n     * www.molo.ch\n     * demo.molo.ch\n     * *.molo.ch (production website)\n     * UI based bugs on parliament\n* RYOT\n     * *.ryotfilms.com (third party)\n     * *.ryot.com (third party)\n     * *.portal.ryot.com (third party)\n* *.spot.im\n* TechCrunch\n     * *.crunchbase.com (3rd party, Crunchbase)\n     * *.tc-appunite.herokuapp.com (3rd party, Heroku now closed)\n     * *.parsely.com (3rd party, Parse.ly)\n     * *.swiftype.com (3rd party, Swiftype now closed)\n     * *.marketo.com (3rd party, Marketo)\n     * *.urbanairship.com (3rd party, Urban Airship)\n     * *.sailthru.com (3rd party, Sailthru)\n     * *.spot.im (3rd party, Spot.IM)\n     * *.tcdisrupt.com (3rd party, App)\n     * *.bit.ly (3rd party, Bit.ly)\n     * *.thomsonreuters.com (3rd party, Open Calais)\n     * *.tinypass.com (3rd party, Piano/Tinypass)\n* TW eCommerce: Auctions\n     * *.yahoo.com.tw\n     * ismarus-ap-94600.tw.juiker.net\n     * *.tw.juiker.net\n     * auth.tw.juiker.net/oauth2/getUserTokenByTurnkey\n     * *.straas.net\n     * iOS: JuikerIMSDK.framework, StraaS-iOS-SDK\n     * Android: io.straas.android.sdk\n     * ecfme.famiport.com.tw (Third Party)\n* TW eCommerce: Shopping\n     * *.yahoo.com.tw\n     * iOS: TPDirect.framework\n     * Android: tech.cherri.tpdirect.api\n* TW Media: News\n     * news.campaign.yahoo.com.tw\n     * *.yahoo.com.tw\n* Uplynk (VDMS)\n* Verizon\n     * MapQuest\n          * MapQuest Android\n          * MapQuest FireOS\n          * MapQuest iOS\n          * *.mapquest.com\n     * MovilData\n     * Skyward\n     * XO\n     * *.verizonwireless.com\n     * *.verizon.com\n     * *.verizon.net\n     * *.vzw.com\n     * *.myvzw.com\n     * *.verizonbusiness.com\n* *.verizondigitalmedia.com\n* Yahoo 7\n     * au.yahoo.com\n     * Nz.yahoo.com\n* Yahoo Cricket\n     * Yahoo Cricket Android\n     * Yahoo Cricket iOS\n     * Out of Scope: cricket.yahoo.net (third party)\n     * Out of Scope: *.sportz.io (third party)\n* Yahoo Japan\n* Yahoo Mail\n     * mail.yahoo.com/cal/ (this is the same as calendar.yahoo.com and should be reported as Yahoo Calendar)\n* Yahoo Messenger\n     * Yahoo Messenger Android\n     * Yahoo Messenger iOS\n     * Yahoo Messanger (web)\n* Yahoo Small Businesses\n     * Smallbusiness.yahoo.com\n     * SiteBuilder\n     * Access Manager\n     * Store Editor\n     * YSB Developer Network\n     * Commerce Central\n     * Localworks\n     * Luminate\n     * Wizards\n      * **All other YSB related products/services/sites**\n* Yahoo Sports: Editorial\n     * shop.yahoosports.com (Third party)\n* Yahoo Sports: Fantasy Games \n     * *.sendbird.com (Third Party, SendBird)\n* Yahoo Sports: Rivals\n     * *.rivalsfanstore.com (3rd party, Fanatics Inc.)\n     * *.rivalscamps.com (3rd party)\n     * *.rivalscampseries.com (3rd party)\n     * Rivals iOS\n* *.yahoo.com.tw\n* *.yahoo.net\n",
+          "integrity_requirement": null,
+          "max_severity": "none"
+        },
+        {
           "asset_identifier": "Miscellaneous",
           "asset_type": "OTHER",
           "availability_requirement": null,
@@ -2289,7 +2300,7 @@
     "handle": "mailru",
     "url": "https://hackerone.com/mailru",
     "offers_bounties": true,
-    "quick_to_bounty": false,
+    "quick_to_bounty": true,
     "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
@@ -2381,6 +2392,17 @@
           "instruction": "This scope covers Mail.ru related subdomains operated by Mail.ru partners outside of Mail.ru infrastructure.\n\n3rd party projects and services are not covered by bug bounty terms and rules. Researchers must follow rules and service agreement published by resource being investigated.  Mail.Ru does not authorize researcher or provide him permissions in any form to research third party resources for vulnerabilities, all permissions must be acquired by researcher directly from third party or partner.\n\nOnly reports affecting Mail.ru services or customers are accepted. \n\nVulnerability information for third party product or service can not be disclosed within Mail.Ru bug bounty program.\n\n==Extended scope only awards critical serverside vulnerabilities, if vulnerability compromises the infrastructure (e.g. RCE, SQLi, LFR, SSRF, etc) or data outside of project's scope (e.g. personal information) via serverside vector.==\n\nClientside vulnerabilities (XSS, CSRF) and business logic specific bugs, including privilege escalations within the product are accepted without bounty. \n\n==MitM and local attacks, user enumeration on registration/recovery, open redirections, insufficient session expiration, cookies working after logout etc are not accepted== unless there are additional vectors identified (e.g. ability to steal the session token via remote vector for open redirection)\n",
           "integrity_requirement": "low",
           "max_severity": "medium"
+        },
+        {
+          "asset_identifier": "Foodplex",
+          "asset_type": "OTHER",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "Foodplex applications, `ucs.ru`, `*.ucs.ru`, `plazius.ru`, `*.plazius.ru`, `*.r-keeper.ru` except delegated and externally hosted domains and branded partner services.\n\n==Foodplex scope only awards critical serverside vulnerabilities, if vulnerability compromises the infrastructure (e.g. RCE, SQLi, LFR, SSRF, etc) or data outside of project's scope (e.g. personal information) via serverside vector.==\n\nClientside vulnerabilities (XSS, CSRF) and business logic specific bugs, including privilege escalations within the product are accepted without bounty.\n\nMitM and local attacks, user enumeration on registration/recovery, open redirections, insufficient session expiration, cookies working after logout etc are not accepted unless there are additional vectors identified (e.g. ability to steal the session token via remote vector for open redirection)",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
         },
         {
           "asset_identifier": "Hosting",
@@ -5121,7 +5143,7 @@
     "url": "https://hackerone.com/glasswire",
     "offers_bounties": true,
     "quick_to_bounty": true,
-    "quick_to_first_response": false,
+    "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
       "in_scope": [
@@ -5585,7 +5607,7 @@
     "handle": "dropbox",
     "url": "https://hackerone.com/dropbox",
     "offers_bounties": true,
-    "quick_to_bounty": false,
+    "quick_to_bounty": true,
     "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
@@ -6286,7 +6308,7 @@
     "url": "https://hackerone.com/dashlane",
     "offers_bounties": true,
     "quick_to_bounty": false,
-    "quick_to_first_response": true,
+    "quick_to_first_response": false,
     "submission_state": "open",
     "targets": {
       "in_scope": [
@@ -8323,20 +8345,10 @@
     "offers_bounties": true,
     "quick_to_bounty": true,
     "quick_to_first_response": true,
-    "submission_state": "open",
+    "submission_state": "paused",
     "targets": {
       "in_scope": [
-        {
-          "asset_identifier": "https://d18papeh5u7ohm.cloudfront.net",
-          "asset_type": "URL",
-          "availability_requirement": "low",
-          "confidentiality_requirement": "none",
-          "eligible_for_bounty": true,
-          "eligible_for_submission": true,
-          "instruction": "We are in the alpha testing phase of the latest release of our community platform: Invision Community 4.5. \n\nWe are launching this campaign for penetration and vulnerability testing. \n\nWe ask that the scope of your testing be focused on the following: \n\n- The AdminCP area of the software. This version removes session IDs from URLs and instead utilizes cookie and database based session management. Every actionable link in the AdminCP should be protected by CSRF tokenization. The scope would involve bypassing CSRF protection which could allow for an unsuspecting administrator to follow a destructive link. \n\n- Platform and infrastructure security. It should not be possible to execute any arbitrary code that would access the infrastructure or permit \"breaking out\" of the test environment, which is housed in /var/www/html - Please alert us if you have found a way to circumvent these protections. \n\n- GraphQL \nThis version includes a GraphQL API, accessible by guests (via Basic authentication with an API key) and members (via an OAuth2 authorization code). It should not be possible to access any data or system settings to which the authenticated user (or guest) does not have access normally, or to perform any mutation/action for which the authenticated user (or guest) does not have permission normally. In addition, GraphQL requests should not have the ability to impact the integrity or stability of the site in general.\n\nGraphQL requests are only accepted at the https://d18papeh5u7ohm.cloudfront.net/api/graphql/ endpoint. An API key has been set up to access the site as a guest user: 21b746f7d5411ddc112636e8df6eb59f\n\nYou may exclusively use https://d18papeh5u7ohm.cloudfront.net for the purpose of your testing. \nAdmin username: admin\nPassword: password123\n\nAll other URLs are considered out of scope. \n",
-          "integrity_requirement": "medium",
-          "max_severity": "high"
-        }
+
       ],
       "out_of_scope": [
 
@@ -8415,7 +8427,7 @@
     "offers_bounties": true,
     "quick_to_bounty": true,
     "quick_to_first_response": false,
-    "submission_state": "open",
+    "submission_state": "paused",
     "targets": {
       "in_scope": [
         {
@@ -10660,7 +10672,7 @@
           "confidentiality_requirement": null,
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
-          "instruction": "The spotify.com domain is used for product and corporate-focused websites.\n\nThis includes, but is not limited to, the webplayer at http://play.spotify.com/, https://open.spotify.com/browse, and https://accounts.spotify.com\n\nFind below a list of in-scope targets. Note that it is continuously updated:\n~~~\naccounts-staging.spotify.com\naccounts.spotify.com\nadstudio.spotify.com\nartists.spotify.com\ncanvas.spotify.com\ncarthing.spotify.com\ncertomato.spotify.com\ncommunity.spotify.com\ndeveloper.spotify.com\nhomething.spotify.com\nhrblog.spotify.com\nlabs.spotify.com\nnewsroom.spotify.com\npodcasters.spotify.com\npromo.spotify.com\npurple.spotify.com\nspotify.com\nsupport.spotify.com\nsurveys.spotify.com\nworks.spotify.com",
+          "instruction": "The spotify.com domain is used for product and corporate-focused websites.\n\nThis includes, but is not limited to, the webplayer at http://play.spotify.com/, https://open.spotify.com/browse, and https://accounts.spotify.com\n\nFind below a list of in-scope targets. Note that it is continuously updated:\n~~~\naccounts-staging.spotify.com\naccounts.spotify.com\nadstudio.spotify.com\nartists.spotify.com\ncanvas.spotify.com\ncarthing.spotify.com\ncertomato.spotify.com\ncommunity.spotify.com\ndeveloper.spotify.com\nhomething.spotify.com\nhrblog.spotify.com\nnewsroom.spotify.com\npodcasters.spotify.com\npromo.spotify.com\npurple.spotify.com\nspotify.com\nsupport.spotify.com\nsurveys.spotify.com\nuplink.spotify.com\nworks.spotify.com",
           "integrity_requirement": null,
           "max_severity": "critical"
         },
@@ -10748,7 +10760,7 @@
           "confidentiality_requirement": null,
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
-          "instruction": "Please use this asset for non *.spotify.com websites. This includes sites in the domans forspotify.com, tospotify.com, fromspotify.com and atspotify.com.\n\nFind below a list of in-scope targets. Note that it is continuously updated:\n~~~\na1live.withspotify.com\nadidas-nitejogger.withspotify.com\nadidasoriginals.withspotify.com\namstelultra.withspotify.com\naudiohub.byspotify.com\nblackhistoryisnow.com\nboniver.withspotify.com\ncaliforniaalmonds.withspotify.com\ncaliforniaroadtrips.withspotify.com\nchurchill.withspotify.com\nclosetheplaygap.com\ncontra-algoritmo-itau.withspotify.com\ncovid19musicrelief.byspotify.com\ncrowdalbum.com\ndewars-disfruta-el-doble.withspotify.com\ndirectory.byspotify.com\ndoesmydogmissme.com\ndreamworkstrollsworldtour.withspotify.com\nequalizerproject.com\nescutaaasminas.byspotify.com\nesteelauder.withspotify.com\nextraction.withspotify.com\nfonter.withspotify.com\nforglowinghearts.withspotify.com\nfrontleftlive.withspotify.com\nfrozen2.withspotify.com\ngaragegigs.withspotify.com\ngroupm.withspotify.com\ngruppocap.withspotify.com\nhazrewind.withspotify.com\nhowamistillhungover.com\nhowdoikeepthekidsbusy.com\nhowdoimakethisroadtripbetter.com\nimabandi.to\nissa.website\njackdaniels.withspotify.com\njustaddspotify.com\nlisteningtogether.atspotify.com\nlistenlocal.byspotify.com\nmasmexa.com\nmichelobultra.withspotify.com\nmillion-nation.withspotify.com\nmimusica2019.com\nmodusmio.de\nmusicadeestimacao.byspotify.com\nnetflixthevictimsgame.withspotify.com\nninemusesfestival.com\no2.withspotify.com\noffthewallwednesday.withspotify.com\npets.byspotify.com\nplay-portraits.com\npoddamnthatsfunny.com\npoweradejapan.withspotify.com\nqueereye.withspotify.com\nrenaultclio.withspotify.com\nreviewvault.com\nseat-diadelamusica.withspotify.com\nseat-tarraco.withspotify.com\nsecretgenius.com\nsergegainsbourg.byspotify.com\nsimplemobile.withspotify.com\nsixthemusical.withspotify.com\nskybulletproof2.withspotify.com\nsonalytic.com\nsoundtrackyourride.byspotify.com\nspotify-countrymatch.com\nspotify-everywhere.com\nspotify-library.com\nspotify.design\nspotify.dev\nspotify.stackenterprise.co\nspotify.xxx\nspotifyawards.com\nspotifycharts.com\nspotifycodes.com\nspotifycs.my.salesforce.com\nspotifyforcreatives.com\nspotifyforpartners.com\nspotifyforpodcasterssummit.com.br\nspotifyforvendors.com\nspotifyjobs.com\nspotifyonstage.com\nspotifypodcastsummit.com\nspotifyresonate.com\nspotifysoundcheck.com\nspotifystories.com\nspotifyvault.com\ntakisintensometro.withspotify.com\nthanksgiving.withspotify.com\nthisisesprit.withspotify.com\ntictacmusic.withspotify.com\ntimetoplayfair.com\ntridentactitudfresca.withspotify.com\nvauxhall-corsa-e.withspotify.com\nwhatisapushplaylist.com\nwhatsgoingonintheworld.com\nwhatsthedealwithasmr.com\nwhatswrongwithmysucculent.com\nwhowebe.com\nwhycantigettosleep.com\nzodiaco.enspotify.com",
+          "instruction": "Please use this asset for non *.spotify.com websites. This includes sites in the domans forspotify.com, tospotify.com, fromspotify.com and atspotify.com.\n\nFind below a list of in-scope targets. Note that it is continuously updated:\n~~~\na1live.withspotify.com\nadidas-nitejogger.withspotify.com\nadidasoriginals.withspotify.com\namstelultra.withspotify.com\naudiohub.byspotify.com\nblackhistoryisnow.com\nboniver.withspotify.com\ncaliforniaalmonds.withspotify.com\ncaliforniaroadtrips.withspotify.com\nchurchill.withspotify.com\nclosetheplaygap.com\ncontra-algoritmo-itau.withspotify.com\ncovid19musicrelief.byspotify.com\ndewars-disfruta-el-doble.withspotify.com\ndirectory.byspotify.com\ndoesmydogmissme.com\ndreamworkstrollsworldtour.withspotify.com\nequalizerproject.com\nescutaaasminas.byspotify.com\nesteelauder.withspotify.com\nextraction.withspotify.com\nfonter.withspotify.com\nforglowinghearts.withspotify.com\nfrontleftlive.withspotify.com\nfrozen2.withspotify.com\ngaragegigs.withspotify.com\ngroupm.withspotify.com\ngruppocap.withspotify.com\nhazrewind.withspotify.com\nhowamistillhungover.com\nhowdoikeepthekidsbusy.com\nhowdoimakethisroadtripbetter.com\nimabandi.to\nissa.website\njackdaniels.withspotify.com\njustaddspotify.com\nlisteningtogether.atspotify.com\nlistenlocal.byspotify.com\nmasmexa.com\nmichelobultra.withspotify.com\nmillion-nation.withspotify.com\nmimusica2019.com\nmusicadeestimacao.byspotify.com\nnetflixthevictimsgame.withspotify.com\nninemusesfestival.com\no2.withspotify.com\noffthewallwednesday.withspotify.com\npets.byspotify.com\nplay-portraits.com\npoddamnthatsfunny.com\npoweradejapan.withspotify.com\nqueereye.withspotify.com\nrenaultclio.withspotify.com\nreviewvault.com\nseat-diadelamusica.withspotify.com\nseat-tarraco.withspotify.com\nsecretgenius.com\nsergegainsbourg.byspotify.com\nsimplemobile.withspotify.com\nsixthemusical.withspotify.com\nskybulletproof2.withspotify.com\nsonalytic.com\nsoundtrackyourride.byspotify.com\nspotify-countrymatch.com\nspotify-everywhere.com\nspotify-library.com\nspotify.design\nspotify.dev\nspotify.stackenterprise.co\nspotify.xxx\nspotifyawards.com\nspotifycharts.com\nspotifycodes.com\nspotifycs.my.salesforce.com\nspotifyforcreatives.com\nspotifyforpartners.com\nspotifyforpodcasterssummit.com.br\nspotifyforvendors.com\nspotifyjobs.com\nspotifyonstage.com\nspotifypodcastsummit.com\nspotifyresonate.com\nspotifysoundcheck.com\nspotifystories.com\nspotifyvault.com\ntakisintensometro.withspotify.com\nthanksgiving.withspotify.com\nthisisesprit.withspotify.com\ntimetoplayfair.com\ntridentactitudfresca.withspotify.com\nvauxhall-corsa-e.withspotify.com\nwhatisapushplaylist.com\nwhatsgoingonintheworld.com\nwhatsthedealwithasmr.com\nwhatswrongwithmysucculent.com\nwhowebe.com\nwhycantigettosleep.com\nzodiaco.enspotify.com",
           "integrity_requirement": null,
           "max_severity": "critical"
         },
@@ -11173,6 +11185,17 @@
       ],
       "out_of_scope": [
         {
+          "asset_identifier": "emailcontent.rockstargames.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": false,
+          "instruction": "We do not have direct control over this subdomain and will not be accepting submissions for it.",
+          "integrity_requirement": null,
+          "max_severity": "none"
+        },
+        {
           "asset_identifier": "faspex.rockstargames.com",
           "asset_type": "URL",
           "availability_requirement": null,
@@ -11255,7 +11278,7 @@
     "url": "https://hackerone.com/revive_adserver",
     "offers_bounties": false,
     "quick_to_bounty": false,
-    "quick_to_first_response": true,
+    "quick_to_first_response": false,
     "submission_state": "open",
     "targets": {
       "in_scope": [
@@ -11946,7 +11969,7 @@
     "handle": "zomato",
     "url": "https://hackerone.com/zomato",
     "offers_bounties": true,
-    "quick_to_bounty": true,
+    "quick_to_bounty": false,
     "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
@@ -12371,7 +12394,7 @@
     "offers_bounties": false,
     "quick_to_bounty": false,
     "quick_to_first_response": false,
-    "submission_state": "paused",
+    "submission_state": "open",
     "targets": {
       "in_scope": [
         {
@@ -12987,7 +13010,40 @@
           "max_severity": "critical"
         },
         {
+          "asset_identifier": "ebsext.oft.hyatt.com",
+          "asset_type": "URL",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
           "asset_identifier": "hyatt.com",
+          "asset_type": "URL",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "meetings.hyatt.com",
+          "asset_type": "URL",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "mobileapp.hyatt.com",
           "asset_type": "URL",
           "availability_requirement": "high",
           "confidentiality_requirement": "high",
@@ -13007,6 +13063,83 @@
           "instruction": "Only test newsroom.images.hyatt.com; newsroom.hyatt.com is not hosted by Hyatt (do not test).",
           "integrity_requirement": "low",
           "max_severity": "medium"
+        },
+        {
+          "asset_identifier": "plannerrequest.hyatt.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "public.hyatt.com",
+          "asset_type": "URL",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "roominglist.hyatt.com",
+          "asset_type": "URL",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "salesportal.hyatt.com",
+          "asset_type": "URL",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "soaext.oft.hyatt.com",
+          "asset_type": "URL",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "sso.oft.hyatt.com",
+          "asset_type": "URL",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "upsell.hyatt.com",
+          "asset_type": "URL",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
         },
         {
           "asset_identifier": "world.hyatt.com",
@@ -14787,7 +14920,7 @@
           "confidentiality_requirement": "medium",
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
-          "instruction": "The scope of the Console application is limited to the following:\n\n## Qualifying Vulnerabilities\n\n* Cross Site Request Forgery (CSRF)\n* Server-Side Request Forgery\n* Remote Code Execution\n* SQL Injection\n* View or modify database records outside of your organization scope\n\n## Non-Qualifying Vulnerabilities\n\n* auth.helium.com\n* Intercom chat feature\n* HTTP request Smuggling\n* console CLI is out of scope: https://github.com/helium/helium-console-cli\n* Clickjacking on static websites\n* Cross Site Scripting (XSS)\n* Missing HTTP Headers which do not directly lead to a vulnerability\n* Phishing and social engineering (of users and Helium employees)\n* Reports for out-of-date software (lacking a proof-of-concept)\n* SPF and DKIM records\n* SSL/TLS protocol vulnerabilities\n* Security best practice concerns\n* Overly permissions Google API keys\n\n",
+          "instruction": "The scope of the Console application is limited to the following:\n\n## Qualifying Vulnerabilities\n\n* Cross Site Request Forgery (CSRF)\n* Server-Side Request Forgery\n* Remote Code Execution\n* SQL Injection\n* View or modify database records outside of your organization scope\n\n## Non-Qualifying Vulnerabilities\n\n\n*validation that the email address of the invite and the email used to register are the same\n* browser session expiration\n* auth.helium.com\n* Intercom chat feature\n* HTTP request Smuggling\n* console CLI is out of scope: https://github.com/helium/helium-console-cli\n* Clickjacking on static websites\n* Cross Site Scripting (XSS)\n* Missing HTTP Headers which do not directly lead to a vulnerability\n* Phishing and social engineering (of users and Helium employees)\n* Reports for out-of-date software (lacking a proof-of-concept)\n* SPF and DKIM records\n* SSL/TLS protocol vulnerabilities\n* Security best practice concerns\n* Overly permissions Google API keys\n\n",
           "integrity_requirement": "low",
           "max_severity": "high"
         },
@@ -14882,6 +15015,17 @@
           "max_severity": "none"
         },
         {
+          "asset_identifier": "whitepaper.helium.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": false,
+          "instruction": "whitepaper.helium.com and its associated public AWS buckets are out of scope.",
+          "integrity_requirement": null,
+          "max_severity": "none"
+        },
+        {
           "asset_identifier": "www.helium.com/store",
           "asset_type": "URL",
           "availability_requirement": null,
@@ -14955,7 +15099,7 @@
     "handle": "files",
     "url": "https://hackerone.com/files",
     "offers_bounties": true,
-    "quick_to_bounty": false,
+    "quick_to_bounty": true,
     "quick_to_first_response": false,
     "submission_state": "open",
     "targets": {
@@ -15899,12 +16043,12 @@
         {
           "asset_identifier": "443904275",
           "asset_type": "APPLE_STORE_APP_ID",
-          "availability_requirement": "high",
-          "confidentiality_requirement": "high",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
           "instruction": "[Apple App Store](https://apps.apple.com/jp/app/line/id443904275)\n\nPlease make sure you are testing the latest version. Only the latest version is considered in scope.",
-          "integrity_requirement": "high",
+          "integrity_requirement": null,
           "max_severity": "critical"
         },
         {
@@ -15921,23 +16065,23 @@
         {
           "asset_identifier": "9wzdncrfj2g6",
           "asset_type": "WINDOWS_APP_STORE_APP_ID",
-          "availability_requirement": "high",
-          "confidentiality_requirement": "high",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
           "instruction": "[Microsoft Windows Store](https://www.microsoft.com/ja-jp/p/line/9wzdncrfj2g6)\n\nPlease make sure you are testing the latest version. Only the latest version is considered in scope.",
-          "integrity_requirement": "high",
+          "integrity_requirement": null,
           "max_severity": "critical"
         },
         {
           "asset_identifier": "Chrome Extension",
           "asset_type": "OTHER",
-          "availability_requirement": "high",
-          "confidentiality_requirement": "high",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
           "instruction": "https://chrome.google.com/webstore/detail/line/ophjlpahpchlmihnnnihgmmeilfjmjjc\n\nPlease make sure you are testing the latest version. Only the latest version is considered in scope.",
-          "integrity_requirement": "high",
+          "integrity_requirement": null,
           "max_severity": "critical"
         },
         {
@@ -15954,12 +16098,12 @@
         {
           "asset_identifier": "jp.naver.line.android",
           "asset_type": "GOOGLE_PLAY_APP_ID",
-          "availability_requirement": "high",
-          "confidentiality_requirement": "high",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
           "instruction": "[Google Play Store](https://play.google.com/store/apps/details?id=jp.naver.line.android)\n\nPlease make sure you are testing the latest version. Only the latest version is considered in scope.",
-          "integrity_requirement": "high",
+          "integrity_requirement": null,
           "max_severity": "critical"
         },
         {
@@ -17917,7 +18061,7 @@
           "confidentiality_requirement": "medium",
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
-          "instruction": "ShowMax tvOS Application for AppleTV",
+          "instruction": "Showmax tvOS Application for AppleTV",
           "integrity_requirement": "medium",
           "max_severity": "critical"
         },
@@ -17928,7 +18072,7 @@
           "confidentiality_requirement": "high",
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
-          "instruction": "ShowMax API",
+          "instruction": "Showmax API",
           "integrity_requirement": "high",
           "max_severity": "critical"
         },
@@ -17939,7 +18083,7 @@
           "confidentiality_requirement": "high",
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
-          "instruction": "ShowMax Website",
+          "instruction": "Showmax Website",
           "integrity_requirement": "high",
           "max_severity": "critical"
         },
@@ -17950,7 +18094,7 @@
           "confidentiality_requirement": "high",
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
-          "instruction": "ShowMax Primary website",
+          "instruction": "Showmax Primary website",
           "integrity_requirement": "high",
           "max_severity": "critical"
         },
@@ -17979,7 +18123,7 @@
           "max_severity": "none"
         },
         {
-          "asset_identifier": "https://blog.showmax.com",
+          "asset_identifier": "https://help.showmax.com",
           "asset_type": "URL",
           "availability_requirement": null,
           "confidentiality_requirement": null,
@@ -17990,7 +18134,7 @@
           "max_severity": "none"
         },
         {
-          "asset_identifier": "https://help.showmax.com",
+          "asset_identifier": "https://stories.showmax.com",
           "asset_type": "URL",
           "availability_requirement": null,
           "confidentiality_requirement": null,
@@ -19128,7 +19272,7 @@
     "url": "https://hackerone.com/vanilla",
     "offers_bounties": true,
     "quick_to_bounty": true,
-    "quick_to_first_response": true,
+    "quick_to_first_response": false,
     "submission_state": "open",
     "targets": {
       "in_scope": [
@@ -21725,7 +21869,7 @@
     "url": "https://hackerone.com/delight_im",
     "offers_bounties": false,
     "quick_to_bounty": false,
-    "quick_to_first_response": false,
+    "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
       "in_scope": [
@@ -24050,6 +24194,17 @@
           "max_severity": "critical"
         },
         {
+          "asset_identifier": "Ghost",
+          "asset_type": "SOURCE_CODE",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
           "asset_identifier": "MQTT.js",
           "asset_type": "SOURCE_CODE",
           "availability_requirement": null,
@@ -24118,12 +24273,12 @@
         {
           "asset_identifier": "assign-deep",
           "asset_type": "SOURCE_CODE",
-          "availability_requirement": "high",
-          "confidentiality_requirement": "high",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
           "eligible_for_bounty": false,
           "eligible_for_submission": true,
           "instruction": "",
-          "integrity_requirement": "high",
+          "integrity_requirement": null,
           "max_severity": "critical"
         },
         {
@@ -24174,7 +24329,7 @@
           "asset_identifier": "body-parser",
           "asset_type": "SOURCE_CODE",
           "availability_requirement": null,
-          "confidentiality_requirement": "none",
+          "confidentiality_requirement": null,
           "eligible_for_bounty": false,
           "eligible_for_submission": true,
           "instruction": "",
@@ -24325,36 +24480,58 @@
           "max_severity": "critical"
         },
         {
-          "asset_identifier": "deap",
+          "asset_identifier": "crypto-js",
           "asset_type": "SOURCE_CODE",
-          "availability_requirement": "high",
-          "confidentiality_requirement": "high",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
           "eligible_for_bounty": false,
           "eligible_for_submission": true,
           "instruction": "",
-          "integrity_requirement": "high",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "deap",
+          "asset_type": "SOURCE_CODE",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
           "max_severity": "critical"
         },
         {
           "asset_identifier": "deep-extend",
           "asset_type": "SOURCE_CODE",
-          "availability_requirement": "high",
-          "confidentiality_requirement": "high",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
           "eligible_for_bounty": false,
           "eligible_for_submission": true,
           "instruction": "",
-          "integrity_requirement": "high",
+          "integrity_requirement": null,
           "max_severity": "critical"
         },
         {
           "asset_identifier": "defaults-deep",
           "asset_type": "SOURCE_CODE",
-          "availability_requirement": "high",
-          "confidentiality_requirement": "high",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
           "eligible_for_bounty": false,
           "eligible_for_submission": true,
           "instruction": "",
-          "integrity_requirement": "high",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "devcert",
+          "asset_type": "SOURCE_CODE",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
           "max_severity": "critical"
         },
         {
@@ -24382,12 +24559,12 @@
         {
           "asset_identifier": "entitlements",
           "asset_type": "SOURCE_CODE",
-          "availability_requirement": "high",
-          "confidentiality_requirement": "high",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
           "eligible_for_bounty": false,
           "eligible_for_submission": true,
           "instruction": "",
-          "integrity_requirement": "high",
+          "integrity_requirement": null,
           "max_severity": "critical"
         },
         {
@@ -24437,23 +24614,23 @@
         {
           "asset_identifier": "extend",
           "asset_type": "SOURCE_CODE",
-          "availability_requirement": "high",
-          "confidentiality_requirement": "high",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
           "eligible_for_bounty": false,
           "eligible_for_submission": true,
           "instruction": "",
-          "integrity_requirement": "high",
+          "integrity_requirement": null,
           "max_severity": "critical"
         },
         {
           "asset_identifier": "fastify",
           "asset_type": "SOURCE_CODE",
-          "availability_requirement": "high",
-          "confidentiality_requirement": "high",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
           "instruction": "",
-          "integrity_requirement": "high",
+          "integrity_requirement": null,
           "max_severity": "critical"
         },
         {
@@ -24591,12 +24768,12 @@
         {
           "asset_identifier": "getcookies",
           "asset_type": "SOURCE_CODE",
-          "availability_requirement": "high",
-          "confidentiality_requirement": "high",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
           "eligible_for_bounty": false,
           "eligible_for_submission": true,
           "instruction": "",
-          "integrity_requirement": "high",
+          "integrity_requirement": null,
           "max_severity": "critical"
         },
         {
@@ -24690,34 +24867,34 @@
         {
           "asset_identifier": "hoek",
           "asset_type": "SOURCE_CODE",
-          "availability_requirement": "high",
-          "confidentiality_requirement": "high",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
           "eligible_for_bounty": false,
           "eligible_for_submission": true,
           "instruction": "",
-          "integrity_requirement": "high",
+          "integrity_requirement": null,
           "max_severity": "critical"
         },
         {
           "asset_identifier": "html-janitor",
           "asset_type": "SOURCE_CODE",
-          "availability_requirement": "high",
-          "confidentiality_requirement": "high",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
           "eligible_for_bounty": false,
           "eligible_for_submission": true,
           "instruction": "",
-          "integrity_requirement": "high",
+          "integrity_requirement": null,
           "max_severity": "critical"
         },
         {
           "asset_identifier": "html-pages",
           "asset_type": "SOURCE_CODE",
-          "availability_requirement": "high",
-          "confidentiality_requirement": "high",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
           "eligible_for_bounty": false,
           "eligible_for_submission": true,
           "instruction": "",
-          "integrity_requirement": "high",
+          "integrity_requirement": null,
           "max_severity": "critical"
         },
         {
@@ -24799,6 +24976,17 @@
         },
         {
           "asset_identifier": "jimp",
+          "asset_type": "SOURCE_CODE",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "jison",
           "asset_type": "SOURCE_CODE",
           "availability_requirement": null,
           "confidentiality_requirement": null,
@@ -24910,23 +25098,34 @@
         {
           "asset_identifier": "lodash",
           "asset_type": "SOURCE_CODE",
-          "availability_requirement": "high",
-          "confidentiality_requirement": "high",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
           "instruction": "",
-          "integrity_requirement": "high",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "logkitty",
+          "asset_type": "SOURCE_CODE",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
           "max_severity": "critical"
         },
         {
           "asset_identifier": "m-server",
           "asset_type": "SOURCE_CODE",
-          "availability_requirement": "high",
-          "confidentiality_requirement": "high",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
           "eligible_for_bounty": false,
           "eligible_for_submission": true,
           "instruction": "",
-          "integrity_requirement": "high",
+          "integrity_requirement": null,
           "max_severity": "critical"
         },
         {
@@ -24998,45 +25197,45 @@
         {
           "asset_identifier": "merge-deep",
           "asset_type": "SOURCE_CODE",
-          "availability_requirement": "high",
-          "confidentiality_requirement": "high",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
           "eligible_for_bounty": false,
           "eligible_for_submission": true,
           "instruction": "",
-          "integrity_requirement": "high",
+          "integrity_requirement": null,
           "max_severity": "critical"
         },
         {
           "asset_identifier": "merge-objects",
           "asset_type": "SOURCE_CODE",
-          "availability_requirement": "high",
-          "confidentiality_requirement": "high",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
           "eligible_for_bounty": false,
           "eligible_for_submission": true,
           "instruction": "",
-          "integrity_requirement": "high",
+          "integrity_requirement": null,
           "max_severity": "critical"
         },
         {
           "asset_identifier": "merge-options",
           "asset_type": "SOURCE_CODE",
-          "availability_requirement": "high",
-          "confidentiality_requirement": "high",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
           "eligible_for_bounty": false,
           "eligible_for_submission": true,
           "instruction": "",
-          "integrity_requirement": "high",
+          "integrity_requirement": null,
           "max_severity": "critical"
         },
         {
           "asset_identifier": "merge-recursive",
           "asset_type": "SOURCE_CODE",
-          "availability_requirement": "high",
-          "confidentiality_requirement": "high",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
           "eligible_for_bounty": false,
           "eligible_for_submission": true,
           "instruction": "",
-          "integrity_requirement": "high",
+          "integrity_requirement": null,
           "max_severity": "critical"
         },
         {
@@ -25075,12 +25274,12 @@
         {
           "asset_identifier": "mixin-deep",
           "asset_type": "SOURCE_CODE",
-          "availability_requirement": "high",
-          "confidentiality_requirement": "high",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
           "eligible_for_bounty": false,
           "eligible_for_submission": true,
           "instruction": "",
-          "integrity_requirement": "high",
+          "integrity_requirement": null,
           "max_severity": "critical"
         },
         {
@@ -25394,16 +25593,27 @@
         {
           "asset_identifier": "put",
           "asset_type": "SOURCE_CODE",
-          "availability_requirement": "high",
-          "confidentiality_requirement": "high",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
           "eligible_for_bounty": false,
           "eligible_for_submission": true,
           "instruction": "",
-          "integrity_requirement": "high",
+          "integrity_requirement": null,
           "max_severity": "critical"
         },
         {
           "asset_identifier": "questor",
+          "asset_type": "SOURCE_CODE",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "react-autolinker-wrapper",
           "asset_type": "SOURCE_CODE",
           "availability_requirement": null,
           "confidentiality_requirement": null,
@@ -25526,12 +25736,12 @@
         {
           "asset_identifier": "serve",
           "asset_type": "SOURCE_CODE",
-          "availability_requirement": "high",
-          "confidentiality_requirement": "high",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
           "eligible_for_bounty": false,
           "eligible_for_submission": true,
           "instruction": "",
-          "integrity_requirement": "high",
+          "integrity_requirement": null,
           "max_severity": "critical"
         },
         {
@@ -25767,6 +25977,17 @@
         },
         {
           "asset_identifier": "utile",
+          "asset_type": "SOURCE_CODE",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "utils-extend",
           "asset_type": "SOURCE_CODE",
           "availability_requirement": null,
           "confidentiality_requirement": null,
@@ -26547,7 +26768,7 @@
     "url": "https://hackerone.com/jamieweb",
     "offers_bounties": false,
     "quick_to_bounty": false,
-    "quick_to_first_response": true,
+    "quick_to_first_response": false,
     "submission_state": "open",
     "targets": {
       "in_scope": [
@@ -27340,7 +27561,7 @@
     "offers_bounties": false,
     "quick_to_bounty": false,
     "quick_to_first_response": false,
-    "submission_state": "paused",
+    "submission_state": "open",
     "targets": {
       "in_scope": [
         {
@@ -27818,7 +28039,7 @@
           "confidentiality_requirement": "high",
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
-          "instruction": "The system is designed to allow to move tokens between blockchains if and only if 50% of the members approve it. Vulnerabilities that require access to a member's private key will be valid but will be considered medium risk at most.\n\n# Out of scope\n* The private key handling and storage is out of scope.\n* Malicious ERC20 tokens are out of scope because there is a whitelisting process in place.",
+          "instruction": "The system is designed to allow to move tokens between blockchains if and only if 50% of the members approve it. Vulnerabilities that require access to a member's private key will be valid but will be considered medium risk at most.\n\n# Out of scope\n* The private key handling and storage is out of scope.\n* Malicious ERC20 tokens are out of scope because there is a whitelisting process in place.\n* Multi-signature wallet.\n* Tests located under `test` folder in (all of them).\n* Open Zeppelin contracts located in `bridge/contracts/zeppelin` ",
           "integrity_requirement": "high",
           "max_severity": "critical"
         }
@@ -27868,7 +28089,7 @@
     "offers_bounties": false,
     "quick_to_bounty": false,
     "quick_to_first_response": true,
-    "submission_state": "open",
+    "submission_state": "disabled",
     "targets": {
       "in_scope": [
         {
@@ -31293,6 +31514,28 @@
           "max_severity": "critical"
         },
         {
+          "asset_identifier": "account.magento.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "accounts.magento.cloud",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
           "asset_identifier": "imagine.magento.com",
           "asset_type": "URL",
           "availability_requirement": "medium",
@@ -33854,6 +34097,17 @@
           "max_severity": "critical"
         },
         {
+          "asset_identifier": "*.usejewel.com",
+          "asset_type": "URL",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
           "asset_identifier": "*.wikibuy.com",
           "asset_type": "URL",
           "availability_requirement": null,
@@ -34488,7 +34742,7 @@
     "handle": "allegro",
     "url": "https://hackerone.com/allegro",
     "offers_bounties": true,
-    "quick_to_bounty": true,
+    "quick_to_bounty": false,
     "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
@@ -35124,6 +35378,17 @@
     "targets": {
       "in_scope": [
         {
+          "asset_identifier": "Coda Chrome Extension",
+          "asset_type": "OTHER",
+          "availability_requirement": "low",
+          "confidentiality_requirement": "low",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "Link: https://chrome.google.com/webstore/detail/coda-browser-extension/cdgkmagmdldlpiglliebaajdpdkigcbi?hl=en",
+          "integrity_requirement": "medium",
+          "max_severity": "high"
+        },
+        {
           "asset_identifier": "https://*.coda.io/*",
           "asset_type": "URL",
           "availability_requirement": "low",
@@ -35254,6 +35519,28 @@
           "instruction": "",
           "integrity_requirement": "none",
           "max_severity": "low"
+        },
+        {
+          "asset_identifier": "io.coda",
+          "asset_type": "APPLE_STORE_APP_ID",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "Link: https://apps.apple.com/us/app/coda/id1397968110\n\nCoda's native apps make heavy use of the same endpoints and UX that's used by the mobile website. That being said, there are some differences and we invite security reports pertaining to our iOS and Android apps. Please be sure to follow the same guidelines for setting up an account in our mobile apps as on https://coda.io.",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "io.coda.codaapp",
+          "asset_type": "GOOGLE_PLAY_APP_ID",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "Link: https://play.google.com/store/apps/details?id=io.coda.codaapp\n\nCoda's native apps make heavy use of the same endpoints and UX that's used by the mobile website. That being said, there are some differences and we invite security reports pertaining to our iOS and Android apps. Please be sure to follow the same guidelines for setting up an account in our mobile apps as on https://coda.io.",
+          "integrity_requirement": null,
+          "max_severity": "critical"
         }
       ],
       "out_of_scope": [
@@ -35436,7 +35723,7 @@
     "handle": "googleapi",
     "url": "https://hackerone.com/googleapi",
     "offers_bounties": true,
-    "quick_to_bounty": true,
+    "quick_to_bounty": false,
     "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
@@ -36559,7 +36846,7 @@
     "handle": "forescout_technologies",
     "url": "https://hackerone.com/forescout_technologies",
     "offers_bounties": true,
-    "quick_to_bounty": false,
+    "quick_to_bounty": true,
     "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
@@ -37056,7 +37343,7 @@
     "url": "https://hackerone.com/curve",
     "offers_bounties": true,
     "quick_to_bounty": false,
-    "quick_to_first_response": true,
+    "quick_to_first_response": false,
     "submission_state": "open",
     "targets": {
       "in_scope": [
@@ -37855,34 +38142,6 @@
     }
   },
   {
-    "id": 41222,
-    "name": "dfuse Platform Inc.",
-    "handle": "dfuse",
-    "url": "https://hackerone.com/dfuse",
-    "offers_bounties": true,
-    "quick_to_bounty": false,
-    "quick_to_first_response": true,
-    "submission_state": "open",
-    "targets": {
-      "in_scope": [
-        {
-          "asset_identifier": "https://mainnet.eos.dfuse.io",
-          "asset_type": "URL",
-          "availability_requirement": "none",
-          "confidentiality_requirement": "none",
-          "eligible_for_bounty": true,
-          "eligible_for_submission": true,
-          "instruction": "NOTE: Security Issues are NOT in scope for this program, only data integrity issues",
-          "integrity_requirement": "high",
-          "max_severity": "critical"
-        }
-      ],
-      "out_of_scope": [
-
-      ]
-    }
-  },
-  {
     "id": 41286,
     "name": "Facebook",
     "handle": "facebook",
@@ -37981,6 +38240,78 @@
           "eligible_for_submission": true,
           "instruction": "",
           "integrity_requirement": null,
+          "max_severity": "critical"
+        }
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
+    "id": 41380,
+    "name": "Bitwala",
+    "handle": "bitwala",
+    "url": "https://hackerone.com/bitwala",
+    "offers_bounties": false,
+    "quick_to_bounty": false,
+    "quick_to_first_response": false,
+    "submission_state": "open",
+    "targets": {
+      "in_scope": [
+        {
+          "asset_identifier": "api.app.bitwala.com",
+          "asset_type": "URL",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "com.bitwala.app",
+          "asset_type": "APPLE_STORE_APP_ID",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "com.bitwala.app",
+          "asset_type": "GOOGLE_PLAY_APP_ID",
+          "availability_requirement": null,
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "https://app.bitwala.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "https://www.bitwala.com",
+          "asset_type": "URL",
+          "availability_requirement": "medium",
+          "confidentiality_requirement": "medium",
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": "medium",
           "max_severity": "critical"
         }
       ],
@@ -38271,110 +38602,6 @@
     }
   },
   {
-    "id": 41708,
-    "name": "Mixin",
-    "handle": "mixin",
-    "url": "https://hackerone.com/mixin",
-    "offers_bounties": true,
-    "quick_to_bounty": false,
-    "quick_to_first_response": true,
-    "submission_state": "open",
-    "targets": {
-      "in_scope": [
-        {
-          "asset_identifier": "https://github.com/MixinNetwork/mixin",
-          "asset_type": "SOURCE_CODE",
-          "availability_requirement": "high",
-          "confidentiality_requirement": "high",
-          "eligible_for_bounty": true,
-          "eligible_for_submission": true,
-          "instruction": "You may use the public testnet we have set up for your testing. The RPC nodes and claiming of test token method are all detailed in [the guide here.](https://github.com/MixinNetwork/mixin-testnet-setup/blob/master/README.md)",
-          "integrity_requirement": "high",
-          "max_severity": "critical"
-        }
-      ],
-      "out_of_scope": [
-        {
-          "asset_identifier": "https://developers.mixin.one/",
-          "asset_type": "URL",
-          "availability_requirement": null,
-          "confidentiality_requirement": null,
-          "eligible_for_bounty": false,
-          "eligible_for_submission": false,
-          "instruction": "",
-          "integrity_requirement": null,
-          "max_severity": "none"
-        },
-        {
-          "asset_identifier": "https://github.com/MixinNetwork/android-app",
-          "asset_type": "SOURCE_CODE",
-          "availability_requirement": null,
-          "confidentiality_requirement": null,
-          "eligible_for_bounty": false,
-          "eligible_for_submission": false,
-          "instruction": "-",
-          "integrity_requirement": null,
-          "max_severity": "none"
-        },
-        {
-          "asset_identifier": "https://github.com/MixinNetwork/desktop-app",
-          "asset_type": "SOURCE_CODE",
-          "availability_requirement": null,
-          "confidentiality_requirement": null,
-          "eligible_for_bounty": false,
-          "eligible_for_submission": false,
-          "instruction": "",
-          "integrity_requirement": null,
-          "max_severity": "none"
-        },
-        {
-          "asset_identifier": "https://github.com/MixinNetwork/ios-app",
-          "asset_type": "SOURCE_CODE",
-          "availability_requirement": null,
-          "confidentiality_requirement": null,
-          "eligible_for_bounty": false,
-          "eligible_for_submission": false,
-          "instruction": "",
-          "integrity_requirement": null,
-          "max_severity": "none"
-        },
-        {
-          "asset_identifier": "https://github.com/MixinNetwork/ocean.one",
-          "asset_type": "SOURCE_CODE",
-          "availability_requirement": null,
-          "confidentiality_requirement": null,
-          "eligible_for_bounty": false,
-          "eligible_for_submission": false,
-          "instruction": "",
-          "integrity_requirement": null,
-          "max_severity": "none"
-        },
-        {
-          "asset_identifier": "https://github.com/MixinNetwork/supergroup.mixin.one",
-          "asset_type": "SOURCE_CODE",
-          "availability_requirement": null,
-          "confidentiality_requirement": null,
-          "eligible_for_bounty": false,
-          "eligible_for_submission": false,
-          "instruction": "",
-          "integrity_requirement": null,
-          "max_severity": "none"
-        },
-        {
-          "asset_identifier": "https://mixin.one",
-          "asset_type": "URL",
-          "availability_requirement": null,
-          "confidentiality_requirement": null,
-          "eligible_for_bounty": false,
-          "eligible_for_submission": false,
-          "instruction": "",
-          "integrity_requirement": null,
-          "max_severity": "none"
-        }
-      ]
-    }
-  },
-  {
     "id": 41710,
     "name": "Orion Labs",
     "handle": "orion_labs",
@@ -38529,7 +38756,7 @@
           "confidentiality_requirement": "medium",
           "eligible_for_bounty": false,
           "eligible_for_submission": true,
-          "instruction": "This is an environment specific for hackerone. It has almost the same setup from the production environment, so any vulnerability found here, will probably be affecting both.\n\nGet in touch if you need test credentials to login to explore the app.\n\nPlease do not report issues for our website www.qulture.rocks, only for the app on https://hackerone.qulture.rocks\n\n# Login strategy\n\n1. We do not block or limit login attempts with invalid emails;\n2. For valid emails, if the password is incorrect, we activate recaptcha after 2 wrong attempts (only in production env);\n3. In order to avoid DDoS, valid users are never blocked due to failed login attempts.\n\n# Credentials\n\nRequire the credentials by creating a report with title \"Credentials request\". We'll reply asap :)\nAfter we reply, you should close the report in seven days, otherwise, we'll close it as informative.\n\n# TLS\n\nWe are already aware that the environment is not running with the latest TLS* version, and that should stay out of scope. Our production environment is using the latest version.\n\n# Contacting us\n\nWe kindly ask not to send us messages on emails that you may find on our website for issues related to this forum, and also not to send chat messages for credentials, prefer to send messages via hackerone platform. \n",
+          "instruction": "This is an environment specific for hackerone. It has almost the same setup from the production environment, so any vulnerability found here, will probably be affecting both.\n\nGet in touch if you need test credentials to login to explore the app.\n\nPlease do not report issues for our website www.qulture.rocks, only for the app on https://hackerone.qulture.rocks\n\n# Login strategy\n\n1. We do not block or limit login attempts with invalid emails;\n2. For valid emails, if the password is incorrect, we activate recaptcha after 2 wrong attempts (only in production env);\n3. In order to avoid DDoS, valid users are never blocked due to failed login attempts.\n\n# Credentials\n\nRequire the credentials by creating a report with title \"Credentials request\". We'll reply asap :)\nAfter we reply, you should close the report in seven days, otherwise, we'll close it as informative.\n\n# TLS\n\nWe are already aware that the environment is not running with the latest TLS* version, and that should stay out of scope. Our production environment is using the latest version.\n\n# Public links\n\nWe do have some public links which may be mistaken for vulnerabilities (e.g.: \nhttps://hackerone.qulture.rocks/translations and https://hackerone.qulture.rocks/robots.txt). \n\n# Contacting us\n\nWe kindly ask not to send us messages on emails that you may find on our website for issues related to this forum, and also not to send chat messages for credentials, prefer to send messages via hackerone platform. \n",
           "integrity_requirement": "high",
           "max_severity": "critical"
         }
@@ -38547,7 +38774,7 @@
     "offers_bounties": false,
     "quick_to_bounty": false,
     "quick_to_first_response": false,
-    "submission_state": "paused",
+    "submission_state": "open",
     "targets": {
       "in_scope": [
         {
@@ -40297,6 +40524,231 @@
     }
   },
   {
+    "id": 43718,
+    "name": "Magisto",
+    "handle": "magisto",
+    "url": "https://hackerone.com/magisto",
+    "offers_bounties": true,
+    "quick_to_bounty": true,
+    "quick_to_first_response": true,
+    "submission_state": "open",
+    "targets": {
+      "in_scope": [
+        {
+          "asset_identifier": "*.magisto.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "**EXCEPTION** - Subdomains owned/controlled/managed/etc by a 3rd party. ",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "486781045",
+          "asset_type": "APPLE_STORE_APP_ID",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "applause1.magisto.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "com.magisto",
+          "asset_type": "GOOGLE_PLAY_APP_ID",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "magisto.com,www.magisto.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "staging.magisto.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        }
+      ],
+      "out_of_scope": [
+        {
+          "asset_identifier": "*.dev.magisto.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": false,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "none"
+        },
+        {
+          "asset_identifier": "*.test.magisto.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": false,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "none"
+        },
+        {
+          "asset_identifier": "Gamma.magisto.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": false,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "none"
+        },
+        {
+          "asset_identifier": "applause2.magisto.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": false,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "none"
+        },
+        {
+          "asset_identifier": "delta.magisto.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": false,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "none"
+        },
+        {
+          "asset_identifier": "epsilon.magisto.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": false,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "none"
+        },
+        {
+          "asset_identifier": "eta.magisto.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": false,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "none"
+        },
+        {
+          "asset_identifier": "int001.vimeo.magisto.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": false,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "none"
+        },
+        {
+          "asset_identifier": "int002.vimeo.magisto.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": false,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "none"
+        },
+        {
+          "asset_identifier": "int003.vimeo.magisto.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": false,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "none"
+        },
+        {
+          "asset_identifier": "int004.vimeo.magisto.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": false,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "none"
+        },
+        {
+          "asset_identifier": "int005vimeo.magisto.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": false,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "none"
+        },
+        {
+          "asset_identifier": "www.magisto.com/blog",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": false,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "none"
+        }
+      ]
+    }
+  },
+  {
     "id": 43727,
     "name": "CompanyHub",
     "handle": "companyhub",
@@ -40850,7 +41302,7 @@
           "confidentiality_requirement": null,
           "eligible_for_bounty": false,
           "eligible_for_submission": false,
-          "instruction": "Amazon Go Mobile Apps, Whole Foods Apps, anything related to Physical Stores will be out-of-scope",
+          "instruction": "Amazon Go Mobile Apps, Whole Foods Apps, anything related to Physical Stores will be out-of-scope; submitted reports will be reviewed and addressed however are not eligible for bounty.",
           "integrity_requirement": null,
           "max_severity": "none"
         },
@@ -40861,7 +41313,7 @@
           "confidentiality_requirement": null,
           "eligible_for_bounty": false,
           "eligible_for_submission": false,
-          "instruction": "Currently, anything related to AWS should be considered out of scope.",
+          "instruction": "Currently, anything related to AWS should be considered out of scope and should be reported directly to AWS: https://aws.amazon.com/security/vulnerability-reporting/",
           "integrity_requirement": null,
           "max_severity": "none"
         },
@@ -41140,7 +41592,7 @@
     "url": "https://hackerone.com/ramp_0tawz",
     "offers_bounties": false,
     "quick_to_bounty": false,
-    "quick_to_first_response": true,
+    "quick_to_first_response": false,
     "submission_state": "paused",
     "targets": {
       "in_scope": [
@@ -41212,6 +41664,17 @@
     "targets": {
       "in_scope": [
         {
+          "asset_identifier": "hydass.be",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
           "asset_identifier": "hydraulics-group.com",
           "asset_type": "URL",
           "availability_requirement": null,
@@ -41223,6 +41686,28 @@
           "max_severity": "critical"
         },
         {
+          "asset_identifier": "rem-b.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "remb.be",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
           "asset_identifier": "remb.sharepoint.com",
           "asset_type": "URL",
           "availability_requirement": null,
@@ -41230,6 +41715,17 @@
           "eligible_for_bounty": false,
           "eligible_for_submission": true,
           "instruction": "Please ensure testing against this asset follows the Microsoft Rules of Engagement: https://www.microsoft.com/en-us/msrc/pentest-rules-of-engagement ",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "rembconnect.be",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "",
           "integrity_requirement": null,
           "max_severity": "critical"
         }
@@ -41540,7 +42036,7 @@
           "confidentiality_requirement": "high",
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
-          "instruction": "*Dinero*\n\nDinero is an accounting software for sole traders and micro businesses based out of Denmark. Our only target group is danish companies and therefore the interface is in danish only.The application is a SaaS application hosted in the cloud and consists of a main application and a number of supportive microservices.\n\nSee the getting started document here: https://vismabugbountyprod.z16.web.core.windows.net/vismaDinero-hackerone-getting-started.pdf\n\nOut of scope:\n-  Issues related to login /user creation / forgot-password and /profile page\n- The Cookie \".AspNet.Cookies\" is not set with HttpOnly which is a known vulnerability - please do not report it.\n-  Session invalidation issues (e.g. logout, password change, email change, role change, user deletion, etc).\n\n\n*Asset added on 2020-03-02*",
+          "instruction": "*Dinero*\n\nDinero is an accounting software for sole traders and micro businesses based out of Denmark. Our only target group is danish companies and therefore the interface is in danish only.The application is a SaaS application hosted in the cloud and consists of a main application and a number of supportive microservices.\n\nSee the getting started document here: https://vismabugbountyprod.z16.web.core.windows.net/vismaDinero-hackerone-getting-started.pdf\n\nOut of scope:\n-  Issues related to login /user creation / forgot-password and /profile page\n- The Cookie \".AspNet.Cookies\" is not set with HttpOnly which is a known vulnerability - please do not report it.\n-  Session invalidation issues (e.g. logout, password change, email change, role change, user deletion, etc).\n- CSRF is out of scope until the team will fix all existing ones.\n\n\n*Asset added on 2020-03-02*",
           "integrity_requirement": "high",
           "max_severity": "critical"
         },
@@ -41573,7 +42069,7 @@
           "confidentiality_requirement": "high",
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
-          "instruction": "This is \"Visma eAccounting\" (aka Visma eEkonomi / Visma ePasseli) which is an ERP system available in Sweden, Norway, Finland and The Netherlands.\n\nYou can read more on https://www.visma.no/eaccounting/english/\n\nYou need to register an user to test this system. The sign-up up process is described in this document:\n\nhttps://vismabugbountyprod.z16.web.core.windows.net/Visma%20eA%20Bug%20Bounty%20Onboarding%20Guide.pdf\n\nThis video also shows the entire setup (only Swedish audio) https://www.youtube.com/watch?v=kVr_CXgfhi0&t=4s\n\nTLDR: Goto https://admin.stage.vismaonline.com/Customer/StudentSignup.aspx?country=en&uilang=en&companyId= and sign up with the training code \"04h2v\"\n\n**Out of scope:**\n - Session invalidation issues (e.g. logout, password change, email change, role change, user deletion, etc).\n- Modification of gray-out fields when logged in with an admin account.\n",
+          "instruction": "This is \"Visma eAccounting\" (aka Visma eEkonomi / Visma ePasseli) which is an ERP system available in Sweden, Norway, Finland and The Netherlands.\n\nYou can read more on https://www.visma.no/eaccounting/english/\n\nYou need to register an user to test this system. The sign-up up process is described in this document:\n\nhttps://vismabugbountyprod.z16.web.core.windows.net/Visma-eAccounting-hackerone-getting-started.pdf\n\nThis video also shows the entire setup (only Swedish audio) https://www.youtube.com/watch?v=kVr_CXgfhi0&t=4s\n\nTLDR: Goto https://admin.stage.vismaonline.com/Customer/StudentSignup.aspx?country=en&uilang=en&companyId= and sign up with the training code \"04h2v\"\n\n**Out of scope:**\n - Session invalidation issues (e.g. logout, password change, email change, role change, user deletion, etc).\n- Modification of gray-out fields when logged in with an admin account.\n",
           "integrity_requirement": "high",
           "max_severity": "critical"
         },
@@ -41712,7 +42208,7 @@
           "confidentiality_requirement": null,
           "eligible_for_bounty": false,
           "eligible_for_submission": true,
-          "instruction": "* `*.cengage.com`\nAny vulnerability which could be directly tied to Cengage assets that is not explicitly listed in scope for another platform",
+          "instruction": "* *.cengage.com`\n",
           "integrity_requirement": null,
           "max_severity": "critical"
         },
@@ -41966,8 +42462,8 @@
     "url": "https://hackerone.com/h1-ctf",
     "offers_bounties": false,
     "quick_to_bounty": false,
-    "quick_to_first_response": true,
-    "submission_state": "open",
+    "quick_to_first_response": false,
+    "submission_state": "paused",
     "targets": {
       "in_scope": [
         {
@@ -42126,7 +42622,7 @@
     "handle": "matic-network",
     "url": "https://hackerone.com/matic-network",
     "offers_bounties": true,
-    "quick_to_bounty": false,
+    "quick_to_bounty": true,
     "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
@@ -42173,7 +42669,7 @@
           "confidentiality_requirement": null,
           "eligible_for_bounty": false,
           "eligible_for_submission": false,
-          "instruction": "Web Assets of Matic is not in scope",
+          "instruction": "Web Assets of Matic is not in scope\n\nAny reports that are out of scope but that are deemed valuable or business impactful to Matic will be considered at Matic's discretion. These reports may be triaged (awarded Reputation Points) but will not be eligible for a bounty.",
           "integrity_requirement": null,
           "max_severity": "none"
         },

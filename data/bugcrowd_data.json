@@ -361,10 +361,6 @@
         },
         {
           "type": "other",
-          "target": "Confluence Questions"
-        },
-        {
-          "type": "other",
           "target": "Confluence Server"
         },
         {
@@ -374,10 +370,6 @@
         {
           "type": "ios",
           "target": "Confluence Server iOS App"
-        },
-        {
-          "type": "website",
-          "target": "Confluence Team Calendars (https://www.atlassian.com/software/confluence/team-calendars)"
         },
         {
           "type": "other",
@@ -476,6 +468,14 @@
         {
           "type": "website",
           "target": "Any repository that you are not an owner of - do not impact Atlassian customers in any way."
+        },
+        {
+          "type": "other",
+          "target": "Confluence Questions"
+        },
+        {
+          "type": "website",
+          "target": "Confluence Team Calendars (https://www.atlassian.com/software/confluence/team-calendars)"
         },
         {
           "type": "other",
@@ -584,10 +584,6 @@
     "targets": {
       "in_scope": [
         {
-          "type": "website",
-          "target": "185.235.160.4"
-        },
-        {
           "type": "api",
           "target": "Java API Bucket"
         },
@@ -605,23 +601,75 @@
         },
         {
           "type": "website",
-          "target": "http://calculations.bigbank.fi/"
+          "target": "apvieno.bigbank.lv"
         },
         {
           "type": "website",
-          "target": "https://bank-link.bigbank.lt/"
+          "target": "arilaen.bigbank.ee"
         },
         {
           "type": "website",
-          "target": "https://ca.bigbank.eu/"
+          "target": "auth.bigbank.eu"
         },
         {
           "type": "website",
-          "target": "https://id-card.bigbank.ee/"
+          "target": "banking.bigbank.ee"
         },
         {
           "type": "website",
-          "target": "https://smart-id.bigbank.eu/"
+          "target": "banking.bigbank.lv"
+        },
+        {
+          "type": "website",
+          "target": "biznesam.bigbank.lv"
+        },
+        {
+          "type": "website",
+          "target": "ca.bigbank.eu"
+        },
+        {
+          "type": "website",
+          "target": "calculations.bigbank.fi"
+        },
+        {
+          "type": "website",
+          "target": "feedback.bigbank.eu"
+        },
+        {
+          "type": "website",
+          "target": "login.bigbank.eu"
+        },
+        {
+          "type": "website",
+          "target": "paraiska.bigbank.lt"
+        },
+        {
+          "type": "website",
+          "target": "partner-api.bigbank.ee"
+        },
+        {
+          "type": "website",
+          "target": "paskolos.bigbank.lt"
+        },
+        {
+          "type": "website",
+          "target": "refinansavimas.bigbank.lt"
+        },
+        {
+          "type": "website",
+          "target": "taotlus.bigbank.ee"
+        },
+        {
+          "type": "website",
+          "target": "uilab.bigbank.ee"
+        },
+        {
+          "type": "website",
+          "target": "verkkopankki.bigbank.fi"
+        },
+        {
+          "type": "website",
+          "target": "verslui.bigbank.lt"
         }
       ],
       "out_of_scope": [
@@ -749,6 +797,14 @@
     "targets": {
       "in_scope": [
         {
+          "type": "website",
+          "target": "*.bitdefender.com"
+        },
+        {
+          "type": "website",
+          "target": "*.bitdefender.net"
+        },
+        {
           "type": "other",
           "target": "Bitdefender Antimalware Engines"
         },
@@ -759,18 +815,6 @@
         {
           "type": "other",
           "target": "Bitdefender Total Security 2020"
-        },
-        {
-          "type": "website",
-          "target": "central.bitdefender.com"
-        },
-        {
-          "type": "website",
-          "target": "nimbus.bitdefender.net"
-        },
-        {
-          "type": "website",
-          "target": "www.bitdefender.com"
         }
       ],
       "out_of_scope": [
@@ -1284,7 +1328,7 @@
     "allows_disclosure": false,
     "managed_by_bugcrowd": true,
     "safe_harbor": "full",
-    "max_payout": 1500,
+    "max_payout": 2500,
     "targets": {
       "in_scope": [
         {
@@ -4036,10 +4080,6 @@
           "target": "Pinterest Android Mobile Application"
         },
         {
-          "type": "other",
-          "target": "Pinterest Buyable Pins / eCommerce features"
-        },
-        {
           "type": "ios",
           "target": "Pinterest iOS Mobile Application"
         },
@@ -4153,6 +4193,22 @@
     }
   },
   {
+    "name": "Help VPN users stay safe",
+    "url": "https://bugcrowd.com/programs/teasers/3dF25Jdi3Divjr36eZCgR2Fd",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "full",
+    "max_payout": 2500,
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
     "name": "A Customer Experience Management Platform",
     "url": "https://bugcrowd.com/programs/teasers/5DevCUcovN6B4tcte4uSiYcK",
     "allows_disclosure": true,
@@ -4254,7 +4310,7 @@
     "allows_disclosure": true,
     "managed_by_bugcrowd": true,
     "safe_harbor": "partial",
-    "max_payout": 4500,
+    "max_payout": 2500,
     "targets": {
       "in_scope": [
 
@@ -4271,22 +4327,6 @@
     "managed_by_bugcrowd": true,
     "safe_harbor": "full",
     "max_payout": 3000,
-    "targets": {
-      "in_scope": [
-
-      ],
-      "out_of_scope": [
-
-      ]
-    }
-  },
-  {
-    "name": "Mesh Wifi ecosystem and mobile application",
-    "url": "https://bugcrowd.com/programs/teasers/EBSoTcRSRLTzWa1CKoZoFLjV",
-    "allows_disclosure": true,
-    "managed_by_bugcrowd": true,
-    "safe_harbor": "partial",
-    "max_payout": 0,
     "targets": {
       "in_scope": [
 
@@ -4430,7 +4470,7 @@
     "allows_disclosure": true,
     "managed_by_bugcrowd": true,
     "safe_harbor": "full",
-    "max_payout": 3000,
+    "max_payout": 5000,
     "targets": {
       "in_scope": [
 
@@ -4558,6 +4598,22 @@
     "allows_disclosure": true,
     "managed_by_bugcrowd": true,
     "safe_harbor": "partial",
+    "max_payout": 5000,
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
+    "name": "Safety First!",
+    "url": "https://bugcrowd.com/programs/teasers/auGYMAudW3xRzkUm5mhBA9nh",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "full",
     "max_payout": 5000,
     "targets": {
       "in_scope": [
@@ -5129,6 +5185,22 @@
     }
   },
   {
+    "name": "Stream on!",
+    "url": "https://bugcrowd.com/programs/teasers/yam5XzDQYwY7uZfGnsLwbAyq",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "partial",
+    "max_payout": 3000,
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
     "name": "PureVPN",
     "url": "https://bugcrowd.com/purevpn",
     "allows_disclosure": false,
@@ -5474,6 +5546,10 @@
     "max_payout": 4000,
     "targets": {
       "in_scope": [
+        {
+          "type": "website",
+          "target": "*.skyscanner.net"
+        },
         {
           "type": "android",
           "target": "Skyscanner Android App"
