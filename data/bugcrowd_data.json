@@ -2624,6 +2624,29 @@
     }
   },
   {
+    "name": "Jumbo Privacy",
+    "url": "https://bugcrowd.com/jumboprivacy",
+    "allows_disclosure": false,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "partial",
+    "max_payout": 4500,
+    "targets": {
+      "in_scope": [
+        {
+          "type": "android",
+          "target": "JumboPrivacy Android Application"
+        },
+        {
+          "type": "ios",
+          "target": "JumboPrivacy iOS Application"
+        }
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
     "name": "Keeper Security Public Bounty Program",
     "url": "https://bugcrowd.com/keepersecurity",
     "allows_disclosure": false,
@@ -2893,25 +2916,6 @@
           "type": "website",
           "target": "https://li.me (hubspot)"
         }
-      ]
-    }
-  },
-  {
-    "name": "Magic Leap One - Device",
-    "url": "https://bugcrowd.com/magicleapdevice",
-    "allows_disclosure": false,
-    "managed_by_bugcrowd": true,
-    "safe_harbor": "partial",
-    "max_payout": 8192,
-    "targets": {
-      "in_scope": [
-        {
-          "type": "other",
-          "target": "Latest public release of LuminOS, ML1"
-        }
-      ],
-      "out_of_scope": [
-
       ]
     }
   },
@@ -3986,7 +3990,7 @@
     }
   },
   {
-    "name": "OWASP ZAP",
+    "name": "OWASP® ZAP",
     "url": "https://bugcrowd.com/owaspzap",
     "allows_disclosure": true,
     "managed_by_bugcrowd": true,
@@ -4321,6 +4325,22 @@
     }
   },
   {
+    "name": "An exciting software company with a broad and varied scope!",
+    "url": "https://bugcrowd.com/programs/teasers/CdHnBeeCFBVPYc1U1iUocDaa",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "partial",
+    "max_payout": 3000,
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
     "name": "Vulnerabilities on isle 5!",
     "url": "https://bugcrowd.com/programs/teasers/CmAFeA8hWbJsUE5S6RTMzAqZ",
     "allows_disclosure": true,
@@ -4609,6 +4629,22 @@
     }
   },
   {
+    "name": "Customer Survey Application",
+    "url": "https://bugcrowd.com/programs/teasers/ZeZo3gpD9wJGym8ugzCnoqiF",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "full",
+    "max_payout": 5000,
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
     "name": "Safety First!",
     "url": "https://bugcrowd.com/programs/teasers/auGYMAudW3xRzkUm5mhBA9nh",
     "allows_disclosure": true,
@@ -4726,7 +4762,7 @@
     "allows_disclosure": true,
     "managed_by_bugcrowd": true,
     "safe_harbor": "partial",
-    "max_payout": 2500,
+    "max_payout": 4500,
     "targets": {
       "in_scope": [
 
@@ -4807,22 +4843,6 @@
     "managed_by_bugcrowd": true,
     "safe_harbor": "partial",
     "max_payout": 0,
-    "targets": {
-      "in_scope": [
-
-      ],
-      "out_of_scope": [
-
-      ]
-    }
-  },
-  {
-    "name": "Privacy matters!",
-    "url": "https://bugcrowd.com/programs/teasers/hDw8EeYXfdQ3m5UncwUBEJBM",
-    "allows_disclosure": true,
-    "managed_by_bugcrowd": true,
-    "safe_harbor": "partial",
-    "max_payout": 4500,
     "targets": {
       "in_scope": [
 
@@ -4919,6 +4939,22 @@
     "managed_by_bugcrowd": true,
     "safe_harbor": "full",
     "max_payout": 2500,
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
+    "name": "FinTech provider",
+    "url": "https://bugcrowd.com/programs/teasers/muoeF4Rpqf48kDvaANUyG3QQ",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "partial",
+    "max_payout": 3500,
     "targets": {
       "in_scope": [
 
@@ -7703,6 +7739,10 @@
     "max_payout": 0,
     "targets": {
       "in_scope": [
+        {
+          "type": "website",
+          "target": "Zynga Poker - WebGL (zyngapoker.com)"
+        },
         {
           "type": "android",
           "target": "Zynga branded games - Android"

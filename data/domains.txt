@@ -163,6 +163,11 @@ forum-pt.ui.com
 help.ui.com
 ir.ui.com
 store.ui.com
+api.pornhub.com
+ht.pornhub.com
+mobile.pornhub.com
+www.pornhub.com
+www.pornhubpremium.com
 api-staging.airtable.com
 staging.airtable.com
 admin.demo.urbandoor.com
@@ -395,6 +400,7 @@ m.avito.ru
 www.avito.ru
 api.showmax.com
 secure.showmax.com
+stories.showmax.com
 www.showmax.com
 cdna.lystit.com
 mobileapi.lystit.com
@@ -462,6 +468,7 @@ identity.bitwarden.com
 vault.bitwarden.com
 api.omise.co
 dashboard.omise.co
+dashboard2.omise.co
 link.omise.co
 offsite.omise.co
 vault.omise.co
@@ -740,7 +747,10 @@ fdbox.net
 www.myomnipod.com
 www.poddercentral.com
 api.fortmatic.com
+api.magic.link
+auth.magic.link
 dashboard.fortmatic.com
+dashboard.magic.link
 fortmatic.com
 x2.fortmatic.com
 tribalwars.cash
@@ -966,6 +976,11 @@ rembconnect.be
 bibliotheek.myndr.nl
 osd.myndr.nl
 www.myndr.nl
+my.playstation.com
+social.playstation.com
+store.playstation.com
+transact.playstation.com
+wallets.api.playstation.com
 slots.io
 www.celo.org
 accountsettings.connect.identity.stagaws.visma.com
@@ -987,6 +1002,9 @@ api.digitalocean.com
 business.digitalocean.com
 cloud.digitalocean.com
 marketplace.digitalocean.com
+api.trycourier.app
+www.trycourier.app
+www.trycourier.com
 apps.apple.com
 get.aol.com
 help.github.com

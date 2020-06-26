@@ -2356,7 +2356,7 @@
           "confidentiality_requirement": "high",
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
-          "instruction": "Video conferencing ```calls.mail.ru```, productivity, e-commerce, B2B and content/news projects at ```*.mail.ru```,  ```*.my.com``` and dedicated project domains (```*.pandao.ru```, ```*.am.ru```, ```*.youla.ru```, ```*.vseapteki.ru```, ```*.relap.io```) except delegated and externally hosted domains and branded partner services.\n\n==Extended scope only awards critical serverside vulnerabilities, if vulnerability compromises the infrastructure (e.g. RCE, SQLi, LFR, SSRF, etc) or data outside of project's scope (e.g. personal information)  via serverside vector.==\n\nClientside vulnerabilities (XSS, CSRF) and business logic specific bugs, including privilege escalations within the product are accepted without bounty. \n==MitM and local attacks, user enumeration on registration/recovery, open redirections, insufficient session expiration, cookies working after logout etc are not accepted== unless there are additional vectors identified (e.g. ability to steal the session token via remote vector for open redirection).",
+          "instruction": "Productivity, e-commerce, B2B and content/news projects at ```*.mail.ru```,  ```*.my.com``` and dedicated project domains (```*.pandao.ru```, ```*.am.ru```, ```*.youla.ru```, ```*.vseapteki.ru```, ```*.relap.io```) except delegated and externally hosted domains and branded partner services.\n\n==Extended scope only awards critical serverside vulnerabilities, if vulnerability compromises the infrastructure (e.g. RCE, SQLi, LFR, SSRF, etc) or data outside of project's scope (e.g. personal information)  via serverside vector.==\n\nClientside vulnerabilities (XSS, CSRF) and business logic specific bugs, including privilege escalations within the product are accepted without bounty. \n==MitM and local attacks, user enumeration on registration/recovery, open redirections, insufficient session expiration, cookies working after logout etc are not accepted== unless there are additional vectors identified (e.g. ability to steal the session token via remote vector for open redirection).",
           "integrity_requirement": "high",
           "max_severity": "critical"
         },
@@ -2400,7 +2400,7 @@
           "confidentiality_requirement": "high",
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
-          "instruction": "Foodplex applications, `ucs.ru`, `*.ucs.ru`, `plazius.ru`, `*.plazius.ru`, `*.r-keeper.ru` except delegated and externally hosted domains and branded partner services.\n\n==Foodplex scope only awards critical serverside vulnerabilities, if vulnerability compromises the infrastructure (e.g. RCE, SQLi, LFR, SSRF, etc) or data outside of project's scope (e.g. personal information) via serverside vector.==\n\nClientside vulnerabilities (XSS, CSRF) and business logic specific bugs, including privilege escalations within the product are accepted without bounty.\n\nMitM and local attacks, user enumeration on registration/recovery, open redirections, insufficient session expiration, cookies working after logout etc are not accepted unless there are additional vectors identified (e.g. ability to steal the session token via remote vector for open redirection)",
+          "instruction": "Foodplex applications, `ucs.ru`, `*.ucs.ru`, `plazius.ru`, `*.plazius.ru`, `sberfood.ru`, `*.sberfood.ru`, `sbertips.ru`, `*.sbertips.ru`, `*.r-keeper.ru` except delegated and externally hosted domains and branded partner services.\n\n==Foodplex scope only awards critical serverside vulnerabilities, if vulnerability compromises the infrastructure (e.g. RCE, SQLi, LFR, SSRF, etc) or data outside of project's scope (e.g. personal information) via serverside vector.==\n\nClientside vulnerabilities (XSS, CSRF) and business logic specific bugs, including privilege escalations within the product are accepted without bounty.\n\nMitM and local attacks, user enumeration on registration/recovery, open redirections, insufficient session expiration, cookies working after logout etc are not accepted unless there are additional vectors identified (e.g. ability to steal the session token via remote vector for open redirection)",
           "integrity_requirement": "high",
           "max_severity": "critical"
         },
@@ -2466,7 +2466,7 @@
           "confidentiality_requirement": "high",
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
-          "instruction": "```mail.ru``` (without subdomains), ```e.mail.ru```, ```*.e.mail.ru```, ```touch.mail.ru```, ```*.touch.mail.ru```, ```m.mail.ru```, ```*.m.mail.ru```, ```tel.mail.ru```, ```*.tel.mail.ru```, ```light.mail.ru```, ```*.light.mail.ru```, ```octavius.mail.ru```, ```*.octavius.mail.ru```, ```smtp.mail.ru```, ```mxs.mail.ru```, ```pop.mail.ru```, ```imap.mail.ru```, ```cloud.mail.ru```, ```*.cloud.mail.ru```, ```calendar.mail.ru```, ```*.calendar.mail.ru```, ```biz.mail.ru```, ```*.biz.mail.ru```, ```edu.mail.ru```, ```*.edu.mail.ru```, ```auth.mail.ru```, ```*.auth.mail.ru```, ```o2.mail.ru```, ```*.o2.mail.ru```, ```account.mail.ru```, ```*.account.mail.ru```, ```swa.mail.ru```, ```*.swa.mail.ru``` except delegated and externally hosted domains and branded partner services.\n\n[Main portal page](https://mail.ru/), [Mail.Ru Mail](https://e.mail.ru/), My.Com MyMail, [Cloud](https://cloud.mail.ru/), [Calendar](https://calendar.mail.ru), [Mail for Business](https://biz.mail.ru), Portal authorization center, [Mail.ru Mail for iOS](https://itunes.apple.com/en/app/pocta-mail.ru/id511310430), [Mail.ru Mail for Android](https://play.google.com/store/apps/details?id=ru.mail.mailapp), [Mail.ru Cloud for iOS](https://itunes.apple.com/en/app/oblako-mail.ru/id696551382), [Mail.ru Cloud for Android](https://play.google.com/store/apps/details?id=ru.mail.cloud), [Mail.ru Calendar for Android](https://play.google.com/store/apps/details?id=ru.mail.calendar), [Код Доступа Mail.Ru for Android](https://play.google.com/store/apps/details?id=ru.mail.auth.totp), [Код Доступа Mail.Ru for iOS](https://itunes.apple.com/us/app/id1158940459) , [MyMail for iOS](https://itunes.apple.com/us/app/mymail-email-for-hotmail-gmail/id722120997?mt=8),  [MyMail for Android](https://play.google.com/store/apps/details?id=com.my.mail&hl=en)\n\nBugs common for both Mail.Ru and MyMail application / serverside are usually accepted as a single bug.",
+          "instruction": "```mail.ru``` (without subdomains), ```e.mail.ru```, ```*.e.mail.ru```, ```touch.mail.ru```, ```*.touch.mail.ru```, ```m.mail.ru```, ```*.m.mail.ru```, ```tel.mail.ru```, ```*.tel.mail.ru```, ```light.mail.ru```, ```*.light.mail.ru```, ```octavius.mail.ru```, ```*.octavius.mail.ru```, ```smtp.mail.ru```, ```mxs.mail.ru```, ```pop.mail.ru```, ```imap.mail.ru```, ```cloud.mail.ru```, ```*.cloud.mail.ru```, ```calendar.mail.ru```, ```*.calendar.mail.ru```, ```todo.mail.ru```, ```*.todo.mail.ru```, ```calls.mail.ru```, ```*.calls.mail.ru```, ```biz.mail.ru```, ```*.biz.mail.ru```, ```edu.mail.ru```, ```*.edu.mail.ru```, ```auth.mail.ru```, ```*.auth.mail.ru```, ```o2.mail.ru```, ```*.o2.mail.ru```, ```account.mail.ru```, ```*.account.mail.ru```, ```swa.mail.ru```, ```*.swa.mail.ru``` except delegated and externally hosted domains and branded partner services.\n\n[Main portal page](https://mail.ru/), [Mail.Ru Mail](https://e.mail.ru/), My.Com MyMail, [Cloud](https://cloud.mail.ru/), [Calendar](https://calendar.mail.ru), [Mail for Business](https://biz.mail.ru), Portal authorization center, [Mail.ru Mail for iOS](https://itunes.apple.com/en/app/pocta-mail.ru/id511310430), [Mail.ru Mail for Android](https://play.google.com/store/apps/details?id=ru.mail.mailapp), [Mail.ru Cloud for iOS](https://itunes.apple.com/en/app/oblako-mail.ru/id696551382), [Mail.ru Cloud for Android](https://play.google.com/store/apps/details?id=ru.mail.cloud), [Mail.ru Calendar for Android](https://play.google.com/store/apps/details?id=ru.mail.calendar), [Код Доступа Mail.Ru for Android](https://play.google.com/store/apps/details?id=ru.mail.auth.totp), [Код Доступа Mail.Ru for iOS](https://itunes.apple.com/us/app/id1158940459) , [MyMail for iOS](https://itunes.apple.com/us/app/mymail-email-for-hotmail-gmail/id722120997?mt=8),  [MyMail for Android](https://play.google.com/store/apps/details?id=com.my.mail&hl=en)\n\nBugs common for both Mail.Ru and MyMail application / serverside are usually accepted as a single bug.",
           "integrity_requirement": "high",
           "max_severity": "critical"
         },
@@ -3902,7 +3902,7 @@
     "handle": "qiwi",
     "url": "https://hackerone.com/qiwi",
     "offers_bounties": true,
-    "quick_to_bounty": true,
+    "quick_to_bounty": false,
     "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
@@ -4681,6 +4681,17 @@
         },
         {
           "asset_identifier": "next.gitter.im",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": false,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "none"
+        },
+        {
+          "asset_identifier": "partners.gitlab.com",
           "asset_type": "URL",
           "availability_requirement": null,
           "confidentiality_requirement": null,
@@ -6308,7 +6319,7 @@
     "url": "https://hackerone.com/dashlane",
     "offers_bounties": true,
     "quick_to_bounty": false,
-    "quick_to_first_response": false,
+    "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
       "in_scope": [
@@ -6738,12 +6749,12 @@
         {
           "asset_identifier": "Cloudkey",
           "asset_type": "HARDWARE",
-          "availability_requirement": "high",
-          "confidentiality_requirement": "high",
+          "availability_requirement": "medium",
+          "confidentiality_requirement": "medium",
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
           "instruction": "",
-          "integrity_requirement": "high",
+          "integrity_requirement": "medium",
           "max_severity": "critical"
         },
         {
@@ -6804,12 +6815,12 @@
         {
           "asset_identifier": "UniFi Access",
           "asset_type": "HARDWARE",
-          "availability_requirement": "high",
-          "confidentiality_requirement": "high",
+          "availability_requirement": "medium",
+          "confidentiality_requirement": "medium",
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
           "instruction": "",
-          "integrity_requirement": "high",
+          "integrity_requirement": "medium",
           "max_severity": "critical"
         },
         {
@@ -6826,23 +6837,23 @@
         {
           "asset_identifier": "UniFi Gateways (UDM, UXG, USG)",
           "asset_type": "HARDWARE",
-          "availability_requirement": "high",
-          "confidentiality_requirement": "high",
+          "availability_requirement": "medium",
+          "confidentiality_requirement": "medium",
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
           "instruction": "",
-          "integrity_requirement": "high",
+          "integrity_requirement": "medium",
           "max_severity": "critical"
         },
         {
           "asset_identifier": "UniFi LED",
           "asset_type": "HARDWARE",
-          "availability_requirement": "high",
-          "confidentiality_requirement": "high",
+          "availability_requirement": "medium",
+          "confidentiality_requirement": "medium",
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
           "instruction": "",
-          "integrity_requirement": "high",
+          "integrity_requirement": "medium",
           "max_severity": "critical"
         },
         {
@@ -6859,34 +6870,34 @@
         {
           "asset_identifier": "UniFi Protect",
           "asset_type": "HARDWARE",
-          "availability_requirement": "high",
-          "confidentiality_requirement": "high",
+          "availability_requirement": "medium",
+          "confidentiality_requirement": "medium",
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
           "instruction": "",
-          "integrity_requirement": "high",
+          "integrity_requirement": "medium",
           "max_severity": "critical"
         },
         {
           "asset_identifier": "UniFi Switches",
           "asset_type": "HARDWARE",
-          "availability_requirement": "high",
-          "confidentiality_requirement": "high",
+          "availability_requirement": "medium",
+          "confidentiality_requirement": "medium",
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
           "instruction": "",
-          "integrity_requirement": "high",
+          "integrity_requirement": "medium",
           "max_severity": "critical"
         },
         {
           "asset_identifier": "UniFi Talk",
           "asset_type": "HARDWARE",
-          "availability_requirement": "high",
-          "confidentiality_requirement": "high",
+          "availability_requirement": "medium",
+          "confidentiality_requirement": "medium",
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
           "instruction": "",
-          "integrity_requirement": "high",
+          "integrity_requirement": "medium",
           "max_severity": "critical"
         },
         {
@@ -6925,12 +6936,12 @@
         {
           "asset_identifier": "UniFi Wireless Access Points",
           "asset_type": "HARDWARE",
-          "availability_requirement": "high",
-          "confidentiality_requirement": "high",
+          "availability_requirement": "medium",
+          "confidentiality_requirement": "medium",
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
           "instruction": "",
-          "integrity_requirement": "high",
+          "integrity_requirement": "medium",
           "max_severity": "critical"
         },
         {
@@ -7180,7 +7191,61 @@
     "submission_state": "open",
     "targets": {
       "in_scope": [
-
+        {
+          "asset_identifier": "api.pornhub.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "ht.pornhub.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "mobile.pornhub.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "www.pornhub.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "www.pornhubpremium.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        }
       ],
       "out_of_scope": [
 
@@ -9278,7 +9343,7 @@
     "handle": "github",
     "url": "https://hackerone.com/github",
     "offers_bounties": true,
-    "quick_to_bounty": false,
+    "quick_to_bounty": true,
     "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
@@ -15004,6 +15069,17 @@
           "max_severity": "none"
         },
         {
+          "asset_identifier": "https://heliumdashboard.grafana.net",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": false,
+          "instruction": "This service is not hosted by Helium and is out of scope.",
+          "integrity_requirement": null,
+          "max_severity": "none"
+        },
+        {
           "asset_identifier": "network.helium.com",
           "asset_type": "URL",
           "availability_requirement": null,
@@ -16336,7 +16412,7 @@
           "confidentiality_requirement": "high",
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
-          "instruction": "**Platform 1**\nThis includes all localized TLDs and localized subdomains, for example:\n* unibet.se\n* be.unibet.com\n\n**NOTE**\nsoftgames.unibet.com is operated by a third-party. Vulnerabilities in Flash applications on that site are not currently eligible for a bounty.",
+          "instruction": "**Platform 1**\nThis includes all localized TLDs and localized subdomains, for example:\n* unibet.se\n* be.unibet.com\n\n**EXCEPTIONS**\nThe following localized TLDs and subdomains are **out of scope**:\n* *.unibet.fr\n* *.nj.unibet.com \n* *.pa.unibet.com\n\n**NOTE**\nsoftgames.unibet.com is operated by a third-party — vulnerabilities in Flash applications are ineligible for a bounty",
           "integrity_requirement": "high",
           "max_severity": "critical"
         },
@@ -18088,6 +18164,17 @@
           "max_severity": "critical"
         },
         {
+          "asset_identifier": "https://stories.showmax.com",
+          "asset_type": "URL",
+          "availability_requirement": "low",
+          "confidentiality_requirement": "low",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "Showmax blog. \n\nThe applications is hosted on a managed hosting platform so we are not interested in infrastructural reports, DDos attacks, etc.",
+          "integrity_requirement": "medium",
+          "max_severity": "high"
+        },
+        {
           "asset_identifier": "https://www.showmax.com",
           "asset_type": "URL",
           "availability_requirement": "high",
@@ -18123,18 +18210,7 @@
           "max_severity": "none"
         },
         {
-          "asset_identifier": "https://help.showmax.com",
-          "asset_type": "URL",
-          "availability_requirement": null,
-          "confidentiality_requirement": null,
-          "eligible_for_bounty": false,
-          "eligible_for_submission": false,
-          "instruction": "Example of 3rd party service out of scope",
-          "integrity_requirement": null,
-          "max_severity": "none"
-        },
-        {
-          "asset_identifier": "https://stories.showmax.com",
+          "asset_identifier": "https://chat.showmax.com",
           "asset_type": "URL",
           "availability_requirement": null,
           "confidentiality_requirement": null,
@@ -20654,6 +20730,17 @@
           "max_severity": "critical"
         },
         {
+          "asset_identifier": "dashboard2.omise.co",
+          "asset_type": "URL",
+          "availability_requirement": "medium",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "https://dashboard2.omise.co \nNew Version2 of Web Dashboard where merchants signin, signup and view all information for their accounts. Some actions are also possible to be run from the dashboard, such as refunding a charge or creating a transfer withdraw.",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
           "asset_identifier": "github.com",
           "asset_type": "SOURCE_CODE",
           "availability_requirement": "low",
@@ -21833,7 +21920,7 @@
     "url": "https://hackerone.com/wakatime",
     "offers_bounties": false,
     "quick_to_bounty": false,
-    "quick_to_first_response": true,
+    "quick_to_first_response": false,
     "submission_state": "open",
     "targets": {
       "in_scope": [
@@ -26768,7 +26855,7 @@
     "url": "https://hackerone.com/jamieweb",
     "offers_bounties": false,
     "quick_to_bounty": false,
-    "quick_to_first_response": false,
+    "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
       "in_scope": [
@@ -28082,34 +28169,6 @@
     }
   },
   {
-    "id": 26602,
-    "name": "Railto LLC",
-    "handle": "railto",
-    "url": "https://hackerone.com/railto",
-    "offers_bounties": false,
-    "quick_to_bounty": false,
-    "quick_to_first_response": true,
-    "submission_state": "disabled",
-    "targets": {
-      "in_scope": [
-        {
-          "asset_identifier": "*.railto.com",
-          "asset_type": "URL",
-          "availability_requirement": null,
-          "confidentiality_requirement": null,
-          "eligible_for_bounty": false,
-          "eligible_for_submission": true,
-          "instruction": "",
-          "integrity_requirement": null,
-          "max_severity": "critical"
-        }
-      ],
-      "out_of_scope": [
-
-      ]
-    }
-  },
-  {
     "id": 26754,
     "name": "Y Combinator",
     "handle": "ycombinator",
@@ -28449,17 +28508,6 @@
       ],
       "out_of_scope": [
         {
-          "asset_identifier": "*.gsn.ratelimited.me",
-          "asset_type": "URL",
-          "availability_requirement": null,
-          "confidentiality_requirement": null,
-          "eligible_for_bounty": false,
-          "eligible_for_submission": false,
-          "instruction": "GSN Student Operations are not included in the Hackerone program.",
-          "integrity_requirement": null,
-          "max_severity": "none"
-        },
-        {
           "asset_identifier": "feedback.ratelimited.me",
           "asset_type": "URL",
           "availability_requirement": null,
@@ -28467,17 +28515,6 @@
           "eligible_for_bounty": false,
           "eligible_for_submission": false,
           "instruction": "Managed by Canny.",
-          "integrity_requirement": null,
-          "max_severity": "none"
-        },
-        {
-          "asset_identifier": "media.ratelimited.me",
-          "asset_type": "URL",
-          "availability_requirement": null,
-          "confidentiality_requirement": null,
-          "eligible_for_bounty": false,
-          "eligible_for_submission": false,
-          "instruction": "",
           "integrity_requirement": null,
           "max_severity": "none"
         },
@@ -28501,17 +28538,6 @@
           "eligible_for_submission": false,
           "instruction": "Contact Atlassian/Statuspage",
           "integrity_requirement": "none",
-          "max_severity": "none"
-        },
-        {
-          "asset_identifier": "storage.ratelimited.me",
-          "asset_type": "URL",
-          "availability_requirement": null,
-          "confidentiality_requirement": null,
-          "eligible_for_bounty": false,
-          "eligible_for_submission": false,
-          "instruction": "",
-          "integrity_requirement": null,
           "max_severity": "none"
         },
         {
@@ -28770,17 +28796,6 @@
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
           "instruction": "This is the Crypto.com Chain Public TestNet.",
-          "integrity_requirement": null,
-          "max_severity": "critical"
-        },
-        {
-          "asset_identifier": "https://github.com/crypto-com/chain-tx-enclave",
-          "asset_type": "SOURCE_CODE",
-          "availability_requirement": null,
-          "confidentiality_requirement": null,
-          "eligible_for_bounty": true,
-          "eligible_for_submission": true,
-          "instruction": "",
           "integrity_requirement": null,
           "max_severity": "critical"
         },
@@ -29319,7 +29334,7 @@
     "offers_bounties": true,
     "quick_to_bounty": true,
     "quick_to_first_response": true,
-    "submission_state": "open",
+    "submission_state": "paused",
     "targets": {
       "in_scope": [
         {
@@ -30423,7 +30438,7 @@
     "url": "https://hackerone.com/upgrade",
     "offers_bounties": false,
     "quick_to_bounty": false,
-    "quick_to_first_response": false,
+    "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
       "in_scope": [
@@ -31294,7 +31309,7 @@
     "handle": "flickr",
     "url": "https://hackerone.com/flickr",
     "offers_bounties": true,
-    "quick_to_bounty": true,
+    "quick_to_bounty": false,
     "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
@@ -31441,6 +31456,17 @@
           "eligible_for_bounty": false,
           "eligible_for_submission": false,
           "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "none"
+        },
+        {
+          "asset_identifier": "links.flickr.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": false,
+          "instruction": "This asset is used for emails and is out of scope.",
           "integrity_requirement": null,
           "max_severity": "none"
         },
@@ -33228,6 +33254,28 @@
           "max_severity": "critical"
         },
         {
+          "asset_identifier": "api.magic.link",
+          "asset_type": "URL",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "**Any activity that could lead to the disruption of our service (DDOS) is explicitly out of scope.**\n\n**What it does:**\n- This is our main API that serves the rest of the Magic assets. As a result a lot of functionality is exposed here -- everything from creating/authenticating users to supporting our [dashboard](dashboard.magic.link) functionalities can be found here.\n\n**What to look for:**\n- We are interested in vulnerabilities which are caused by improper access control and can cause leakage/modification of user information. Please keep in mind to only ever test against your own accounts.\n\n**Test plan:**\n- Grab a set of API keys from our [dashboard](dashboard.magic.link)\n- Access our API by providing your API key to the `X-Magic-API-Key` header. Endpoints under access control uses an authorization bearer token returned by the API once the user is able to successfully authenticate. Inspecting `auth.magic.link`’s or `dashboard.magic.link`'s interactions with the API will provide a good idea of how the API can be invoked.",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "auth.magic.link",
+          "asset_type": "URL",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "This is our main product, orchestrating the one-click passwordless login experience. \nFollow the instructions on our [documentation page](https://docs.magic.link/), and please keep our [out of scope vulnerabilities](https://hackerone.com/fortmatic_inc) in mind while testing.\n\n**What it is:**\n- User interface and authentication relayer to enable passwordless authentication using magic links. The main way to interact with this interface will be through our [client SDK](https://www.npmjs.com/package/magic-sdk), our [docs](https://docs.magic.link/get-started) will help you to quickly get up and running!\n\n**What to look for:**\n- We are highly interested in any access control, token enumerations, or privilege escalation vulnerabilities and consider them as very high risk issues. Also keep an eye on other standard web vulnerabilities such as XSS/CSRF for extracting held secrets in local storage/cookies. Please note to only ever test against your own account.\n\n**What it runs on:**\n- Javascript ES6, TypeScript, React, Redux, HTML, CSS, LESS, \n\n**Test plan:**\n- Get your API keys from our [dashboard](https://dashboard.magic.link).\n- Fork our [demo app](https://go.magic.link/hello-world-code), and run with your test publishable API keys from our dashboard. \n- Inputting an email will start the login process, and you'll be off to the races!\n",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
           "asset_identifier": "dashboard.fortmatic.com",
           "asset_type": "URL",
           "availability_requirement": "low",
@@ -33237,6 +33285,17 @@
           "instruction": "Navigate to dashboard.fortmatic.com for signup, at this time there is no way for us to pre-assign credentials for our hackers, apologies for the inconvenience.\n\n**Similar to our other scopes any DDoS based exploits are explicitly out of scope**\n\n**What it runs on:**\n- HTML, LESS\n\n**What it does:**\n- Developers come in here to manage their access to the Fortmatic API. It contains features that are vital to the operation of the developers’ app -- domain verification, and obtaining/rolling their API keys. \n\n**What to look for:**\n- Any web vulnerabilities are of concern here e.g, cross-site scripting (XSS) or cross-site request forgery (CSRF) that could force the developer to commit unwanted actions or on behalf of another user. Also interested in vulnerabilities in the OAuth flow that occur for user sign-up/sign-in.\n\n**Test plan:**\n- This is a fairly standard web application, with no particular gotchas. Your standard tool kit should be all that you’d need here.\n",
           "integrity_requirement": "medium",
           "max_severity": "high"
+        },
+        {
+          "asset_identifier": "dashboard.magic.link",
+          "asset_type": "URL",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "Navigate to our [dashboard](dashboard.magic.link) for signup, at this time there is no way for us to pre-assign credentials for our testers, apologies for the inconvenience. Please keep our [out of scope vulnerabilities](https://hackerone.com/fortmatic_inc) in mind while testing.\n\n**Similar to our other scopes any DDoS based exploits are explicitly out of scope**\n\n**What it runs on:**\n- React, Redux, Javascript, Typescript, HTML, CSS, LESS\n\n**What it does:**\n- Developers come in here to manage their access to the Magic API. It contains features that are vital to the operation of the developers’ app -- billing setup, branding customizations*, and obtaining/rolling their API keys, to name a few. \n\n**What to look for:**\n- Any web vulnerabilities are of concern here e.g, cross-site scripting (XSS) or cross-site request forgery (CSRF) that could force the developer to commit unwanted actions or on behalf of another user. Access control bypasses are also of interest to us, can you maybe bypass payments to get access to branding, or access to other higher paid tier features?\n\n**Test plan:**\n- This is a fairly standard web application, with no particular gotchas. Your standard tool kit should be all that you’d need here.\n\n*Branding is available to developer tier and up. However a free trial can be used to access any paid tier features.",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
         },
         {
           "asset_identifier": "fortmatic.com",
@@ -33326,7 +33385,7 @@
     "handle": "ford",
     "url": "https://hackerone.com/ford",
     "offers_bounties": false,
-    "quick_to_bounty": true,
+    "quick_to_bounty": false,
     "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
@@ -34350,7 +34409,7 @@
     "url": "https://hackerone.com/filezilla",
     "offers_bounties": true,
     "quick_to_bounty": false,
-    "quick_to_first_response": true,
+    "quick_to_first_response": false,
     "submission_state": "open",
     "targets": {
       "in_scope": [
@@ -34742,7 +34801,7 @@
     "handle": "allegro",
     "url": "https://hackerone.com/allegro",
     "offers_bounties": true,
-    "quick_to_bounty": false,
+    "quick_to_bounty": true,
     "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
@@ -36846,7 +36905,7 @@
     "handle": "forescout_technologies",
     "url": "https://hackerone.com/forescout_technologies",
     "offers_bounties": true,
-    "quick_to_bounty": true,
+    "quick_to_bounty": false,
     "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
@@ -41292,6 +41351,17 @@
           "instruction": "",
           "integrity_requirement": null,
           "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "Amazon Retail Subsidiaries",
+          "asset_type": "OTHER",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
         }
       ],
       "out_of_scope": [
@@ -41818,6 +41888,133 @@
     }
   },
   {
+    "id": 44879,
+    "name": "PlayStation",
+    "handle": "playstation",
+    "url": "https://hackerone.com/playstation",
+    "offers_bounties": true,
+    "quick_to_bounty": true,
+    "quick_to_first_response": true,
+    "submission_state": "open",
+    "targets": {
+      "in_scope": [
+        {
+          "asset_identifier": "*.api.playstation.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "*.playstation.net",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "*.sonyentertainmentnetwork.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "PlayStation 4",
+          "asset_type": "HARDWARE",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "Console system and operating system",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "PlayStation Network",
+          "asset_type": "OTHER",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "See in scope assets above - domains/subdomains not listed are out of scope",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "my.playstation.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "social.playstation.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "store.playstation.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "transact.playstation.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "wallets.api.playstation.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        }
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
     "id": 44956,
     "name": "RGhost",
     "handle": "rghost",
@@ -41852,7 +42049,7 @@
     "url": "https://hackerone.com/kopikas_entertainment",
     "offers_bounties": false,
     "quick_to_bounty": false,
-    "quick_to_first_response": true,
+    "quick_to_first_response": false,
     "submission_state": "open",
     "targets": {
       "in_scope": [
@@ -41909,7 +42106,7 @@
     "url": "https://hackerone.com/celo",
     "offers_bounties": true,
     "quick_to_bounty": true,
-    "quick_to_first_response": true,
+    "quick_to_first_response": false,
     "submission_state": "open",
     "targets": {
       "in_scope": [
@@ -42069,7 +42266,7 @@
           "confidentiality_requirement": "high",
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
-          "instruction": "This is \"Visma eAccounting\" (aka Visma eEkonomi / Visma ePasseli) which is an ERP system available in Sweden, Norway, Finland and The Netherlands.\n\nYou can read more on https://www.visma.no/eaccounting/english/\n\nYou need to register an user to test this system. The sign-up up process is described in this document:\n\nhttps://vismabugbountyprod.z16.web.core.windows.net/Visma-eAccounting-hackerone-getting-started.pdf\n\nThis video also shows the entire setup (only Swedish audio) https://www.youtube.com/watch?v=kVr_CXgfhi0&t=4s\n\nTLDR: Goto https://admin.stage.vismaonline.com/Customer/StudentSignup.aspx?country=en&uilang=en&companyId= and sign up with the training code \"04h2v\"\n\n**Out of scope:**\n - Session invalidation issues (e.g. logout, password change, email change, role change, user deletion, etc).\n- Modification of gray-out fields when logged in with an admin account.\n",
+          "instruction": "This is \"Visma eAccounting\" (aka Visma eEkonomi / Visma ePasseli) which is an ERP system available in Sweden, Norway, Finland and The Netherlands.\n\nYou can read more on https://www.visma.no/eaccounting/english/\n\nYou need to register an user to test this system. The sign-up up process is described in this document:\n\nhttps://vismabugbountyprod.z16.web.core.windows.net/Visma-eAccounting-hackerone-getting-started.pdf\n\nThis video also shows the entire setup (only Swedish audio) https://www.youtube.com/watch?v=kVr_CXgfhi0&t=4s\n\nTLDR: Goto https://admin.stage.vismaonline.com/Customer/StudentSignup.aspx?country=en&uilang=en&companyId= and sign up with the training code \"04h2v\"\n\n**Out of scope:**\n - Session invalidation issues (e.g. logout, password change, email change, role change, user deletion, etc).\n- Modification of gray-out fields when logged in with an admin account.\n- Improper access control: manipulation of the message conversation by members that have no permission (edit subject, join thread conversation, closing the conversation).\n",
           "integrity_requirement": "high",
           "max_severity": "critical"
         },
@@ -42610,6 +42807,67 @@
     "targets": {
       "in_scope": [
 
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
+    "id": 47876,
+    "name": "Courier",
+    "handle": "trycourier",
+    "url": "https://hackerone.com/trycourier",
+    "offers_bounties": false,
+    "quick_to_bounty": false,
+    "quick_to_first_response": true,
+    "submission_state": "open",
+    "targets": {
+      "in_scope": [
+        {
+          "asset_identifier": "*.ct0.app",
+          "asset_type": "URL",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "The ct0.app domains are used for click-through tracking.",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "api.trycourier.app",
+          "asset_type": "URL",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "This API is used by Courier customers to programmatically send notifications to their users; this is the core use case for our product, without which Courier is of limited value.",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "www.trycourier.app",
+          "asset_type": "URL",
+          "availability_requirement": "medium",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "This is our web application, which customers use to design & configure the notifications they will send via our API.",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "www.trycourier.com",
+          "asset_type": "URL",
+          "availability_requirement": "low",
+          "confidentiality_requirement": "none",
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "This is our public-facing website. It is a static site, and open source:\n\nhttps://github.com/trycourier/website",
+          "integrity_requirement": "medium",
+          "max_severity": "high"
+        }
       ],
       "out_of_scope": [
 
