@@ -27,6 +27,88 @@
     }
   },
   {
+    "id": "/coingecko/coingecko",
+    "name": "Coingecko",
+    "url": "https://hackenproof.com/coingecko/coingecko",
+    "archived": false,
+    "targets": {
+      "in_scope": [
+        {
+          "target": "*.coingecko.com",
+          "type": "Web",
+          "instruction": "",
+          "severity": "Critical",
+          "reward": "Bounty"
+        },
+        {
+          "target": "api.coingecko.com",
+          "type": "API",
+          "instruction": "Documentation: https://www.coingecko.com/en/api",
+          "severity": "Critical",
+          "reward": "Bounty"
+        },
+        {
+          "target": "Android App",
+          "type": "Android",
+          "instruction": "https://play.google.com/store/apps/details?id=com.coingecko.coingeckoapp",
+          "severity": "Critical",
+          "reward": "Bounty"
+        },
+        {
+          "target": "iOS App",
+          "type": "iOS",
+          "instruction": "https://apps.apple.com/us/app/coingecko-bitcoin-crypto-app/id1390323960",
+          "severity": "Critical",
+          "reward": "Bounty"
+        },
+        {
+          "target": "Chrome Extension",
+          "type": "Extension",
+          "instruction": "https://chrome.google.com/webstore/detail/coingecko-bitcoin-cryptoc/ofmoicejmilkphppeoekfhbpkleppdlb",
+          "severity": "Critical",
+          "reward": "Bounty"
+        }
+      ],
+      "out_of_scope": [
+        {
+          "target": "blog.coingecko.com",
+          "type": "Web",
+          "instruction": "",
+          "severity": "None",
+          "reward": "--"
+        },
+        {
+          "target": "landing.coingecko.com",
+          "type": "Web",
+          "instruction": "",
+          "severity": "None",
+          "reward": "--"
+        },
+        {
+          "target": "assets.coingecko.com",
+          "type": "Web",
+          "instruction": "",
+          "severity": "None",
+          "reward": "--"
+        },
+        {
+          "target": "newsletter.coingecko.com",
+          "type": "Web",
+          "instruction": "",
+          "severity": "None",
+          "reward": "--"
+        },
+        {
+          "target": "selfserve.coingecko.com",
+          "type": "Web",
+          "instruction": "",
+          "severity": "None",
+          "reward": "--"
+        }
+      ]
+    }
+  },
+  {
     "id": "/crypviser/crypviser-network",
     "name": "Crypviser Network",
     "url": "https://hackenproof.com/crypviser/crypviser-network",
@@ -88,6 +170,61 @@
     "targets": {
       "in_scope": [
 
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
+    "id": "/gate-dot-io/gate-dot-io-exchange",
+    "name": "Gate.io Exchange",
+    "url": "https://hackenproof.com/gate-dot-io/gate-dot-io-exchange",
+    "archived": false,
+    "targets": {
+      "in_scope": [
+        {
+          "target": "gate.io",
+          "type": "Web",
+          "instruction": "",
+          "severity": "Critical",
+          "reward": "Bounty"
+        },
+        {
+          "target": "iOS App",
+          "type": "iOS",
+          "instruction": "https://apps.apple.com/us/app/gate-io/id1294998195 Or https://testflight.apple.com/join/tBYCVJgJ",
+          "severity": "Critical",
+          "reward": "Bounty"
+        },
+        {
+          "target": "Android App",
+          "type": "Android",
+          "instruction": "https://play.google.com/store/apps/details?id=com.gateio.gateio",
+          "severity": "Critical",
+          "reward": "Bounty"
+        },
+        {
+          "target": "Windows App",
+          "type": "Windows",
+          "instruction": "https://gapp.b.live/Gateio_Setup-winapp",
+          "severity": "Critical",
+          "reward": "Bounty"
+        },
+        {
+          "target": "Mac App",
+          "type": "Mac",
+          "instruction": "https://gapp.b.live/Gate.io-macapp",
+          "severity": "Critical",
+          "reward": "Bounty"
+        },
+        {
+          "target": "API",
+          "type": "API",
+          "instruction": "https://www.gate.io/api2",
+          "severity": "Critical",
+          "reward": "Bounty"
+        }
       ],
       "out_of_scope": [
 
@@ -240,21 +377,21 @@
         {
           "target": "TTC Connect Wallet",
           "type": "iOS",
-          "instruction": "",
+          "instruction": "https://itunes.apple.com/us/app/ttc-connect-wallet/id1436822085?mt=8",
           "severity": "Critical",
           "reward": "Bounty"
         },
         {
           "target": "TTC Connect",
           "type": "Android",
-          "instruction": "",
+          "instruction": "https://play.google.com/store/apps/details?id=com.ttc.wallet&hl=en_US",
           "severity": "Critical",
           "reward": "Bounty"
         },
         {
           "target": "TTC Connect APK",
           "type": "Android",
-          "instruction": "",
+          "instruction": "https://d1u6eqogwsdivn.cloudfront.net/apk/TTC_Connect.apk",
           "severity": "Critical",
           "reward": "Bounty"
         }
@@ -341,7 +478,7 @@
         {
           "target": "VIP191",
           "type": "Blockchain",
-          "instruction": "",
+          "instruction": "VIP191 - Designated Gas Payer function",
           "severity": "Critical",
           "reward": "Bounty"
         }
@@ -361,14 +498,14 @@
         {
           "target": "iOS Wallet",
           "type": "iOS",
-          "instruction": "",
+          "instruction": "https://itunes.apple.com/app/vechainthor/id1397679485?mt=8",
           "severity": "Critical",
           "reward": "Bounty"
         },
         {
           "target": "Android Wallet",
           "type": "Android",
-          "instruction": "",
+          "instruction": "https://play.google.com/store/apps/details?id=com.vechain.wallet",
           "severity": "Critical",
           "reward": "Bounty"
         }
