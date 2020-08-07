@@ -1383,6 +1383,7 @@ apps.topcoder.com
 arena.topcoder.com
 blockchain.topcoder.com
 bugzilla.topcoder.com
+challenges.topcoder.com
 cmap.topcoder.com
 cognitive.topcoder.com
 community-app.topcoder.com
@@ -1467,10 +1468,14 @@ yapi.clario.co
 be.test.insolar.io
 wallet-api.test.insolar.io
 wallet.test.insolar.io
+www.amazon.ca
 www.amazon.co.jp
 www.amazon.co.uk
+www.amazon.com.mx
 www.amazon.de
+www.amazon.es
 www.amazon.fr
+www.amazon.in
 app.lemlist.com
 hydass.be
 rem-b.com
@@ -1513,6 +1518,7 @@ www.superdrug.com
 app.smtp2go.com
 smtp2go.com
 ews.qa.finra.org
+calc.buggywebsite.com
 api.rs2.usw2.rockset.com
 console.rockset.com
 docs.rockset.com
@@ -1713,8 +1719,6 @@ associatie.kuleuven.be
 webwsp.aps.kuleuven.be
 developers.sentiance.com
 asupport.suivo.com
-nextel.be
-my.nextel.be
 www2.telenet.be
 www.tempo-team.com
 www.tempo-team.nl

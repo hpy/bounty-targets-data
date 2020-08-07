@@ -97,6 +97,7 @@ type ActivitiesAddedToPentest implements ActivityInterface & Node {
   actor: ActorUnion
   created_at: DateTime!
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -116,6 +117,7 @@ type ActivitiesAgreedOnGoingPublic implements ActivityInterface & Node & ReportA
   first_to_agree: Boolean!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -139,6 +141,7 @@ type ActivitiesBountyAwarded implements ActivityInterface & Node & ReportActivit
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -162,6 +165,7 @@ type ActivitiesBountySuggested implements ActivityInterface & Node & ReportActiv
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -182,6 +186,7 @@ type ActivitiesBugCloned implements ActivityInterface & Node & ReportActivityInt
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -204,6 +209,7 @@ type ActivitiesBugDuplicate implements ActivityInterface & Node & ReportActivity
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -226,6 +232,7 @@ type ActivitiesBugFiled implements ActivityInterface & Node & ReportActivityInte
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -246,6 +253,7 @@ type ActivitiesBugInactive implements ActivityInterface & Node & ReportActivityI
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -266,6 +274,7 @@ type ActivitiesBugInformative implements ActivityInterface & Node & ReportActivi
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -286,6 +295,7 @@ type ActivitiesBugNeedsMoreInfo implements ActivityInterface & Node & ReportActi
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -306,6 +316,7 @@ type ActivitiesBugNew implements ActivityInterface & Node & ReportActivityInterf
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -326,6 +337,7 @@ type ActivitiesBugNotApplicable implements ActivityInterface & Node & ReportActi
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -346,6 +358,7 @@ type ActivitiesBugReopened implements ActivityInterface & Node & ReportActivityI
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -366,6 +379,7 @@ type ActivitiesBugResolved implements ActivityInterface & Node & ReportActivityI
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -386,6 +400,7 @@ type ActivitiesBugRetesting implements ActivityInterface & Node & ReportActivity
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -406,6 +421,7 @@ type ActivitiesBugSpam implements ActivityInterface & Node & ReportActivityInter
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -426,6 +442,7 @@ type ActivitiesBugTriaged implements ActivityInterface & Node & ReportActivityIn
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -446,6 +463,7 @@ type ActivitiesCancelledDisclosureRequest implements ActivityInterface & Node & 
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -466,6 +484,7 @@ type ActivitiesChangedScope implements ActivityInterface & Node & ReportActivity
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -485,6 +504,7 @@ type ActivitiesChecklistCheckClaimed implements ChecklistCheckResponseActivityIn
   actor: ActorUnion
   created_at: DateTime!
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -503,6 +523,7 @@ type ActivitiesChecklistCheckExpired implements ChecklistCheckResponseActivityIn
   actor: ActorUnion
   created_at: DateTime!
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -521,6 +542,7 @@ type ActivitiesChecklistCheckReleased implements ChecklistCheckResponseActivityI
   actor: ActorUnion
   created_at: DateTime!
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -539,6 +561,7 @@ type ActivitiesChecklistCheckResponseApproved implements ChecklistCheckResponseA
   actor: ActorUnion
   created_at: DateTime!
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -558,6 +581,7 @@ type ActivitiesChecklistCheckResponseComment implements AttachmentActivityInterf
   attachments: [Attachment]
   created_at: DateTime!
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -577,6 +601,7 @@ type ActivitiesChecklistCheckResponseCreated implements AttachmentActivityInterf
   attachments: [Attachment]
   created_at: DateTime!
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -595,6 +620,7 @@ type ActivitiesChecklistCheckResponseRejected implements ChecklistCheckResponseA
   actor: ActorUnion
   created_at: DateTime!
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -614,6 +640,7 @@ type ActivitiesChecklistCheckResponseUpdated implements AttachmentActivityInterf
   attachments: [Attachment]
   created_at: DateTime!
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -632,6 +659,7 @@ type ActivitiesChecklistCheckRevoked implements ChecklistCheckResponseActivityIn
   actor: ActorUnion
   created_at: DateTime!
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -667,6 +695,7 @@ type ActivitiesComment implements ActivityInterface & Node & ReportActivityInter
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -687,6 +716,7 @@ type ActivitiesCommentsClosed implements ActivityInterface & Node & ReportActivi
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -708,6 +738,7 @@ type ActivitiesCveIdAdded implements ActivityInterface & Node & ReportActivityIn
   cve_ids: [String]
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -728,6 +759,7 @@ type ActivitiesDraftStarted implements ActivityInterface & Node & ReportActivity
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -748,6 +780,7 @@ type ActivitiesExternalAdvisoryAdded implements ActivityInterface & Node & Repor
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -769,6 +802,7 @@ type ActivitiesExternalUserInvitationCancelled implements ActivityInterface & No
   email: String
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -790,6 +824,7 @@ type ActivitiesExternalUserInvited implements ActivityInterface & Node & ReportA
   email: String
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -812,6 +847,7 @@ type ActivitiesExternalUserJoined implements ActivityInterface & Node & ReportAc
   duplicate_report_id: Int
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -832,6 +868,7 @@ type ActivitiesExternalUserRemoved implements ActivityInterface & Node & ReportA
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -855,6 +892,7 @@ type ActivitiesGroupAssignedToBug implements ActivityInterface & Node & ReportAc
   genius_execution_id: ID
   group: TeamMemberGroup
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -875,6 +913,7 @@ type ActivitiesHackerRequestedMediation implements ActivityInterface & Node & Re
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -932,6 +971,7 @@ type ActivitiesManuallyDisclosed implements ActivityInterface & Node & ReportAct
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -952,6 +992,7 @@ type ActivitiesMediationRequested implements ActivityInterface & Node & ReportAc
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -972,6 +1013,7 @@ type ActivitiesNobodyAssignedToBug implements ActivityInterface & Node & ReportA
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -992,6 +1034,7 @@ type ActivitiesNotEligibleForBounty implements ActivityInterface & Node & Report
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -1009,6 +1052,7 @@ type ActivitiesPentestCheckAssigned implements ActivityInterface & Node {
   actor: ActorUnion
   created_at: DateTime!
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -1024,6 +1068,7 @@ type ActivitiesPentestCheckCompleted implements ActivityInterface & Node {
   actor: ActorUnion
   created_at: DateTime!
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -1039,6 +1084,7 @@ type ActivitiesPentestCheckUnassigned implements ActivityInterface & Node {
   actor: ActorUnion
   created_at: DateTime!
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -1054,6 +1100,7 @@ type ActivitiesPentestCheckUpdated implements ActivityInterface & Node {
   actor: ActorUnion
   created_at: DateTime!
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -1069,6 +1116,7 @@ type ActivitiesPentestPublished implements ActivityInterface & Node {
   actor: ActorUnion
   created_at: DateTime!
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -1084,6 +1132,7 @@ type ActivitiesPentestStarted implements ActivityInterface & Node {
   actor: ActorUnion
   created_at: DateTime!
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -1099,6 +1148,7 @@ type ActivitiesPentesterAwarded implements ActivityInterface & Node {
   actor: ActorUnion
   created_at: DateTime!
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -1114,6 +1164,7 @@ type ActivitiesProgramHackerJoined implements ActivityInterface & Node {
   actor: ActorUnion
   created_at: DateTime!
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -1130,6 +1181,7 @@ type ActivitiesProgramHackerLeft implements ActivityInterface & Node {
   actor: ActorUnion
   created_at: DateTime!
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -1149,6 +1201,7 @@ type ActivitiesProgramInactive implements ActivityInterface & Node & ReportActiv
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -1169,6 +1222,7 @@ type ActivitiesReassignedToTeam implements ActivityInterface & Node & ReportActi
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -1189,6 +1243,7 @@ type ActivitiesReferenceIdAdded implements ActivityInterface & Node & ReportActi
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -1208,6 +1263,7 @@ type ActivitiesRemovedFromPentest implements ActivityInterface & Node {
   actor: ActorUnion
   created_at: DateTime!
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -1226,6 +1282,7 @@ type ActivitiesReportBecamePublic implements ActivityInterface & Node & ReportAc
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -1246,6 +1303,7 @@ type ActivitiesReportCollaboratorInvited implements ActivityInterface & Node & R
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -1266,6 +1324,7 @@ type ActivitiesReportCollaboratorJoined implements ActivityInterface & Node & Re
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -1283,6 +1342,7 @@ type ActivitiesReportRetestApproved implements ActivityInterface & Node {
   actor: ActorUnion
   created_at: DateTime!
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -1298,6 +1358,7 @@ type ActivitiesReportRetestRejected implements ActivityInterface & Node {
   actor: ActorUnion
   created_at: DateTime!
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -1316,10 +1377,13 @@ type ActivitiesReportSeverityUpdated implements ActivityInterface & Node & Repor
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
   message: String
+  new_severity: Severity
+  old_severity: Severity
   report: Report
   triage_inbox_item: TriageInboxItem
   updated_at: DateTime!
@@ -1336,6 +1400,7 @@ type ActivitiesReportTitleUpdated implements ActivityInterface & Node & ReportAc
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -1358,6 +1423,7 @@ type ActivitiesReportUndisclosed implements ActivityInterface & Node & ReportAct
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -1378,6 +1444,7 @@ type ActivitiesReportVulnerabilityTypesUpdated implements ActivityInterface & No
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -1400,6 +1467,7 @@ type ActivitiesRetestUserExpired implements ActivityInterface & Node & ReportAct
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -1420,6 +1488,7 @@ type ActivitiesSwagAwarded implements ActivityInterface & Node & ReportActivityI
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -1438,6 +1507,7 @@ type ActivitiesTeamBountyTableUpdated implements ActivityInterface & Node {
   actor: ActorUnion
   created_at: DateTime!
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -1453,6 +1523,7 @@ type ActivitiesTeamPolicyUpdated implements ActivityInterface & Node {
   actor: ActorUnion
   created_at: DateTime!
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -1468,6 +1539,7 @@ type ActivitiesTeamPostCreated implements ActivityInterface & Node {
   actor: ActorUnion
   created_at: DateTime!
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -1483,6 +1555,7 @@ type ActivitiesTeamPublished implements ActivityInterface & Node {
   actor: ActorUnion
   created_at: DateTime!
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -1498,6 +1571,7 @@ type ActivitiesTeamStructuredScopeUpdated implements ActivityInterface & Node {
   actor: ActorUnion
   created_at: DateTime!
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -1517,6 +1591,7 @@ type ActivitiesUserAssignedToBug implements ActivityInterface & Node & ReportAct
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -1537,6 +1612,7 @@ type ActivitiesUserBannedFromProgram implements ActivityInterface & Node & Repor
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -1558,6 +1634,7 @@ type ActivitiesUserCompletedRetest implements ActivityInterface & Node & ReportA
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -1575,6 +1652,7 @@ type ActivitiesUserJoined implements ActivityInterface & Node {
   actor: ActorUnion
   created_at: DateTime!
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -1593,6 +1671,7 @@ type ActivitiesUserLeftRetest implements ActivityInterface & Node & ReportActivi
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -1632,6 +1711,7 @@ interface ActivityInterface {
   actor: ActorUnion
   created_at: DateTime!
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -3285,6 +3365,7 @@ interface ChecklistCheckResponseActivityInterface {
   actor: ActorUnion
   created_at: DateTime!
   i_can_edit: Boolean!
+  i_can_flag: Boolean!
   id: ID!
   internal: Boolean
   markdown_message: String
@@ -3829,6 +3910,17 @@ type CountryDetails implements Node {
   flag: String
   id: ID!
   name: String
+}
+
+"""
+Coverage Analytics Summary type
+"""
+type CoverageAnalyticsSummary implements Node {
+  finders: Int!
+  hits: Int!
+  id: ID!
+  minutes: Int!
+  report_count: Int!
 }
 
 """
@@ -5580,8 +5672,10 @@ input CreateSlackPipelineInput {
   notification_report_not_eligible_for_bounty: Boolean!
   notification_report_public_comment_added: Boolean!
   notification_report_reopened: Boolean!
+  notification_report_retesting: Boolean!
   notification_report_swag_awarded: Boolean!
   notification_report_triaged: Boolean!
+  notification_report_user_completed_retest: Boolean!
   team_id: ID!
 }
 
@@ -6110,6 +6204,54 @@ type CreateUserBountiesReportPayload implements MutationResult {
     types: [ErrorTypeEnum]
   ): ErrorConnection!
   me: User
+  was_successful: Boolean!
+}
+
+"""
+Autogenerated input type of CreateUserFlag
+"""
+input CreateUserFlagInput {
+  category: UserFlagCategoryEnum!
+
+  """
+  A unique identifier for the client performing the mutation.
+  """
+  clientMutationId: String
+  note: String!
+  username: String!
+}
+
+"""
+Autogenerated return type of CreateUserFlag
+"""
+type CreateUserFlagPayload implements MutationResult {
+  """
+  A unique identifier for the client performing the mutation.
+  """
+  clientMutationId: String
+  errors(
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+    types: [ErrorTypeEnum]
+  ): ErrorConnection!
+  user: User
   was_successful: Boolean!
 }
 
@@ -9690,7 +9832,6 @@ type JiraIntegration implements Node {
   ): JiraPriorityToSeverityRatingConnection
   pid: Int!
   project_selection_enabled: Boolean!
-  stored_project_meta: [Hash]
   summary: String!
   team: Team!
   updated_at: DateTime!
@@ -9700,17 +9841,10 @@ type JiraIntegration implements Node {
 A JIRA Oauth for a team
 """
 type JiraOauth implements Node {
-  """
-  Assignables for a project
-  """
-  assignables(project_id: Int!): [Hash]
   configured: Boolean!
   created_at: DateTime!
   id: ID!
   jwt: Boolean!
-  priorities: [Hash]
-  project_meta(issue_type: Int, project_id: Int): [Hash]
-  projects: [Hash]
   site: String
   team: Team!
   updated_at: DateTime!
@@ -10601,6 +10735,7 @@ type Mutation {
   createTrigger(input: CreateTriggerInput!): CreateTriggerPayload
   createTwoFactorAuthenticationCredentials(input: CreateTwoFactorAuthenticationCredentialsInput!): CreateTwoFactorAuthenticationCredentialsPayload
   createUserBountiesReport(input: CreateUserBountiesReportInput!): CreateUserBountiesReportPayload
+  createUserFlag(input: CreateUserFlagInput!): CreateUserFlagPayload
   createUserLufthansaAccount(input: CreateUserLufthansaAccountInput!): CreateUserLufthansaAccountPayload
   createUserPayoutsReport(input: CreateUserPayoutsReportInput!): CreateUserPayoutsReportPayload
   createUserTwoFactorReset(input: CreateUserTwoFactorResetInput!): CreateUserTwoFactorResetPayload
@@ -10664,14 +10799,17 @@ type Mutation {
   shareReportViaEmail(input: ShareReportViaEmailInput!): ShareReportViaEmailPayload
   startVpnInstance(input: StartVpnInstanceInput!): StartVpnInstancePayload
   stopVpnInstance(input: StopVpnInstanceInput!): StopVpnInstancePayload
+  swapCertificatesSamlProvider(input: SwapCertificatesSamlProviderMutationInput!): SwapCertificatesSamlProviderMutationPayload
   testWebhook(input: TestWebhookRequestInput!): TestWebhookRequestPayload
   toggleFollowUserMutation(input: ToggleFollowUserInput!): ToggleFollowUserPayload
+  toggleSurveyRatingItemVisibleOnUserProfile(input: ToggleSurveyRatingItemVisibleOnUserProfileInput!): ToggleSurveyRatingItemVisibleOnUserProfilePayload
   toggleTeamUpdatesSubscription(input: ToggleTeamUpdatesSubscriptionInput!): ToggleTeamUpdatesSubscriptionPayload
   trackerIncrement(input: TrackerIncrementInput!): TrackerIncrementPayload
   unarchiveStructuredScope(input: UnarchiveStructuredScopeInput!): UnarchiveStructuredScopePayload
   unclaimReportRetest(input: UnclaimReportRetestInput!): UnclaimReportRetestPayload
   unsubscribeMailingList(input: UnsubscribeMailingListInput!): UnsubscribeMailingListPayload
   updateAccountRecoveryPhoneNumber(input: UpdateAccountRecoveryPhoneNumberInput!): UpdateAccountRecoveryPhoneNumberPayload
+  updateAlternativeCertificateSamlProvider(input: UpdateAlternativeCertificateSamlProviderInput!): UpdateAlternativeCertificateSamlProviderPayload
   updateAssigneeToGroup(input: UpdateAssigneeToGroupInput!): UpdateAssigneeToGroupPayload
   updateAssigneeToNobody(input: UpdateAssigneeToNobodyInput!): UpdateAssigneeToNobodyPayload
   updateAssigneeToUser(input: UpdateAssigneeToUserInput!): UpdateAssigneeToUserPayload
@@ -12082,7 +12220,7 @@ type Pentester implements Node {
   award_amount: String!
   completed_at: DateTime
   id: ID!
-  pentest: Pentest!
+  pentest: Pentest
   revoked_at: DateTime
   state: PentesterStateEnum!
   user: User!
@@ -14692,6 +14830,8 @@ type RevokeReportShareTokenPayload implements MutationResult {
 }
 
 type SamlProvider {
+  alternative_certificate: String
+  alternative_certificate_fingerprint: String
   approval_requested_at: DateTime
   certificate: String!
   certificate_fingerprint: String!
@@ -15378,8 +15518,10 @@ type SlackPipeline implements Node & ResourceInterface {
   notification_report_not_eligible_for_bounty: Boolean!
   notification_report_public_comment_added: Boolean!
   notification_report_reopened: Boolean!
+  notification_report_retesting: Boolean!
   notification_report_swag_awarded: Boolean!
   notification_report_triaged: Boolean!
+  notification_report_user_completed_retest: Boolean!
   team: Team!
   updated_at: DateTime!
   url: URI!
@@ -16194,8 +16336,10 @@ A survey rating
 """
 type SurveyRating implements Node {
   _id: ID!
+  completed_at: DateTime
   created_at: DateTime!
   id: ID!
+  respondent: User
   state: String
   survey_rating_items(
     """
@@ -16235,8 +16379,36 @@ type SurveyRatingItem implements Node {
   public_comment: String
   rating: Int
   rating_out_of: Int!
+  subject: SurveyRatingItemSubjectUnion
+  survey_rating: SurveyRating
   team: Team
   updated_at: DateTime
+  visible_on_user_profile: Boolean
+}
+
+"""
+The connection type for SurveyRatingItem.
+"""
+type SurveyRatingItemConnection {
+  """
+  A list of edges.
+  """
+  edges: [SurveyRatingItemsEdge]
+
+  """
+  A list of nodes.
+  """
+  nodes: [SurveyRatingItem]
+
+  """
+  Information to aid in pagination.
+  """
+  pageInfo: PageInfo!
+
+  """
+  Int
+  """
+  total_count: Int!
 }
 
 input SurveyRatingItemResultInput {
@@ -16245,6 +16417,11 @@ input SurveyRatingItemResultInput {
   public_comment: String
   rating: Int
 }
+
+"""
+The actor of an survey rating item
+"""
+union SurveyRatingItemSubjectUnion = Pentest | Pentester | Team
 
 """
 The connection type for SurveyRatingItem.
@@ -16443,6 +16620,51 @@ type SwagEdge {
   The item at the end of the edge.
   """
   node: Swag
+}
+
+"""
+Autogenerated input type of SwapCertificatesSamlProviderMutation
+"""
+input SwapCertificatesSamlProviderMutationInput {
+  """
+  A unique identifier for the client performing the mutation.
+  """
+  clientMutationId: String
+  team_id: ID!
+}
+
+"""
+Autogenerated return type of SwapCertificatesSamlProviderMutation
+"""
+type SwapCertificatesSamlProviderMutationPayload implements MutationResult {
+  """
+  A unique identifier for the client performing the mutation.
+  """
+  clientMutationId: String
+  errors(
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+    types: [ErrorTypeEnum]
+  ): ErrorConnection!
+  saml_provider: SamlProvider
+  was_successful: Boolean!
 }
 
 """
@@ -16741,6 +16963,7 @@ type Team implements ActivitiesInterface & Node & ResourceInterface {
   controlled_launch_team: Boolean
   cover_color: String
   cover_photo_url: String
+  coverage_analytics_summary(end_date: Date!, start_date: Date!): CoverageAnalyticsSummary!
   created_at: DateTime
   credential_instruction: String
   credential_instruction_html: String
@@ -16925,6 +17148,7 @@ type Team implements ActivitiesInterface & Node & ResourceInterface {
   hide_bounty_amounts: Boolean
   i_am_a_whitelisted_reporter: Boolean
   i_can_assign_report_to_pentests: Boolean!
+  i_can_create_draft_reports: Boolean!
   i_can_create_jira_webhook: Boolean
   i_can_create_pentest: Boolean!
   i_can_create_report: Boolean
@@ -17991,7 +18215,17 @@ A TeamIntegrations object for Jira
 type TeamIntegrationsJira implements Node & TeamIntegrationInterface {
   _id: ID!
   active: Boolean!
+
+  """
+  Assignables for a project
+  """
+  assignables(project_id: Int!): [Hash]
+  has_authentication: Boolean
   id: ID!
+  priorities: [Hash]
+  project_meta(issue_type: Int, project_id: Int): [Hash]
+  projects: [Hash]
+  stored_project_meta: [Hash]
   team: Team!
 }
 
@@ -18554,6 +18788,51 @@ type ToggleFollowUserPayload implements MutationResult {
   ): ErrorConnection!
   me: User
   user: User
+  was_successful: Boolean!
+}
+
+"""
+Autogenerated input type of ToggleSurveyRatingItemVisibleOnUserProfile
+"""
+input ToggleSurveyRatingItemVisibleOnUserProfileInput {
+  """
+  A unique identifier for the client performing the mutation.
+  """
+  clientMutationId: String
+  survey_rating_item_id: ID!
+}
+
+"""
+Autogenerated return type of ToggleSurveyRatingItemVisibleOnUserProfile
+"""
+type ToggleSurveyRatingItemVisibleOnUserProfilePayload implements MutationResult {
+  """
+  A unique identifier for the client performing the mutation.
+  """
+  clientMutationId: String
+  errors(
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+    types: [ErrorTypeEnum]
+  ): ErrorConnection!
+  survey_rating_item: SurveyRatingItem
   was_successful: Boolean!
 }
 
@@ -19258,6 +19537,53 @@ type UpdateAccountRecoveryPhoneNumberPayload implements MutationResult {
     types: [ErrorTypeEnum]
   ): ErrorConnection!
   me: User
+  was_successful: Boolean!
+}
+
+"""
+Autogenerated input type of UpdateAlternativeCertificateSamlProvider
+"""
+input UpdateAlternativeCertificateSamlProviderInput {
+  alternative_certificate: String
+
+  """
+  A unique identifier for the client performing the mutation.
+  """
+  clientMutationId: String
+  team_id: ID!
+}
+
+"""
+Autogenerated return type of UpdateAlternativeCertificateSamlProvider
+"""
+type UpdateAlternativeCertificateSamlProviderPayload implements MutationResult {
+  """
+  A unique identifier for the client performing the mutation.
+  """
+  clientMutationId: String
+  errors(
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+    types: [ErrorTypeEnum]
+  ): ErrorConnection!
+  saml_provider: SamlProvider
   was_successful: Boolean!
 }
 
@@ -21545,8 +21871,10 @@ input UpdateSlackPipelineInput {
   notification_report_not_eligible_for_bounty: Boolean!
   notification_report_public_comment_added: Boolean!
   notification_report_reopened: Boolean!
+  notification_report_retesting: Boolean!
   notification_report_swag_awarded: Boolean!
   notification_report_triaged: Boolean!
+  notification_report_user_completed_retest: Boolean!
   slack_pipeline_id: ID!
 }
 
@@ -23725,6 +24053,27 @@ type User implements Node & ResourceInterface {
   statistics_snapshot(snapshot_type: UserStatisticsSnapshotTypeEnum!): UserStatisticsSnapshot
   subscribed_for_monthly_digest: Boolean
   subscribed_for_team_messages: Boolean
+  survey_rating_items(
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+  ): SurveyRatingItemConnection
   swag(
     """
     Returns the elements in the list that come after the specified cursor.
@@ -23936,6 +24285,25 @@ User Email Subscription Enum
 enum UserEmailSubscriptionEnum {
   subscribed_for_monthly_digest
   subscribed_for_team_messages
+}
+
+"""
+User flag categories
+"""
+enum UserFlagCategoryEnum {
+  abuse
+  abusive_language
+  contacting_security_team_oob
+  discussing_private_program_details
+  exposing_pii
+  extortion
+  h1_clear_violation
+  reputation_farming
+  service_degradation
+  spam
+  unauthorized_disclosure
+  unauthorized_impersonation
+  unprofessional_behavior
 }
 
 """

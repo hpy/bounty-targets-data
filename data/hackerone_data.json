@@ -1042,7 +1042,7 @@
     "url": "https://hackerone.com/rails",
     "offers_bounties": true,
     "quick_to_bounty": false,
-    "quick_to_first_response": true,
+    "quick_to_first_response": false,
     "submission_state": "open",
     "targets": {
       "in_scope": [
@@ -1098,7 +1098,7 @@
     "url": "https://hackerone.com/ibb-openssl",
     "offers_bounties": true,
     "quick_to_bounty": false,
-    "quick_to_first_response": true,
+    "quick_to_first_response": false,
     "submission_state": "open",
     "targets": {
       "in_scope": [
@@ -7649,28 +7649,6 @@
           "max_severity": "critical"
         },
         {
-          "asset_identifier": "UniFi Video Cloud",
-          "asset_type": "OTHER",
-          "availability_requirement": "medium",
-          "confidentiality_requirement": "medium",
-          "eligible_for_bounty": true,
-          "eligible_for_submission": true,
-          "instruction": "",
-          "integrity_requirement": "medium",
-          "max_severity": "critical"
-        },
-        {
-          "asset_identifier": "UniFi Video Server",
-          "asset_type": "DOWNLOADABLE_EXECUTABLES",
-          "availability_requirement": "medium",
-          "confidentiality_requirement": "medium",
-          "eligible_for_bounty": true,
-          "eligible_for_submission": true,
-          "instruction": "",
-          "integrity_requirement": "medium",
-          "max_severity": "critical"
-        },
-        {
           "asset_identifier": "UniFi Wireless Access Points",
           "asset_type": "HARDWARE",
           "availability_requirement": "medium",
@@ -7749,17 +7727,6 @@
         },
         {
           "asset_identifier": "com.ubnt.umobile",
-          "asset_type": "GOOGLE_PLAY_APP_ID",
-          "availability_requirement": "low",
-          "confidentiality_requirement": "medium",
-          "eligible_for_bounty": true,
-          "eligible_for_submission": true,
-          "instruction": "",
-          "integrity_requirement": "medium",
-          "max_severity": "critical"
-        },
-        {
-          "asset_identifier": "com.ubnt.unifivideo",
           "asset_type": "GOOGLE_PLAY_APP_ID",
           "availability_requirement": "low",
           "confidentiality_requirement": "medium",
@@ -7860,6 +7827,28 @@
           "max_severity": "none"
         },
         {
+          "asset_identifier": "UniFi Video Cloud",
+          "asset_type": "OTHER",
+          "availability_requirement": "medium",
+          "confidentiality_requirement": "medium",
+          "eligible_for_bounty": false,
+          "eligible_for_submission": false,
+          "instruction": "",
+          "integrity_requirement": "medium",
+          "max_severity": "none"
+        },
+        {
+          "asset_identifier": "UniFi Video Server",
+          "asset_type": "DOWNLOADABLE_EXECUTABLES",
+          "availability_requirement": "medium",
+          "confidentiality_requirement": "medium",
+          "eligible_for_bounty": false,
+          "eligible_for_submission": false,
+          "instruction": "",
+          "integrity_requirement": "medium",
+          "max_severity": "none"
+        },
+        {
           "asset_identifier": "UniFi Voip",
           "asset_type": "HARDWARE",
           "availability_requirement": "low",
@@ -7883,6 +7872,17 @@
         },
         {
           "asset_identifier": "com.ubnt.unifi.edu",
+          "asset_type": "GOOGLE_PLAY_APP_ID",
+          "availability_requirement": "low",
+          "confidentiality_requirement": "medium",
+          "eligible_for_bounty": false,
+          "eligible_for_submission": false,
+          "instruction": "",
+          "integrity_requirement": "medium",
+          "max_severity": "none"
+        },
+        {
+          "asset_identifier": "com.ubnt.unifivideo",
           "asset_type": "GOOGLE_PLAY_APP_ID",
           "availability_requirement": "low",
           "confidentiality_requirement": "medium",
@@ -10238,7 +10238,7 @@
     "offers_bounties": true,
     "quick_to_bounty": false,
     "quick_to_first_response": true,
-    "submission_state": "open",
+    "submission_state": "paused",
     "targets": {
       "in_scope": [
 
@@ -12962,6 +12962,17 @@
           "max_severity": "critical"
         },
         {
+          "asset_identifier": "*.zomans.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "This domain is mainly used for internal applications that are hosted in AWS. Our area of interest is any issue that can potentially give anyone unrestricted access or expose internal or confidential data.",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
           "asset_identifier": "*.zomato.com",
           "asset_type": "URL",
           "availability_requirement": null,
@@ -14467,7 +14478,7 @@
     "handle": "localtapiola",
     "url": "https://hackerone.com/localtapiola",
     "offers_bounties": true,
-    "quick_to_bounty": false,
+    "quick_to_bounty": true,
     "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
@@ -15354,7 +15365,7 @@
     "url": "https://hackerone.com/phpbb",
     "offers_bounties": false,
     "quick_to_bounty": false,
-    "quick_to_first_response": true,
+    "quick_to_first_response": false,
     "submission_state": "open",
     "targets": {
       "in_scope": [
@@ -17288,7 +17299,7 @@
     "handle": "blockstack",
     "url": "https://hackerone.com/blockstack",
     "offers_bounties": true,
-    "quick_to_bounty": false,
+    "quick_to_bounty": true,
     "quick_to_first_response": false,
     "submission_state": "open",
     "targets": {
@@ -20446,7 +20457,7 @@
     "handle": "trustpilot",
     "url": "https://hackerone.com/trustpilot",
     "offers_bounties": true,
-    "quick_to_bounty": false,
+    "quick_to_bounty": true,
     "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
@@ -21830,7 +21841,7 @@
     "handle": "tts",
     "url": "https://hackerone.com/tts",
     "offers_bounties": true,
-    "quick_to_bounty": false,
+    "quick_to_bounty": true,
     "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
@@ -25216,7 +25227,7 @@
     "url": "https://hackerone.com/nodejs-ecosystem",
     "offers_bounties": false,
     "quick_to_bounty": false,
-    "quick_to_first_response": true,
+    "quick_to_first_response": false,
     "submission_state": "open",
     "targets": {
       "in_scope": [
@@ -27388,7 +27399,7 @@
     "handle": "tube8",
     "url": "https://hackerone.com/tube8",
     "offers_bounties": true,
-    "quick_to_bounty": false,
+    "quick_to_bounty": true,
     "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
@@ -35963,7 +35974,7 @@
     "handle": "monolith",
     "url": "https://hackerone.com/monolith",
     "offers_bounties": true,
-    "quick_to_bounty": false,
+    "quick_to_bounty": true,
     "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
@@ -36152,56 +36163,6 @@
     "targets": {
       "in_scope": [
 
-      ],
-      "out_of_scope": [
-
-      ]
-    }
-  },
-  {
-    "id": 39080,
-    "name": "UMA Project",
-    "handle": "uma_project",
-    "url": "https://hackerone.com/uma_project",
-    "offers_bounties": true,
-    "quick_to_bounty": false,
-    "quick_to_first_response": true,
-    "submission_state": "open",
-    "targets": {
-      "in_scope": [
-        {
-          "asset_identifier": "https://github.com/UMAprotocol/protocol/blob/master/README.md",
-          "asset_type": "SOURCE_CODE",
-          "availability_requirement": "none",
-          "confidentiality_requirement": "none",
-          "eligible_for_bounty": false,
-          "eligible_for_submission": true,
-          "instruction": "Project README ",
-          "integrity_requirement": "none",
-          "max_severity": "none"
-        },
-        {
-          "asset_identifier": "https://github.com/UMAprotocol/protocol/tree/master/contracts",
-          "asset_type": "SOURCE_CODE",
-          "availability_requirement": null,
-          "confidentiality_requirement": null,
-          "eligible_for_bounty": true,
-          "eligible_for_submission": true,
-          "instruction": "Contract solidity code repo\nContains the latest Solidity smart-contracts associated with the tokenized derivative contract. These contracts collectively handle all of the operations of the UMA system",
-          "integrity_requirement": null,
-          "max_severity": "critical"
-        },
-        {
-          "asset_identifier": "https://github.com/UMAprotocol/protocol/tree/master/sponsor-dapp",
-          "asset_type": "SOURCE_CODE",
-          "availability_requirement": null,
-          "confidentiality_requirement": null,
-          "eligible_for_bounty": true,
-          "eligible_for_submission": true,
-          "instruction": "React Dapp code and assets\nContains all of the React & Drizzle components needed to launch the UMA Dapp. The Dapp lets token sponsors (and in a more limited way, token holders) interact with the contracts they sponsor (or hold tokens for, respectively). This is the main way we anticipate token sponsors and holders will interact with the UMA system.",
-          "integrity_requirement": null,
-          "max_severity": "critical"
-        }
       ],
       "out_of_scope": [
 
@@ -38118,7 +38079,7 @@
     "targets": {
       "in_scope": [
         {
-          "asset_identifier": "Automotive Security (Out of Scope)",
+          "asset_identifier": "Automotive Security",
           "asset_type": "OTHER",
           "availability_requirement": null,
           "confidentiality_requirement": null,
@@ -38129,7 +38090,7 @@
           "max_severity": "critical"
         },
         {
-          "asset_identifier": "Other Vulnerabilities (Out of Scope)",
+          "asset_identifier": "Other Vulnerabilities",
           "asset_type": "OTHER",
           "availability_requirement": null,
           "confidentiality_requirement": null,
@@ -39171,7 +39132,7 @@
     "url": "https://hackerone.com/pegasys_bbp",
     "offers_bounties": true,
     "quick_to_bounty": false,
-    "quick_to_first_response": true,
+    "quick_to_first_response": false,
     "submission_state": "paused",
     "targets": {
       "in_scope": [
@@ -40954,6 +40915,17 @@
           "eligible_for_bounty": false,
           "eligible_for_submission": true,
           "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "challenges.topcoder.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "Topcoder's Work Manager application supports the set-up, launch, and management for all challenges and/or tasks created for a project.\nA client’s journey with Topcoder starts by creating a project in connect.topcoder.com (+New Project > Select option from catalog and completes intake), our project management application. The core processes that must be enabled in the project prior to work starting for the project, are:\n-The project is moved to ‘Active’ status.\n-Any project stakeholders are invited to the project and accept the invitation, so that they have visibility to the project. Outside of Topcoder employees, all other platform users can only view a project if they created it or were invited to it.\nWhen delivery is ready to start for the project, this is where the Work Manager application (challenges.topcoder.com) comes into play. At Topcoder, a project is broken down into a series of challenges or tasks for delivery. The breakdown of work options are as follows:\nTrack: Design, Development, Quality Assurance, Data Science\nType: Challenge (open competition on larger/more complex item), First2Finish Task (open competition on smaller/less complex task), Assigned Task (no competition small task)\nAfter selecting the parameters above, the user will complete the remaining set-up for the challenge or task:\n-Optional: Copilot (freelancer delivery facilitator) selection. The only Copilot options shown here should be the same Copilot(s) that were invited to the project.\n-Required: Reviewer - Community, or Internal.\n-Required: Public Specification (would be viewable to the Topcoder freelancer)\n-Required: Tags (technology attributes)\n-Required: Prize(s) (can be $0.00)\nSubmit or Save\nWork Manager is still an in-development application, so some supporting functions for challenge/task set-up such as timeline management, billing account assignment, and after set-up maintenance, will still be managed in the legacy challenge/task management system (Direct) as we work to support this functionality in the new Work Manager application. Additionally, the submission review process (submissions generated by the freelancer) will continue to operate in the Online Review application.",
           "integrity_requirement": null,
           "max_severity": "critical"
         },
@@ -42839,7 +42811,7 @@
           "max_severity": "critical"
         },
         {
-          "asset_identifier": "Amazon Retail Sites (e.g. Amazon.in, Amazon.es)",
+          "asset_identifier": "Amazon Retail Subsidiaries",
           "asset_type": "OTHER",
           "availability_requirement": null,
           "confidentiality_requirement": null,
@@ -42850,7 +42822,7 @@
           "max_severity": "critical"
         },
         {
-          "asset_identifier": "Amazon Retail Subsidiaries",
+          "asset_identifier": "Other Amazon Retail Sites (e.g. Amazon.com.au, Amazon.sg)",
           "asset_type": "OTHER",
           "availability_requirement": null,
           "confidentiality_requirement": null,
@@ -42865,6 +42837,17 @@
           "asset_type": "GOOGLE_PLAY_APP_ID",
           "availability_requirement": null,
           "confidentiality_requirement": "high",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "www.amazon.ca",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
           "instruction": "",
@@ -42905,7 +42888,29 @@
           "max_severity": "critical"
         },
         {
+          "asset_identifier": "www.amazon.com.mx",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
           "asset_identifier": "www.amazon.de",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "www.amazon.es",
           "asset_type": "URL",
           "availability_requirement": null,
           "confidentiality_requirement": "high",
@@ -42920,6 +42925,17 @@
           "asset_type": "URL",
           "availability_requirement": null,
           "confidentiality_requirement": "high",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "www.amazon.in",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
           "instruction": "",
@@ -44854,6 +44870,56 @@
           "integrity_requirement": null,
           "max_severity": "none"
         }
+      ]
+    }
+  },
+  {
+    "id": 49074,
+    "name": "BugPoC",
+    "handle": "bugpoc",
+    "url": "https://hackerone.com/bugpoc",
+    "offers_bounties": true,
+    "quick_to_bounty": true,
+    "quick_to_first_response": true,
+    "submission_state": "open",
+    "targets": {
+      "in_scope": [
+        {
+          "asset_identifier": "*.bugpoc.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "*.bugpoc.ninja",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "IMPORTANT! Please read the \"Out of scope vulnerabilities\" section before testing this domain.This domain is considered untrustworthy and most bugs affecting this domain are false-positives. ",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "calc.buggywebsite.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "**LIMITED TIME ONLY XSS CHALLENGE!** - [http://calc.buggywebsite.com](http://calc.buggywebsite.com)\n*08/07 - 08/11*\n\nWays to Win:\n\n1. **$500** to 1st valid submission \n1. **$400** to 2nd valid submission \n1. **$300** to 3rd valid submission \n1. **$200** to best blog write-up *(submit via Twitter on 08/12)*\n1. **$100** to 6 raffle winners  *(randomly chosen on 08/12)*\n\nRules:\n\n1. You must pop an `alert(domain)` showing `calc.buggywebsite.com`\n1. You must **bypass CSP**\n1. It must be reproducible using the latest version of *Chrome*\n1. You must provide a working proof-of-concept on [bugpoc.com](https://bugpoc.com)\n\nFAQ:\n\n**Q: Can I publicly talk about this challenge?**\n*A: Yes! But please do not disclose your solution until 08/12*\n\n**Q: Can I get a hint?**\n*A: Yes! Follow @bugpoc_official on Twitter for hints*\n\n**Q: How do I enter the raffle?**\n*A: All valid solutions submitted before 08/12 will automatically be entered into the raffle*\n\n**Q: How to I submit my blog write-up**\n*A: Mention @bugpoc_official on Twitter on 08/12 with a link*",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        }
+      ],
+      "out_of_scope": [
+
       ]
     }
   },

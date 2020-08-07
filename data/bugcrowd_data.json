@@ -1340,7 +1340,7 @@
     "allows_disclosure": false,
     "managed_by_bugcrowd": true,
     "safe_harbor": "full",
-    "max_payout": 2500,
+    "max_payout": 7000,
     "targets": {
       "in_scope": [
         {
@@ -2362,7 +2362,7 @@
     "name": "Hack Me!",
     "url": "https://bugcrowd.com/hackme",
     "allows_disclosure": false,
-    "managed_by_bugcrowd": false,
+    "managed_by_bugcrowd": true,
     "safe_harbor": "partial",
     "max_payout": 2500,
     "targets": {
@@ -2376,7 +2376,7 @@
           "target": "All IT-Managed Third-Party Services and Infrastructure"
         },
         {
-          "type": "other",
+          "type": "api testing",
           "target": "Testing the Bugcrowd platform"
         }
       ],
@@ -3655,7 +3655,22 @@
         }
       ],
       "out_of_scope": [
-
+        {
+          "type": "website testing",
+          "target": "development-naspersbrand.naspers.com"
+        },
+        {
+          "type": "website testing",
+          "target": "development-nasperspolicy.naspers.com"
+        },
+        {
+          "type": "website testing",
+          "target": "development-prosus.naspers.com"
+        },
+        {
+          "type": "website testing",
+          "target": "development.naspers.com"
+        }
       ]
     }
   },
@@ -4418,6 +4433,22 @@
     }
   },
   {
+    "name": "Web, iOS, Android, and More Available for Testing on Conferencing Product",
+    "url": "https://bugcrowd.com/programs/teasers/5HQsizg8sd5onSVUzSNPYyJm",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "partial",
+    "max_payout": 4500,
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
     "name": "Help secure an American healthcare provider’s API assets",
     "url": "https://bugcrowd.com/programs/teasers/5VqRm3tLw4kETHq95hGbwgJT",
     "allows_disclosure": true,
@@ -4658,7 +4689,7 @@
     }
   },
   {
-    "name": "Leading digital transaction provider",
+    "name": "Leading digital transaction provider. New mobile targets introduced recently!",
     "url": "https://bugcrowd.com/programs/teasers/Jpzfw2e8eSJaYSjdN9TGiK8d",
     "allows_disclosure": true,
     "managed_by_bugcrowd": true,
@@ -4807,7 +4838,7 @@
     "allows_disclosure": true,
     "managed_by_bugcrowd": true,
     "safe_harbor": "partial",
-    "max_payout": 3500,
+    "max_payout": 9000,
     "targets": {
       "in_scope": [
 
@@ -5560,6 +5591,22 @@
     "managed_by_bugcrowd": true,
     "safe_harbor": "partial",
     "max_payout": 3000,
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
+    "name": "An established software company needs your help to secure their broad web and API scope!",
+    "url": "https://bugcrowd.com/programs/teasers/xCSA3BdWAtsFeuJ4oWhUaKWY",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "full",
+    "max_payout": 4000,
     "targets": {
       "in_scope": [
 
@@ -8006,6 +8053,10 @@
         {
           "type": "website testing",
           "target": "whmcs.community"
+        },
+        {
+          "type": "website testing",
+          "target": "www.whmcs.com"
         }
       ]
     }
