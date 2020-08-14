@@ -2477,7 +2477,7 @@
           "confidentiality_requirement": null,
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
-          "instruction": "`samokat.ru`, `*.samokat.ru`, `samokat-team.ru`, `*.samokat-team.ru`, `samokat.io`, `*.samokat.io`, `smart.space`, `*.smart.space` and Samokat applications except delegated and externally hosted domains and branded partner services.\n\n==Samokat scope only awards critical serverside vulnerabilities, if vulnerability compromises the infrastructure (e.g. RCE, SQLi, LFR, SSRF, etc) or data outside of project's scope (e.g. personal information) via serverside vector.==\n\nClientside vulnerabilities (XSS, CSRF) and business logic specific bugs, including privilege escalations within the product are accepted without bounty.\n\nMitM and local attacks, user enumeration on registration/recovery, open redirections, insufficient session expiration, cookies working after logout etc are not accepted unless there are additional vectors identified (e.g. ability to steal the session token via remote vector for open redirection)",
+          "instruction": "`samokat.ru`, `*.samokat.ru`, `samokat-team.ru`, `*.samokat-team.ru`, `samokat.io`, `*.samokat.io`,  `*.smart.space` (domain only, smart.space mobile aplication does not belong to Samokat) except delegated and externally hosted domains and branded partner services, `Samokat` and `Dark Store` applications for iOS/Android. \n\n==Samokat scope only awards critical serverside vulnerabilities, if vulnerability compromises the infrastructure (e.g. RCE, SQLi, LFR, SSRF, etc) or data outside of project's scope (e.g. personal information) via serverside vector.==\n\nClientside vulnerabilities (XSS, CSRF) and business logic specific bugs, including privilege escalations within the product are accepted without bounty.\n\nMitM and local attacks, user enumeration on registration/recovery, open redirections, insufficient session expiration, cookies working after logout etc are not accepted unless there are additional vectors identified (e.g. ability to steal the session token via remote vector for open redirection)",
           "integrity_requirement": null,
           "max_severity": "critical"
         },
@@ -2637,7 +2637,7 @@
     "handle": "coinbase",
     "url": "https://hackerone.com/coinbase",
     "offers_bounties": true,
-    "quick_to_bounty": true,
+    "quick_to_bounty": false,
     "quick_to_first_response": false,
     "submission_state": "open",
     "targets": {
@@ -5257,6 +5257,17 @@
           "max_severity": "critical"
         },
         {
+          "asset_identifier": "*.scene7.com",
+          "asset_type": "URL",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
           "asset_identifier": "*.tubemogul.com",
           "asset_type": "URL",
           "availability_requirement": null,
@@ -7066,7 +7077,7 @@
     "handle": "dashlane",
     "url": "https://hackerone.com/dashlane",
     "offers_bounties": true,
-    "quick_to_bounty": false,
+    "quick_to_bounty": true,
     "quick_to_first_response": false,
     "submission_state": "open",
     "targets": {
@@ -11205,7 +11216,7 @@
     "handle": "badoo",
     "url": "https://hackerone.com/badoo",
     "offers_bounties": true,
-    "quick_to_bounty": false,
+    "quick_to_bounty": true,
     "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
@@ -14479,7 +14490,7 @@
     "url": "https://hackerone.com/localtapiola",
     "offers_bounties": true,
     "quick_to_bounty": true,
-    "quick_to_first_response": true,
+    "quick_to_first_response": false,
     "submission_state": "open",
     "targets": {
       "in_scope": [
@@ -17266,6 +17277,155 @@
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
           "instruction": "",
+          "integrity_requirement": "medium",
+          "max_severity": "critical"
+        }
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
+    "id": 13428,
+    "name": "Acronis",
+    "handle": "acronis",
+    "url": "https://hackerone.com/acronis",
+    "offers_bounties": true,
+    "quick_to_bounty": true,
+    "quick_to_first_response": true,
+    "submission_state": "open",
+    "targets": {
+      "in_scope": [
+        {
+          "asset_identifier": "*-api-*.acronis.com",
+          "asset_type": "URL",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "*.acronis.com",
+          "asset_type": "URL",
+          "availability_requirement": "low",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": "low",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "1118448159",
+          "asset_type": "APPLE_STORE_APP_ID",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "low",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "Acronis Cyber Backup for [iOS](https://apps.apple.com/app/acronis-cyber-backup/id1118448159)",
+          "integrity_requirement": "low",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "978342143",
+          "asset_type": "APPLE_STORE_APP_ID",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "low",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "Acronis True Image for [iOS](https://apps.apple.com/app/acronis-true-image-mobile/id978342143)",
+          "integrity_requirement": "low",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "Acronis Agent",
+          "asset_type": "DOWNLOADABLE_EXECUTABLES",
+          "availability_requirement": "medium",
+          "confidentiality_requirement": "medium",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "Acronis Agent is a client-side application for Acronis Cyber Cloud and Acronis Cyber Backup that incorporates backup and cyber protection mechanisms. You may download versions for all supported platforms from [here](https://mc-beta-cloud.acronis.com/download/u/baas/4.0/)",
+          "integrity_requirement": "low",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "Acronis Cyber Backup",
+          "asset_type": "DOWNLOADABLE_EXECUTABLES",
+          "availability_requirement": "medium",
+          "confidentiality_requirement": "medium",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "Acronis Cyber Backup is an on-premises backup solution designed for the business environment. You may request a trial by completing [registration](https://www.acronis.com/en-us/business/backup/trial/#/registration).\n\nNote that some vulnerabilities may already be fixed in the [beta](https://www.acronis.com/en-us/business/cyber-protect/trial/#/registration) version.",
+          "integrity_requirement": "low",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "Acronis True Image",
+          "asset_type": "DOWNLOADABLE_EXECUTABLES",
+          "availability_requirement": "low",
+          "confidentiality_requirement": "medium",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "Acronis True Image is designed for protection of home computers. You may download a trial version [here](https://www.acronis.com/en-us/personal/computer-backup).\n\nNote that some vulnerabilities may already be fixed in the [beta](https://www.acronis.com/en-us/personal/computer-backup/beta/#registration) version.",
+          "integrity_requirement": "medium",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "Other Acronis Domains",
+          "asset_type": "OTHER",
+          "availability_requirement": "low",
+          "confidentiality_requirement": "low",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": "low",
+          "max_severity": "medium"
+        },
+        {
+          "asset_identifier": "account.acronis.com",
+          "asset_type": "URL",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "Acronis Customer Portal",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "beta-baas.acronis.com",
+          "asset_type": "URL",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "Acronis Cyber Cloud beta environment. Request access by sending an email to security-bounty-accounts@acronis.com with `ACCOUNT-REQUEST:[username]` in subject. Make sure to provide your H1 username, not [email](https://docs.hackerone.com/hackers/hacker-email-alias.html). For instance, account request for user `acronis` should have the subject `ACCOUNT-REQUEST:acronis`",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "com.acronis.abc",
+          "asset_type": "GOOGLE_PLAY_APP_ID",
+          "availability_requirement": "medium",
+          "confidentiality_requirement": "low",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "Acronis Cyber Backup for [Android](https://play.google.com/store/apps/details?id=com.acronis.abc)",
+          "integrity_requirement": "medium",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "com.acronis.acronistrueimage",
+          "asset_type": "GOOGLE_PLAY_APP_ID",
+          "availability_requirement": "medium",
+          "confidentiality_requirement": "low",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "Acronis True Image for [Android](https://play.google.com/store/apps/details?id=com.acronis.acronistrueimage)",
           "integrity_requirement": "medium",
           "max_severity": "critical"
         }
@@ -20363,7 +20523,7 @@
     "handle": "vanilla",
     "url": "https://hackerone.com/vanilla",
     "offers_bounties": true,
-    "quick_to_bounty": true,
+    "quick_to_bounty": false,
     "quick_to_first_response": false,
     "submission_state": "open",
     "targets": {
@@ -23054,7 +23214,7 @@
     "handle": "upserve",
     "url": "https://hackerone.com/upserve",
     "offers_bounties": true,
-    "quick_to_bounty": true,
+    "quick_to_bounty": false,
     "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
@@ -24623,7 +24783,7 @@
     "url": "https://hackerone.com/kartpay",
     "offers_bounties": false,
     "quick_to_bounty": false,
-    "quick_to_first_response": false,
+    "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
       "in_scope": [
@@ -27235,17 +27395,6 @@
     "targets": {
       "in_scope": [
         {
-          "asset_identifier": "*.dev.jupiterone.io",
-          "asset_type": "URL",
-          "availability_requirement": "high",
-          "confidentiality_requirement": "high",
-          "eligible_for_bounty": true,
-          "eligible_for_submission": true,
-          "instruction": "",
-          "integrity_requirement": "high",
-          "max_severity": "critical"
-        },
-        {
           "asset_identifier": "*.dev.lifeomic.com",
           "asset_type": "URL",
           "availability_requirement": "medium",
@@ -27342,6 +27491,17 @@
           "eligible_for_submission": true,
           "instruction": "Only the opensource codebases developed by LifeOmic are included as in-scope. Forks, etc are not in scope.",
           "integrity_requirement": "medium",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "https://lifeology.dev.lifeomic.com",
+          "asset_type": "URL",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": "high",
           "max_severity": "critical"
         }
       ],
@@ -28427,6 +28587,88 @@
     }
   },
   {
+    "id": 24883,
+    "name": "Affirm",
+    "handle": "affirm",
+    "url": "https://hackerone.com/affirm",
+    "offers_bounties": true,
+    "quick_to_bounty": false,
+    "quick_to_first_response": true,
+    "submission_state": "open",
+    "targets": {
+      "in_scope": [
+        {
+          "asset_identifier": "com.affirm.central.audit",
+          "asset_type": "GOOGLE_PLAY_APP_ID",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "This is the Android testing app built for HackerOne. It's distributed through Google Play Store.",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "com.affirm.internal.hackerone",
+          "asset_type": "OTHER",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "This is the testing iOS app built for HackerOne. It is distributed through Crashlytics.",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "http://hackerone.affirm-odin.com/",
+          "asset_type": "URL",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "https://direct-hackerone.affirm-odin.com/",
+          "asset_type": "URL",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "It is an example integration that demonstrates how our application integration works with a merchant. In general, websites will integrate with Affirm for payments. This domain is simply a testing site to show how the API works and to test the flow of taking out a loan for buying an item. It intentionally has no ACLs, or permissions. The endpoints that you access to at the end of a checkout emulate what websites who integrate with us have access to.",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "https://vcn-hackerone.affirm-odin.com/",
+          "asset_type": "URL",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "It is an example integration that demonstrates how our application integration works with a merchant. In general, websites will integrate with Affirm for payments. This domain is simply a testing site to show how the API works and to test the flow of taking out a loan for buying an item. It intentionally has no ACLs, or permissions. The endpoints that you access to at the end of a checkout emulate what websites who integrate with us have access to.",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        }
+      ],
+      "out_of_scope": [
+        {
+          "asset_identifier": "*.affirm.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": false,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "none"
+        }
+      ]
+    }
+  },
+  {
     "id": 25172,
     "name": "Crowdstrike",
     "handle": "crowdstrike",
@@ -29297,7 +29539,7 @@
     "url": "https://hackerone.com/loofah",
     "offers_bounties": false,
     "quick_to_bounty": false,
-    "quick_to_first_response": false,
+    "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
       "in_scope": [
@@ -29509,7 +29751,7 @@
     "url": "https://hackerone.com/passit",
     "offers_bounties": false,
     "quick_to_bounty": false,
-    "quick_to_first_response": true,
+    "quick_to_first_response": false,
     "submission_state": "open",
     "targets": {
       "in_scope": [
@@ -30754,17 +30996,7 @@
     "submission_state": "paused",
     "targets": {
       "in_scope": [
-        {
-          "asset_identifier": "*.hboeck.de",
-          "asset_type": "URL",
-          "availability_requirement": null,
-          "confidentiality_requirement": null,
-          "eligible_for_bounty": false,
-          "eligible_for_submission": true,
-          "instruction": "",
-          "integrity_requirement": null,
-          "max_severity": "critical"
-        }
+
       ],
       "out_of_scope": [
 
@@ -31278,7 +31510,7 @@
     "handle": "chainlink",
     "url": "https://hackerone.com/chainlink",
     "offers_bounties": true,
-    "quick_to_bounty": true,
+    "quick_to_bounty": false,
     "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
@@ -38431,7 +38663,7 @@
     "handle": "libra",
     "url": "https://hackerone.com/libra",
     "offers_bounties": false,
-    "quick_to_bounty": true,
+    "quick_to_bounty": false,
     "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
@@ -38779,7 +39011,7 @@
     "handle": "codefi_bbp",
     "url": "https://hackerone.com/codefi_bbp",
     "offers_bounties": true,
-    "quick_to_bounty": false,
+    "quick_to_bounty": true,
     "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
@@ -40507,67 +40739,6 @@
           "eligible_for_submission": true,
           "instruction": "",
           "integrity_requirement": "high",
-          "max_severity": "critical"
-        }
-      ],
-      "out_of_scope": [
-
-      ]
-    }
-  },
-  {
-    "id": 42707,
-    "name": "LendingHome",
-    "handle": "lendinghome",
-    "url": "https://hackerone.com/lendinghome",
-    "offers_bounties": false,
-    "quick_to_bounty": false,
-    "quick_to_first_response": true,
-    "submission_state": "open",
-    "targets": {
-      "in_scope": [
-        {
-          "asset_identifier": "*.lendinghome.com",
-          "asset_type": "URL",
-          "availability_requirement": null,
-          "confidentiality_requirement": null,
-          "eligible_for_bounty": false,
-          "eligible_for_submission": true,
-          "instruction": "If you find something and that's what's brought you here please report it, but please use lh-matrix.com instead for exploratory testing.",
-          "integrity_requirement": null,
-          "max_severity": "critical"
-        },
-        {
-          "asset_identifier": "*.lh-matrix.com",
-          "asset_type": "URL",
-          "availability_requirement": null,
-          "confidentiality_requirement": null,
-          "eligible_for_bounty": false,
-          "eligible_for_submission": true,
-          "instruction": "Please create any accounts with your @wearehackerone.com email address.\nRunning through the \"see your rate\" flow will prompt you to create a new username at the appropriate time that you can return to.",
-          "integrity_requirement": null,
-          "max_severity": "critical"
-        },
-        {
-          "asset_identifier": "*.lhcapital-matrix.com",
-          "asset_type": "URL",
-          "availability_requirement": null,
-          "confidentiality_requirement": null,
-          "eligible_for_bounty": false,
-          "eligible_for_submission": true,
-          "instruction": "",
-          "integrity_requirement": null,
-          "max_severity": "critical"
-        },
-        {
-          "asset_identifier": "*.lhcapitalmanagement.com",
-          "asset_type": "URL",
-          "availability_requirement": null,
-          "confidentiality_requirement": null,
-          "eligible_for_bounty": false,
-          "eligible_for_submission": true,
-          "instruction": "If you find something and that's what's brought you here please report it, but please use lhcapital-matrix.com instead for exploratory testing.",
-          "integrity_requirement": null,
           "max_severity": "critical"
         }
       ],
@@ -42822,6 +42993,17 @@
           "max_severity": "critical"
         },
         {
+          "asset_identifier": "Other Amazon Retail Assets (if you are not sure about the asset scope, please use this one)",
+          "asset_type": "OTHER",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
           "asset_identifier": "Other Amazon Retail Sites (e.g. Amazon.com.au, Amazon.sg)",
           "asset_type": "OTHER",
           "availability_requirement": null,
@@ -44905,21 +45087,20 @@
           "instruction": "IMPORTANT! Please read the \"Out of scope vulnerabilities\" section before testing this domain.This domain is considered untrustworthy and most bugs affecting this domain are false-positives. ",
           "integrity_requirement": null,
           "max_severity": "critical"
-        },
-        {
-          "asset_identifier": "calc.buggywebsite.com",
-          "asset_type": "URL",
-          "availability_requirement": null,
-          "confidentiality_requirement": null,
-          "eligible_for_bounty": true,
-          "eligible_for_submission": true,
-          "instruction": "**LIMITED TIME ONLY XSS CHALLENGE!** - [http://calc.buggywebsite.com](http://calc.buggywebsite.com)\n*08/07 - 08/11*\n\nWays to Win:\n\n1. **$500** to 1st valid submission \n1. **$400** to 2nd valid submission \n1. **$300** to 3rd valid submission \n1. **$200** to best blog write-up *(submit via Twitter on 08/12)*\n1. **$100** to 6 raffle winners  *(randomly chosen on 08/12)*\n\nRules:\n\n1. You must pop an `alert(domain)` showing `calc.buggywebsite.com`\n1. You must **bypass CSP**\n1. It must be reproducible using the latest version of *Chrome*\n1. You must provide a working proof-of-concept on [bugpoc.com](https://bugpoc.com)\n\nFAQ:\n\n**Q: Can I publicly talk about this challenge?**\n*A: Yes! But please do not disclose your solution until 08/12*\n\n**Q: Can I get a hint?**\n*A: Yes! Follow @bugpoc_official on Twitter for hints*\n\n**Q: How do I enter the raffle?**\n*A: All valid solutions submitted before 08/12 will automatically be entered into the raffle*\n\n**Q: How to I submit my blog write-up**\n*A: Mention @bugpoc_official on Twitter on 08/12 with a link*",
-          "integrity_requirement": null,
-          "max_severity": "critical"
         }
       ],
       "out_of_scope": [
-
+        {
+          "asset_identifier": "*.buggywebsite.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": false,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "none"
+        }
       ]
     }
   },

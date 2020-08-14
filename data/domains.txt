@@ -282,6 +282,7 @@ opendata-demo.test-socrata.com
 opendata.test-socrata.com
 astaro.uservoice.com
 dev.phishthreat.com
+test.portal.darkbytes.com
 checkout.soundcloud.com
 developers.soundcloud.com
 m.soundcloud.com
@@ -864,6 +865,8 @@ live.line.me
 music.line.me
 news.line.me
 store.line.me
+account.acronis.com
+beta-baas.acronis.com
 relaxcdn.unibet.com
 api.drive2.ru
 www.drive2.ru
@@ -1066,6 +1069,7 @@ api.recarga.com
 secure.recarga.com
 www.recargapay.com.br
 apps.wellness.dev.lifeomic.com
+lifeology.dev.lifeomic.com
 de.tube8.com
 jp.tube8.com
 www.tube8.com
@@ -1089,6 +1093,9 @@ nyc01.jamieweb.net
 www.jamieweb.net
 api.thecoalition.com
 platform.thecoalition.com
+hackerone.affirm-odin.com
+direct-hackerone.affirm-odin.com
+vcn-hackerone.affirm-odin.com
 blog.crowdstrike.com
 www.crowdstrike.com
 www.crowdstrike.org
@@ -1518,7 +1525,6 @@ www.superdrug.com
 app.smtp2go.com
 smtp2go.com
 ews.qa.finra.org
-calc.buggywebsite.com
 api.rs2.usw2.rockset.com
 console.rockset.com
 docs.rockset.com
@@ -1717,7 +1723,7 @@ mynexuz.be
 www.nexuzhealth.be
 associatie.kuleuven.be
 webwsp.aps.kuleuven.be
-developers.sentiance.com
+docs.sentiance.com
 asupport.suivo.com
 www2.telenet.be
 www.tempo-team.com

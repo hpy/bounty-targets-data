@@ -24,6 +24,15 @@
 *.sandbox.directly.com
 *.expressvpn.com
 *.xvservice.net
+*.cloudvisory.com
+*.fireeye.com
+*.fireeye.dev
+*.fireeye.market
+*.fireeyecloud.com
+*.flare-on.com
+*.isightpartners.com
+*.mandiant.com
+*.verodin.com
 *-api.fitbit.com
 *-client.fitbit.com
 *.gojekapi.com
@@ -194,6 +203,7 @@ ws*.gitter.im
 *.mixamo.com
 *.omniture.com
 *.phonegap.com
+*.scene7.com
 *.tubemogul.com
 *.typekit.com
 *.blockchain.com
@@ -280,6 +290,8 @@ www.paypal-*.com
 *.line.me
 *.line.naver.jp
 *.secnews.gr
+*-api-*.acronis.com
+*.acronis.com
 *.bingo.com
 *.casinohuone.com
 *.igame.com
@@ -343,7 +355,6 @@ www.paypal-*.com
 *.grammarly.net
 *.kartpay.com
 *.smule.com
-*.dev.jupiterone.io
 *.dev.lifeomic.com
 *.infra.lifeomic.com
 *.bitmex.com
@@ -422,10 +433,6 @@ vcc-*.8x8.com
 *.laurelroad.com
 *.koho.app
 *.koho.ca
-*.lendinghome.com
-*.lh-matrix.com
-*.lhcapital-matrix.com
-*.lhcapitalmanagement.com
 *.testnet.oasiscloud.io
 *.magisto.com
 *.kromtech.com

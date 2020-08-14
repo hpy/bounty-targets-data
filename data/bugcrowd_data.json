@@ -1172,6 +1172,10 @@
           "target": "Any Third Party Software Applications (Zendesk, etc)"
         },
         {
+          "type": "website testing",
+          "target": "Caffeine.custhelp.com"
+        },
+        {
           "type": "api testing",
           "target": "https://events.caffeine.tv/"
         }
@@ -2094,6 +2098,84 @@
         {
           "type": "website testing",
           "target": "mail.files.com"
+        }
+      ]
+    }
+  },
+  {
+    "name": "FireEye Bug Bounty Program",
+    "url": "https://bugcrowd.com/fireeye",
+    "allows_disclosure": false,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "full",
+    "max_payout": 2500,
+    "targets": {
+      "in_scope": [
+        {
+          "type": "website testing",
+          "target": "*.cloudvisory.com"
+        },
+        {
+          "type": "website testing",
+          "target": "*.fireeye.com"
+        },
+        {
+          "type": "website testing",
+          "target": "*.fireeye.dev"
+        },
+        {
+          "type": "website testing",
+          "target": "*.fireeye.market"
+        },
+        {
+          "type": "website testing",
+          "target": "*.fireeyecloud.com"
+        },
+        {
+          "type": "website testing",
+          "target": "*.flare-on.com"
+        },
+        {
+          "type": "website testing",
+          "target": "*.isightpartners.com"
+        },
+        {
+          "type": "website testing",
+          "target": "*.mandiant.com"
+        },
+        {
+          "type": "website testing",
+          "target": "*.verodin.com"
+        },
+        {
+          "type": "website testing",
+          "target": "DNS Configuration Issues"
+        },
+        {
+          "type": "website testing",
+          "target": "Localized FireEye Websites (fireeye.de, fireeye.jp, etc.)"
+        }
+      ],
+      "out_of_scope": [
+        {
+          "type": "website testing",
+          "target": "*.theemaillaundry.com"
+        },
+        {
+          "type": "other",
+          "target": "FireEye systems or products in AWS GovCloud"
+        },
+        {
+          "type": "other",
+          "target": "Systems or vulnerabilities that expose no sensitive data or functionality, such as those used to test or demonstrate FireEye products or services"
+        },
+        {
+          "type": "other",
+          "target": "Third-party products that may be used by FireEye"
+        },
+        {
+          "type": "website testing",
+          "target": "http://community.fireeye.dev/"
         }
       ]
     }
@@ -3561,7 +3643,7 @@
   {
     "name": "Moneytree KK",
     "url": "https://bugcrowd.com/moneytreekkog",
-    "allows_disclosure": false,
+    "allows_disclosure": true,
     "managed_by_bugcrowd": true,
     "safe_harbor": "partial",
     "max_payout": 5000,
@@ -4833,12 +4915,12 @@
     }
   },
   {
-    "name": "Place your bets!",
-    "url": "https://bugcrowd.com/programs/teasers/Pc3zSR4oEJ3Kx1eafoY4fvnC",
+    "name": "Secure a Bug Reporting Platform",
+    "url": "https://bugcrowd.com/programs/teasers/S6SBPirVxiQ7xFHrbdTSecg2",
     "allows_disclosure": true,
     "managed_by_bugcrowd": true,
-    "safe_harbor": "partial",
-    "max_payout": 9000,
+    "safe_harbor": "full",
+    "max_payout": 2500,
     "targets": {
       "in_scope": [
 
@@ -5601,7 +5683,7 @@
     }
   },
   {
-    "name": "An established software company needs your help to secure their broad web and API scope!",
+    "name": "An established Internet technology company needs your help to secure their broad web and API scope!",
     "url": "https://bugcrowd.com/programs/teasers/xCSA3BdWAtsFeuJ4oWhUaKWY",
     "allows_disclosure": true,
     "managed_by_bugcrowd": true,
@@ -6189,6 +6271,10 @@
         {
           "type": "website testing",
           "target": "dev.phishthreat.com"
+        },
+        {
+          "type": "website testing",
+          "target": "test.portal.darkbytes.com"
         }
       ],
       "out_of_scope": [
