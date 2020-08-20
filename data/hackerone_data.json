@@ -2466,7 +2466,7 @@
           "confidentiality_requirement": "high",
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
-          "instruction": "```mail.ru``` (without subdomains), ```e.mail.ru```, ```*.e.mail.ru```, ```touch.mail.ru```, ```*.touch.mail.ru```, ```m.mail.ru```, ```*.m.mail.ru```, ```tel.mail.ru```, ```*.tel.mail.ru```, ```light.mail.ru```, ```*.light.mail.ru```, ```octavius.mail.ru```, ```*.octavius.mail.ru```, ```smtp.mail.ru```, ```mxs.mail.ru```, ```pop.mail.ru```, ```imap.mail.ru```, ```cloud.mail.ru```, ```*.cloud.mail.ru```, ```calendar.mail.ru```, ```*.calendar.mail.ru```, ```todo.mail.ru```, ```*.todo.mail.ru```, ```calls.mail.ru```, ```*.calls.mail.ru```, ```biz.mail.ru```, ```*.biz.mail.ru```, ```edu.mail.ru```, ```*.edu.mail.ru```, ```auth.mail.ru```, ```*.auth.mail.ru```, ```o2.mail.ru```, ```*.o2.mail.ru```, ```account.mail.ru```, ```*.account.mail.ru```, ```swa.mail.ru```, ```*.swa.mail.ru``` except delegated and externally hosted domains and branded partner services.\n\n[Main portal page](https://mail.ru/), [Mail.Ru Mail](https://e.mail.ru/), My.Com MyMail, [Cloud](https://cloud.mail.ru/), [Calendar](https://calendar.mail.ru), [Todo](https://todo.mail.ru), [Calls](https://calls.mail.ru), [Mail for Business](https://biz.mail.ru), Portal authorization center, [Mail.ru Mail for iOS](https://itunes.apple.com/en/app/pocta-mail.ru/id511310430), [Mail.ru Mail for Android](https://play.google.com/store/apps/details?id=ru.mail.mailapp), [Mail.ru Cloud for iOS](https://itunes.apple.com/en/app/oblako-mail.ru/id696551382), [Mail.ru Cloud for Android](https://play.google.com/store/apps/details?id=ru.mail.cloud), [Mail.ru Calendar for Android](https://play.google.com/store/apps/details?id=ru.mail.calendar), [Код Доступа Mail.Ru for Android](https://play.google.com/store/apps/details?id=ru.mail.auth.totp), [Код Доступа Mail.Ru for iOS](https://itunes.apple.com/us/app/id1158940459) , [MyMail for iOS](https://itunes.apple.com/us/app/mymail-email-for-hotmail-gmail/id722120997?mt=8),  [MyMail for Android](https://play.google.com/store/apps/details?id=com.my.mail&hl=en)\n\nBugs common for both Mail.Ru and MyMail application / serverside are usually accepted as a single bug.",
+          "instruction": "```mail.ru``` (without subdomains), ```e.mail.ru```, ```*.e.mail.ru```, ```touch.mail.ru```, ```*.touch.mail.ru```, ```m.mail.ru```, ```*.m.mail.ru```, ```tel.mail.ru```, ```*.tel.mail.ru```, ```light.mail.ru```, ```*.light.mail.ru```, ```octavius.mail.ru```, ```*.octavius.mail.ru```, ```smtp.mail.ru```, ```mxs.mail.ru```, ```pop.mail.ru```, ```imap.mail.ru```, ```cloud.mail.ru```, ```*.cloud.mail.ru```, ```calendar.mail.ru```, ```*.calendar.mail.ru```, ```todo.mail.ru```, ```*.todo.mail.ru```, ```calls.mail.ru```, ```*.calls.mail.ru```, ```biz.mail.ru```, ```*.biz.mail.ru```, ```edu.mail.ru```, ```*.edu.mail.ru```, ```auth.mail.ru```, ```*.auth.mail.ru```, ```o2.mail.ru```, ```*.o2.mail.ru```, ```account.mail.ru```, ```*.account.mail.ru```, ```swa.mail.ru```, ```*.swa.mail.ru``` , ```id.mail.ru```,  ```*.id.mail. ru``` except delegated and externally hosted domains and branded partner services.\n\n[Main portal page](https://mail.ru/), [Mail.Ru Mail](https://e.mail.ru/), My.Com MyMail, [Cloud](https://cloud.mail.ru/), [Calendar](https://calendar.mail.ru), [Todo](https://todo.mail.ru), [Calls](https://calls.mail.ru), [Mail for Business](https://biz.mail.ru), Portal authorization center, [Mail.ru Mail for iOS](https://itunes.apple.com/en/app/pocta-mail.ru/id511310430), [Mail.ru Mail for Android](https://play.google.com/store/apps/details?id=ru.mail.mailapp), [Mail.ru Cloud for iOS](https://itunes.apple.com/en/app/oblako-mail.ru/id696551382), [Mail.ru Cloud for Android](https://play.google.com/store/apps/details?id=ru.mail.cloud), [Mail.ru Calendar for Android](https://play.google.com/store/apps/details?id=ru.mail.calendar), [Код Доступа Mail.Ru for Android](https://play.google.com/store/apps/details?id=ru.mail.auth.totp), [Код Доступа Mail.Ru for iOS](https://itunes.apple.com/us/app/id1158940459) , [MyMail for iOS](https://itunes.apple.com/us/app/mymail-email-for-hotmail-gmail/id722120997?mt=8),  [MyMail for Android](https://play.google.com/store/apps/details?id=com.my.mail&hl=en)\n\nBugs common for both Mail.Ru and MyMail application / serverside are usually accepted as a single bug.",
           "integrity_requirement": "high",
           "max_severity": "critical"
         },
@@ -4770,6 +4770,17 @@
         },
         {
           "asset_identifier": "support.gitlab.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": false,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "none"
+        },
+        {
+          "asset_identifier": "translate.gitlab.com",
           "asset_type": "URL",
           "availability_requirement": null,
           "confidentiality_requirement": null,
@@ -9329,10 +9340,10 @@
     "name": "Invision Power Services, Inc.",
     "handle": "ips",
     "url": "https://hackerone.com/ips",
-    "offers_bounties": true,
+    "offers_bounties": false,
     "quick_to_bounty": true,
     "quick_to_first_response": true,
-    "submission_state": "paused",
+    "submission_state": "open",
     "targets": {
       "in_scope": [
 
@@ -11227,7 +11238,7 @@
     "handle": "badoo",
     "url": "https://hackerone.com/badoo",
     "offers_bounties": true,
-    "quick_to_bounty": true,
+    "quick_to_bounty": false,
     "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
@@ -17095,7 +17106,7 @@
           "confidentiality_requirement": null,
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
-          "instruction": "**_Tier B_ Asset** \n\nOnly exploits that are successful within the LINE Application are considered in scope.\nAny exploit that may work on web browsers, but not in the LINE app itself, is out of scope. ",
+          "instruction": "**_Tier B_ Asset** ",
           "integrity_requirement": null,
           "max_severity": "critical"
         },
@@ -17106,7 +17117,7 @@
           "confidentiality_requirement": null,
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
-          "instruction": "**_Tier B_ Asset** \n\nPrevious standalone web domains such as live.line.me, music.line.me, news.line.me, store.line.me are now included in this wildcard. \n\nOther notes: \nOnly exploits that are successful within the LINE Application are considered in scope.\nAny exploit that may work on web browsers, but not in the LINE app itself, is out of scope. ",
+          "instruction": "**_Tier B_ Asset** \n\nPrevious standalone web domains such as live.line.me, music.line.me, news.line.me, store.line.me are now included in this wildcard. ",
           "integrity_requirement": null,
           "max_severity": "critical"
         },
@@ -17117,7 +17128,7 @@
           "confidentiality_requirement": null,
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
-          "instruction": "**_Tier B_ Asset** \n\nOnly exploits that are successful within the LINE Application are considered in scope.\nAny exploit that may work on web browsers, but not in the LINE app itself, is out of scope.",
+          "instruction": "**_Tier B_ Asset** ",
           "integrity_requirement": null,
           "max_severity": "critical"
         },
@@ -18048,17 +18059,6 @@
           "instruction": "We host non-production servers in our \"quantshack.com\" domain, primarily www.quantshack.com.\n\nYou shouldn't be able to access front-end pages on www.quantshack.com, because it is restricted by an IP whitelist and anyone not on the whitelist should get redirected automatically to www.quantopian.com. If you are able to bypass that whitelist and access any functionality other than an error page, that's certainly a reportable issue. Note that _functionality_ is key; static assets (i.e., JavaScript files style sheets, images, etc.) on www.quantshack.com are not protected by a whitelist, so please do not submit reports about them.\n\nWe will also accept reports about issues you discover on any other resources you discover in this domain.\n\nPlease do not submit reports about DMARC, DKIM, or SPF on this domain.",
           "integrity_requirement": "low",
           "max_severity": "medium"
-        },
-        {
-          "asset_identifier": "blog.quantopian.com",
-          "asset_type": "URL",
-          "availability_requirement": "medium",
-          "confidentiality_requirement": "medium",
-          "eligible_for_bounty": true,
-          "eligible_for_submission": true,
-          "instruction": "### DO NOT SUBMIT: \n* xmlrpc.php on our blog; we know it's enabled and [we are not going to disable it](https://www.wordfence.com/blog/2015/10/should-you-disable-xml-rpc-on-wordpress/);\n* attacks requiring a victim's device to be compromised by malware, a rootkit, etc;\n* security vulnerabilities in third-party components made public within the past 14 days;\n* issues that you have not actually confirmed are present; or\n* issues without a clearly defined security impact.",
-          "integrity_requirement": "medium",
-          "max_severity": "critical"
         },
         {
           "asset_identifier": "www.quantopian.com",
@@ -23092,6 +23092,17 @@
           "instruction": "",
           "integrity_requirement": "low",
           "max_severity": "medium"
+        },
+        {
+          "asset_identifier": "https://github.com/delight-im",
+          "asset_type": "SOURCE_CODE",
+          "availability_requirement": "none",
+          "confidentiality_requirement": "none",
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "Projects with the label `[UNMAINTAINED]`, usually in their description, are out of scope.",
+          "integrity_requirement": "none",
+          "max_severity": "none"
         },
         {
           "asset_identifier": "im.delight.letters",
@@ -31269,7 +31280,7 @@
     "url": "https://hackerone.com/nisc",
     "offers_bounties": false,
     "quick_to_bounty": false,
-    "quick_to_first_response": true,
+    "quick_to_first_response": false,
     "submission_state": "open",
     "targets": {
       "in_scope": [
@@ -31721,7 +31732,7 @@
     "offers_bounties": true,
     "quick_to_bounty": false,
     "quick_to_first_response": true,
-    "submission_state": "paused",
+    "submission_state": "disabled",
     "targets": {
       "in_scope": [
         {
@@ -31995,6 +32006,17 @@
           "max_severity": "critical"
         },
         {
+          "asset_identifier": "*.callstats.io",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
           "asset_identifier": "*.contactnow.8x8.com",
           "asset_type": "URL",
           "availability_requirement": "low",
@@ -32146,17 +32168,6 @@
           "eligible_for_submission": true,
           "instruction": "",
           "integrity_requirement": "high",
-          "max_severity": "critical"
-        },
-        {
-          "asset_identifier": "callstats.io",
-          "asset_type": "URL",
-          "availability_requirement": null,
-          "confidentiality_requirement": null,
-          "eligible_for_bounty": false,
-          "eligible_for_submission": true,
-          "instruction": "",
-          "integrity_requirement": null,
           "max_severity": "critical"
         },
         {
@@ -34952,7 +34963,7 @@
     "url": "https://hackerone.com/xilinx",
     "offers_bounties": false,
     "quick_to_bounty": false,
-    "quick_to_first_response": false,
+    "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
       "in_scope": [
@@ -38295,7 +38306,7 @@
           "confidentiality_requirement": null,
           "eligible_for_bounty": false,
           "eligible_for_submission": true,
-          "instruction": "Please select this asset to report automotive-related vulnerabilities and please consider our __policy__ regarding \"out of scope vulnerabilities\", __the safe harbor clause__ and that this asset is out of scope of the program and not eligible for bounty. This asset is eligible for submission, therefore, it is shown as \"In Scope\".\n",
+          "instruction": "Please select this asset to report automotive-related vulnerabilities and please consider our __policy__ regarding \"out of scope vulnerabilities\" and a potentially deviating application of the __safe harbor clause__.  As this asset is eligible for submission it is shown as \"In Scope\". However, please note that this asset is out of scope of the bug bounty program and, therefore, not eligible for bounty. \n",
           "integrity_requirement": null,
           "max_severity": "critical"
         },
@@ -38306,7 +38317,7 @@
           "confidentiality_requirement": null,
           "eligible_for_bounty": false,
           "eligible_for_submission": true,
-          "instruction": "Please select this asset to report other vulnerabilities and please consider our __policy__ regarding \"out of scope vulnerabilities\", __the safe harbor clause__ and that this asset is out of scope of the program and not eligible for bounty. This asset is eligible for submission, therefore, it is shown as \"In Scope\".\n",
+          "instruction": "Please select this asset to report vulnerabilities not matching any of the assets stated above and note our __policy__ regarding \"out of scope vulnerabilities\" and a potentially deviating application of the __safe harbor clause__. As this asset is eligible for submission it is shown as \"In Scope\". However, please note that this asset is out of scope of the bug bounty program and, therefore, not eligible for bounty. \n",
           "integrity_requirement": null,
           "max_severity": "critical"
         },
@@ -43693,6 +43704,28 @@
           "max_severity": "critical"
         },
         {
+          "asset_identifier": "api.direct.playstation.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "direct.playstation.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
           "asset_identifier": "my.playstation.com",
           "asset_type": "URL",
           "availability_requirement": null,
@@ -44832,6 +44865,24 @@
     }
   },
   {
+    "id": 48687,
+    "name": "Coingaming",
+    "handle": "coingaming",
+    "url": "https://hackerone.com/coingaming",
+    "offers_bounties": true,
+    "quick_to_bounty": false,
+    "quick_to_first_response": true,
+    "submission_state": "open",
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
     "id": 48781,
     "name": "SMTP2GO",
     "handle": "smtp2go",
@@ -45083,6 +45134,78 @@
     }
   },
   {
+    "id": 49300,
+    "name": "Solana BBP",
+    "handle": "solana-bbp",
+    "url": "https://hackerone.com/solana-bbp",
+    "offers_bounties": true,
+    "quick_to_bounty": false,
+    "quick_to_first_response": true,
+    "submission_state": "open",
+    "targets": {
+      "in_scope": [
+        {
+          "asset_identifier": "https://github.com/solana-labs/example-helloworld",
+          "asset_type": "SOURCE_CODE",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "https://github.com/solana-labs/solana-program-library",
+          "asset_type": "SOURCE_CODE",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "https://github.com/solana-labs/solana/tree/master/programs",
+          "asset_type": "SOURCE_CODE",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "https://github.com/solana-labs/solana/tree/master/runtime",
+          "asset_type": "SOURCE_CODE",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "https://github.com/solana-labs/solana/tree/master/sdk",
+          "asset_type": "SOURCE_CODE",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        }
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
     "id": 49532,
     "name": "Rockset",
     "handle": "rockset",
@@ -45120,6 +45243,34 @@
           "asset_type": "URL",
           "availability_requirement": "medium",
           "confidentiality_requirement": "medium",
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": "medium",
+          "max_severity": "critical"
+        }
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
+    "id": 49538,
+    "name": "Dropcontact",
+    "handle": "dropcontact",
+    "url": "https://hackerone.com/dropcontact",
+    "offers_bounties": false,
+    "quick_to_bounty": false,
+    "quick_to_first_response": true,
+    "submission_state": "open",
+    "targets": {
+      "in_scope": [
+        {
+          "asset_identifier": "www.dropcontact.io",
+          "asset_type": "URL",
+          "availability_requirement": "medium",
+          "confidentiality_requirement": "high",
           "eligible_for_bounty": false,
           "eligible_for_submission": true,
           "instruction": "",

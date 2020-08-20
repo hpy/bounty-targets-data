@@ -319,6 +319,7 @@ trello.com
 api.twilio.com
 build.twilio.com
 tsock.us1.twilio.com
+twilio.com
 api.myfitnesspal.com
 record.underarmour.com
 www.endomondo.com
@@ -433,6 +434,7 @@ renofi.com
 estimate.renofi.com
 login.renofi.com
 secure.renofi.com
+app.supportbee.com
 sylaps.com
 briefe.io
 moviecontentfilter.com
@@ -869,7 +871,6 @@ beta-baas.acronis.com
 relaxcdn.unibet.com
 api.drive2.ru
 www.drive2.ru
-blog.quantopian.com
 www.quantopian.com
 forum.portswigger.net
 portswigger.net
@@ -1178,7 +1179,6 @@ chain.link
 jenkins.eslint.org
 8x8.vc
 accountmanager.8x8.com
-callstats.io
 get8x8.com
 sso.8x8.com
 support.8x8.com
@@ -1491,6 +1491,8 @@ rembconnect.be
 bibliotheek.myndr.nl
 osd.myndr.nl
 www.myndr.nl
+api.direct.playstation.com
+direct.playstation.com
 my.playstation.com
 social.playstation.com
 store.playstation.com
@@ -1527,6 +1529,7 @@ ews.qa.finra.org
 api.rs2.usw2.rockset.com
 console.rockset.com
 docs.rockset.com
+www.dropcontact.io
 apps.apple.com
 get.aol.com
 help.github.com
@@ -1703,6 +1706,12 @@ whycantigettosleep.com
 preact.io
 lrswitch-access-2.kulnet.kuleuven.be
 login.arkane.network
+webwinkel.volkskrant.nl
+abonnement.volkskrant.nl
+login2.volkskrant.nl
+myaccount.volkskrant.nl
+shop.volkskrant.nl
+www.volkskrant.nl
 login.oyens.com
 www.gulp-shop.de
 demo.tendertracker.de

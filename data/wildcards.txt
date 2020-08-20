@@ -138,10 +138,7 @@ api*.soundcloud.com
 *.teslainsuranceservices.com
 *.teslamotors.com
 *.trello.services
-*.authy.com
-*.flex.twilio.com
 *.sip.*.twilio.com
-*.twilio.com
 *.upwork.com
 *.westernunion.*
 *.studiopress.com
@@ -376,6 +373,7 @@ www.paypal-*.com
 *.upgrade.com
 *.smartcontract.com
 *.8x8.com
+*.callstats.io
 *.contactnow.8x8.com
 *.dxi.eu
 *.easycontactnow.com

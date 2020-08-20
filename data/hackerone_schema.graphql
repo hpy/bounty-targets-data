@@ -854,6 +854,7 @@ type ActivitiesExternalUserJoined implements ActivityInterface & Node & ReportAc
   markdown_message: String
   message: String
   report: Report
+  report_retest_user: User
   triage_inbox_item: TriageInboxItem
   updated_at: DateTime!
 }
@@ -17232,7 +17233,7 @@ type Team implements ActivitiesInterface & Node & ResourceInterface {
   controlled_launch_team: Boolean
   cover_color: String
   cover_photo_url: String
-  coverage_analytics_summary(end_date: Date!, start_date: Date!): CoverageAnalyticsSummary!
+  coverage_analytics_summary(asset_id: ID = null, end_date: Date!, start_date: Date!): CoverageAnalyticsSummary!
   created_at: DateTime
   credential_instruction: String
   credential_instruction_html: String
@@ -19303,6 +19304,7 @@ enum TriageInboxItemReportSubstateEnum {
   new
   not_applicable
   resolved
+  retesting
   spam
   triaged
 }
@@ -23880,6 +23882,7 @@ type User implements Node & ResourceInterface {
   ): ChecklistCheckConnection
   cleared: Boolean!
   cobalt_handle: String
+  country: String
   created_at: DateTime!
   current_sign_in_at: DateTime
   demo_hacker: Boolean!
