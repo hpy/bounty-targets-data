@@ -2444,7 +2444,7 @@
           "confidentiality_requirement": null,
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
-          "instruction": "MY.GAMES core services: ```my.games``` (without subdomains), ```account.my.games```, ```community.my.games```, ```profile.my.games```, ```store.my.games```, ```market.my.games```, ```api.my.games```, ```ac.my.games```, ```*-ac.my.games```, ```auth.my.games```, ```c.my.games```, ```o2.my.games```, ```acint.my.games```, ```dummy.my.games``` \n\nGame subdomains do not belong to this scope.\n\n==MY.GAMES scope only awards critical serverside vulnerabilities, if vulnerability compromises the infrastructure (e.g. RCE, SQLi, LFR, SSRF, etc) or data outside of project's scope (e.g. personal information) via serverside vector.==\n\nClientside vulnerabilities (XSS, CSRF) and business logic specific bugs, including privilege escalations within the product are accepted without bounty. \n\n==MitM and local attacks, user enumeration on registration/recovery, open redirections, insufficient session expiration, cookies working after logout etc are not accepted== unless there are additional vectors identified (e.g. ability to steal the session token via remote vector for open redirection)",
+          "instruction": "MY.GAMES core services: ```my.games``` (without subdomains), ```account.my.games```, ```community.my.games```, ```profile.my.games```, ```store.my.games```, ```market.my.games```, ```api.my.games```, ```ac.my.games```, ```*-ac.my.games```, ```auth.my.games```, ```c.my.games```, ```o2.my.games```, ```acint.my.games```, ```dummy.my.games``` \n\nGame subdomains do not belong to this scope.\n\n==MitM and local attacks, user enumeration on registration/recovery, open redirections, insufficient session expiration, cookies working after logout etc are not accepted== unless there are additional vectors identified (e.g. ability to steal the session token via remote vector for open redirection)",
           "integrity_requirement": null,
           "max_severity": "critical"
         },
@@ -2637,7 +2637,7 @@
     "handle": "coinbase",
     "url": "https://hackerone.com/coinbase",
     "offers_bounties": true,
-    "quick_to_bounty": false,
+    "quick_to_bounty": true,
     "quick_to_first_response": false,
     "submission_state": "open",
     "targets": {
@@ -7001,6 +7001,17 @@
           "max_severity": "critical"
         },
         {
+          "asset_identifier": "restaurants.yelp.com",
+          "asset_type": "URL",
+          "availability_requirement": "none",
+          "confidentiality_requirement": "none",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": "low",
+          "max_severity": "low"
+        },
+        {
           "asset_identifier": "www.yelp-support.com",
           "asset_type": "URL",
           "availability_requirement": "low",
@@ -9341,7 +9352,7 @@
     "handle": "ips",
     "url": "https://hackerone.com/ips",
     "offers_bounties": false,
-    "quick_to_bounty": true,
+    "quick_to_bounty": false,
     "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
@@ -9953,7 +9964,7 @@
     "url": "https://hackerone.com/globaleaks",
     "offers_bounties": false,
     "quick_to_bounty": false,
-    "quick_to_first_response": true,
+    "quick_to_first_response": false,
     "submission_state": "open",
     "targets": {
       "in_scope": [
@@ -28292,7 +28303,7 @@
           "max_severity": "none"
         },
         {
-          "asset_identifier": "*.sports.betfair.*",
+          "asset_identifier": "*.responsiblegambling.betfair.*",
           "asset_type": "URL",
           "availability_requirement": null,
           "confidentiality_requirement": null,
@@ -28303,7 +28314,7 @@
           "max_severity": "none"
         },
         {
-          "asset_identifier": "*.sportsiteexweb.betfair.com",
+          "asset_identifier": "*.responsiblegambling.paddypower.*",
           "asset_type": "URL",
           "availability_requirement": null,
           "confidentiality_requirement": null,
@@ -43821,7 +43832,7 @@
     "url": "https://hackerone.com/kopikas_entertainment",
     "offers_bounties": false,
     "quick_to_bounty": false,
-    "quick_to_first_response": false,
+    "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
       "in_scope": [
@@ -45134,6 +45145,78 @@
     }
   },
   {
+    "id": 49254,
+    "name": "Rebellion Defense",
+    "handle": "rebellion-defense",
+    "url": "https://hackerone.com/rebellion-defense",
+    "offers_bounties": false,
+    "quick_to_bounty": false,
+    "quick_to_first_response": true,
+    "submission_state": "open",
+    "targets": {
+      "in_scope": [
+        {
+          "asset_identifier": "*.mooch.rip",
+          "asset_type": "URL",
+          "availability_requirement": "none",
+          "confidentiality_requirement": "medium",
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": "low",
+          "max_severity": "high"
+        },
+        {
+          "asset_identifier": "*.moochirp.io",
+          "asset_type": "URL",
+          "availability_requirement": "none",
+          "confidentiality_requirement": "medium",
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": "low",
+          "max_severity": "high"
+        },
+        {
+          "asset_identifier": "*.rebelliondefence.com",
+          "asset_type": "URL",
+          "availability_requirement": "medium",
+          "confidentiality_requirement": "medium",
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "*.rebelliondefense.com",
+          "asset_type": "URL",
+          "availability_requirement": "medium",
+          "confidentiality_requirement": "medium",
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "www.rebelliondefense.com",
+          "asset_type": "URL",
+          "availability_requirement": "low",
+          "confidentiality_requirement": "none",
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "Main public website, managed through Squarespace",
+          "integrity_requirement": "low",
+          "max_severity": "medium"
+        }
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
     "id": 49300,
     "name": "Solana BBP",
     "handle": "solana-bbp",
@@ -45273,7 +45356,7 @@
           "confidentiality_requirement": "high",
           "eligible_for_bounty": false,
           "eligible_for_submission": true,
-          "instruction": "",
+          "instruction": "Please do not report vunerabilities on FirstPromoteur or HelpScout.",
           "integrity_requirement": "medium",
           "max_severity": "critical"
         }

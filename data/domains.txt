@@ -638,6 +638,7 @@ biz.yelp.com
 blog.yelp.com
 m.yelp.com
 mobile-api.yelp.com
+restaurants.yelp.com
 www.yelp-support.com
 www.yelp.com
 www.yelpreservations.com
@@ -1526,6 +1527,7 @@ www.superdrug.com
 app.smtp2go.com
 smtp2go.com
 ews.qa.finra.org
+www.rebelliondefense.com
 api.rs2.usw2.rockset.com
 console.rockset.com
 docs.rockset.com
