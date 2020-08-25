@@ -3146,7 +3146,7 @@
     "allows_disclosure": false,
     "managed_by_bugcrowd": true,
     "safe_harbor": "partial",
-    "max_payout": 2500,
+    "max_payout": 10000,
     "targets": {
       "in_scope": [
         {
@@ -3159,7 +3159,7 @@
         },
         {
           "type": "api testing",
-          "target": "Testing the Bugcrowd platform"
+          "target": "Testing the Bugcrowd platforms"
         },
         {
           "type": "api testing",
@@ -3863,44 +3863,6 @@
           "type": "website testing",
           "target": "https://support.logmeininc.com/lastpass"
         }
-      ]
-    }
-  },
-  {
-    "name": "LevelUp0x07 CTF",
-    "url": "https://bugcrowd.com/levelup-ctf",
-    "allows_disclosure": true,
-    "managed_by_bugcrowd": true,
-    "safe_harbor": "full",
-    "max_payout": 0,
-    "targets": {
-      "in_scope": [
-        {
-          "type": "other",
-          "target": "https://07.levelupctf.com/"
-        }
-      ],
-      "out_of_scope": [
-
-      ]
-    }
-  },
-  {
-    "name": "LevelUp0x07 CTF",
-    "url": "https://bugcrowd.com/levelup-ctf",
-    "allows_disclosure": true,
-    "managed_by_bugcrowd": true,
-    "safe_harbor": "full",
-    "max_payout": 0,
-    "targets": {
-      "in_scope": [
-        {
-          "type": "other",
-          "target": "https://07.levelupctf.com/"
-        }
-      ],
-      "out_of_scope": [
-
       ]
     }
   },
@@ -4674,10 +4636,6 @@
         },
         {
           "type": "other",
-          "target": "Device & Content Authorization Targets"
-        },
-        {
-          "type": "other",
           "target": "Microsites"
         },
         {
@@ -5251,22 +5209,6 @@
     }
   },
   {
-    "name": "SDKs and APIs Oh My!",
-    "url": "https://bugcrowd.com/programs/teasers/1Z21mCvj7Fkohij4GEv4L2mv",
-    "allows_disclosure": true,
-    "managed_by_bugcrowd": true,
-    "safe_harbor": "full",
-    "max_payout": 4500,
-    "targets": {
-      "in_scope": [
-
-      ],
-      "out_of_scope": [
-
-      ]
-    }
-  },
-  {
     "name": "Workplace Misconduct reporting tool",
     "url": "https://bugcrowd.com/programs/teasers/2tGFGG44931uCUuXxfNn1a1m",
     "allows_disclosure": true,
@@ -5320,7 +5262,7 @@
     "allows_disclosure": true,
     "managed_by_bugcrowd": true,
     "safe_harbor": "partial",
-    "max_payout": 3000,
+    "max_payout": 4500,
     "targets": {
       "in_scope": [
 
@@ -5379,12 +5321,12 @@
     }
   },
   {
-    "name": "Help Secure an Anti-Crime FinTech Application",
-    "url": "https://bugcrowd.com/programs/teasers/8KNfwfm3QXy4HeKXYvL6fRRq",
+    "name": "A Network Access Control Provider",
+    "url": "https://bugcrowd.com/programs/teasers/7VFmYw1mboDRKHXJYUhWvrmc",
     "allows_disclosure": true,
     "managed_by_bugcrowd": true,
     "safe_harbor": "full",
-    "max_payout": 2000,
+    "max_payout": 1500,
     "targets": {
       "in_scope": [
 
@@ -5401,6 +5343,38 @@
     "managed_by_bugcrowd": true,
     "safe_harbor": "partial",
     "max_payout": 2500,
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
+    "name": "Help secure a shocking new eCommerce platform",
+    "url": "https://bugcrowd.com/programs/teasers/BRTLEC2brLWovrqfpFoF7V3R",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "partial",
+    "max_payout": 1000,
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
+    "name": "An exciting software company with a broad and varied scope!",
+    "url": "https://bugcrowd.com/programs/teasers/CdHnBeeCFBVPYc1U1iUocDaa",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "partial",
+    "max_payout": 3000,
     "targets": {
       "in_scope": [
 
@@ -5667,22 +5641,6 @@
     }
   },
   {
-    "name": "Web, API, iOS and Android Applications in Ongoing Bounty Program",
-    "url": "https://bugcrowd.com/programs/teasers/V8rjBFxupVP2t9xqommVvgXF",
-    "allows_disclosure": true,
-    "managed_by_bugcrowd": true,
-    "safe_harbor": "partial",
-    "max_payout": 10000,
-    "targets": {
-      "in_scope": [
-
-      ],
-      "out_of_scope": [
-
-      ]
-    }
-  },
-  {
     "name": "Secure Healthcare Application",
     "url": "https://bugcrowd.com/programs/teasers/Wt5HsxiwVaYAiSe2RYt4QhFg",
     "allows_disclosure": true,
@@ -5875,12 +5833,12 @@
     }
   },
   {
-    "name": "Mathematical software solutions provider",
-    "url": "https://bugcrowd.com/programs/teasers/eQuhxoBoidGUJpQZgWisbrrk",
+    "name": "Click here to submit a support ticket!",
+    "url": "https://bugcrowd.com/programs/teasers/dzLdTDyKibS7sbLurifaVrGk",
     "allows_disclosure": true,
     "managed_by_bugcrowd": true,
-    "safe_harbor": "partial",
-    "max_payout": 3500,
+    "safe_harbor": "full",
+    "max_payout": 0,
     "targets": {
       "in_scope": [
 
@@ -5891,12 +5849,12 @@
     }
   },
   {
-    "name": "A design application for MacOS is looking to secure its assets - help out and receive rewards of up to $2,500!",
-    "url": "https://bugcrowd.com/programs/teasers/fvxaHLDQ25Znja789ma8Jq5Z",
+    "name": "Mathematical software solutions provider",
+    "url": "https://bugcrowd.com/programs/teasers/eQuhxoBoidGUJpQZgWisbrrk",
     "allows_disclosure": true,
     "managed_by_bugcrowd": true,
-    "safe_harbor": "full",
-    "max_payout": 1500,
+    "safe_harbor": "partial",
+    "max_payout": 3500,
     "targets": {
       "in_scope": [
 
@@ -6035,22 +5993,6 @@
     }
   },
   {
-    "name": "Financial Services Firm",
-    "url": "https://bugcrowd.com/programs/teasers/kumhTMRPifLRha3ttg8KZDwh",
-    "allows_disclosure": true,
-    "managed_by_bugcrowd": true,
-    "safe_harbor": "partial",
-    "max_payout": 5000,
-    "targets": {
-      "in_scope": [
-
-      ],
-      "out_of_scope": [
-
-      ]
-    }
-  },
-  {
     "name": "Leading BioTech firm",
     "url": "https://bugcrowd.com/programs/teasers/mJuqBbrajVZMck72L2teD1Km",
     "allows_disclosure": true,
@@ -6147,6 +6089,22 @@
     }
   },
   {
+    "name": "Private program for cloud-based news platform",
+    "url": "https://bugcrowd.com/programs/teasers/qNtAFjB4wvSjrtXsEsase6VF",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "partial",
+    "max_payout": 2500,
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
     "name": "A Leading Learning Platform",
     "url": "https://bugcrowd.com/programs/teasers/qffLu4EbCbHbMpirYQMCGWut",
     "allows_disclosure": true,
@@ -6217,6 +6175,22 @@
     "managed_by_bugcrowd": true,
     "safe_harbor": "full",
     "max_payout": 2800,
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
+    "name": "Let's go secure this private program!",
+    "url": "https://bugcrowd.com/programs/teasers/wz2XjLbMbdSSVadU4sTkDAgJ",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "partial",
+    "max_payout": 3000,
     "targets": {
       "in_scope": [
 
