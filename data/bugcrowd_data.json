@@ -505,8 +505,16 @@
           "target": "Bitbucket Server"
         },
         {
+          "type": "ios",
+          "target": "Conflience Cloud iOS"
+        },
+        {
           "type": "website testing",
           "target": "Confluence Cloud (bugbounty-test-<bugcrowd-name>.atlassian.net/wiki)"
+        },
+        {
+          "type": "android",
+          "target": "Confluence Cloud Android"
         },
         {
           "type": "android",
@@ -554,11 +562,19 @@
         },
         {
           "type": "android",
+          "target": "Jira Cloud Android"
+        },
+        {
+          "type": "android",
           "target": "Jira Cloud Mobile App for Android"
         },
         {
           "type": "ios",
           "target": "Jira Cloud Mobile App for iOS"
+        },
+        {
+          "type": "ios",
+          "target": "Jira Cloud iOS"
         },
         {
           "type": "other",
@@ -591,6 +607,10 @@
         {
           "type": "other",
           "target": "Other - (all other Atlassian targets)"
+        },
+        {
+          "type": "website testing",
+          "target": "SourceTree (for macOS and Windows)"
         },
         {
           "type": "other",
@@ -1510,6 +1530,14 @@
           "target": "Local Client Launcher"
         },
         {
+          "type": "api testing",
+          "target": "account-api.io.centrify.com"
+        },
+        {
+          "type": "website testing",
+          "target": "account.io.centrify.com"
+        },
+        {
           "type": "website testing",
           "target": "https://www.centrify.com"
         },
@@ -1520,6 +1548,80 @@
         {
           "type": "website testing",
           "target": "pod23.centrify.com"
+        },
+        {
+          "type": "website testing",
+          "target": "www.centrify.com"
+        }
+      ],
+      "out_of_scope": [
+        {
+          "type": "ios",
+          "target": "Centrify  iOS App"
+        },
+        {
+          "type": "android",
+          "target": "Centrify Android App"
+        },
+        {
+          "type": "other",
+          "target": "Centrify Browser Extension"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Centrify",
+    "url": "https://bugcrowd.com/centrify",
+    "allows_disclosure": false,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "partial",
+    "max_payout": 3000,
+    "targets": {
+      "in_scope": [
+        {
+          "type": "other",
+          "target": "Centrify Agent for Windows"
+        },
+        {
+          "type": "other",
+          "target": "Centrify Cloud Connector"
+        },
+        {
+          "type": "website testing",
+          "target": "Centrify Privilege Service Portal"
+        },
+        {
+          "type": "api testing",
+          "target": "Centrify Service API"
+        },
+        {
+          "type": "other",
+          "target": "Local Client Launcher"
+        },
+        {
+          "type": "api testing",
+          "target": "account-api.io.centrify.com"
+        },
+        {
+          "type": "website testing",
+          "target": "account.io.centrify.com"
+        },
+        {
+          "type": "website testing",
+          "target": "https://www.centrify.com"
+        },
+        {
+          "type": "website testing",
+          "target": "pod12.centrify.com"
+        },
+        {
+          "type": "website testing",
+          "target": "pod23.centrify.com"
+        },
+        {
+          "type": "website testing",
+          "target": "www.centrify.com"
         }
       ],
       "out_of_scope": [
@@ -2204,6 +2306,10 @@
         {
           "type": "website testing",
           "target": "*.emc.com/*"
+        },
+        {
+          "type": "website testing",
+          "target": "*.manywho.com/*"
         },
         {
           "type": "website testing",
@@ -3949,6 +4055,88 @@
     }
   },
   {
+    "name": "Lime",
+    "url": "https://bugcrowd.com/lime",
+    "allows_disclosure": false,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "full",
+    "max_payout": 5000,
+    "targets": {
+      "in_scope": [
+        {
+          "type": "api testing",
+          "target": "*.lime.bike"
+        },
+        {
+          "type": "website testing",
+          "target": "*.limeinternal.com"
+        },
+        {
+          "type": "website testing",
+          "target": "https://admintool.lime.bike"
+        },
+        {
+          "type": "website testing",
+          "target": "https://airflow.limeinternal.com"
+        },
+        {
+          "type": "api testing",
+          "target": "https://api.lime.bike"
+        },
+        {
+          "type": "ios",
+          "target": "https://apps.apple.com/us/app/lime/id1199780189"
+        },
+        {
+          "type": "website testing",
+          "target": "https://data.limeinternal.com"
+        },
+        {
+          "type": "api testing",
+          "target": "https://juicer.lime.bike"
+        },
+        {
+          "type": "api testing",
+          "target": "https://ops.lime.bike"
+        },
+        {
+          "type": "website testing",
+          "target": "https://orchard.limeinternal.com"
+        },
+        {
+          "type": "android",
+          "target": "https://play.google.com/store/apps/details?id=com.limebike"
+        },
+        {
+          "type": "website testing",
+          "target": "https://tab.limeinternal.com"
+        },
+        {
+          "type": "api testing",
+          "target": "https://webviews.lime.bike"
+        },
+        {
+          "type": "api testing",
+          "target": "proxy-production.lime.bike"
+        }
+      ],
+      "out_of_scope": [
+        {
+          "type": "website testing",
+          "target": "https://*.li.me"
+        },
+        {
+          "type": "website testing",
+          "target": "https://help.li.me (zendesk)"
+        },
+        {
+          "type": "website testing",
+          "target": "https://li.me (hubspot)"
+        }
+      ]
+    }
+  },
+  {
     "name": "Mailgun",
     "url": "https://bugcrowd.com/mailgun",
     "allows_disclosure": false,
@@ -5209,6 +5397,22 @@
     }
   },
   {
+    "name": "SDKs and APIs Oh My!",
+    "url": "https://bugcrowd.com/programs/teasers/1Z21mCvj7Fkohij4GEv4L2mv",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "full",
+    "max_payout": 4500,
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
     "name": "Workplace Misconduct reporting tool",
     "url": "https://bugcrowd.com/programs/teasers/2tGFGG44931uCUuXxfNn1a1m",
     "allows_disclosure": true,
@@ -5321,22 +5525,6 @@
     }
   },
   {
-    "name": "A Network Access Control Provider",
-    "url": "https://bugcrowd.com/programs/teasers/7VFmYw1mboDRKHXJYUhWvrmc",
-    "allows_disclosure": true,
-    "managed_by_bugcrowd": true,
-    "safe_harbor": "full",
-    "max_payout": 1500,
-    "targets": {
-      "in_scope": [
-
-      ],
-      "out_of_scope": [
-
-      ]
-    }
-  },
-  {
     "name": "Mobile Web Application in Healthcare",
     "url": "https://bugcrowd.com/programs/teasers/8jwMiFAD8rJsLDXHSbwShMv8",
     "allows_disclosure": true,
@@ -5369,12 +5557,12 @@
     }
   },
   {
-    "name": "An exciting software company with a broad and varied scope!",
-    "url": "https://bugcrowd.com/programs/teasers/CdHnBeeCFBVPYc1U1iUocDaa",
+    "name": "Do you like games?",
+    "url": "https://bugcrowd.com/programs/teasers/CVP3tvjhbJZP4tQ4TCscBuaT",
     "allows_disclosure": true,
     "managed_by_bugcrowd": true,
     "safe_harbor": "partial",
-    "max_payout": 3000,
+    "max_payout": 2500,
     "targets": {
       "in_scope": [
 
@@ -5465,12 +5653,12 @@
     }
   },
   {
-    "name": "Access Points, Controllers, and Gateway Products",
-    "url": "https://bugcrowd.com/programs/teasers/JbEmSR2TS4dsh5buWePqFS5x",
+    "name": "Leading digital transaction provider. New mobile targets introduced recently!",
+    "url": "https://bugcrowd.com/programs/teasers/Jpzfw2e8eSJaYSjdN9TGiK8d",
     "allows_disclosure": true,
     "managed_by_bugcrowd": true,
-    "safe_harbor": "full",
-    "max_payout": 1500,
+    "safe_harbor": "partial",
+    "max_payout": 3000,
     "targets": {
       "in_scope": [
 
@@ -5503,6 +5691,22 @@
     "managed_by_bugcrowd": true,
     "safe_harbor": "partial",
     "max_payout": 2500,
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
+    "name": "End to End Payment Solution",
+    "url": "https://bugcrowd.com/programs/teasers/NN5Yd45gNJZdnVaEDPuqkmKH",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "partial",
+    "max_payout": 3500,
     "targets": {
       "in_scope": [
 
@@ -5609,22 +5813,6 @@
     }
   },
   {
-    "name": "Mobile Network Monitoring at it's finest",
-    "url": "https://bugcrowd.com/programs/teasers/UVoLcy2ragXwrS2ifYJq55oe",
-    "allows_disclosure": true,
-    "managed_by_bugcrowd": true,
-    "safe_harbor": "full",
-    "max_payout": 1500,
-    "targets": {
-      "in_scope": [
-
-      ],
-      "out_of_scope": [
-
-      ]
-    }
-  },
-  {
     "name": "Web, API, iOS and Android Applications in Ongoing Bounty Program",
     "url": "https://bugcrowd.com/programs/teasers/V8rjBFxupVP2t9xqommVvgXF",
     "allows_disclosure": true,
@@ -5663,22 +5851,6 @@
     "managed_by_bugcrowd": true,
     "safe_harbor": "full",
     "max_payout": 2500,
-    "targets": {
-      "in_scope": [
-
-      ],
-      "out_of_scope": [
-
-      ]
-    }
-  },
-  {
-    "name": "Educational tool used by students worldwide",
-    "url": "https://bugcrowd.com/programs/teasers/YnMCWcQy4ay1meH5zS4KmQe4",
-    "allows_disclosure": true,
-    "managed_by_bugcrowd": true,
-    "safe_harbor": "partial",
-    "max_payout": 2000,
     "targets": {
       "in_scope": [
 
@@ -5865,6 +6037,22 @@
     }
   },
   {
+    "name": "A design application for MacOS is looking to secure its assets - help out and receive rewards of up to $2,500!",
+    "url": "https://bugcrowd.com/programs/teasers/fvxaHLDQ25Znja789ma8Jq5Z",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "full",
+    "max_payout": 1500,
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
     "name": "Leading Cybersecurity Solutions Provider",
     "url": "https://bugcrowd.com/programs/teasers/g55EBqXg4edagMyYHdWBRz3S",
     "allows_disclosure": true,
@@ -5961,22 +6149,6 @@
     }
   },
   {
-    "name": "Be the Authority!",
-    "url": "https://bugcrowd.com/programs/teasers/ihjPujsLBGznTPRDeRvLvYBL",
-    "allows_disclosure": true,
-    "managed_by_bugcrowd": true,
-    "safe_harbor": "partial",
-    "max_payout": 1000,
-    "targets": {
-      "in_scope": [
-
-      ],
-      "out_of_scope": [
-
-      ]
-    }
-  },
-  {
     "name": "A payroll company is looking to the crowd to help maintain its security posture",
     "url": "https://bugcrowd.com/programs/teasers/jW2fWkt6rFnheo8PDCAd9d13",
     "allows_disclosure": true,
@@ -5993,12 +6165,44 @@
     }
   },
   {
+    "name": "Financial Services Firm",
+    "url": "https://bugcrowd.com/programs/teasers/kumhTMRPifLRha3ttg8KZDwh",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "partial",
+    "max_payout": 5000,
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
     "name": "Leading BioTech firm",
     "url": "https://bugcrowd.com/programs/teasers/mJuqBbrajVZMck72L2teD1Km",
     "allows_disclosure": true,
     "managed_by_bugcrowd": true,
     "safe_harbor": "full",
     "max_payout": 2500,
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
+    "name": "FinTech provider",
+    "url": "https://bugcrowd.com/programs/teasers/muoeF4Rpqf48kDvaANUyG3QQ",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "partial",
+    "max_payout": 3500,
     "targets": {
       "in_scope": [
 
@@ -6041,22 +6245,6 @@
     }
   },
   {
-    "name": "Apps for an app",
-    "url": "https://bugcrowd.com/programs/teasers/pCUGM1UfiSfRdMh6WaBrKGS4",
-    "allows_disclosure": true,
-    "managed_by_bugcrowd": true,
-    "safe_harbor": "partial",
-    "max_payout": 1500,
-    "targets": {
-      "in_scope": [
-
-      ],
-      "out_of_scope": [
-
-      ]
-    }
-  },
-  {
     "name": "Customer Feedback Platform",
     "url": "https://bugcrowd.com/programs/teasers/pSbLHw5kitMU4As1DcAyDqeo",
     "allows_disclosure": true,
@@ -6073,12 +6261,12 @@
     }
   },
   {
-    "name": "Automatic, Systematic",
-    "url": "https://bugcrowd.com/programs/teasers/ptBb5dBZppXPxL5H4fqatAGb",
+    "name": "The leader in transport fuels.",
+    "url": "https://bugcrowd.com/programs/teasers/pinkJ5MeAb2fpEH1QkQA9uuS",
     "allows_disclosure": true,
     "managed_by_bugcrowd": true,
-    "safe_harbor": "partial",
-    "max_payout": 1500,
+    "safe_harbor": "full",
+    "max_payout": 2500,
     "targets": {
       "in_scope": [
 
@@ -6175,22 +6363,6 @@
     "managed_by_bugcrowd": true,
     "safe_harbor": "full",
     "max_payout": 2800,
-    "targets": {
-      "in_scope": [
-
-      ],
-      "out_of_scope": [
-
-      ]
-    }
-  },
-  {
-    "name": "Let's go secure this private program!",
-    "url": "https://bugcrowd.com/programs/teasers/wz2XjLbMbdSSVadU4sTkDAgJ",
-    "allows_disclosure": true,
-    "managed_by_bugcrowd": true,
-    "safe_harbor": "partial",
-    "max_payout": 3000,
     "targets": {
       "in_scope": [
 
