@@ -3633,6 +3633,28 @@
           "max_severity": "critical"
         },
         {
+          "asset_identifier": "api.smooch.io",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "app.smooch.io",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
           "asset_identifier": "apps.zendesk.com",
           "asset_type": "URL",
           "availability_requirement": null,
@@ -3707,6 +3729,50 @@
           "eligible_for_submission": true,
           "instruction": "Zendesk Support SDK for iOS ",
           "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "https://github.com/smooch/smooch-android",
+          "asset_type": "SOURCE_CODE",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "https://github.com/smooch/smooch-ios",
+          "asset_type": "SOURCE_CODE",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "https://github.com/smooch/smooch-web",
+          "asset_type": "SOURCE_CODE",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "smooch.io",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
           "max_severity": "critical"
         },
         {
@@ -5202,6 +5268,17 @@
           "max_severity": "critical"
         },
         {
+          "asset_identifier": "*.adobeconnect.com",
+          "asset_type": "URL",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
           "asset_identifier": "*.adobecqms.net",
           "asset_type": "URL",
           "availability_requirement": null,
@@ -6555,7 +6632,7 @@
     "handle": "snapchat",
     "url": "https://hackerone.com/snapchat",
     "offers_bounties": true,
-    "quick_to_bounty": true,
+    "quick_to_bounty": false,
     "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
@@ -8918,7 +8995,7 @@
     "handle": "moneybird",
     "url": "https://hackerone.com/moneybird",
     "offers_bounties": false,
-    "quick_to_bounty": true,
+    "quick_to_bounty": false,
     "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
@@ -9998,6 +10075,17 @@
     "targets": {
       "in_scope": [
         {
+          "asset_identifier": "api.heydoctor.com",
+          "asset_type": "URL",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "All tickets that involve api.heydoctor.com must be tied to a request stemming from an action on heydoctor.goodrx.com.",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
           "asset_identifier": "com.goodrx",
           "asset_type": "GOOGLE_PLAY_APP_ID",
           "availability_requirement": "high",
@@ -10037,7 +10125,7 @@
           "confidentiality_requirement": "high",
           "eligible_for_bounty": true,
           "eligible_for_submission": true,
-          "instruction": "While this domain is in scope, please refrain from starting a doctor consultation and interacting with doctors for the sole sake of testing. Bounties are eligible for this host as it does handle live production traffic. Questions about acceptable scope for this host can be sent to: security@goodrx.com",
+          "instruction": "While this domain is in scope, please refrain from starting a doctor consultation and interacting with doctors for the sole sake of testing. \n\nThe site uses https://api.heydoctor.com in order to function, if the vulnerability to discovered requires a request to https://api.heydoctor.com then you can report it and it will be considered in-scope.\n\nBounties are eligible for this host as it does handle live production traffic. Questions about acceptable scope for this host can be sent to: security@goodrx.com",
           "integrity_requirement": "high",
           "max_severity": "critical"
         },
@@ -11124,7 +11212,7 @@
     "url": "https://hackerone.com/matomo",
     "offers_bounties": true,
     "quick_to_bounty": true,
-    "quick_to_first_response": true,
+    "quick_to_first_response": false,
     "submission_state": "open",
     "targets": {
       "in_scope": [
@@ -17648,6 +17736,17 @@
           "max_severity": "critical"
         },
         {
+          "asset_identifier": "maria.casino",
+          "asset_type": "URL",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "unibet.me, maria.casino, stly.eu share the same platform, we will only reward the initial report for any bug, as one fix will solve the bug on all three domains.",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
           "asset_identifier": "relaxcdn.unibet.com",
           "asset_type": "URL",
           "availability_requirement": "none",
@@ -17657,6 +17756,28 @@
           "instruction": "Operated by a third-party. Reports for this domain will be triaged but are ineligible for a bounty.",
           "integrity_requirement": "low",
           "max_severity": "low"
+        },
+        {
+          "asset_identifier": "stly.eu",
+          "asset_type": "URL",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "unibet.me, maria.casino, stly.eu share the same platform, we will only reward the initial report for any bug, as one fix will solve the bug on all three domains.",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "unibet.me",
+          "asset_type": "URL",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": true,
+          "eligible_for_submission": true,
+          "instruction": "unibet.me, maria.casino, stly.eu share the same platform, we will only reward the initial report for any bug, as one fix will solve the bug on all three domains.",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
         }
       ],
       "out_of_scope": [
@@ -18117,6 +18238,28 @@
         }
       ],
       "out_of_scope": [
+        {
+          "asset_identifier": "enterprise.quantopian.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": false,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "none"
+        },
+        {
+          "asset_identifier": "factset.quantopian.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": false,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "none"
+        },
         {
           "asset_identifier": "status.quantopian.com",
           "asset_type": "URL",
@@ -20628,7 +20771,7 @@
     "handle": "trustpilot",
     "url": "https://hackerone.com/trustpilot",
     "offers_bounties": true,
-    "quick_to_bounty": true,
+    "quick_to_bounty": false,
     "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
@@ -21169,7 +21312,7 @@
     "url": "https://hackerone.com/homebrew",
     "offers_bounties": false,
     "quick_to_bounty": false,
-    "quick_to_first_response": true,
+    "quick_to_first_response": false,
     "submission_state": "open",
     "targets": {
       "in_scope": [
@@ -21984,7 +22127,7 @@
     "handle": "wink_jq3al",
     "url": "https://hackerone.com/wink_jq3al",
     "offers_bounties": true,
-    "quick_to_bounty": true,
+    "quick_to_bounty": false,
     "quick_to_first_response": false,
     "submission_state": "open",
     "targets": {
@@ -22012,7 +22155,7 @@
     "handle": "tts",
     "url": "https://hackerone.com/tts",
     "offers_bounties": true,
-    "quick_to_bounty": true,
+    "quick_to_bounty": false,
     "quick_to_first_response": true,
     "submission_state": "open",
     "targets": {
@@ -24755,7 +24898,7 @@
     "url": "https://hackerone.com/streak_com",
     "offers_bounties": false,
     "quick_to_bounty": false,
-    "quick_to_first_response": true,
+    "quick_to_first_response": false,
     "submission_state": "open",
     "targets": {
       "in_scope": [
@@ -26240,6 +26383,17 @@
         },
         {
           "asset_identifier": "jpeg-js",
+          "asset_type": "SOURCE_CODE",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": null,
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "json-bigint",
           "asset_type": "SOURCE_CODE",
           "availability_requirement": null,
           "confidentiality_requirement": null,
@@ -31145,6 +31299,17 @@
           "eligible_for_bounty": false,
           "eligible_for_submission": false,
           "instruction": "The old blog archive is not eligible",
+          "integrity_requirement": null,
+          "max_severity": "none"
+        },
+        {
+          "asset_identifier": "cbswag.com",
+          "asset_type": "URL",
+          "availability_requirement": null,
+          "confidentiality_requirement": null,
+          "eligible_for_bounty": false,
+          "eligible_for_submission": false,
+          "instruction": "This is a Shopify store, we recommend you submit any shopify bugs to their program: https://hackerone.com/shopify",
           "integrity_requirement": null,
           "max_severity": "none"
         },
@@ -38985,7 +39150,7 @@
     "url": "https://hackerone.com/amitree_inc",
     "offers_bounties": false,
     "quick_to_bounty": false,
-    "quick_to_first_response": true,
+    "quick_to_first_response": false,
     "submission_state": "open",
     "targets": {
       "in_scope": [
@@ -40731,7 +40896,7 @@
     "url": "https://hackerone.com/stripo",
     "offers_bounties": false,
     "quick_to_bounty": false,
-    "quick_to_first_response": true,
+    "quick_to_first_response": false,
     "submission_state": "open",
     "targets": {
       "in_scope": [
@@ -44067,6 +44232,67 @@
           "eligible_for_submission": true,
           "instruction": "*Visma Online*\n\nThis is an interface where the customer's users can access all their services, and customer's administrators can manage users on the company and manage users' access to services that the company has. \nMore information about the service and test accounts creation can be found here:\nhttps://vismabugbountyprod.z16.web.core.windows.net/VismaOnline-hackerone-getting-started.pdf\n\n**Out of scope:**\n Session invalidation issues (e.g. logout, password change, email change, role change, user deletion, etc).",
           "integrity_requirement": "high",
+          "max_severity": "critical"
+        }
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
+    "id": 45395,
+    "name": "Simple Poll",
+    "handle": "simple_poll",
+    "url": "https://hackerone.com/simple_poll",
+    "offers_bounties": false,
+    "quick_to_bounty": false,
+    "quick_to_first_response": true,
+    "submission_state": "open",
+    "targets": {
+      "in_scope": [
+        {
+          "asset_identifier": "Simple Goals slack app",
+          "asset_type": "OTHER",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "The Simple Goals app can be installed from the [Slack App directory](slack.com/apps/AU9M045ML-simple-goals) and then subsequently be used from within the Slack client.\n\nOf course the slack app directory website, or the Slack client itself are not within scope of this program. However, Slack does offer their own bug bounty: https://slack.com/intl/en-gb/report-vulnerability\n\nAs with all other assets in scope, automated testing is not permitted\n\n",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "Simple Poll Slack app",
+          "asset_type": "OTHER",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "The app can be installed from the [Slack App directory](https://slack.com/apps/A0HFW7MR6-simple-poll) and then subsequently be used from within the Slack client.\n\nOf course the slack app directory website, or the Slack client itself are not within scope of this program. However, Slack does offer their own bug bounty: https://slack.com/intl/en-gb/report-vulnerability\n\nAs with all other assets in scope, automated testing is not permitted\n\n",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "https://simplepoll.rocks",
+          "asset_type": "URL",
+          "availability_requirement": "high",
+          "confidentiality_requirement": "high",
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": "high",
+          "max_severity": "critical"
+        },
+        {
+          "asset_identifier": "simplegoals.app",
+          "asset_type": "URL",
+          "availability_requirement": "medium",
+          "confidentiality_requirement": "medium",
+          "eligible_for_bounty": false,
+          "eligible_for_submission": true,
+          "instruction": "",
+          "integrity_requirement": "medium",
           "max_severity": "critical"
         }
       ],

@@ -37,7 +37,6 @@
 *-api.fitbit.com
 *-client.fitbit.com
 *.gojekapi.com
-*.bugcrowd.com
 *.healthifyme.com
 *.hs-sites.com
 *.hubapi.com
@@ -147,7 +146,6 @@ api*.soundcloud.com
 *.wpesvc.net
 *-cvr-aws-*.sys.comcast.net
 *signalservice.comcast.net
-business-*-prod.codebig2.net
 xhomeapi-*.cloud.comcast.net
 xhomeapi-*.codebig2.net
 *.vpn.hackerone.net
@@ -195,6 +193,7 @@ ws*.gitter.im
 *.adobe.com
 *.adobe.io
 *.adobeaemcloud.com
+*.adobeconnect.com
 *.adobecqms.net
 *.bizible.com
 *.marketo.com

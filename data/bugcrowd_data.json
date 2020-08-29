@@ -192,44 +192,6 @@
     }
   },
   {
-    "name": "Arkose Labs",
-    "url": "https://bugcrowd.com/arkose-labs",
-    "allows_disclosure": false,
-    "managed_by_bugcrowd": true,
-    "safe_harbor": "partial",
-    "max_payout": 5600,
-    "targets": {
-      "in_scope": [
-        {
-          "type": "other",
-          "target": "Level 3, please contact whitehat@arkoselabs.com for access"
-        },
-        {
-          "type": "website testing",
-          "target": "dashboard.arkoselabs.com"
-        },
-        {
-          "type": "other",
-          "target": "https://client-demo.arkoselabs.com/solo-animals"
-        },
-        {
-          "type": "other",
-          "target": "https://client-demo.arkoselabs.com/stacked-animals"
-        }
-      ],
-      "out_of_scope": [
-        {
-          "type": "website testing",
-          "target": "arkoselabs.com"
-        },
-        {
-          "type": "website testing",
-          "target": "status.arkoselabs.com"
-        }
-      ]
-    }
-  },
-  {
     "name": "Arlo Cash Rewards",
     "url": "https://bugcrowd.com/arlo",
     "allows_disclosure": false,
@@ -901,6 +863,10 @@
         },
         {
           "type": "other",
+          "target": "Binance Smart Chain"
+        },
+        {
+          "type": "other",
           "target": "Binance macOS Application"
         },
         {
@@ -941,7 +907,23 @@
         },
         {
           "type": "other",
+          "target": "https://github.com/binance-chain/bsc"
+        },
+        {
+          "type": "other",
+          "target": "https://github.com/binance-chain/bsc-genesis-contract"
+        },
+        {
+          "type": "other",
+          "target": "https://github.com/binance-chain/bsc-relayer"
+        },
+        {
+          "type": "other",
           "target": "https://github.com/binance-chain/ledger-app-binance"
+        },
+        {
+          "type": "other",
+          "target": "https://github.com/binance-chain/oracle-relayer"
         },
         {
           "type": "other",
@@ -1011,6 +993,10 @@
         },
         {
           "type": "other",
+          "target": "Binance Smart Chain"
+        },
+        {
+          "type": "other",
           "target": "Binance macOS Application"
         },
         {
@@ -1051,7 +1037,23 @@
         },
         {
           "type": "other",
+          "target": "https://github.com/binance-chain/bsc"
+        },
+        {
+          "type": "other",
+          "target": "https://github.com/binance-chain/bsc-genesis-contract"
+        },
+        {
+          "type": "other",
+          "target": "https://github.com/binance-chain/bsc-relayer"
+        },
+        {
+          "type": "other",
           "target": "https://github.com/binance-chain/ledger-app-binance"
+        },
+        {
+          "type": "other",
+          "target": "https://github.com/binance-chain/oracle-relayer"
         },
         {
           "type": "other",
@@ -1539,10 +1541,6 @@
         },
         {
           "type": "website testing",
-          "target": "https://www.centrify.com"
-        },
-        {
-          "type": "website testing",
           "target": "pod12.centrify.com"
         },
         {
@@ -1606,10 +1604,6 @@
         {
           "type": "website testing",
           "target": "account.io.centrify.com"
-        },
-        {
-          "type": "website testing",
-          "target": "https://www.centrify.com"
         },
         {
           "type": "website testing",
@@ -2024,92 +2018,6 @@
         {
           "type": "website testing",
           "target": "Any asset not explicitly listed as 'In Scope' above is explicitly out of scope"
-        }
-      ]
-    }
-  },
-  {
-    "name": "Credit Karma",
-    "url": "https://bugcrowd.com/creditkarma",
-    "allows_disclosure": false,
-    "managed_by_bugcrowd": true,
-    "safe_harbor": "partial",
-    "max_payout": 5000,
-    "targets": {
-      "in_scope": [
-        {
-          "type": "android",
-          "target": "Credit Karma Android Mobile Application"
-        },
-        {
-          "type": "ios",
-          "target": "Credit Karma Canada iOS App"
-        },
-        {
-          "type": "ios",
-          "target": "Credit Karma iOS Mobile Application"
-        },
-        {
-          "type": "api testing",
-          "target": "api.creditkarma.com"
-        },
-        {
-          "type": "website testing",
-          "target": "https://*.creditkarma.com"
-        },
-        {
-          "type": "website testing",
-          "target": "https://accounts.creditkarma.com"
-        },
-        {
-          "type": "website testing",
-          "target": "https://blog.creditkarma.com/"
-        },
-        {
-          "type": "website testing",
-          "target": "https://help.creditkarma.com/"
-        },
-        {
-          "type": "website testing",
-          "target": "https://tax.creditkarma.com"
-        },
-        {
-          "type": "website testing",
-          "target": "https://www.creditkarma.ca/"
-        }
-      ],
-      "out_of_scope": [
-        {
-          "type": "website testing",
-          "target": "appsflyer.com"
-        },
-        {
-          "type": "website testing",
-          "target": "crashlytics.com"
-        },
-        {
-          "type": "website testing",
-          "target": "http://socialverification.creditkarma.com/"
-        },
-        {
-          "type": "website testing",
-          "target": "http://socialverification.stage.creditkarma.com/"
-        },
-        {
-          "type": "website testing",
-          "target": "https://www.creditkarma.com/all/advice"
-        },
-        {
-          "type": "website testing",
-          "target": "https://www.creditkarma.com/article/*"
-        },
-        {
-          "type": "website testing",
-          "target": "https://www.creditkarma.com/reviews/"
-        },
-        {
-          "type": "website testing",
-          "target": "taplytics.com"
         }
       ]
     }
@@ -2734,6 +2642,10 @@
         {
           "type": "website testing",
           "target": "your-assigned-subdomain.files.com"
+        },
+        {
+          "type": "website testing",
+          "target": "your-assigned-subdomain.files.com"
         }
       ],
       "out_of_scope": [
@@ -2776,6 +2688,10 @@
         {
           "type": "website testing",
           "target": "www.files.com"
+        },
+        {
+          "type": "website testing",
+          "target": "your-assigned-subdomain.files.com"
         },
         {
           "type": "website testing",
@@ -3256,26 +3172,26 @@
     "targets": {
       "in_scope": [
         {
-          "type": "website testing",
-          "target": "*.bugcrowd.com"
-        },
-        {
           "type": "other",
           "target": "All IT-Managed Third-Party Services and Infrastructure"
         },
         {
           "type": "api testing",
-          "target": "Testing the Bugcrowd platforms"
+          "target": "api.bugcrowd.com"
         },
         {
-          "type": "api testing",
-          "target": "api.bugcrowd.com"
+          "type": "website testing",
+          "target": "bugcrowd.com"
         }
       ],
       "out_of_scope": [
         {
           "type": "website testing",
           "target": "docs.bugcrowd.com"
+        },
+        {
+          "type": "website testing",
+          "target": "researcherdocs.bugcrowd.com"
         },
         {
           "type": "website testing",
@@ -3690,6 +3606,56 @@
     }
   },
   {
+    "name": "iRobot",
+    "url": "https://bugcrowd.com/irobot",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "partial",
+    "max_payout": 7500,
+    "targets": {
+      "in_scope": [
+        {
+          "type": "ios",
+          "target": "https://itunes.apple.com/us/app/irobot-home/id1012014442?mt=8"
+        },
+        {
+          "type": "android",
+          "target": "https://play.google.com/store/apps/details?id=com.irobot.home"
+        },
+        {
+          "type": "hardware testing",
+          "target": "iRobot cloud-connected robot that you own (e.g., i7, 980, 960, 690, Braava, etc.)"
+        }
+      ],
+      "out_of_scope": [
+        {
+          "type": "website testing",
+          "target": "http://www.irobot.com"
+        },
+        {
+          "type": "website testing",
+          "target": "https://global.irobot.com/My%20Privacy"
+        },
+        {
+          "type": "website testing",
+          "target": "https://homesupport.irobot.com"
+        },
+        {
+          "type": "website testing",
+          "target": "https://homesupport.irobot.com/app/chat/chat_launch"
+        },
+        {
+          "type": "website testing",
+          "target": "https://store.irobot.com"
+        },
+        {
+          "type": "website testing",
+          "target": "irobot.in"
+        }
+      ]
+    }
+  },
+  {
     "name": "(ISC)²",
     "url": "https://bugcrowd.com/isc2",
     "allows_disclosure": false,
@@ -3728,29 +3694,6 @@
           "type": "website testing",
           "target": "https://learn.isc2.org"
         }
-      ]
-    }
-  },
-  {
-    "name": "Jumbo Privacy",
-    "url": "https://bugcrowd.com/jumboprivacy",
-    "allows_disclosure": false,
-    "managed_by_bugcrowd": true,
-    "safe_harbor": "partial",
-    "max_payout": 4500,
-    "targets": {
-      "in_scope": [
-        {
-          "type": "android",
-          "target": "JumboPrivacy Android Application"
-        },
-        {
-          "type": "ios",
-          "target": "JumboPrivacy iOS Application"
-        }
-      ],
-      "out_of_scope": [
-
       ]
     }
   },
@@ -5397,38 +5340,6 @@
     }
   },
   {
-    "name": "SDKs and APIs Oh My!",
-    "url": "https://bugcrowd.com/programs/teasers/1Z21mCvj7Fkohij4GEv4L2mv",
-    "allows_disclosure": true,
-    "managed_by_bugcrowd": true,
-    "safe_harbor": "full",
-    "max_payout": 4500,
-    "targets": {
-      "in_scope": [
-
-      ],
-      "out_of_scope": [
-
-      ]
-    }
-  },
-  {
-    "name": "Workplace Misconduct reporting tool",
-    "url": "https://bugcrowd.com/programs/teasers/2tGFGG44931uCUuXxfNn1a1m",
-    "allows_disclosure": true,
-    "managed_by_bugcrowd": true,
-    "safe_harbor": "full",
-    "max_payout": 2500,
-    "targets": {
-      "in_scope": [
-
-      ],
-      "out_of_scope": [
-
-      ]
-    }
-  },
-  {
     "name": "Help secure an American healthcare provider’s API, web and mobile assets",
     "url": "https://bugcrowd.com/programs/teasers/31HdyjMajAJgMkE5hUB7jC2h",
     "allows_disclosure": true,
@@ -5525,6 +5436,38 @@
     }
   },
   {
+    "name": "No hardware, no problem! Route your submissions here!",
+    "url": "https://bugcrowd.com/programs/teasers/85QHLUn4xVHNMXnm5RnTXi5i",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "full",
+    "max_payout": 2500,
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
+    "name": "Help Secure an Anti-Crime FinTech Application",
+    "url": "https://bugcrowd.com/programs/teasers/8KNfwfm3QXy4HeKXYvL6fRRq",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "full",
+    "max_payout": 2000,
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
     "name": "Mobile Web Application in Healthcare",
     "url": "https://bugcrowd.com/programs/teasers/8jwMiFAD8rJsLDXHSbwShMv8",
     "allows_disclosure": true,
@@ -5541,28 +5484,12 @@
     }
   },
   {
-    "name": "Help secure a shocking new eCommerce platform",
-    "url": "https://bugcrowd.com/programs/teasers/BRTLEC2brLWovrqfpFoF7V3R",
+    "name": "A cloud-based translation platform needs your help to help secure their web and API targets!",
+    "url": "https://bugcrowd.com/programs/teasers/B3ULt7tmegepSnmFbSdmbgHN",
     "allows_disclosure": true,
     "managed_by_bugcrowd": true,
     "safe_harbor": "partial",
-    "max_payout": 1000,
-    "targets": {
-      "in_scope": [
-
-      ],
-      "out_of_scope": [
-
-      ]
-    }
-  },
-  {
-    "name": "Do you like games?",
-    "url": "https://bugcrowd.com/programs/teasers/CVP3tvjhbJZP4tQ4TCscBuaT",
-    "allows_disclosure": true,
-    "managed_by_bugcrowd": true,
-    "safe_harbor": "partial",
-    "max_payout": 2500,
+    "max_payout": 0,
     "targets": {
       "in_scope": [
 
@@ -5637,12 +5564,44 @@
     }
   },
   {
+    "name": "An international law firm is looking for talented researchers to test out the security of their broad list of Web targets and IP addresses!!",
+    "url": "https://bugcrowd.com/programs/teasers/GK9HJa2TkcTEcGpsad4iAHUv",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "partial",
+    "max_payout": 3000,
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
     "name": "Access Points, Controllers, and Gateway Products",
     "url": "https://bugcrowd.com/programs/teasers/JbEmSR2TS4dsh5buWePqFS5x",
     "allows_disclosure": true,
     "managed_by_bugcrowd": true,
     "safe_harbor": "full",
     "max_payout": 1500,
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
+    "name": "Leading digital transaction provider. New mobile targets introduced recently!",
+    "url": "https://bugcrowd.com/programs/teasers/Jpzfw2e8eSJaYSjdN9TGiK8d",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "partial",
+    "max_payout": 3000,
     "targets": {
       "in_scope": [
 
@@ -5733,22 +5692,6 @@
     }
   },
   {
-    "name": "UK FinTech business banking mobile application",
-    "url": "https://bugcrowd.com/programs/teasers/NrkF3VgMxU9gFeFEpysYzGc2",
-    "allows_disclosure": true,
-    "managed_by_bugcrowd": true,
-    "safe_harbor": "full",
-    "max_payout": 5000,
-    "targets": {
-      "in_scope": [
-
-      ],
-      "out_of_scope": [
-
-      ]
-    }
-  },
-  {
     "name": "3 Easy payments",
     "url": "https://bugcrowd.com/programs/teasers/PYG4BcYhkMm668So9ZdYxvFh",
     "allows_disclosure": true,
@@ -5781,7 +5724,7 @@
     }
   },
   {
-    "name": "USA! USA! USA!",
+    "name": ".",
     "url": "https://bugcrowd.com/programs/teasers/TLnfMNC1dwRLpUixkuToPb2B",
     "allows_disclosure": true,
     "managed_by_bugcrowd": true,
@@ -5861,12 +5804,44 @@
     }
   },
   {
+    "name": "Educational tool used by students worldwide",
+    "url": "https://bugcrowd.com/programs/teasers/YnMCWcQy4ay1meH5zS4KmQe4",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "partial",
+    "max_payout": 2000,
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
     "name": "Online Form Builder",
     "url": "https://bugcrowd.com/programs/teasers/Z5Um4X5BE7FTXZTuVYjHEmgJ",
     "allows_disclosure": true,
     "managed_by_bugcrowd": true,
     "safe_harbor": "partial",
     "max_payout": 1500,
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
+    "name": "Payment platform looking for bug hunters!",
+    "url": "https://bugcrowd.com/programs/teasers/ZFU5tCmZVAJJc3W3y66eWdfb",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "partial",
+    "max_payout": 5000,
     "targets": {
       "in_scope": [
 
@@ -6005,44 +5980,12 @@
     }
   },
   {
-    "name": "Click here to submit a support ticket!",
-    "url": "https://bugcrowd.com/programs/teasers/dzLdTDyKibS7sbLurifaVrGk",
-    "allows_disclosure": true,
-    "managed_by_bugcrowd": true,
-    "safe_harbor": "full",
-    "max_payout": 0,
-    "targets": {
-      "in_scope": [
-
-      ],
-      "out_of_scope": [
-
-      ]
-    }
-  },
-  {
     "name": "Mathematical software solutions provider",
     "url": "https://bugcrowd.com/programs/teasers/eQuhxoBoidGUJpQZgWisbrrk",
     "allows_disclosure": true,
     "managed_by_bugcrowd": true,
     "safe_harbor": "partial",
     "max_payout": 3500,
-    "targets": {
-      "in_scope": [
-
-      ],
-      "out_of_scope": [
-
-      ]
-    }
-  },
-  {
-    "name": "A design application for MacOS is looking to secure its assets - help out and receive rewards of up to $2,500!",
-    "url": "https://bugcrowd.com/programs/teasers/fvxaHLDQ25Znja789ma8Jq5Z",
-    "allows_disclosure": true,
-    "managed_by_bugcrowd": true,
-    "safe_harbor": "full",
-    "max_payout": 1500,
     "targets": {
       "in_scope": [
 
@@ -6075,6 +6018,22 @@
     "managed_by_bugcrowd": true,
     "safe_harbor": "full",
     "max_payout": 2500,
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
+    "name": "Cloud Security Platform",
+    "url": "https://bugcrowd.com/programs/teasers/gaCPhg1rSBNy9AeVKnmbi9Rv",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "partial",
+    "max_payout": 0,
     "targets": {
       "in_scope": [
 
@@ -6197,22 +6156,6 @@
     }
   },
   {
-    "name": "FinTech provider",
-    "url": "https://bugcrowd.com/programs/teasers/muoeF4Rpqf48kDvaANUyG3QQ",
-    "allows_disclosure": true,
-    "managed_by_bugcrowd": true,
-    "safe_harbor": "partial",
-    "max_payout": 3500,
-    "targets": {
-      "in_scope": [
-
-      ],
-      "out_of_scope": [
-
-      ]
-    }
-  },
-  {
     "name": "Online Survey Software tool",
     "url": "https://bugcrowd.com/programs/teasers/opjaCTB6DU8FZphycw1jmB1L",
     "allows_disclosure": true,
@@ -6235,6 +6178,22 @@
     "managed_by_bugcrowd": true,
     "safe_harbor": "partial",
     "max_payout": 3000,
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
+    "name": "Apps for an app",
+    "url": "https://bugcrowd.com/programs/teasers/pCUGM1UfiSfRdMh6WaBrKGS4",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "partial",
+    "max_payout": 1500,
     "targets": {
       "in_scope": [
 
@@ -6277,12 +6236,28 @@
     }
   },
   {
-    "name": "Private program for cloud-based news platform",
-    "url": "https://bugcrowd.com/programs/teasers/qNtAFjB4wvSjrtXsEsase6VF",
+    "name": "Automatic, Systematic",
+    "url": "https://bugcrowd.com/programs/teasers/ptBb5dBZppXPxL5H4fqatAGb",
     "allows_disclosure": true,
     "managed_by_bugcrowd": true,
     "safe_harbor": "partial",
-    "max_payout": 2500,
+    "max_payout": 1500,
+    "targets": {
+      "in_scope": [
+
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
+    "name": "Information Security Company's Ongoing Program",
+    "url": "https://bugcrowd.com/programs/teasers/qEcxjGndRoGtHNobumXqvbSJ",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "full",
+    "max_payout": 2700,
     "targets": {
       "in_scope": [
 
@@ -6341,12 +6316,12 @@
     }
   },
   {
-    "name": "Cryptocurrency payment system",
-    "url": "https://bugcrowd.com/programs/teasers/tSwYQmjuPaCBLG8Wh3uDtYgq",
+    "name": "Help secure an American healthcare provider’s web assets",
+    "url": "https://bugcrowd.com/programs/teasers/vpoaHJiffxD1XYnnbKeMdwR2",
     "allows_disclosure": true,
     "managed_by_bugcrowd": true,
-    "safe_harbor": "partial",
-    "max_payout": 4500,
+    "safe_harbor": "full",
+    "max_payout": 2800,
     "targets": {
       "in_scope": [
 
@@ -6357,12 +6332,12 @@
     }
   },
   {
-    "name": "Help secure an American healthcare provider’s web assets",
-    "url": "https://bugcrowd.com/programs/teasers/vpoaHJiffxD1XYnnbKeMdwR2",
+    "name": "Let's go secure this private program!",
+    "url": "https://bugcrowd.com/programs/teasers/wz2XjLbMbdSSVadU4sTkDAgJ",
     "allows_disclosure": true,
     "managed_by_bugcrowd": true,
-    "safe_harbor": "full",
-    "max_payout": 2800,
+    "safe_harbor": "partial",
+    "max_payout": 3000,
     "targets": {
       "in_scope": [
 
@@ -6883,7 +6858,7 @@
     "allows_disclosure": true,
     "managed_by_bugcrowd": true,
     "safe_harbor": "full",
-    "max_payout": 3000,
+    "max_payout": 10000,
     "targets": {
       "in_scope": [
         {
@@ -6953,6 +6928,180 @@
         {
           "type": "other",
           "target": "Invincea X NextGen Anti-Virus"
+        },
+        {
+          "type": "iot",
+          "target": "Sophos XG Firewall"
+        },
+        {
+          "type": "other",
+          "target": "astaro.uservoice.com"
+        },
+        {
+          "type": "website testing",
+          "target": "dev.phishthreat.com"
+        },
+        {
+          "type": "website testing",
+          "target": "test.portal.darkbytes.com"
+        }
+      ],
+      "out_of_scope": [
+        {
+          "type": "website testing",
+          "target": "*.Sandboxie.com (including downloadable product)"
+        },
+        {
+          "type": "other",
+          "target": "*.astaro-security.com"
+        },
+        {
+          "type": "other",
+          "target": "*.astaroedu.com"
+        },
+        {
+          "type": "website testing",
+          "target": "*.ddns.cyberoam.com"
+        },
+        {
+          "type": "website testing",
+          "target": "*.releaseportal.cyberoam.com"
+        },
+        {
+          "type": "website testing",
+          "target": "*.spotflux.com (including downloadable product)"
+        },
+        {
+          "type": "website testing",
+          "target": "*eventreg.sophos.com"
+        },
+        {
+          "type": "website testing",
+          "target": "app.reflexion.net"
+        },
+        {
+          "type": "other",
+          "target": "autodiscover.hitmanpro.com"
+        },
+        {
+          "type": "website testing",
+          "target": "events.sophos.com"
+        },
+        {
+          "type": "other",
+          "target": "lyncdiscover.hitmanpro.com"
+        },
+        {
+          "type": "website testing",
+          "target": "mev.hitmanpro.com"
+        },
+        {
+          "type": "other",
+          "target": "shop.hitmanpro.com"
+        },
+        {
+          "type": "other",
+          "target": "sip.hitmanpro.com"
+        },
+        {
+          "type": "website testing",
+          "target": "sophos.atlassian.net (Public service desk)"
+        },
+        {
+          "type": "other",
+          "target": "support.hitmanpro.com"
+        },
+        {
+          "type": "website testing",
+          "target": "surveys.sophos.com"
+        },
+        {
+          "type": "website testing",
+          "target": "tickets.reflexion.net"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Sophos",
+    "url": "https://bugcrowd.com/sophos",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "full",
+    "max_payout": 10000,
+    "targets": {
+      "in_scope": [
+        {
+          "type": "other",
+          "target": "*.astaro.at"
+        },
+        {
+          "type": "other",
+          "target": "*.astaro.ch"
+        },
+        {
+          "type": "website testing",
+          "target": "*.astaro.com"
+        },
+        {
+          "type": "other",
+          "target": "*.astaro.de"
+        },
+        {
+          "type": "other",
+          "target": "*.astaro.info"
+        },
+        {
+          "type": "other",
+          "target": "*.astaro.net"
+        },
+        {
+          "type": "other",
+          "target": "*.astaro.org"
+        },
+        {
+          "type": "website testing",
+          "target": "*.cyberoam.com"
+        },
+        {
+          "type": "other",
+          "target": "*.fw-notify.net"
+        },
+        {
+          "type": "other",
+          "target": "*.hitmanpro.com"
+        },
+        {
+          "type": "other",
+          "target": "*.hitmanpro.nl"
+        },
+        {
+          "type": "other",
+          "target": "*.mojave.net"
+        },
+        {
+          "type": "other",
+          "target": "*.myastaro.com"
+        },
+        {
+          "type": "other",
+          "target": "*.reflexion.net"
+        },
+        {
+          "type": "other",
+          "target": "*.sophos.com"
+        },
+        {
+          "type": "other",
+          "target": "*.surfright.nl"
+        },
+        {
+          "type": "other",
+          "target": "Invincea X NextGen Anti-Virus"
+        },
+        {
+          "type": "iot",
+          "target": "Sophos XG Firewall"
         },
         {
           "type": "other",
@@ -9050,6 +9199,66 @@
     }
   },
   {
+    "name": "WestJet's Vulnerability Disclosure Program",
+    "url": "https://bugcrowd.com/westjet-disclose",
+    "allows_disclosure": false,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "full",
+    "max_payout": 0,
+    "targets": {
+      "in_scope": [
+        {
+          "type": "website testing",
+          "target": "www.flyswoop.com"
+        },
+        {
+          "type": "website testing",
+          "target": "www.westjet.com"
+        }
+      ],
+      "out_of_scope": [
+        {
+          "type": "website testing",
+          "target": "biz.westjet.com"
+        },
+        {
+          "type": "api testing",
+          "target": "travel.westjet.com"
+        }
+      ]
+    }
+  },
+  {
+    "name": "WestJet's Vulnerability Disclosure Program",
+    "url": "https://bugcrowd.com/westjet-disclose",
+    "allows_disclosure": false,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "full",
+    "max_payout": 0,
+    "targets": {
+      "in_scope": [
+        {
+          "type": "website testing",
+          "target": "www.flyswoop.com"
+        },
+        {
+          "type": "website testing",
+          "target": "www.westjet.com"
+        }
+      ],
+      "out_of_scope": [
+        {
+          "type": "website testing",
+          "target": "biz.westjet.com"
+        },
+        {
+          "type": "api testing",
+          "target": "travel.westjet.com"
+        }
+      ]
+    }
+  },
+  {
     "name": "WHMCS Client Management Portal",
     "url": "https://bugcrowd.com/whmcs",
     "allows_disclosure": false,
@@ -9181,10 +9390,6 @@
         {
           "type": "ios",
           "target": "Xfinity Home iOS mobile app"
-        },
-        {
-          "type": "api testing",
-          "target": "https://business-*-prod.codebig2.net/*/v1"
         },
         {
           "type": "website testing",
