@@ -96,23 +96,11 @@
     "targets": {
       "in_scope": [
         {
-          "type": "api",
-          "target": "one.federacy.com"
-        },
-        {
           "type": "website",
           "target": "www.federacy.com"
         }
       ],
       "out_of_scope": [
-        {
-          "type": "website",
-          "target": "honeypot.federacy.com"
-        },
-        {
-          "type": "website",
-          "target": "staging-2.federacy.com"
-        },
         {
           "type": "website",
           "target": "help.federacy.com"
@@ -147,6 +135,29 @@
         {
           "type": "website",
           "target": "www.moderntreasury.com"
+        }
+      ]
+    }
+  },
+  {
+    "id": "6a44c70b-3dd5-4a0c-9eb2-d9b4565f9adf",
+    "name": "Nanonets",
+    "url": "https://www.federacy.com/nanonets",
+    "targets": {
+      "in_scope": [
+        {
+          "type": "api",
+          "target": "app.nanonets.com"
+        },
+        {
+          "type": "website",
+          "target": "nanonets.com"
+        }
+      ],
+      "out_of_scope": [
+        {
+          "type": "website",
+          "target": "status.nanonets.com"
         }
       ]
     }
@@ -211,12 +222,51 @@
         {
           "type": "website",
           "target": "secure.renofi.com"
+        },
+        {
+          "type": "website",
+          "target": "calculator.renofi.com"
         }
       ],
       "out_of_scope": [
         {
           "type": "website",
           "target": "other subdomains of renofi.com that aren't listed in scope - these may be apps that are currently under development; feel free to contact us at security@renofi.com with any questions"
+        }
+      ]
+    }
+  },
+  {
+    "id": "a2130823-56fb-4d68-b210-13dccdb4c607",
+    "name": "RevenueCat",
+    "url": "https://www.federacy.com/revenuecat",
+    "targets": {
+      "in_scope": [
+        {
+          "type": "website",
+          "target": "*.revenuecat.com"
+        },
+        {
+          "type": "website",
+          "target": "appatar.io"
+        },
+        {
+          "type": "website",
+          "target": "app.revenuecat.com"
+        },
+        {
+          "type": "api",
+          "target": "api.revenucat.com"
+        },
+        {
+          "type": "website",
+          "target": "www.revenuecat.com"
+        }
+      ],
+      "out_of_scope": [
+        {
+          "type": "website",
+          "target": "support.revenuecat.com"
         }
       ]
     }

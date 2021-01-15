@@ -111,6 +111,7 @@ A Activities::AgreedOnGoingPublic activity for a report
 type ActivitiesAgreedOnGoingPublic implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -133,11 +134,13 @@ A Activities::BountyAwarded activity for a report
 type ActivitiesBountyAwarded implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   bonus_amount: String
   bounty_amount: String
   bounty_currency: String
+  collaborator: User
   created_at: DateTime!
   genius_execution_id: ID
   i_can_edit: Boolean!
@@ -157,6 +160,7 @@ A Activities::BountySuggested activity for a report
 type ActivitiesBountySuggested implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   bonus_amount: String
@@ -181,6 +185,7 @@ A Activities::BugCloned activity for a report
 type ActivitiesBugCloned implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -204,6 +209,7 @@ A Activities::BugDuplicate activity for a report
 type ActivitiesBugDuplicate implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -227,6 +233,7 @@ A Activities::BugFiled activity for a report
 type ActivitiesBugFiled implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -248,6 +255,7 @@ A Activities::BugInactive activity for a report
 type ActivitiesBugInactive implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -269,6 +277,7 @@ A Activities::BugInformative activity for a report
 type ActivitiesBugInformative implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -290,6 +299,7 @@ A Activities::BugNeedsMoreInfo activity for a report
 type ActivitiesBugNeedsMoreInfo implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -311,6 +321,7 @@ A Activities::BugNew activity for a report
 type ActivitiesBugNew implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -332,6 +343,7 @@ A Activities::BugNotApplicable activity for a report
 type ActivitiesBugNotApplicable implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -353,6 +365,7 @@ A Activities::BugReopened activity for a report
 type ActivitiesBugReopened implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -374,6 +387,7 @@ A Activities::BugResolved activity for a report
 type ActivitiesBugResolved implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -395,6 +409,7 @@ An Activities::BugRetesting activity for a bug
 type ActivitiesBugRetesting implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -406,6 +421,7 @@ type ActivitiesBugRetesting implements ActivityInterface & Node & ReportActivity
   markdown_message: String
   message: String
   report: Report
+  report_retest: ReportRetest
   triage_inbox_item: TriageInboxItem
   updated_at: DateTime!
 }
@@ -416,6 +432,7 @@ A Activities::BugSpam activity for a report
 type ActivitiesBugSpam implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -437,6 +454,7 @@ A Activities::BugTriaged activity for a report
 type ActivitiesBugTriaged implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -458,6 +476,7 @@ A Activities::CancelledDisclosureRequest activity for a report
 type ActivitiesCancelledDisclosureRequest implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -479,6 +498,7 @@ A Activities::ChangedScope activity for a report
 type ActivitiesChangedScope implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -690,6 +710,7 @@ A Activities::Comment activity for a report
 type ActivitiesComment implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -711,6 +732,7 @@ A Activities::CommentsClosed activity for a report
 type ActivitiesCommentsClosed implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -732,6 +754,7 @@ A Activities::CveIdAdded activity for a report
 type ActivitiesCveIdAdded implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -754,6 +777,7 @@ A Activities::DraftStarted activity for a report
 type ActivitiesDraftStarted implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -775,6 +799,7 @@ A Activities::ExternalAdvisoryAdded activity for a report
 type ActivitiesExternalAdvisoryAdded implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -796,6 +821,7 @@ A Activities::ExternalUserInvitationCancelled activity for a report
 type ActivitiesExternalUserInvitationCancelled implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -818,6 +844,7 @@ A Activities::ExternalUserInvited activity for a report
 type ActivitiesExternalUserInvited implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -841,6 +868,7 @@ A Activities::ExternalUserJoined activity for a report
 type ActivitiesExternalUserJoined implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -855,6 +883,7 @@ type ActivitiesExternalUserJoined implements ActivityInterface & Node & ReportAc
   message: String
   report: Report
   report_retest_user: User
+  report_retest_user_id: Int
   triage_inbox_item: TriageInboxItem
   updated_at: DateTime!
 }
@@ -865,6 +894,7 @@ A Activities::ExternalUserRemoved activity for a report
 type ActivitiesExternalUserRemoved implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -875,7 +905,7 @@ type ActivitiesExternalUserRemoved implements ActivityInterface & Node & ReportA
   internal: Boolean
   markdown_message: String
   message: String
-  removed_user: User!
+  removed_user: User
   report: Report
   triage_inbox_item: TriageInboxItem
   updated_at: DateTime!
@@ -887,6 +917,7 @@ A Activities::GroupAssignedToBug activity for a report
 type ActivitiesGroupAssignedToBug implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   assigned_group: TeamMemberGroup
   attachments: [Attachment]
   automated_response: Boolean
@@ -910,6 +941,7 @@ A Activities::HackerRequestedMediation activity for a report
 type ActivitiesHackerRequestedMediation implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -944,6 +976,7 @@ interface ActivitiesInterface {
     Returns the first _n_ elements from the list.
     """
     first: Int
+    internal: [Boolean]
 
     """
     Returns the last _n_ elements from the list.
@@ -968,6 +1001,7 @@ A Activities::ManuallyDisclosed activity for a report
 type ActivitiesManuallyDisclosed implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -989,6 +1023,7 @@ A Activities::MediationRequested activity for a report
 type ActivitiesMediationRequested implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -1010,6 +1045,7 @@ An Activities::NobodyAssignedToBug activity for a report
 type ActivitiesNobodyAssignedToBug implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -1031,6 +1067,7 @@ A Activities::NotEligibleForBounty activity for a report
 type ActivitiesNotEligibleForBounty implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -1198,6 +1235,7 @@ A Activities::ProgramInactive activity for a report
 type ActivitiesProgramInactive implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -1219,6 +1257,7 @@ A Activities::ReassignedToTeam activity for a report
 type ActivitiesReassignedToTeam implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -1242,6 +1281,7 @@ A Activities::ReferenceIdAdded activity for a report
 type ActivitiesReferenceIdAdded implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -1281,6 +1321,7 @@ A Activities::ReportBecamePublic activity for a report
 type ActivitiesReportBecamePublic implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -1302,6 +1343,7 @@ A Activities::ReportCollaboratorInvited activity for a report
 type ActivitiesReportCollaboratorInvited implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -1324,6 +1366,29 @@ A Activities::ReportCollaboratorJoined activity for a report
 type ActivitiesReportCollaboratorJoined implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
+  attachments: [Attachment]
+  automated_response: Boolean
+  created_at: DateTime!
+  genius_execution_id: ID
+  i_can_edit: Boolean!
+  i_can_flag: Boolean!
+  id: ID!
+  internal: Boolean
+  markdown_message: String
+  message: String
+  report: Report
+  triage_inbox_item: TriageInboxItem
+  updated_at: DateTime!
+}
+
+"""
+An Activities::ReportRemediationGuidanceUpdated activity for a report
+"""
+type ActivitiesReportRemediationGuidanceUpdated implements ActivityInterface & Node & ReportActivityInterface {
+  _id: ID!
+  actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -1345,6 +1410,7 @@ An Activities::ReportRetestApproved activity for a Report
 type ActivitiesReportRetestApproved implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -1356,6 +1422,7 @@ type ActivitiesReportRetestApproved implements ActivityInterface & Node & Report
   markdown_message: String
   message: String
   report: Report
+  report_retest_user: ReportRetestUser
   triage_inbox_item: TriageInboxItem
   updated_at: DateTime!
 }
@@ -1366,6 +1433,7 @@ An Activities::ReportRetestRejected activity for a Report
 type ActivitiesReportRetestRejected implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -1387,6 +1455,7 @@ A Activities::ReportSeverityUpdated activity for a report
 type ActivitiesReportSeverityUpdated implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -1410,6 +1479,7 @@ A Activities::ReportTitleUpdated activity for a report
 type ActivitiesReportTitleUpdated implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -1420,8 +1490,8 @@ type ActivitiesReportTitleUpdated implements ActivityInterface & Node & ReportAc
   internal: Boolean
   markdown_message: String
   message: String
-  new_title: String!
-  old_title: String!
+  new_title: String
+  old_title: String
   report: Report
   triage_inbox_item: TriageInboxItem
   updated_at: DateTime!
@@ -1433,6 +1503,7 @@ A Activities::ReportUndisclosed activity for a report
 type ActivitiesReportUndisclosed implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -1454,6 +1525,7 @@ A Activities::ReportVulnerabilityTypesUpdated activity for a report
 type ActivitiesReportVulnerabilityTypesUpdated implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -1477,6 +1549,7 @@ A Activities::RetestUserExpired activity for a report
 type ActivitiesRetestUserExpired implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -1498,6 +1571,7 @@ A Activities::SwagAwarded activity for a report
 type ActivitiesSwagAwarded implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -1509,7 +1583,7 @@ type ActivitiesSwagAwarded implements ActivityInterface & Node & ReportActivityI
   markdown_message: String
   message: String
   report: Report
-  swag: Swag!
+  swag: Swag
   triage_inbox_item: TriageInboxItem
   updated_at: DateTime!
 }
@@ -1600,7 +1674,8 @@ A Activities::UserAssignedToBug activity for a report
 type ActivitiesUserAssignedToBug implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
-  assigned_user: User!
+  actor_is_customer: Boolean!
+  assigned_user: User
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -1622,6 +1697,7 @@ A Activities::UserBannedFromProgram activity for a report
 type ActivitiesUserBannedFromProgram implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -1632,7 +1708,7 @@ type ActivitiesUserBannedFromProgram implements ActivityInterface & Node & Repor
   internal: Boolean
   markdown_message: String
   message: String
-  removed_user: User!
+  removed_user: User
   report: Report
   triage_inbox_item: TriageInboxItem
   updated_at: DateTime!
@@ -1644,6 +1720,7 @@ A Activities::UserCompletedRetest activity for a report
 type ActivitiesUserCompletedRetest implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -1681,6 +1758,7 @@ A Activities::UserLeftRetest activity for a report
 type ActivitiesUserLeftRetest implements ActivityInterface & Node & ReportActivityInterface {
   _id: ID!
   actor: ActorUnion
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   created_at: DateTime!
@@ -1810,6 +1888,7 @@ enum ActivityTypes {
   ReportBecamePublic
   ReportCollaboratorInvited
   ReportCollaboratorJoined
+  ReportRemediationGuidanceUpdated
   ReportSeverityUpdated
   ReportTitleUpdated
   ReportUndisclosed
@@ -1831,7 +1910,7 @@ enum ActivityTypes {
 """
 Activities can be of multiple types
 """
-union ActivityUnion = ActivitiesAddedToPentest | ActivitiesAgreedOnGoingPublic | ActivitiesBountyAwarded | ActivitiesBountySuggested | ActivitiesBugCloned | ActivitiesBugDuplicate | ActivitiesBugFiled | ActivitiesBugInactive | ActivitiesBugInformative | ActivitiesBugNeedsMoreInfo | ActivitiesBugNew | ActivitiesBugNotApplicable | ActivitiesBugReopened | ActivitiesBugResolved | ActivitiesBugRetesting | ActivitiesBugSpam | ActivitiesBugTriaged | ActivitiesCancelledDisclosureRequest | ActivitiesChangedScope | ActivitiesChecklistCheckClaimed | ActivitiesChecklistCheckExpired | ActivitiesChecklistCheckReleased | ActivitiesChecklistCheckResponseApproved | ActivitiesChecklistCheckResponseComment | ActivitiesChecklistCheckResponseCreated | ActivitiesChecklistCheckResponseRejected | ActivitiesChecklistCheckResponseUpdated | ActivitiesChecklistCheckRevoked | ActivitiesChecklistExpirationNotification | ActivitiesChecklistStarted | ActivitiesComment | ActivitiesCommentsClosed | ActivitiesCveIdAdded | ActivitiesDraftStarted | ActivitiesExternalAdvisoryAdded | ActivitiesExternalUserInvitationCancelled | ActivitiesExternalUserInvited | ActivitiesExternalUserJoined | ActivitiesExternalUserRemoved | ActivitiesGroupAssignedToBug | ActivitiesHackerRequestedMediation | ActivitiesManuallyDisclosed | ActivitiesMediationRequested | ActivitiesNobodyAssignedToBug | ActivitiesNotEligibleForBounty | ActivitiesPentestCheckAssigned | ActivitiesPentestCheckCompleted | ActivitiesPentestCheckUnassigned | ActivitiesPentestCheckUpdated | ActivitiesPentestPublished | ActivitiesPentestStarted | ActivitiesPentesterAwarded | ActivitiesProgramHackerJoined | ActivitiesProgramHackerLeft | ActivitiesProgramInactive | ActivitiesReassignedToTeam | ActivitiesReferenceIdAdded | ActivitiesRemovedFromPentest | ActivitiesReportBecamePublic | ActivitiesReportCollaboratorInvited | ActivitiesReportCollaboratorJoined | ActivitiesReportRetestApproved | ActivitiesReportRetestRejected | ActivitiesReportSeverityUpdated | ActivitiesReportTitleUpdated | ActivitiesReportUndisclosed | ActivitiesReportVulnerabilityTypesUpdated | ActivitiesRetestUserExpired | ActivitiesSwagAwarded | ActivitiesTeamBountyTableUpdated | ActivitiesTeamPolicyUpdated | ActivitiesTeamPostCreated | ActivitiesTeamPublished | ActivitiesTeamStructuredScopeUpdated | ActivitiesUserAssignedToBug | ActivitiesUserBannedFromProgram | ActivitiesUserCompletedRetest | ActivitiesUserJoined | ActivitiesUserLeftRetest
+union ActivityUnion = ActivitiesAddedToPentest | ActivitiesAgreedOnGoingPublic | ActivitiesBountyAwarded | ActivitiesBountySuggested | ActivitiesBugCloned | ActivitiesBugDuplicate | ActivitiesBugFiled | ActivitiesBugInactive | ActivitiesBugInformative | ActivitiesBugNeedsMoreInfo | ActivitiesBugNew | ActivitiesBugNotApplicable | ActivitiesBugReopened | ActivitiesBugResolved | ActivitiesBugRetesting | ActivitiesBugSpam | ActivitiesBugTriaged | ActivitiesCancelledDisclosureRequest | ActivitiesChangedScope | ActivitiesChecklistCheckClaimed | ActivitiesChecklistCheckExpired | ActivitiesChecklistCheckReleased | ActivitiesChecklistCheckResponseApproved | ActivitiesChecklistCheckResponseComment | ActivitiesChecklistCheckResponseCreated | ActivitiesChecklistCheckResponseRejected | ActivitiesChecklistCheckResponseUpdated | ActivitiesChecklistCheckRevoked | ActivitiesChecklistExpirationNotification | ActivitiesChecklistStarted | ActivitiesComment | ActivitiesCommentsClosed | ActivitiesCveIdAdded | ActivitiesDraftStarted | ActivitiesExternalAdvisoryAdded | ActivitiesExternalUserInvitationCancelled | ActivitiesExternalUserInvited | ActivitiesExternalUserJoined | ActivitiesExternalUserRemoved | ActivitiesGroupAssignedToBug | ActivitiesHackerRequestedMediation | ActivitiesManuallyDisclosed | ActivitiesMediationRequested | ActivitiesNobodyAssignedToBug | ActivitiesNotEligibleForBounty | ActivitiesPentestCheckAssigned | ActivitiesPentestCheckCompleted | ActivitiesPentestCheckUnassigned | ActivitiesPentestCheckUpdated | ActivitiesPentestPublished | ActivitiesPentestStarted | ActivitiesPentesterAwarded | ActivitiesProgramHackerJoined | ActivitiesProgramHackerLeft | ActivitiesProgramInactive | ActivitiesReassignedToTeam | ActivitiesReferenceIdAdded | ActivitiesRemovedFromPentest | ActivitiesReportBecamePublic | ActivitiesReportCollaboratorInvited | ActivitiesReportCollaboratorJoined | ActivitiesReportRemediationGuidanceUpdated | ActivitiesReportRetestApproved | ActivitiesReportRetestRejected | ActivitiesReportSeverityUpdated | ActivitiesReportTitleUpdated | ActivitiesReportUndisclosed | ActivitiesReportVulnerabilityTypesUpdated | ActivitiesRetestUserExpired | ActivitiesSwagAwarded | ActivitiesTeamBountyTableUpdated | ActivitiesTeamPolicyUpdated | ActivitiesTeamPostCreated | ActivitiesTeamPublished | ActivitiesTeamStructuredScopeUpdated | ActivitiesUserAssignedToBug | ActivitiesUserBannedFromProgram | ActivitiesUserCompletedRetest | ActivitiesUserJoined | ActivitiesUserLeftRetest
 
 """
 An edge in a connection.
@@ -2092,6 +2171,62 @@ type ArchiveStructuredScopePayload implements MutationResult {
 }
 
 """
+A HackerOne asset weakness cohort run item
+"""
+type AssetWeaknessCohortRunItem implements Node {
+  _id: ID!
+  created_at: DateTime!
+  id: ID!
+  platform_report_count: Int!
+  platform_severity_mode: SeverityRatingEnum
+  platform_user_count: Int!
+  structured_scope: StructuredScope!
+  structured_scope_report_count: Int!
+  structured_scope_severity_mode: SeverityRatingEnum
+  structured_scope_user_count: Int!
+  team_report_count: Int!
+  team_severity_mode: SeverityRatingEnum
+  team_user_count: Int!
+  updated_at: DateTime!
+  weakness_cohort: WeaknessCohort!
+}
+
+"""
+The connection type for AssetWeaknessCohortRunItem.
+"""
+type AssetWeaknessCohortRunItemConnection {
+  """
+  A list of edges.
+  """
+  edges: [AssetWeaknessCohortRunItemEdge]
+
+  """
+  A list of nodes.
+  """
+  nodes: [AssetWeaknessCohortRunItem]
+
+  """
+  Information to aid in pagination.
+  """
+  pageInfo: PageInfo!
+}
+
+"""
+An edge in a connection.
+"""
+type AssetWeaknessCohortRunItemEdge {
+  """
+  A cursor for use in pagination.
+  """
+  cursor: String!
+
+  """
+  The item at the end of the edge.
+  """
+  node: AssetWeaknessCohortRunItem
+}
+
+"""
 Autogenerated input type of AssignPentestCheckPentesters
 """
 input AssignPentestCheckPentestersInput {
@@ -2251,6 +2386,55 @@ enum AuthenticationServiceEnum {
   database
   saml
   token
+}
+
+"""
+An automated remediation guidance item
+"""
+type AutomatedRemediationGuidance implements Node {
+  """
+  The primary key from the database
+  """
+  _id: ID!
+  created_at: DateTime!
+  id: ID!
+  remediation_guidance_reference: String
+  report: Report!
+}
+
+"""
+The connection type for AutomatedRemediationGuidance.
+"""
+type AutomatedRemediationGuidanceConnection {
+  """
+  A list of edges.
+  """
+  edges: [AutomatedRemediationGuidanceEdge]
+
+  """
+  A list of nodes.
+  """
+  nodes: [AutomatedRemediationGuidance]
+
+  """
+  Information to aid in pagination.
+  """
+  pageInfo: PageInfo!
+}
+
+"""
+An edge in a connection.
+"""
+type AutomatedRemediationGuidanceEdge {
+  """
+  A cursor for use in pagination.
+  """
+  cursor: String!
+
+  """
+  The item at the end of the edge.
+  """
+  node: AutomatedRemediationGuidance
 }
 
 """
@@ -2507,6 +2691,11 @@ type BlogPostEdge {
   The item at the end of the edge.
   """
   node: BlogPost
+}
+
+input BoolQueryInput {
+  filter: FilterInput
+  must: MustInput
 }
 
 input BooleanPredicateInput {
@@ -2887,6 +3076,27 @@ input BountyTableRowInput {
 }
 
 """
+BundleSubscription
+"""
+type BundleSubscription implements Node & ResourceInterface {
+  _id: ID!
+  awarding_retesters: Boolean!
+  id: ID!
+  tag: RetestSubscriptionTag!
+  triage: Boolean!
+  url: URI!
+}
+
+"""
+A temp HackerOne severity score for a report
+"""
+type CalculatedSeverity implements Node {
+  id: ID!
+  rating: SeverityRatingEnum
+  score: Float
+}
+
+"""
 Autogenerated input type of CancelDomainOwnership
 """
 input CancelDomainOwnershipInput {
@@ -3235,6 +3445,7 @@ type ChecklistCheck implements Node {
   cluster_id: Int!
   description: String
   id: ID!
+  instruction: String
   markdown_description: String
   markdown_instruction: String
   state: ChecklistCheckStateEnum
@@ -3344,6 +3555,7 @@ type ChecklistCheckResponse implements ActivitiesInterface & Node {
     Returns the first _n_ elements from the list.
     """
     first: Int
+    internal: [Boolean]
 
     """
     Returns the last _n_ elements from the list.
@@ -3375,7 +3587,7 @@ type ChecklistCheckResponse implements ActivitiesInterface & Node {
 }
 
 """
-A interface for checklist check response
+A interface for the common fields on an HackerOne Activity
 """
 interface ChecklistCheckResponseActivityInterface {
   _id: ID!
@@ -3612,9 +3824,74 @@ type ClaimReportRetestPayload implements MutationResult {
 }
 
 """
+Autogenerated input type of ClearCustomRemediationGuidance
+"""
+input ClearCustomRemediationGuidanceInput {
+  """
+  A unique identifier for the client performing the mutation.
+  """
+  clientMutationId: String
+  report_id: ID!
+}
+
+"""
+Autogenerated return type of ClearCustomRemediationGuidance
+"""
+type ClearCustomRemediationGuidancePayload implements MutationResult {
+  """
+  A unique identifier for the client performing the mutation.
+  """
+  clientMutationId: String
+  errors(
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+    types: [ErrorTypeEnum]
+  ): ErrorConnection!
+  was_successful: Boolean!
+}
+
+"""
 A subset of weaknesses that share a common characteristic
 """
 type Cluster implements Node {
+  batched_weaknesses(
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+  ): WeaknessConnection
   created_at: DateTime!
   description: String
   id: ID!
@@ -3905,6 +4182,50 @@ type CompleteReportRetestUserPayload implements MutationResult {
 }
 
 """
+Autogenerated input type of CompleteTutorial
+"""
+input CompleteTutorialInput {
+  """
+  A unique identifier for the client performing the mutation.
+  """
+  clientMutationId: String
+  type: String!
+}
+
+"""
+Autogenerated return type of CompleteTutorial
+"""
+type CompleteTutorialPayload implements MutationResult {
+  """
+  A unique identifier for the client performing the mutation.
+  """
+  clientMutationId: String
+  errors(
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+    types: [ErrorTypeEnum]
+  ): ErrorConnection!
+  was_successful: Boolean!
+}
+
+"""
 Will only return values for valid SeverityRatingEnum and null.
 """
 scalar CountBySeverity
@@ -3930,14 +4251,43 @@ type CountryDetails implements Node {
 }
 
 """
+Fields on which a collection of Coverage summaries can be ordered
+"""
+enum CoverageAnalyticsOrderField {
+  finders
+  hits
+  http_host
+  last_path_level
+  minutes
+  url_count
+}
+
+input CoverageAnalyticsOrderInput {
+  direction: OrderDirection!
+  field: CoverageAnalyticsOrderField!
+}
+
+"""
 Coverage Analytics Summary type
 """
 type CoverageAnalyticsSummary implements Node {
   finders: Int!
+  finders_list: [Int!]
+  group_by_val: [Hash]
   hits: Int!
+  http_host: String
   id: ID!
+  last_path_level: String
+  last_seen: String
   minutes: Int!
   report_count: Int!
+  report_ids_list: [Int]!
+  structured_scope_id: Int
+  structured_scope_ids_list: [Int]
+  url_count: Int!
+  user_id: Int
+  username: String
+  username_list: [String!]
 }
 
 """
@@ -4449,6 +4799,53 @@ type CreateCustomFieldAttributePayload implements MutationResult {
 }
 
 """
+Autogenerated input type of CreateCustomRemediationGuidance
+"""
+input CreateCustomRemediationGuidanceInput {
+  """
+  A unique identifier for the client performing the mutation.
+  """
+  clientMutationId: String
+  message: String!
+  report_id: ID!
+}
+
+"""
+Autogenerated return type of CreateCustomRemediationGuidance
+"""
+type CreateCustomRemediationGuidancePayload implements MutationResult {
+  """
+  A unique identifier for the client performing the mutation.
+  """
+  clientMutationId: String
+  custom_remediation_guidance: CustomRemediationGuidance
+  errors(
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+    types: [ErrorTypeEnum]
+  ): ErrorConnection!
+  report: Report
+  was_successful: Boolean!
+}
+
+"""
 Autogenerated input type of CreateCveRequest
 """
 input CreateCveRequestInput {
@@ -4644,6 +5041,54 @@ type CreateExternalReportPayload implements MutationResult {
     last: Int
   ): ReportConnection
   team: Team
+  was_successful: Boolean!
+}
+
+"""
+Autogenerated input type of CreateHackerTriageRating
+"""
+input CreateHackerTriageRatingInput {
+  """
+  A unique identifier for the client performing the mutation.
+  """
+  clientMutationId: String
+  comment: String
+  rating: Int
+  rating_options: [String!]
+  report_id: Int!
+}
+
+"""
+Autogenerated return type of CreateHackerTriageRating
+"""
+type CreateHackerTriageRatingPayload implements MutationResult {
+  """
+  A unique identifier for the client performing the mutation.
+  """
+  clientMutationId: String
+  errors(
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+    types: [ErrorTypeEnum]
+  ): ErrorConnection!
+  hacker_triage_rating: HackerTriageRating
   was_successful: Boolean!
 }
 
@@ -5617,6 +6062,7 @@ input CreateSeverityInput {
   clientMutationId: String
   confidentiality: String
   integrity: String
+  message: String
   privileges_required: String
   rating: String
   report_id: Int!
@@ -5760,7 +6206,6 @@ input CreateSolutionInstanceInput {
   A unique identifier for the client performing the mutation.
   """
   clientMutationId: String
-  name: String!
   solution_id: String!
   team_id: ID!
 }
@@ -5795,6 +6240,7 @@ type CreateSolutionInstancePayload implements MutationResult {
     last: Int
     types: [ErrorTypeEnum]
   ): ErrorConnection!
+  new_solution_instance_id: String
   team: Team
   was_successful: Boolean!
 }
@@ -6566,6 +7012,18 @@ enum CredentialOrderFieldEnum {
 }
 
 """
+Entry for the ctf points leaderboard
+"""
+type CtfPointsLeaderboardEntry implements LeaderboardEntryInterface & Node {
+  _id: ID!
+  id: ID!
+  points: Int!
+  previous_rank: Int
+  rank: Int
+  user: User!
+}
+
+"""
 A currency as defined by ISO 4217
 """
 type Currency implements Node {
@@ -6814,6 +7272,54 @@ input CustomFieldValueInput {
 }
 
 """
+custom remediation guidance for a report
+"""
+type CustomRemediationGuidance implements Node {
+  _id: ID!
+  author: User!
+  created_at: DateTime!
+  id: ID!
+  message: String
+  report: Report!
+  updated_at: DateTime!
+}
+
+"""
+The connection type for CustomRemediationGuidance.
+"""
+type CustomRemediationGuidanceConnection {
+  """
+  A list of edges.
+  """
+  edges: [CustomRemediationGuidanceEdge]
+
+  """
+  A list of nodes.
+  """
+  nodes: [CustomRemediationGuidance]
+
+  """
+  Information to aid in pagination.
+  """
+  pageInfo: PageInfo!
+}
+
+"""
+An edge in a connection.
+"""
+type CustomRemediationGuidanceEdge {
+  """
+  A cursor for use in pagination.
+  """
+  cursor: String!
+
+  """
+  The item at the end of the edge.
+  """
+  node: CustomRemediationGuidance
+}
+
+"""
 A request for a CVE
 """
 type CveRequest implements Node & ResourceInterface {
@@ -6889,7 +7395,8 @@ type CveRequestsEdge {
 """
 Data point object
 """
-type DataPoint {
+type DataPoint implements Node {
+  additional_data: Hash
   id: ID!
   report_ids: [Int!]
   report_ids_missed_sla: [Int!]
@@ -7552,21 +8059,6 @@ type DeleteWebhookPayload implements MutationResult {
 }
 
 """
-Demo leaderboard entries
-"""
-type Demo implements LeaderboardEntryInterface & Node {
-  _id: ID!
-  id: ID!
-  impact: Float
-  previous_rank: Int
-  rank: Int!
-  reputation: Int!
-  signal: Float
-  user: User!
-  votes: Int
-}
-
-"""
 The connection type for Weakness.
 """
 type DeprecatedTeamWeaknessConnection {
@@ -7749,6 +8241,7 @@ input DisableSamlProviderInput {
   A unique identifier for the client performing the mutation.
   """
   clientMutationId: String
+  create_notifications: Boolean!
   team_id: ID!
 }
 
@@ -7796,6 +8289,27 @@ type Disclosed implements HacktivityItemInterface & Node {
   id: ID!
   latest_disclosable_action: String
   latest_disclosable_activity_at: DateTime
+  recommended_hacktivity_items(
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+  ): HacktivityItemConnection
   report: Report
   reporter: User
   severity_rating: SeverityRatingEnum
@@ -7964,6 +8478,11 @@ type DismissTriageInboxItemsPayload implements MutationResult {
 }
 
 """
+ElasticSearch Document can be of different types
+"""
+union DocumentUnion = ReportDocument
+
+"""
 A domain ownership object
 """
 type DomainOwnership implements Node {
@@ -8029,25 +8548,16 @@ enum DomainVerificationMethodEnum {
   http_file
 }
 
-"""
-The connection type for Report.
-"""
-type DuplicateReportsConnection {
-  """
-  A list of edges.
-  """
-  edges: [ReportWithSimilarityScoreEdgeType]
-
-  """
-  A list of nodes.
-  """
-  nodes: [Report]
-
-  """
-  Information to aid in pagination.
-  """
-  pageInfo: PageInfo!
-  total_count: Int!
+input DuplicateDetectionPageStateInput {
+  isExactMatch: Boolean
+  selectedEndpoints: [String!]!
+  selectedHosts: [String!]!
+  selectedIpAddresses: [String!]!
+  selectedParameters: [String!]!
+  selectedReportRank: Int!
+  selectedSearchParamsGroups: [String!]!
+  selectedTeamIds: [String!]!
+  selectedTextQueries: [String!]!
 }
 
 """
@@ -8118,7 +8628,7 @@ enum EarningTypeEnum {
 """
 Allowed domains for embedded submission forms
 """
-type EmbeddedSubmissionDomain {
+type EmbeddedSubmissionDomain implements Node {
   _id: ID!
   created_by: User
   domain: String!
@@ -8166,8 +8676,14 @@ type EmbeddedSubmissionDomainEdge {
 Embedded submission form
 """
 type EmbeddedSubmissionForm implements Node {
+  accent_color: String
+  button_color: String
   id: ID!
+  link_color: String
+  promotion_enabled: Boolean!
   team: Team!
+  typeface: String
+  uses_new_form: Boolean
   uuid: String
 }
 
@@ -8215,6 +8731,7 @@ input EnableSamlProviderInput {
   A unique identifier for the client performing the mutation.
   """
   clientMutationId: String
+  create_notifications: Boolean!
   team_id: ID!
 }
 
@@ -8319,20 +8836,22 @@ enum ErrorTypeEnum {
 }
 
 """
-Autogenerated input type of EscalateReportToTray
+Autogenerated input type of EscalateReport
 """
-input EscalateReportToTrayInput {
+input EscalateReportInput {
   """
   A unique identifier for the client performing the mutation.
   """
   clientMutationId: String
+  integration_id: ID!
+  reference: String
   report_id: ID!
 }
 
 """
-Autogenerated return type of EscalateReportToTray
+Autogenerated return type of EscalateReport
 """
-type EscalateReportToTrayPayload implements MutationResult {
+type EscalateReportPayload implements MutationResult {
   """
   A unique identifier for the client performing the mutation.
   """
@@ -8409,9 +8928,68 @@ type EscalateToJiraPayload implements MutationResult {
 }
 
 """
+An escalation for a report
+"""
+type Escalation implements Node {
+  _id: ID!
+  id: ID!
+  implementation: EscalationImplementationUnion
+}
+
+"""
+The connection type for Escalation.
+"""
+type EscalationConnection {
+  """
+  A list of edges.
+  """
+  edges: [EscalationEdge]
+
+  """
+  A list of nodes.
+  """
+  nodes: [Escalation]
+
+  """
+  Information to aid in pagination.
+  """
+  pageInfo: PageInfo!
+
+  """
+  Int
+  """
+  total_count: Int!
+}
+
+"""
+An edge in a connection.
+"""
+type EscalationEdge {
+  """
+  A cursor for use in pagination.
+  """
+  cursor: String!
+
+  """
+  The item at the end of the edge.
+  """
+  node: Escalation
+}
+
+"""
+Possible implementations of an escalation
+"""
+union EscalationImplementationUnion = ManualEscalation | TrayEscalation
+
+"""
+Different types of things can escalate
+"""
+union EscalationIntegrationUnion = SolutionInstance | TeamIntegrationsManual
+
+"""
 Experience by OWASP categories type
 """
-type ExperienceByOwaspCategories {
+type ExperienceByOwaspCategories implements Node {
   a10_flags: Int
   a10_submissions: Int
   a1_flags: Int
@@ -8703,6 +9281,10 @@ ExtractedReportData
 """
 type ExtractedReportData implements Node {
   _id: ID!
+  filtered_hosts: [String]
+  filtered_paths: [String]
+  filtered_query_parameters: [String]
+  host_scope_matches: [ReportHostScopeMatch]
   hosts: [String]
   id: ID!
   ip_addresses: [String]
@@ -8753,6 +9335,10 @@ type FeatureEdge {
   node: Feature
 }
 
+input FilterInput {
+  terms: TermsFilterInput
+}
+
 """
 Possible directions for sorting a collection
 """
@@ -8781,12 +9367,34 @@ input FiltersAuditLogItemFilterOrder {
   id: FilterOrderPredicateInput
 }
 
+input FiltersAutomatedRemediationGuidanceFilterInput {
+  _and: [FiltersAutomatedRemediationGuidanceFilterInput]
+  _not: FiltersAutomatedRemediationGuidanceFilterInput
+  _or: [FiltersAutomatedRemediationGuidanceFilterInput]
+  id: IntPredicateInput
+}
+
+input FiltersAutomatedRemediationGuidanceFilterOrder {
+  created_at: FilterOrderPredicateInput
+  id: FilterOrderPredicateInput
+}
+
 input FiltersBountyFilterInput {
   _and: [FiltersBountyFilterInput]
   _not: FiltersBountyFilterInput
   _or: [FiltersBountyFilterInput]
   created_at: DateTimePredicateInput
   id: IntPredicateInput
+}
+
+input FiltersBundleSubscriptionsRetestSubscriptionFilterInput {
+  _and: [FiltersBundleSubscriptionsRetestSubscriptionFilterInput]
+  _not: FiltersBundleSubscriptionsRetestSubscriptionFilterInput
+  _or: [FiltersBundleSubscriptionsRetestSubscriptionFilterInput]
+  has_claimable_retests: Boolean
+  has_retest_usage_nudges: Boolean
+  id: IntPredicateInput
+  tag: RetestSubscriptionTagPredicateInput
 }
 
 input FiltersChecklistCheckFilterInput {
@@ -8816,6 +9424,18 @@ input FiltersChecklistCheckResponseFilterOrder {
   id: FilterOrderPredicateInput
 }
 
+input FiltersCustomRemediationGuidanceFilterInput {
+  _and: [FiltersCustomRemediationGuidanceFilterInput]
+  _not: FiltersCustomRemediationGuidanceFilterInput
+  _or: [FiltersCustomRemediationGuidanceFilterInput]
+  id: IntPredicateInput
+}
+
+input FiltersCustomRemediationGuidanceFilterOrder {
+  created_at: FilterOrderPredicateInput
+  id: FilterOrderPredicateInput
+}
+
 input FiltersDerivedReportRetestFilterInput {
   _and: [FiltersDerivedReportRetestFilterInput]
   _not: FiltersDerivedReportRetestFilterInput
@@ -8837,6 +9457,20 @@ input FiltersDerivedTeamMinimumBountyFilterOrder {
 input FiltersDerivedTeamReportResolvedCountFilterOrder {
   resolved_count: FilterOrderPredicateInput
   team_id: FilterOrderPredicateInput
+}
+
+input FiltersEscalationFilterInput {
+  _and: [FiltersEscalationFilterInput]
+  _not: FiltersEscalationFilterInput
+  _or: [FiltersEscalationFilterInput]
+  enabled: Boolean
+  id: IntPredicateInput
+  implementation_type: StringPredicateInput
+}
+
+input FiltersEscalationFilterOrder {
+  created_at: FilterOrderPredicateInput
+  id: FilterOrderPredicateInput
 }
 
 input FiltersExternalProgramFilterInput {
@@ -8944,6 +9578,8 @@ input FiltersReportFilterInput {
   reporter: FiltersUserFilterInput
   severity_rating: SeverityRatingEnumPredicateInput
   state: ReportStateEnumPredicateInput
+  structured_scope_id: IntPredicateInput
+  submitted_at: DateTimePredicateInput
   substate: ReportStateEnumPredicateInput
   team: FiltersTeamFilterInput
   timer_bounty_awarded_elapsed_time: IntPredicateInput
@@ -8970,12 +9606,14 @@ input FiltersReportRetestFilterInput {
   derived_report_retest: FiltersDerivedReportRetestFilterInput
   id: IntPredicateInput
   report_retest_users: FiltersReportRetestUserFilterInput
+  retest_subscription: FiltersBundleSubscriptionsRetestSubscriptionFilterInput
   state: ReportRetestStateEnumPredicateInput
 }
 
 input FiltersReportRetestFilterOrder {
   created_at: FilterOrderPredicateInput
   id: FilterOrderPredicateInput
+  needs_approval_at: FilterOrderPredicateInput
 }
 
 input FiltersReportRetestUserFilterInput {
@@ -8992,7 +9630,8 @@ input FiltersRetestSubscriptionAggregateFilterInput {
   _not: FiltersRetestSubscriptionAggregateFilterInput
   _or: [FiltersRetestSubscriptionAggregateFilterInput]
   id: IntPredicateInput
-  is_active: Boolean
+  public_visibility_and_filtering: Boolean
+  tag: RetestSubscriptionTagPredicateInput
 }
 
 input FiltersSamlProviderDomainFilterOrder {
@@ -9066,6 +9705,7 @@ input FiltersTeamFilterInput {
   reporters: FiltersUserFilterInput
   response_efficiency_percentage: IntPredicateInput
   retest_subscription: FiltersRetestSubscriptionAggregateFilterInput
+  roles: [FiltersTeamFilterRoles]
   state: TeamStatePredicateInput
   structured_scopes: FiltersStructuredScopeFilterInput
   submission_state: SubmissionStateEnumPredicateInput
@@ -9084,6 +9724,43 @@ input FiltersTeamFilterOrder {
   reports: FiltersDerivedTeamReportResolvedCountFilterOrder
   response_efficiency_percentage: FilterOrderPredicateInput
   started_accepting_at: FilterOrderPredicateInput
+}
+
+enum FiltersTeamFilterRoles {
+  is_anc_triager
+  is_approved_pentester
+  is_check_responder
+  is_creditkarma
+  is_enabled_embedded_submissions
+  is_external_user
+  is_gate_credential_management
+  is_h1_pentester
+  is_h1_triager
+  is_has_published_external_program
+  is_invitation_recipient_with_satisfied_requirements
+  is_invitation_recipient_with_unsatisfied_requirements
+  is_not_sandboxed
+  is_offers_bounties
+  is_private
+  is_private_team_with_checklist
+  is_private_team_with_public_checks
+  is_private_with_public_thanks
+  is_provided_embedded_submission_form_uuid
+  is_public
+  is_report_collaborator
+  is_sandboxed
+  is_shows_minimum_bounty
+  is_shows_response_efficiency_indicator
+  is_someone_who_has_submitted_a_report
+  is_someone_who_has_submitted_a_retest
+  is_submissions_open
+  is_team_manager
+  is_team_member
+  is_team_member_of_a_child
+  is_team_member_of_a_parent
+  is_team_with_published_pentests
+  is_whitelisted_reporter
+  is_with_hierarchy_thanks
 }
 
 input FiltersTeamMemberFilterInput {
@@ -9310,6 +9987,27 @@ type HackerPublished implements HacktivityItemInterface & Node {
   created_at: DateTime
   id: ID!
   latest_disclosable_activity_at: DateTime
+  recommended_hacktivity_items(
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+  ): HacktivityItemConnection
   report: Report!
   reporter: User
   severity_rating: SeverityRatingEnum
@@ -9398,6 +10096,67 @@ type HackerTempBan implements Node & ResourceInterface {
 }
 
 """
+A Hacker triage rating for a report
+"""
+type HackerTriageRating implements Node {
+  _id: ID!
+  activity_type: String
+  comment: String
+  id: ID!
+  rating: Int
+  rating_options: [String!]
+  report_id: ID!
+  status: HackerTriageRatingStatusEnum!
+  team_id: ID
+  user_id: ID!
+}
+
+"""
+The connection type for HackerTriageRating.
+"""
+type HackerTriageRatingConnection {
+  """
+  A list of edges.
+  """
+  edges: [HackerTriageRatingEdge]
+
+  """
+  A list of nodes.
+  """
+  nodes: [HackerTriageRating]
+
+  """
+  Information to aid in pagination.
+  """
+  pageInfo: PageInfo!
+  total_count: Int!
+}
+
+"""
+An edge in a connection.
+"""
+type HackerTriageRatingEdge {
+  """
+  A cursor for use in pagination.
+  """
+  cursor: String!
+
+  """
+  The item at the end of the edge.
+  """
+  node: HackerTriageRating
+}
+
+"""
+Hacker triage rating status
+"""
+enum HackerTriageRatingStatusEnum {
+  closed
+  dismissed
+  submitted
+}
+
+"""
 A HackeronePayroll Payout Preference
 """
 type HackeronePayrollPayoutPreferenceType implements Node & PayoutPreferenceInterface {
@@ -9450,6 +10209,27 @@ interface HacktivityItemInterface {
   _id: ID!
   created_at: DateTime
   id: ID!
+  recommended_hacktivity_items(
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+  ): HacktivityItemConnection
   upvoted_by_current_user: Boolean
   votes(
     """
@@ -9506,7 +10286,81 @@ enum HacktivityOrderFieldEnum {
   popular
 }
 
+"""
+Entry for the upvotes leaderboard
+"""
+type HacktivityUpvotesLeaderboardEntry implements LeaderboardEntryInterface & Node {
+  _id: ID!
+  id: ID!
+  previous_rank: Int
+  rank: Int
+  user: User!
+  votes: Int!
+}
+
 scalar Hash
+
+"""
+Entry for the highest reputation leaderboard
+"""
+type HighCritReputationLeaderboardEntry implements LeaderboardEntryInterface & Node {
+  _id: ID!
+  id: ID!
+  impact: Float
+  previous_rank: Int
+  rank: Int
+  reputation: Int!
+  signal: Float
+  user: User!
+}
+
+"""
+Entry for the highest reputation by country leaderboard
+"""
+type HighestReputationByCountryLeaderboardEntry implements LeaderboardEntryInterface & Node {
+  _id: ID!
+  id: ID!
+  impact: Float
+  previous_rank: Int
+  rank: Int
+  reputation: Int!
+  signal: Float
+  user: User!
+}
+
+"""
+Entry for the highest reputation leaderboard
+"""
+type HighestReputationLeaderboardEntry implements LeaderboardEntryInterface & Node {
+  _id: ID!
+  id: ID!
+  impact: Float
+  previous_rank: Int
+  rank: Int
+  reputation: Int!
+  signal: Float
+  user: User!
+}
+
+input HighlightFieldOptionsInput {
+  type: String
+}
+
+input HighlightFieldsInput {
+  vulnerability_information: HighlightFieldOptionsInput
+}
+
+input HighlightInput {
+  fields: [HighlightFieldsInput!]
+  number_of_fragments: Int
+}
+
+"""
+Available ElasticSearch indexes
+"""
+enum IndexEnum {
+  DuplicateDetectorReportsIndex
+}
 
 input IntPredicateInput {
   _eq: Int
@@ -9545,6 +10399,7 @@ type IntegrationEventsConfiguration implements Node {
   report_needs_more_info: Boolean!
   report_new: Boolean!
   report_not_eligible_for_bounty: Boolean!
+  report_remediation_guidance_updated: Boolean!
   report_reopened: Boolean!
   report_resolved: Boolean!
   report_retest_approved: Boolean!
@@ -9580,6 +10435,7 @@ input IntegrationEventsConfigurationInputType {
   report_needs_more_info: Boolean!
   report_new: Boolean!
   report_not_eligible_for_bounty: Boolean!
+  report_remediation_guidance_updated: Boolean!
   report_reopened: Boolean!
   report_resolved: Boolean!
   report_retest_approved: Boolean!
@@ -9689,6 +10545,11 @@ enum IntegrationEventsEnum {
   When a report is marked as ineligible for bounty.
   """
   report_not_eligible_for_bounty
+
+  """
+  When a report is report remediation guidance updated.
+  """
+  report_remediation_guidance_updated
 
   """
   When a report is reopened.
@@ -9830,7 +10691,9 @@ Invitation source types
 enum InvitationSourceEnum {
   automatic_invite
   facebook_invite
+  h12010_open_invite
   h14420_invite
+  manual_hacker_ops_invite
   manual_invite
   manual_looker_invite
   manual_skillset_invitation
@@ -10015,18 +10878,6 @@ type JiraIntegration implements Node {
   pid: Int!
   project_selection_enabled: Boolean!
   summary: String!
-  team: Team!
-  updated_at: DateTime!
-}
-
-"""
-A JIRA Oauth for a team
-"""
-type JiraOauth implements Node {
-  configured: Boolean!
-  created_at: DateTime!
-  id: ID!
-  site: String
   team: Team!
   updated_at: DateTime!
 }
@@ -10417,7 +11268,7 @@ interface LeaderboardEntryInterface {
   _id: ID!
   id: ID!
   previous_rank: Int
-  rank: Int!
+  rank: Int
   user: User!
 }
 
@@ -10425,7 +11276,7 @@ interface LeaderboardEntryInterface {
 The different types of leaderboards that exist. Type that is returned is based
 on the key that is passed, and is linked to LeaderboardKeyEnum
 """
-union LeaderboardEntryUnion = Demo
+union LeaderboardEntryUnion = CtfPointsLeaderboardEntry | HacktivityUpvotesLeaderboardEntry | HighCritReputationLeaderboardEntry | HighestReputationByCountryLeaderboardEntry | HighestReputationLeaderboardEntry | OwaspTopTenLeaderboardEntry | UpAndComersLeaderboardEntry
 
 """
 An edge in a connection.
@@ -10446,7 +11297,13 @@ type LeaderboardEntryUnionEdge {
 Types of leaderboards
 """
 enum LeaderboardKeyEnum {
-  DEMO
+  CTF_POINTS
+  HACKTIVITY_UPVOTES
+  HIGHEST_REPUTATION
+  HIGHEST_REPUTATION_BY_COUNTRY
+  HIGH_CRIT_REPUTATION
+  OWASP_TOP_10
+  UP_AND_COMERS
 }
 
 """
@@ -10537,6 +11394,10 @@ type LeaveReportRetestUserPayload implements MutationResult {
   was_successful: Boolean!
 }
 
+input LikeInput {
+  _id: String
+}
+
 """
 Autogenerated input type of LockReport
 """
@@ -10616,6 +11477,18 @@ type LufthansaAccount implements Node {
   last_name: String!
   number: String!
   updated_at: DateTime!
+}
+
+"""
+A manual escalation for a report
+"""
+type ManualEscalation implements Node {
+  _id: ID!
+  created_at: Date!
+  id: ID!
+  reference: String
+  source: TeamIntegrationsManual!
+  url: URI
 }
 
 """
@@ -10911,13 +11784,31 @@ input MembershipOrderInput {
 """
 Min Max object
 """
-type MinMax {
+type MinMax implements Node {
   id: ID!
   max: Int
   min: Int
 }
 
-type Mutation {
+input MoreLikeThisInput {
+  fields: [String!]
+  like: LikeInput
+  min_doc_freq: Int
+  min_term_freq: Int
+}
+
+input MultiMatchInput {
+  fields: [String!]
+  query: String!
+  type: String
+}
+
+input MustInput {
+  more_like_this: MoreLikeThisInput
+  multi_match: MultiMatchInput
+}
+
+type Mutation implements Node {
   acceptInvitation(input: AcceptInvitationInput!): AcceptInvitationPayload
   acknowledgeProgramHealthAcknowledgement(input: AcknowledgeProgramHealthAcknowledgementInput!): AcknowledgeProgramHealthAcknowledgementPayload
   addReportParticipant(input: AddReportParticipantInput!): AddReportParticipantPayload
@@ -10932,8 +11823,10 @@ type Mutation {
   claimChecklistCheck(input: ClaimChecklistCheckInput!): ClaimChecklistCheckPayload
   claimCredential(input: ClaimCredentialInput!): ClaimCredentialPayload
   claimReportRetest(input: ClaimReportRetestInput!): ClaimReportRetestPayload
+  clearCustomRemediationGuidance(input: ClearCustomRemediationGuidanceInput!): ClearCustomRemediationGuidancePayload
   completeReportRetest(input: CompleteReportRetestInput!): CompleteReportRetestPayload
   completeReportRetestUser(input: CompleteReportRetestUserInput!): CompleteReportRetestUserPayload
+  completeTutorial(input: CompleteTutorialInput!): CompleteTutorialPayload
   createActivityComment(input: CreateActivityCommentInput!): CreateActivityCommentPayload
   createApiUser(input: CreateApiUserInput!): CreateApiUserPayload
   createBounty(input: CreateBountyInput!): CreateBountyPayload
@@ -10943,9 +11836,11 @@ type Mutation {
   createCoinbasePayoutPreference(input: CreateCoinbasePayoutPreferenceInput!): CreateCoinbasePayoutPreferencePayload
   createCurrencycloudBankTransferPayoutPreference(input: CreateCurrencycloudBankTransferPayoutPreferenceInput!): CreateCurrencycloudBankTransferPayoutPreferencePayload
   createCustomFieldAttribute(input: CreateCustomFieldAttributeInput!): CreateCustomFieldAttributePayload
+  createCustomRemediationGuidance(input: CreateCustomRemediationGuidanceInput!): CreateCustomRemediationGuidancePayload
   createCveRequest(input: CreateCveRequestInput!): CreateCveRequestPayload
   createDomainOwnership(input: CreateDomainOwnershipInput!): CreateDomainOwnershipPayload
   createExternalReport(input: CreateExternalReportInput!): CreateExternalReportPayload
+  createHackerTriageRating(input: CreateHackerTriageRatingInput!): CreateHackerTriageRatingPayload
   createIncident(input: CreateIncidentInput!): CreateIncidentPayload
   createIssueTrackerReferenceId(input: CreateIssueTrackerReferenceIdInput!): CreateIssueTrackerReferenceIdPayload
   createJiraOauthUrl(input: CreateJiraOauthUrlInput!): CreateJiraOauthUrlPayload
@@ -11004,7 +11899,7 @@ type Mutation {
   dismissReport(input: DismissReportInput!): DismissReportPayload
   dismissTriageInboxItems(input: DismissTriageInboxItemsInput!): DismissTriageInboxItemsPayload
   enableSamlProvider(input: EnableSamlProviderInput!): EnableSamlProviderPayload
-  escalateReportToTray(input: EscalateReportToTrayInput!): EscalateReportToTrayPayload
+  escalateReport(input: EscalateReportInput!): EscalateReportPayload
   escalateToJira(input: EscalateToJiraInput!): EscalateToJiraPayload
   exportLifetimeAuditLogItems(input: ExportLifetimeAuditLogItemsInput!): ExportLifetimeAuditLogItemsPayload
   exportLifetimeReports(input: ExportLifetimeReportsInput!): ExportLifetimeReportsPayload
@@ -11012,6 +11907,11 @@ type Mutation {
   forgetFacebookCredentials(input: ForgetFacebookCredentialInput!): ForgetFacebookCredentialPayload
   generateReportShareToken(input: GenerateReportShareTokenInput!): GenerateReportShareTokenPayload
   generateTaxFormUrl(input: GenerateTaxFormUrlInput!): GenerateTaxFormUrlPayload
+
+  """
+  ID of the object.
+  """
+  id: ID!
   launchTeam(input: LaunchTeamInput!): LaunchTeamPayload
   launchTeamPublicly(input: LaunchTeamPubliclyInput!): LaunchTeamPubliclyPayload
   leavePrivateProgram(input: LeavePrivateProgramInput!): LeavePrivateProgramPayload
@@ -11033,6 +11933,7 @@ type Mutation {
   releaseChecklistCheck(input: ReleaseChecklistCheckInput!): ReleaseChecklistCheckPayload
   removeBountyTable(input: RemoveBountyTableInput!): RemoveBountyTablePayload
   removeReference(input: RemoveReferenceInput!): RemoveReferencePayload
+  removeSolutionInstance(input: RemoveSolutionInstanceInput!): RemoveSolutionInstancePayload
   requestReportDisclosure(input: RequestReportDisclosureInput!): RequestReportDisclosurePayload
   revokeCredential(input: RevokeCredentialInput!): RevokeCredentialPayload
   revokePentester(input: RevokePentesterInput!): RevokePentesterPayload
@@ -11051,6 +11952,7 @@ type Mutation {
   unclaimReportRetest(input: UnclaimReportRetestInput!): UnclaimReportRetestPayload
   unsubscribeMailingList(input: UnsubscribeMailingListInput!): UnsubscribeMailingListPayload
   updateAccountRecoveryPhoneNumber(input: UpdateAccountRecoveryPhoneNumberInput!): UpdateAccountRecoveryPhoneNumberPayload
+  updateActivity(input: UpdateActivityInput!): UpdateActivityPayload
   updateAlternativeCertificateSamlProvider(input: UpdateAlternativeCertificateSamlProviderInput!): UpdateAlternativeCertificateSamlProviderPayload
   updateAssigneeToGroup(input: UpdateAssigneeToGroupInput!): UpdateAssigneeToGroupPayload
   updateAssigneeToNobody(input: UpdateAssigneeToNobodyInput!): UpdateAssigneeToNobodyPayload
@@ -11065,10 +11967,13 @@ type Mutation {
   updateCredentialAccountDetails(input: UpdateCredentialAccountDetailInput!): UpdateCredentialAccountDetailPayload
   updateCredentialInstruction(input: UpdateCredentialInstructionInput!): UpdateCredentialInstructionPayload
   updateCustomFieldAttribute(input: UpdateCustomFieldAttributeInput!): UpdateCustomFieldAttributePayload
+  updateCveIds(input: UpdateCveIdsInput!): UpdateCveIdsPayload
   updateCveRequest(input: UpdateCveRequestInput!): UpdateCveRequestPayload
   updateEmbeddedSubmissionDomains(input: UpdateEmbeddedSubmissionDomainInput!): UpdateEmbeddedSubmissionDomainPayload
+  updateEmbeddedSubmissionForm(input: UpdateEmbeddedSubmissionFormInput!): UpdateEmbeddedSubmissionFormPayload
   updateGatewayProgramState(input: UpdateGatewayProgramStateInput!): UpdateGatewayProgramStatePayload
   updateGatewayUserState(input: UpdateGatewayUserStateInput!): UpdateGatewayUserStatePayload
+  updateHackerTriageRating(input: UpdateHackerTriageRatingInput!): UpdateHackerTriageRatingPayload
   updateInvitationPreferences(input: UpdateInvitationPreferencesInput!): UpdateInvitationPreferencesPayload
   updateJiraWebhook(input: UpdateJiraWebhookInput!): UpdateJiraWebhookPayload
   updateJobListing(input: UpdateJobListingInput!): UpdateJobListingPayload
@@ -11079,8 +11984,10 @@ type Mutation {
   updateNotificationPreferences(input: UpdateNotificationPreferencesInput!): UpdateNotificationPreferencesPayload
   updatePaymentsUser(input: UpdatePaymentsUserMutationInput!): UpdatePaymentsUserMutationPayload
   updatePentestFormAnswer(input: UpdatePentestFormAnswerInput!): UpdatePentestFormAnswerPayload
+  updatePentestTask(input: UpdatePentestTaskInput!): UpdatePentestTaskPayload
   updatePhabricatorIntegration(input: UpdatePhabricatorIntegrationInput!): UpdatePhabricatorIntegrationPayload
   updateProgramPolicy(input: UpdateProgramPolicyInput!): UpdateProgramPolicyPayload
+  updateRemediationGuidance(input: UpdateRemediationGuidanceInput!): UpdateRemediationGuidancePayload
   updateReportCloseComments(input: UpdateReportCloseCommentsInput!): UpdateReportCloseCommentsPayload
   updateReportCustomFieldValues(input: UpdateReportCustomFieldValuesInput!): UpdateReportCustomFieldValuesPayload
   updateReportIneligibleForBounty(input: UpdateReportIneligibleForBountyInput!): UpdateReportIneligibleForBountyPayload
@@ -11091,6 +11998,7 @@ type Mutation {
   updateReportStateToNew(input: UpdateReportStateToNewInput!): UpdateReportStateToNewPayload
   updateReportStateToNotApplicable(input: UpdateReportStateToNotApplicableInput!): UpdateReportStateToNotApplicablePayload
   updateReportStateToResolved(input: UpdateReportStateToResolvedInput!): UpdateReportStateToResolvedPayload
+  updateReportStateToRetesting(input: UpdateReportStateToRetestingInput!): UpdateReportStateToRetestingPayload
   updateReportStateToSpam(input: UpdateReportStateToSpamInput!): UpdateReportStateToSpamPayload
   updateReportStateToTriaged(input: UpdateReportStateToTriagedInput!): UpdateReportStateToTriagedPayload
   updateReportStructuredScope(input: UpdateReportStructuredScopeInput!): UpdateReportStructuredScopePayload
@@ -11111,7 +12019,9 @@ type Mutation {
   updateTeamBountySplittingSetting(input: UpdateTeamBountySplittingSettingInput!): UpdateTeamBountySplittingSettingPayload
   updateTeamCriticalSubmissionState(input: UpdateTeamCriticalSubmissionStateInput!): UpdateTeamCriticalSubmissionStatePayload
   updateTeamDisplayOptions(input: UpdateTeamDisplayOptionsInput!): UpdateTeamDisplayOptionsPayload
+  updateTeamEmailSetting(input: UpdateTeamEmailSettingInput!): UpdateTeamEmailSettingPayload
   updateTeamFancySlackIntegration(input: UpdateTeamFancySlackIntegrationInput!): UpdateTeamFancySlackIntegrationPayload
+  updateTeamGenius(input: UpdateTeamGeniusInput!): UpdateTeamGeniusPayload
   updateTeamMemberVisibility(input: UpdateTeamMemberVisibilityInput!): UpdateTeamMemberVisibilityPayload
   updateTeamResponseSla(input: UpdateTeamResponseSlaInput!): UpdateTeamResponseSlaPayload
   updateTeamSubmissionState(input: UpdateTeamSubmissionStateInput!): UpdateTeamSubmissionStatePayload
@@ -11459,8 +12369,13 @@ type NotificationPreferencesMention implements Node & NotificationPreferenceInte
 """
 An OAuth Application that can use a 'Sign in using HackerOne' flow and be given OAuth Access Tokens.
 """
-type OauthApplication {
+type OauthApplication implements Node {
   client_id: String
+
+  """
+  ID of the object.
+  """
+  id: ID!
   name: String
   scopes: [String]
 }
@@ -11471,6 +12386,20 @@ Possible directions for sorting a collection
 enum OrderDirection {
   ASC
   DESC
+}
+
+"""
+Entry for the Owasp top 10 leaderboard
+"""
+type OwaspTopTenLeaderboardEntry implements LeaderboardEntryInterface & Node {
+  _id: ID!
+  id: ID!
+  impact: Float
+  previous_rank: Int
+  rank: Int
+  reputation: Int!
+  signal: Float
+  user: User!
 }
 
 """
@@ -11579,11 +12508,7 @@ type PaymentTransactionConnection {
   Information to aid in pagination.
   """
   pageInfo: PageInfo!
-
-  """
-  Int
-  """
-  total_count: Int!
+  total_count: Int
 }
 
 """
@@ -11702,6 +12627,7 @@ type Pentest implements Node {
   i_applied: Boolean!
   i_can_apply: Boolean!
   i_can_delete: Boolean!
+  i_can_edit_pentest_tasks: Boolean!
   i_can_manage: Boolean!
   i_can_revoke: Boolean!
   id: ID!
@@ -11776,6 +12702,29 @@ type Pentest implements Node {
     """
     last: Int
   ): PentestStructuredScopeConnection
+  pentest_tasks(
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+  ): PentestTaskConnection
+  pentest_tasks_enabled: Boolean!
+  pentester_cap: Int
 
   """
   A Resolver for Pentesters
@@ -11919,6 +12868,7 @@ type PentestCheck implements Node {
   attachments: [Attachment]
   description: String
   id: ID!
+  instruction: String
   markdown_description: String
   markdown_instruction: String
   markdown_message: String
@@ -12453,6 +13403,88 @@ type PentestStructuredScopeEdge {
 }
 
 """
+A pentest task
+"""
+type PentestTask implements Node {
+  _id: ID!
+  group_key: String!
+  id: ID!
+  key: String!
+  label: String
+  pentest_checks(
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+  ): PentestCheckConnection
+  state: PentestTaskStateEnum
+}
+
+"""
+The connection type for PentestTask.
+"""
+type PentestTaskConnection {
+  """
+  A list of edges.
+  """
+  edges: [PentestTaskEdge]
+
+  """
+  A list of nodes.
+  """
+  nodes: [PentestTask]
+
+  """
+  Information to aid in pagination.
+  """
+  pageInfo: PageInfo!
+
+  """
+  Int
+  """
+  total_count: Int!
+}
+
+"""
+An edge in a connection.
+"""
+type PentestTaskEdge {
+  """
+  A cursor for use in pagination.
+  """
+  cursor: String!
+
+  """
+  The item at the end of the edge.
+  """
+  node: PentestTask
+}
+
+"""
+Pentest task state enum
+"""
+enum PentestTaskStateEnum {
+  completed
+  in_progress
+  incomplete
+}
+
+"""
 A pentester
 """
 type Pentester implements Node {
@@ -12712,17 +13744,18 @@ type PhabricatorIntegration implements Node {
   updated_at: DateTime!
 }
 
-type Post {
+type Post implements Node {
   created_at: DateTime!
   id: ID!
   markdown_message: String
+  message: String
   title: String
 }
 
 """
 Product Edition of a Team
 """
-type ProductEdition {
+type ProductEdition implements Node {
   display_name: String!
   gate_saml_opened: Boolean!
   hacker_invitations_enabled: Boolean!
@@ -12790,11 +13823,14 @@ input ProgramAnalyticsFilterInput {
   actor_is_hackerone_triager: ProgramAnalyticsFilterBoolInput
   asset_id: ProgramAnalyticsFilterStringInput
   asset_identifier: ProgramAnalyticsFilterStringInput
+  current_path: ProgramAnalyticsFilterStringInput
   custom_fields: [ProgramAnalyticsFilterCustomFieldInput!]
+  http_host: ProgramAnalyticsFilterStringInput
   report_current_substate: ProgramAnalyticsFilterStringInput
   report_disclosed_state: ProgramAnalyticsFilterStringInput
   report_severity: ProgramAnalyticsFilterStringInput
   report_source: ProgramAnalyticsFilterStringInput
+  structured_scope_id: ProgramAnalyticsFilterStringInput
   weakness_id: ProgramAnalyticsFilterStringInput
 }
 
@@ -12811,32 +13847,33 @@ enum ProgramAnalyticsFromEnum {
 }
 
 enum ProgramAnalyticsGroupEnum {
-  day_date
+  day_activity_created_at
+  day_occurred_date
   month_activity_created_at
   month_bounty_awarded_at
-  month_date
   month_first_response_at
+  month_occurred_date
   month_resolved_at
   month_submitted_at
   month_triaged_at
   quarter_activity_created_at
   quarter_bounty_awarded_at
-  quarter_date
   quarter_first_response_at
+  quarter_occurred_date
   quarter_resolved_at
   quarter_submitted_at
   quarter_triaged_at
   week_activity_created_at
   week_bounty_awarded_at
-  week_date
   week_first_response_at
+  week_occurred_date
   week_resolved_at
   week_submitted_at
   week_triaged_at
   year_activity_created_at
   year_bounty_awarded_at
-  year_date
   year_first_response_at
+  year_occurred_date
   year_resolved_at
   year_submitted_at
   year_triaged_at
@@ -13148,6 +14185,7 @@ type ProgramSubmissionMetricsEdge {
 Root entity of the Hackerone Schema
 """
 type Query implements Node {
+  activity(id: Int!): ActivityUnion
   application: Application!
   assignable_teams(
     """
@@ -13251,30 +14289,6 @@ type Query implements Node {
     last: Int
     order_by: ClusterOrder = {direction: ASC, field: BROWSING_FRIENDLY}
   ): ClusterConnection
-  duplicate_reports(
-    """
-    Returns the elements in the list that come after the specified cursor.
-    """
-    after: String
-
-    """
-    Returns the elements in the list that come before the specified cursor.
-    """
-    before: String
-
-    """
-    Returns the first _n_ elements from the list.
-    """
-    first: Int
-
-    """
-    Returns the last _n_ elements from the list.
-    """
-    last: Int
-    search: ReportSimilaritySearch
-    store_on: Int
-    where: FiltersReportFilterInput
-  ): DuplicateReportsConnection
   embedded_submission_form(uuid: String!): EmbeddedSubmissionForm
   external_program(handle: String!): ExternalProgram
   external_programs(
@@ -13394,10 +14408,6 @@ type Query implements Node {
     last: Int
   ): LabelCategoryConnection!
   languages: [Hash!]!
-
-  """
-  A Resolver for Leaderboard entries
-  """
   leaderboard_entries(
     """
     Returns the elements in the list that come after the specified cursor.
@@ -13408,6 +14418,7 @@ type Query implements Node {
     Returns the elements in the list that come before the specified cursor.
     """
     before: String
+    filter: String
 
     """
     Returns the first _n_ elements from the list.
@@ -13558,6 +14569,30 @@ type Query implements Node {
   ): ReportConnection
   resource(url: URI): ResourceInterface
   response_target_benchmarks(response_target: Int!, response_target_type: ResponseTargetTypeEnum!, severity_rating: SeverityRatingEnum, teams: [String!]!): MinMax
+  search(
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+    highlight: HighlightInput
+    index: IndexEnum!
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+    query: QueryInput
+  ): SearchResultConnection
   session: Session
   severity_calculator: SeverityCalculator
   skills(
@@ -13604,6 +14639,7 @@ type Query implements Node {
     order_by: SlaStatusOrder = {field: TRIAGER_ROLE_AND_SLA_STATUS}
     team_states: [TeamState]
   ): SlaStatusConnection
+  solution(handle: String!, solution_id: String!): Solution
   surveys(
     """
     Returns the elements in the list that come after the specified cursor.
@@ -13755,6 +14791,10 @@ type Query implements Node {
     order_by: WeaknessOrder = {direction: ASC, field: name}
   ): WeaknessConnection
   webhook(id: ID!): Webhook
+}
+
+input QueryInput {
+  bool: BoolQueryInput
 }
 
 """
@@ -14215,6 +15255,52 @@ type RemoveReferencePayload implements MutationResult {
 }
 
 """
+Autogenerated input type of RemoveSolutionInstance
+"""
+input RemoveSolutionInstanceInput {
+  """
+  A unique identifier for the client performing the mutation.
+  """
+  clientMutationId: String
+  solution_instance_id: ID!
+  team_id: ID!
+}
+
+"""
+Autogenerated return type of RemoveSolutionInstance
+"""
+type RemoveSolutionInstancePayload implements MutationResult {
+  """
+  A unique identifier for the client performing the mutation.
+  """
+  clientMutationId: String
+  errors(
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+    types: [ErrorTypeEnum]
+  ): ErrorConnection!
+  team: Team
+  was_successful: Boolean!
+}
+
+"""
 A HackerOne report
 """
 type Report implements ActivitiesInterface & Node & ResourceInterface {
@@ -14234,6 +15320,7 @@ type Report implements ActivitiesInterface & Node & ResourceInterface {
     Returns the first _n_ elements from the list.
     """
     first: Int
+    internal: [Boolean]
 
     """
     Returns the last _n_ elements from the list.
@@ -14255,6 +15342,30 @@ type Report implements ActivitiesInterface & Node & ResourceInterface {
   anc_reasons: [String]
   assignee: AssigneeUnion
   attachments: [Attachment]
+  automated_remediation_guidances(
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+    secure_order_by: FiltersAutomatedRemediationGuidanceFilterOrder
+    where: FiltersAutomatedRemediationGuidanceFilterInput
+  ): AutomatedRemediationGuidanceConnection
+  available_hacker_triage_rating_options: [String]
   bounties: [Bounty]
   bounty_awarded_at: DateTime
   bounty_awarded_staleness_threshold: Int
@@ -14284,6 +15395,29 @@ type Report implements ActivitiesInterface & Node & ResourceInterface {
     """
     last: Int
   ): CustomFieldValueConnection
+  custom_remediation_guidances(
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+    secure_order_by: FiltersCustomRemediationGuidanceFilterOrder
+    where: FiltersCustomRemediationGuidanceFilterInput
+  ): CustomRemediationGuidanceConnection
   cve_ids: [String]
   disclosed_at: DateTime
   duplicates(
@@ -14307,14 +15441,39 @@ type Report implements ActivitiesInterface & Node & ResourceInterface {
     """
     last: Int
   ): ReportConnection
+  escalations(
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+    order_by: FiltersEscalationFilterOrder
+    where: FiltersEscalationFilterInput
+  ): EscalationConnection
   extracted_report_data: ExtractedReportData
   first_program_activity_at: DateTime
   hacker_published: Boolean
   i_am_subscribed: Boolean
   i_can_anc_review: Boolean
-  i_can_change_pentest: Boolean!
+  i_can_change_pentest: Boolean
+  i_can_post_hacker_triage_rating: Boolean
   i_can_post_triage_rating: Boolean
   id: ID!
+  is_external_bug: Boolean
   jira_escalation_last_state_change_at: DateTime
   jira_escalation_state: String
   latest_activity_at: DateTime
@@ -14337,6 +15496,7 @@ type Report implements ActivitiesInterface & Node & ResourceInterface {
   previous_substate: String
   reference: ID
   reference_link: String
+  report_pending_party_last_activity: DateTime
   report_share_tokens: [ReportShareToken!]!
   reporter: User
   resolution_staleness_threshold: Int
@@ -14347,6 +15507,7 @@ type Report implements ActivitiesInterface & Node & ResourceInterface {
   stage: String
   state: String
   structured_scope: StructuredScope
+  submitted_at: DateTime
   substate: String!
   suggested_bounty: String
   summaries: [Summary]
@@ -14396,17 +15557,21 @@ type Report implements ActivitiesInterface & Node & ResourceInterface {
   vulnerability_information: String
   vulnerability_information_html: String
   weakness: Weakness
+  weakness_suggestion: WeaknessSuggestion
 }
 
 """
 A interface for the common fields on an HackerOne Report Activity
 """
 interface ReportActivityInterface {
+  actor_is_customer: Boolean!
   attachments: [Attachment]
   automated_response: Boolean
   genius_execution_id: ID
   id: ID!
   internal: Boolean
+  markdown_message: String
+  message: String
   report: Report
   triage_inbox_item: TriageInboxItem
 }
@@ -14487,6 +15652,19 @@ type ReportConnection {
   """
   total_count: Int!
   total_resolved_by_month(year: Int!): [LabeledIntegerPair]
+}
+
+type ReportDocument implements Node {
+  _score: Float!
+
+  """
+  ID of the object.
+  """
+  id: ID!
+  report: Report!
+  report_id: Int!
+  title: String!
+  vulnerability_information_highlight: String
 }
 
 """
@@ -14570,6 +15748,17 @@ input ReportFilterInput {
 }
 
 """
+A match between a host mentioned in a report and the program's structured scope
+"""
+type ReportHostScopeMatch implements Node {
+  host: String!
+  id: ID!
+  match: String!
+  scope: String!
+  structured_scope_asset_identifier: String!
+}
+
+"""
 Fields on which a collection of reports can be ordered
 """
 enum ReportOrderField {
@@ -14586,6 +15775,7 @@ enum ReportOrderField {
   last_reporter_activity_at
   latest_activity_at
   severity_rating
+  submitted_at
   substate
   swag_awarded_at
   timer_bounty_awarded_elapsed_time
@@ -14605,6 +15795,7 @@ input ReportOrderInput {
 Parties that a report can be pending action from
 """
 enum ReportPendingActionFromEnum {
+  pending_action_from_hacker
   pending_action_from_team
   pending_action_from_triage
 }
@@ -14622,7 +15813,7 @@ enum ReportPreSubmissionReviewStateEnum {
 """
 A report retest
 """
-type ReportRetest {
+type ReportRetest implements Node {
   _id: ID!
   asset_name: String
   asset_type: String
@@ -14632,6 +15823,7 @@ type ReportRetest {
   created_at: DateTime
   created_by: User
   id: ID!
+  needs_approval_at: DateTime
   report: Report
   report_retest_users(
     """
@@ -14656,6 +15848,7 @@ type ReportRetest {
     new: Boolean
     visible: Boolean
   ): ReportRetestUserConnection
+  retest_subscription: BundleSubscription
   state: ReportRetestStateEnum
   team: Team!
   weakness_name: String
@@ -14730,7 +15923,7 @@ input ReportRetestStateEnumPredicateInput {
 """
 A report retest user
 """
-type ReportRetestUser {
+type ReportRetestUser implements Node {
   _id: ID!
   activity: ActivitiesUserCompletedRetest
   answered_fix_can_be_bypassed: Boolean
@@ -14830,14 +16023,6 @@ type ReportShareToken implements Node {
   usable: Boolean!
 }
 
-input ReportSimilaritySearch {
-  hosts: [String]
-  ip_addresses: [String]
-  paths: [String]
-  query_parameters: [String]
-  vulnerability_information: [String]
-}
-
 """
 States a report can be in
 """
@@ -14872,26 +16057,6 @@ Visibility of a shared report
 enum ReportVisibilityEnum {
   full
   limited
-}
-
-"""
-An edge in a connection.
-"""
-type ReportWithSimilarityScoreEdgeType {
-  """
-  A cursor for use in pagination.
-  """
-  cursor: String!
-
-  """
-  The item at the end of the edge.
-  """
-  node: Report
-
-  """
-  The possible duplicate report's similarity score
-  """
-  similarity_score: Float
 }
 
 """
@@ -15053,6 +16218,26 @@ enum ResponseTargetTypeEnum {
 }
 
 """
+Different types of a retesting subscription
+"""
+enum RetestSubscriptionTag {
+  demo
+  legacy
+  new
+  pentest
+  pentest_legacy
+  triage
+}
+
+input RetestSubscriptionTagPredicateInput {
+  _eq: RetestSubscriptionTag
+  _in: [RetestSubscriptionTag]
+  _is_null: Boolean
+  _neq: RetestSubscriptionTag
+  _nin: [RetestSubscriptionTag]
+}
+
+"""
 Autogenerated input type of RevokeCredential
 """
 input RevokeCredentialInput {
@@ -15187,7 +16372,7 @@ type RevokeReportShareTokenPayload implements MutationResult {
   was_successful: Boolean!
 }
 
-type SamlProvider {
+type SamlProvider implements Node {
   alternative_certificate: String
   alternative_certificate_fingerprint: String
   approval_requested_at: DateTime
@@ -15298,7 +16483,7 @@ type SamlProviderDomainEdge {
   node: SamlProviderDomain
 }
 
-type SamlResponseLog {
+type SamlResponseLog implements Node {
   id: ID!
   response: String!
   status: String
@@ -15427,6 +16612,46 @@ type SavePentestCheckResultPayload implements MutationResult {
 }
 
 """
+The connection type for DocumentUnion.
+"""
+type SearchResultConnection {
+  """
+  A list of edges.
+  """
+  edges: [SearchResultEdge]
+
+  """
+  A list of nodes.
+  """
+  nodes: [DocumentUnion]
+
+  """
+  Information to aid in pagination.
+  """
+  pageInfo: PageInfo!
+
+  """
+  Int
+  """
+  total_count: Int!
+}
+
+"""
+An edge in a connection.
+"""
+type SearchResultEdge {
+  """
+  A cursor for use in pagination.
+  """
+  cursor: String!
+
+  """
+  The item at the end of the edge.
+  """
+  node: DocumentUnion
+}
+
+"""
 A HackerOne session
 """
 type Session implements Node {
@@ -15495,6 +16720,7 @@ Calculate CVSS Severity score and rating
 """
 type SeverityCalculator implements Node {
   calculated_max_severity(availability_requirement: SeveritySecurityRequirementEnum, confidentiality_requirement: SeveritySecurityRequirementEnum, integrity_requirement: SeveritySecurityRequirementEnum): SeverityRatingEnum
+  calculated_severity(attack_complexity: SeverityAttackComplexityEnum!, attack_vector: SeverityAttackVectorEnum!, availability: SeverityAvailabilityEnum!, confidentiality: SeverityConfidentialityEnum!, integrity: SeverityIntegrityEnum!, privileges_required: SeverityPrivilegesRequiredEnum!, report_id: Int!, scope: SeverityScopeEnum!, user_interaction: SeverityUserInteractionEnum!): CalculatedSeverity!
   id: ID!
 }
 
@@ -15671,7 +16897,7 @@ type SkillEdge {
 """
 Resolution SLA settings for a HackerOne team
 """
-type SlaSetting {
+type SlaSetting implements Node {
   _id: ID!
   critical_severity_resolved_staleness_threshold: Int!
   high_severity_resolved_staleness_threshold: Int!
@@ -15990,6 +17216,7 @@ Tray::SolutionInstance
 type SolutionInstance implements Node & ResourceInterface {
   _id: ID!
   created: DateTime
+  description: String
   edit_url: String!
   enabled: Boolean!
   id: ID!
@@ -16731,6 +17958,7 @@ A survey rating item
 type SurveyRatingItem implements Node {
   _id: ID!
   created_at: DateTime!
+  i_can_toggle_survey_rating_item: Boolean!
   id: ID!
   key: String!
   pentester: Pentester
@@ -17140,6 +18368,7 @@ type Team implements ActivitiesInterface & Node & ResourceInterface {
     Returns the first _n_ elements from the list.
     """
     first: Int
+    internal: [Boolean]
 
     """
     Returns the last _n_ elements from the list.
@@ -17164,7 +18393,6 @@ type Team implements ActivitiesInterface & Node & ResourceInterface {
   allows_bounty_splitting: Boolean
   allows_disclosure_assistance: Boolean!
   allows_private_disclosure: Boolean
-  allows_retesting: Boolean
   anc_enabled: Boolean
   attachments: [Attachment]
   audit_log_items(
@@ -17336,7 +18564,7 @@ type Team implements ActivitiesInterface & Node & ResourceInterface {
   controlled_launch_team: Boolean
   cover_color: String
   cover_photo_url: String
-  coverage_analytics_summary(asset_id: ID = null, end_date: Date!, start_date: Date!): CoverageAnalyticsSummary!
+  coverage_analytics_summary(current_path: String = null, end_date: DateTime, group_by: [String] = [], http_host: String = null, order_by: CoverageAnalyticsOrderInput = {}, page: Int = null, start_date: DateTime): [CoverageAnalyticsSummary!]!
   created_at: DateTime
   credential_instruction: String
   credential_instruction_html: String
@@ -17434,6 +18662,7 @@ type Team implements ActivitiesInterface & Node & ResourceInterface {
     """
     last: Int
   ): DomainOwnershipConnection
+  email_setting: Int
   embedded_submission_domains(
     """
     Returns the elements in the list that come after the specified cursor.
@@ -17476,6 +18705,7 @@ type Team implements ActivitiesInterface & Node & ResourceInterface {
     """
     last: Int
   ): EmbeddedSubmissionFormConnection
+  escalation_integrations: [EscalationIntegrationUnion!]!
   external_program: ExternalProgram
   external_url: String
   facebook_team: Boolean
@@ -17530,6 +18760,7 @@ type Team implements ActivitiesInterface & Node & ResourceInterface {
   i_can_manage_custom_fields: Boolean
   i_can_manage_job_listings: Boolean!
   i_can_manage_program: Boolean!
+  i_can_manage_references: Boolean!
   i_can_manage_system_users: Boolean!
   i_can_subscribe_to_policy_changes: Boolean!
   i_can_toggle_anc: Boolean
@@ -17554,6 +18785,7 @@ type Team implements ActivitiesInterface & Node & ResourceInterface {
   i_can_view_weaknesses: Boolean
   i_reached_abuse_limit: Boolean
   id: ID!
+  ignored_hosts_in_reports: [String]
   inbox_views(
     """
     Returns the elements in the list that come after the specified cursor.
@@ -17619,7 +18851,7 @@ type Team implements ActivitiesInterface & Node & ResourceInterface {
   is_ready_for_public_launch: Boolean
   is_team_member: Boolean!
   jira_integration: JiraIntegration
-  jira_oauth: JiraOauth
+  jira_team_integration: TeamIntegrationsJira
   jira_webhook: JiraWebhook
   job_listings(
     active: Boolean
@@ -17653,6 +18885,7 @@ type Team implements ActivitiesInterface & Node & ResourceInterface {
   last_invitation_accepted_at_for_user: DateTime
   last_policy_change_at: DateTime
   last_report_resolved_at: DateTime
+  last_team_weakness_cohort_run: TeamWeaknessCohortRun
   launch_link: String
   maximum_number_of_team_mediation_requests: Float
   minimum_bounty: Int
@@ -17847,6 +19080,8 @@ type Team implements ActivitiesInterface & Node & ResourceInterface {
     structured_scope_ids: [ID!]
     view_by: ProgramSubmissionMetricViewByEnum
   ): ProgramSubmissionMetricsConnection!
+  publicly_visible_retesting: Boolean
+  remediation_guidance_enabled: Boolean!
   report_sources: [String!]
   report_submission_form_intro: String
   report_submission_form_intro_html: String
@@ -18080,6 +19315,7 @@ type Team implements ActivitiesInterface & Node & ResourceInterface {
     Returns the first _n_ elements from the list.
     """
     first: Int
+    id: Int
 
     """
     Returns the last _n_ elements from the list.
@@ -18172,6 +19408,27 @@ type Team implements ActivitiesInterface & Node & ResourceInterface {
   ): TeamMemberConnection
   target_signal: Float
   team_display_options: TeamDisplayOptions
+  team_genii(
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+  ): TeamGeniusConnection
   team_integrations(
     """
     Returns the elements in the list that come after the specified cursor.
@@ -18238,6 +19495,7 @@ type Team implements ActivitiesInterface & Node & ResourceInterface {
     """
     last: Int
   ): TeamWeaknessConnection
+  terms: String
   terms_html: String
   thanks_items(
     """
@@ -18262,6 +19520,7 @@ type Team implements ActivitiesInterface & Node & ResourceInterface {
   ): ThanksItemConnection
   top_bounty_lower_amount: Int
   top_bounty_upper_amount: Int
+  tray_integration: TeamIntegrationsTray
   triage_active: Boolean
   triage_bounty_management: String
   triage_enabled: Boolean
@@ -18418,7 +19677,7 @@ type TeamConnection {
 """
 Display options for a HackerOne team
 """
-type TeamDisplayOptions {
+type TeamDisplayOptions implements Node {
   _id: ID!
   id: ID!
   show_average_bounty: Boolean!
@@ -18447,6 +19706,53 @@ type TeamEdge {
   The item at the end of the edge.
   """
   node: Team
+}
+
+"""
+A HackerOne team genius object
+"""
+type TeamGenius implements Node {
+  _id: ID!
+  description: String
+  id: ID!
+  muted: Boolean!
+  name: String!
+}
+
+"""
+The connection type for TeamGenius.
+"""
+type TeamGeniusConnection {
+  """
+  A list of edges.
+  """
+  edges: [TeamGeniusEdge]
+
+  """
+  A list of nodes.
+  """
+  nodes: [TeamGenius]
+
+  """
+  Information to aid in pagination.
+  """
+  pageInfo: PageInfo!
+  total_count: Int!
+}
+
+"""
+An edge in a connection.
+"""
+type TeamGeniusEdge {
+  """
+  A cursor for use in pagination.
+  """
+  cursor: String!
+
+  """
+  The item at the end of the edge.
+  """
+  node: TeamGenius
 }
 
 """
@@ -18548,7 +19854,9 @@ An interface for the common fields on an HackerOne Team Integration
 interface TeamIntegrationInterface {
   _id: ID!
   active: Boolean!
+  authentication_type: String
   id: ID!
+  name: String!
   team: Team!
 }
 
@@ -18593,8 +19901,10 @@ type TeamIntegrationsJira implements Node & TeamIntegrationInterface {
   Assignables for a project
   """
   assignables(project_id: Int!): [Hash]
+  authentication_type: String
   has_authentication: Boolean
   id: ID!
+  name: String!
   priorities: [Hash]
   project_meta(issue_type: Int, project_id: Int): [Hash]
   projects: [Hash]
@@ -18604,12 +19914,29 @@ type TeamIntegrationsJira implements Node & TeamIntegrationInterface {
 }
 
 """
+A TeamIntegrations object for Manual
+"""
+type TeamIntegrationsManual implements Node & TeamIntegrationInterface {
+  _id: ID!
+  active: Boolean!
+  authentication_type: String
+  create_reference_url: String
+  id: ID!
+  name: String!
+  team: Team!
+  url_for_report(report_id: Int!): String
+  view_reference_url: String
+}
+
+"""
 A TeamIntegrations object for Slack
 """
 type TeamIntegrationsSlack implements Node & TeamIntegrationInterface {
   _id: ID!
   active: Boolean!
+  authentication_type: String
   id: ID!
+  name: String!
   team: Team!
 }
 
@@ -18619,8 +19946,10 @@ A TeamIntegrations object for Tray
 type TeamIntegrationsTray implements Node & TeamIntegrationInterface {
   _id: ID!
   active: Boolean!
+  authentication_type: String
   config_url: String
   id: ID!
+  name: String!
   solution_instances(
     """
     Returns the elements in the list that come after the specified cursor.
@@ -18653,7 +19982,9 @@ A TeamIntegrations object for Webhooks
 type TeamIntegrationsWebhook implements Node & TeamIntegrationInterface {
   _id: ID!
   active: Boolean!
+  authentication_type: String
   id: ID!
+  name: String!
   team: Team!
 }
 
@@ -18968,10 +20299,41 @@ type TeamWeakness implements Node {
   id: ID!
   instruction: String
   rendered_instruction: String
-  report_count: Int
   state: TeamWeaknessStates
   team: Team!
   weakness: Weakness
+}
+
+"""
+A HackerOne team weakness cohort run
+"""
+type TeamWeaknessCohortRun implements Node {
+  _id: ID!
+  asset_weakness_cohort_run_items(
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+  ): AssetWeaknessCohortRunItemConnection!
+  created_at: DateTime!
+  id: ID!
+  team: Team!
+  updated_at: DateTime!
 }
 
 """
@@ -19017,6 +20379,10 @@ enum TeamWeaknessStates {
   disabled
   enabled
   hidden
+}
+
+input TermsFilterInput {
+  team_id: [Int!]
 }
 
 """
@@ -19305,6 +20671,18 @@ type TrackerIncrementPayload implements MutationResult {
 }
 
 """
+A tray escalation for a report
+"""
+type TrayEscalation implements Node {
+  _id: ID!
+  created_at: Date!
+  id: ID!
+  reference: String
+  solution_instance: SolutionInstance
+  url: URI
+}
+
+"""
 A Tray Profile object
 """
 type TrayProfile implements Node {
@@ -19443,7 +20821,7 @@ type TriageMeta implements Node & ResourceInterface {
 """
 A HackerOne report triage rating
 """
-type TriageRating {
+type TriageRating implements Node {
   _id: ID!
   comment: String!
   id: ID!
@@ -19495,7 +20873,7 @@ type TriageRatingEdge {
 """
 Triage Workflow
 """
-type TriageWorkflow {
+type TriageWorkflow implements Node {
   _id: ID!
   allow_participants_for_duplicate_reports: Boolean
   custom_triage_summary_templates: [String!]!
@@ -19682,6 +21060,55 @@ enum TshirtSizeEnum {
 }
 
 """
+Tutorial
+"""
+type Tutorial implements Node {
+  complete: Boolean
+  id: ID!
+  type: String!
+}
+
+"""
+The connection type for Tutorial.
+"""
+type TutorialConnection {
+  """
+  A list of edges.
+  """
+  edges: [TutorialEdge]
+
+  """
+  A list of nodes.
+  """
+  nodes: [Tutorial]
+
+  """
+  Information to aid in pagination.
+  """
+  pageInfo: PageInfo!
+
+  """
+  Int
+  """
+  total_count: Int!
+}
+
+"""
+An edge in a connection.
+"""
+type TutorialEdge {
+  """
+  A cursor for use in pagination.
+  """
+  cursor: String!
+
+  """
+  The item at the end of the edge.
+  """
+  node: Tutorial
+}
+
+"""
 An object that holds backup codes, a TOTP secret, signature, and QR code
 """
 type TwoFactorAuthenticationCredentials implements Node {
@@ -19798,6 +21225,27 @@ type Undisclosed implements HacktivityItemInterface & Node {
   id: ID!
   latest_disclosable_action: String
   latest_disclosable_activity_at: DateTime
+  recommended_hacktivity_items(
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+  ): HacktivityItemConnection
   reporter: User
   requires_view_privilege: Boolean!
   team: Team
@@ -19872,6 +21320,18 @@ type UnsubscribeMailingListPayload implements MutationResult {
 }
 
 """
+Entry for the up and comers leaderboard
+"""
+type UpAndComersLeaderboardEntry implements LeaderboardEntryInterface & Node {
+  _id: ID!
+  id: ID!
+  previous_rank: Int
+  rank: Int
+  reputation: Int!
+  user: User!
+}
+
+"""
 Autogenerated input type of UpdateAccountRecoveryPhoneNumber
 """
 input UpdateAccountRecoveryPhoneNumberInput {
@@ -19914,6 +21374,55 @@ type UpdateAccountRecoveryPhoneNumberPayload implements MutationResult {
     types: [ErrorTypeEnum]
   ): ErrorConnection!
   me: User
+  was_successful: Boolean!
+}
+
+"""
+Autogenerated input type of UpdateActivity
+"""
+input UpdateActivityInput {
+  activity_id: ID!
+  attachment_ids: [Int!]!
+
+  """
+  A unique identifier for the client performing the mutation.
+  """
+  clientMutationId: String
+  message: String!
+}
+
+"""
+Autogenerated return type of UpdateActivity
+"""
+type UpdateActivityPayload implements MutationResult {
+  activity: ActivityUnion
+
+  """
+  A unique identifier for the client performing the mutation.
+  """
+  clientMutationId: String
+  errors(
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+    types: [ErrorTypeEnum]
+  ): ErrorConnection!
   was_successful: Boolean!
 }
 
@@ -20612,6 +22121,52 @@ type UpdateCustomFieldAttributePayload implements MutationResult {
 }
 
 """
+Autogenerated input type of UpdateCveIds
+"""
+input UpdateCveIdsInput {
+  """
+  A unique identifier for the client performing the mutation.
+  """
+  clientMutationId: String
+  cve_ids: [String!]!
+  report_id: ID!
+}
+
+"""
+Autogenerated return type of UpdateCveIds
+"""
+type UpdateCveIdsPayload implements MutationResult {
+  """
+  A unique identifier for the client performing the mutation.
+  """
+  clientMutationId: String
+  errors(
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+    types: [ErrorTypeEnum]
+  ): ErrorConnection!
+  report: Report
+  was_successful: Boolean!
+}
+
+"""
 Autogenerated input type of UpdateCveRequest
 """
 input UpdateCveRequestInput {
@@ -20687,6 +22242,58 @@ type UpdateEmbeddedSubmissionDomainPayload implements MutationResult {
   A unique identifier for the client performing the mutation.
   """
   clientMutationId: String
+  errors(
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+    types: [ErrorTypeEnum]
+  ): ErrorConnection!
+  team: Team
+  was_successful: Boolean!
+}
+
+"""
+Autogenerated input type of UpdateEmbeddedSubmissionForm
+"""
+input UpdateEmbeddedSubmissionFormInput {
+  accent_color: String
+  button_color: String
+
+  """
+  A unique identifier for the client performing the mutation.
+  """
+  clientMutationId: String
+  link_color: String
+  promotion_enabled: Boolean!
+  team_id: ID!
+  typeface: String
+}
+
+"""
+Autogenerated return type of UpdateEmbeddedSubmissionForm
+"""
+type UpdateEmbeddedSubmissionFormPayload implements MutationResult {
+  """
+  A unique identifier for the client performing the mutation.
+  """
+  clientMutationId: String
+  embedded_submission_form: EmbeddedSubmissionForm
   errors(
     """
     Returns the elements in the list that come after the specified cursor.
@@ -20803,6 +22410,54 @@ type UpdateGatewayUserStatePayload implements MutationResult {
     types: [ErrorTypeEnum]
   ): ErrorConnection!
   user_vpn_instance: VpnInstance
+  was_successful: Boolean!
+}
+
+"""
+Autogenerated input type of UpdateHackerTriageRating
+"""
+input UpdateHackerTriageRatingInput {
+  """
+  A unique identifier for the client performing the mutation.
+  """
+  clientMutationId: String
+  comment: String
+  rating: Int
+  rating_options: [String!]
+  report_id: Int!
+}
+
+"""
+Autogenerated return type of UpdateHackerTriageRating
+"""
+type UpdateHackerTriageRatingPayload implements MutationResult {
+  """
+  A unique identifier for the client performing the mutation.
+  """
+  clientMutationId: String
+  errors(
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+    types: [ErrorTypeEnum]
+  ): ErrorConnection!
+  hacker_triage_rating: HackerTriageRating
   was_successful: Boolean!
 }
 
@@ -21281,6 +22936,52 @@ type UpdatePentestFormAnswerPayload implements MutationResult {
 }
 
 """
+Autogenerated input type of UpdatePentestTask
+"""
+input UpdatePentestTaskInput {
+  """
+  A unique identifier for the client performing the mutation.
+  """
+  clientMutationId: String
+  new_state: PentestTaskStateEnum!
+  pentest_task_id: ID!
+}
+
+"""
+Autogenerated return type of UpdatePentestTask
+"""
+type UpdatePentestTaskPayload implements MutationResult {
+  """
+  A unique identifier for the client performing the mutation.
+  """
+  clientMutationId: String
+  errors(
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+    types: [ErrorTypeEnum]
+  ): ErrorConnection!
+  pentest_task: PentestTask
+  was_successful: Boolean!
+}
+
+"""
 Autogenerated input type of UpdatePhabricatorIntegration
 """
 input UpdatePhabricatorIntegrationInput {
@@ -21377,6 +23078,52 @@ type UpdateProgramPolicyPayload implements MutationResult {
     types: [ErrorTypeEnum]
   ): ErrorConnection!
   program: Team
+  was_successful: Boolean!
+}
+
+"""
+Autogenerated input type of UpdateRemediationGuidance
+"""
+input UpdateRemediationGuidanceInput {
+  """
+  A unique identifier for the client performing the mutation.
+  """
+  clientMutationId: String
+  disabled: Boolean!
+  team_id: ID!
+}
+
+"""
+Autogenerated return type of UpdateRemediationGuidance
+"""
+type UpdateRemediationGuidancePayload implements MutationResult {
+  """
+  A unique identifier for the client performing the mutation.
+  """
+  clientMutationId: String
+  errors(
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+    types: [ErrorTypeEnum]
+  ): ErrorConnection!
+  team: Team!
   was_successful: Boolean!
 }
 
@@ -21571,6 +23318,7 @@ input UpdateReportStateToDuplicateInput {
   A unique identifier for the client performing the mutation.
   """
   clientMutationId: String
+  duplicate_detection_page_state: DuplicateDetectionPageStateInput
   message: String!
   original_report_id: Int
   report_id: ID!
@@ -21810,6 +23558,52 @@ input UpdateReportStateToResolvedInput {
 Autogenerated return type of UpdateReportStateToResolved
 """
 type UpdateReportStateToResolvedPayload implements MutationResult {
+  """
+  A unique identifier for the client performing the mutation.
+  """
+  clientMutationId: String
+  errors(
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+    types: [ErrorTypeEnum]
+  ): ErrorConnection!
+  report: Report
+  was_successful: Boolean!
+}
+
+"""
+Autogenerated input type of UpdateReportStateToRetesting
+"""
+input UpdateReportStateToRetestingInput {
+  """
+  A unique identifier for the client performing the mutation.
+  """
+  clientMutationId: String
+  message: String
+  report_id: ID!
+}
+
+"""
+Autogenerated return type of UpdateReportStateToRetesting
+"""
+type UpdateReportStateToRetestingPayload implements MutationResult {
   """
   A unique identifier for the client performing the mutation.
   """
@@ -22826,6 +24620,52 @@ type UpdateTeamDisplayOptionsPayload implements MutationResult {
 }
 
 """
+Autogenerated input type of UpdateTeamEmailSetting
+"""
+input UpdateTeamEmailSettingInput {
+  """
+  A unique identifier for the client performing the mutation.
+  """
+  clientMutationId: String
+  email_setting: Int!
+  team_id: ID!
+}
+
+"""
+Autogenerated return type of UpdateTeamEmailSetting
+"""
+type UpdateTeamEmailSettingPayload implements MutationResult {
+  """
+  A unique identifier for the client performing the mutation.
+  """
+  clientMutationId: String
+  errors(
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+    types: [ErrorTypeEnum]
+  ): ErrorConnection!
+  team: Team
+  was_successful: Boolean!
+}
+
+"""
 Autogenerated input type of UpdateTeamFancySlackIntegration
 """
 input UpdateTeamFancySlackIntegrationInput {
@@ -22868,6 +24708,52 @@ type UpdateTeamFancySlackIntegrationPayload implements MutationResult {
     types: [ErrorTypeEnum]
   ): ErrorConnection!
   team: Team
+  was_successful: Boolean!
+}
+
+"""
+Autogenerated input type of UpdateTeamGenius
+"""
+input UpdateTeamGeniusInput {
+  """
+  A unique identifier for the client performing the mutation.
+  """
+  clientMutationId: String
+  muted: Boolean!
+  team_genius_id: ID!
+}
+
+"""
+Autogenerated return type of UpdateTeamGenius
+"""
+type UpdateTeamGeniusPayload implements MutationResult {
+  """
+  A unique identifier for the client performing the mutation.
+  """
+  clientMutationId: String
+  errors(
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+    types: [ErrorTypeEnum]
+  ): ErrorConnection!
+  team_genius: TeamGenius
   was_successful: Boolean!
 }
 
@@ -24065,6 +25951,28 @@ type User implements Node & ResourceInterface {
   gitlab_handle: String
   h1_pentester: Boolean
   hacker_invitations_profile: HackerInvitationsProfile
+  hacker_triage_ratings(
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+    report_id: Int
+  ): HackerTriageRatingConnection
   hackerone_employee: Boolean
   hackerone_triager: Boolean
   has_active_ban: Boolean
@@ -24100,6 +26008,7 @@ type User implements Node & ResourceInterface {
     """
     last: Int
   ): InvitationQueueConnection
+  leaderboard_entry(filter: String, key: LeaderboardKeyEnum!, quarter: Int, year: Int!): LeaderboardEntryUnion
   linkedin_handle: String
   location: String
   lufthansa_account: LufthansaAccount
@@ -24282,6 +26191,27 @@ type User implements Node & ResourceInterface {
   receive_policy_update_notifications: Boolean
   receive_structured_scope_update_notifications: Boolean
   receive_team_update_delivery_preference: TeamUpdateDeliveryPreferences
+  recommended_hacktivity_items(
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+  ): HacktivityItemConnection
   remaining_otp_backup_code_count: Int
   remaining_reports(team_handle: String!): Int
   report_retest_users(
@@ -24503,10 +26433,6 @@ type User implements Node & ResourceInterface {
     secure_order_by: FiltersTeamFilterOrder
     where: FiltersTeamFilterInput
   ): TeamConnection
-
-  """
-  A Resolver for SurveyRatingItems
-  """
   testimonials(
     """
     Returns the elements in the list that come after the specified cursor.
@@ -24577,6 +26503,27 @@ type User implements Node & ResourceInterface {
   ): TriageRatingConnection
   triage_user: Boolean
   tshirt_size: TshirtSizeEnum
+  tutorials(
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+  ): TutorialConnection
   twitter_handle: String
   unconfirmed_email: String
   url: URI!
@@ -24642,7 +26589,7 @@ type UserConnection {
 """
 Display options for a user
 """
-type UserDisplayOptions {
+type UserDisplayOptions implements Node {
   _id: ID!
   id: ID!
   show_bounty_amounts: Boolean!
@@ -25050,6 +26997,27 @@ The type of vulnerability on a HackerOne report
 """
 type Weakness implements Node {
   _id: ID!
+  batched_clusters(
+    """
+    Returns the elements in the list that come after the specified cursor.
+    """
+    after: String
+
+    """
+    Returns the elements in the list that come before the specified cursor.
+    """
+    before: String
+
+    """
+    Returns the first _n_ elements from the list.
+    """
+    first: Int
+
+    """
+    Returns the last _n_ elements from the list.
+    """
+    last: Int
+  ): ClusterConnection
   bounties: Float
 
   """
@@ -25130,6 +27098,15 @@ type Weakness implements Node {
 }
 
 """
+A HackerOne weakness cohort
+"""
+type WeaknessCohort implements Node {
+  _id: ID!
+  id: ID!
+  name: String!
+}
+
+"""
 The connection type for Weakness.
 """
 type WeaknessConnection {
@@ -25176,6 +27153,20 @@ Fields on which a collection of weaknesses can be ordered
 enum WeaknessOrderField {
   name
   report_count
+}
+
+"""
+The type of vulnerability on a HackerOne report
+"""
+type WeaknessSuggestion implements Node {
+  _id: ID!
+  id: ID!
+  weakness_1: Weakness!
+  weakness_1_confidence: Float!
+  weakness_2: Weakness
+  weakness_2_confidence: Float
+  weakness_3: Weakness
+  weakness_3_confidence: Float
 }
 
 """

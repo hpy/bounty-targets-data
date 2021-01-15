@@ -109,6 +109,47 @@
     }
   },
   {
+    "id": "/coinsbit/coinsbit",
+    "name": "Coinsbit",
+    "url": "https://hackenproof.com/coinsbit/coinsbit",
+    "archived": false,
+    "targets": {
+      "in_scope": [
+        {
+          "target": "*.coinsbit.io",
+          "type": "Web",
+          "instruction": "",
+          "severity": "Critical",
+          "reward": "Bounty"
+        },
+        {
+          "target": "iOS App",
+          "type": "iOS",
+          "instruction": "https://apps.apple.com/ru/app/coinsbit-crypto-exchange/id1517008816",
+          "severity": "Critical",
+          "reward": "Bounty"
+        },
+        {
+          "target": "Android App",
+          "type": "Android",
+          "instruction": "https://play.google.com/store/apps/details?id=com.coinsbit.coinsbit",
+          "severity": "Critical",
+          "reward": "Bounty"
+        },
+        {
+          "target": "API",
+          "type": "API",
+          "instruction": "https://www.notion.so/API-COINSBIT-WS-API-COINSBIT-cf1044cff30646d49a0bab0e28f27a87",
+          "severity": "Critical",
+          "reward": "Bounty"
+        }
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
     "id": "/crypviser/crypviser-network",
     "name": "Crypviser Network",
     "url": "https://hackenproof.com/crypviser/crypviser-network",
@@ -272,6 +313,47 @@
     }
   },
   {
+    "id": "/hotbit/hotbit",
+    "name": "Hotbit",
+    "url": "https://hackenproof.com/hotbit/hotbit",
+    "archived": false,
+    "targets": {
+      "in_scope": [
+        {
+          "target": "*.hotbit.io",
+          "type": "Web",
+          "instruction": "",
+          "severity": "Critical",
+          "reward": "Bounty"
+        },
+        {
+          "target": "API",
+          "type": "API",
+          "instruction": "https://github.com/hotbitex/hotbit.io-api-docs/blob/master/rest_api.md",
+          "severity": "Critical",
+          "reward": "Bounty"
+        },
+        {
+          "target": "Android App",
+          "type": "Android",
+          "instruction": "https://play.google.com/store/apps/details?id=io.hotbit.shouyi",
+          "severity": "Critical",
+          "reward": "Bounty"
+        },
+        {
+          "target": "iOS App",
+          "type": "iOS",
+          "instruction": "https://app.hotbit.pro/",
+          "severity": "Critical",
+          "reward": "Bounty"
+        }
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
     "id": "/interkassa/interkassa-ltd",
     "name": "Interkassa ltd",
     "url": "https://hackenproof.com/interkassa/interkassa-ltd",
@@ -368,6 +450,40 @@
     }
   },
   {
+    "id": "/p2pb2b/p2pb2b",
+    "name": "P2PB2B",
+    "url": "https://hackenproof.com/p2pb2b/p2pb2b",
+    "archived": false,
+    "targets": {
+      "in_scope": [
+        {
+          "target": "p2pb2b.io",
+          "type": "Web",
+          "instruction": "",
+          "severity": "Critical",
+          "reward": "Bounty"
+        },
+        {
+          "target": "api.p2pb2b.io",
+          "type": "API",
+          "instruction": "",
+          "severity": "Critical",
+          "reward": "Bounty"
+        },
+        {
+          "target": "apiws.p2pb2b.io",
+          "type": "API",
+          "instruction": "https://p2pb2bwsspublic.docs.apiary.io/",
+          "severity": "Critical",
+          "reward": "Bounty"
+        }
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
     "id": "/ttc/ttc-mobile",
     "name": "TTC | Mobile",
     "url": "https://hackenproof.com/ttc/ttc-mobile",
@@ -449,6 +565,145 @@
     }
   },
   {
+    "id": "/tickets-travel-network/ttn-program",
+    "name": "TTN Program",
+    "url": "https://hackenproof.com/tickets-travel-network/ttn-program",
+    "archived": false,
+    "targets": {
+      "in_scope": [
+        {
+          "target": "tickets.ua/ru/kz",
+          "type": "Web",
+          "instruction": "",
+          "severity": "Critical",
+          "reward": "Bounty"
+        },
+        {
+          "target": "avia.tickets.ua/ru",
+          "type": "Web",
+          "instruction": "",
+          "severity": "Critical",
+          "reward": "Bounty"
+        },
+        {
+          "target": "gd.tickets.ua/ru",
+          "type": "Web",
+          "instruction": "",
+          "severity": "Critical",
+          "reward": "Bounty"
+        },
+        {
+          "target": "tickets.kz/gd",
+          "type": "Web",
+          "instruction": "",
+          "severity": "Critical",
+          "reward": "Bounty"
+        },
+        {
+          "target": "bus.tickets.ua/ru",
+          "type": "Web",
+          "instruction": "",
+          "severity": "Critical",
+          "reward": "Bounty"
+        },
+        {
+          "target": "hotels.tickets.ua/ru",
+          "type": "Web",
+          "instruction": "",
+          "severity": "Critical",
+          "reward": "Bounty"
+        },
+        {
+          "target": "transfer.tickets.ua/ru",
+          "type": "Web",
+          "instruction": "",
+          "severity": "Critical",
+          "reward": "Bounty"
+        },
+        {
+          "target": "car.tickets.ua/ru",
+          "type": "Web",
+          "instruction": "",
+          "severity": "Critical",
+          "reward": "Bounty"
+        },
+        {
+          "target": "insurance.tickets.ua/ru",
+          "type": "Web",
+          "instruction": "",
+          "severity": "Critical",
+          "reward": "Bounty"
+        },
+        {
+          "target": "my.tickets.ua/ru",
+          "type": "Web",
+          "instruction": "",
+          "severity": "Critical",
+          "reward": "Bounty"
+        },
+        {
+          "target": "travel.tickets.ua",
+          "type": "Web",
+          "instruction": "",
+          "severity": "Critical",
+          "reward": "Bounty"
+        },
+        {
+          "target": "railway.tickets.ua",
+          "type": "Web",
+          "instruction": "",
+          "severity": "Critical",
+          "reward": "Bounty"
+        },
+        {
+          "target": "events.tickets.ua",
+          "type": "Web",
+          "instruction": "",
+          "severity": "Critical",
+          "reward": "Bounty"
+        },
+        {
+          "target": "aeroexpress.tickets.ru",
+          "type": "Web",
+          "instruction": "",
+          "severity": "Critical",
+          "reward": "Bounty"
+        },
+        {
+          "target": "tickets.kz/transfer",
+          "type": "Web",
+          "instruction": "",
+          "severity": "Critical",
+          "reward": "Bounty"
+        },
+        {
+          "target": "tickets.kz/my",
+          "type": "Web",
+          "instruction": "",
+          "severity": "Critical",
+          "reward": "Bounty"
+        },
+        {
+          "target": "tickets.kz/avia",
+          "type": "Web",
+          "instruction": "",
+          "severity": "Critical",
+          "reward": "Bounty"
+        },
+        {
+          "target": "fatpayments.net",
+          "type": "Web",
+          "instruction": "",
+          "severity": "Critical",
+          "reward": "Bounty"
+        }
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
     "id": "/vechain/vechainthor",
     "name": "VeChainThor",
     "url": "https://hackenproof.com/vechain/vechainthor",
@@ -506,6 +761,54 @@
           "target": "Android Wallet",
           "type": "Android",
           "instruction": "https://play.google.com/store/apps/details?id=com.vechain.wallet",
+          "severity": "Critical",
+          "reward": "Bounty"
+        }
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
+    "id": "/whitebit/whitebit",
+    "name": "WhiteBIT",
+    "url": "https://hackenproof.com/whitebit/whitebit",
+    "archived": false,
+    "targets": {
+      "in_scope": [
+        {
+          "target": "whitebit.com",
+          "type": "Web",
+          "instruction": "",
+          "severity": "Critical",
+          "reward": "Bounty"
+        },
+        {
+          "target": "api.whitebit.com",
+          "type": "API",
+          "instruction": "https://github.com/whitebit-exchange/api-docs",
+          "severity": "Critical",
+          "reward": "Bounty"
+        },
+        {
+          "target": "info.whitebit.com",
+          "type": "Web",
+          "instruction": "",
+          "severity": "Critical",
+          "reward": "Bounty"
+        },
+        {
+          "target": "Android App",
+          "type": "Web",
+          "instruction": "https://play.google.com/store/apps/details?id=com.whitebit.android",
+          "severity": "Critical",
+          "reward": "Bounty"
+        },
+        {
+          "target": "iOS App",
+          "type": "iOS",
+          "instruction": "https://apps.apple.com/ua/app/whitebit/id1463405025",
           "severity": "Critical",
           "reward": "Bounty"
         }
