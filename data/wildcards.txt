@@ -46,6 +46,7 @@
 *-api.fitbit.com
 *-client.fitbit.com
 *.gojekapi.com
+*.gopayapi.com
 *.healthifyme.com
 *.hs-sites.com
 *.hubapi.com
@@ -341,6 +342,7 @@ www.paypal-*.com
 *.infrastructure.newrelic.com
 *.newrelic.com
 *.nr-data.net
+*.nr-ops.net
 *.nordvpn.com
 *.vanillacommunities.com
 *.vanilladevelopment.com
@@ -515,6 +517,9 @@ www.amazon.*
 *.realmemobile.com
 *.realmepaysa.com
 *.realmeservice.com
+*.cirrusinsight.com
+*.cirruspath.com
+*.zynbitdev.com
 *.gener8ads.com
 *.digitalocean.com
 *.digitaloceanspaces.com
@@ -541,6 +546,8 @@ www.amazon.*
 *.citrixworkspacesapi.net
 *developer.cloud.com
 onboarding-*.cloud.com
+*.emaplan.com
+*.emoneyadvisor.com
 *.whocoronavirus.org
 *.ad.nl
 *.bpost2.be
@@ -566,6 +573,9 @@ onboarding-*.cloud.com
 *.jooki.rocks
 *.muuselabs.com
 *.kinepolis.com
+*.mobilevikings.be
+*.unleashed.be
+*.vikingco.com
 *.military.com
 *.monster.at
 *.monster.be
@@ -617,7 +627,6 @@ onboarding-*.cloud.com
 *.tweakimg.net
 *.canvas.be
 *.dewarmsteweek.be
-*.een.be
 *.ketnet.be
 *.klara.be
 *.mnm.be
