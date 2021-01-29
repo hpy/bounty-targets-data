@@ -262,7 +262,7 @@ www.paypal-*.com
 *.spotify.net
 *.spotifyforbrands.com
 *.rockstargames.com
-(*.)maximum.nl
+*.maximum.nl
 *.binary.com
 *.hyperpure.com
 *.zdev.net
@@ -515,7 +515,6 @@ www.amazon.*
 *.realme.net
 *.realmebbs.com
 *.realmemobile.com
-*.realmepaysa.com
 *.realmeservice.com
 *.cirrusinsight.com
 *.cirruspath.com
@@ -551,6 +550,7 @@ onboarding-*.cloud.com
 *.whocoronavirus.org
 *.ad.nl
 *.bpost2.be
+*.challenge-0121.intigriti.io
 *.dpgmedia.be
 *.demorgen.be
 *.volkskrant.nl
@@ -610,10 +610,8 @@ onboarding-*.cloud.com
 *.speakap.com
 *.speakap.io
 *.sqills.com
-*.9lives.be
 *.base.be
 *.telenet.be
-*.yelo.be
 *.yeloplay.be
 *.tempo-team.*
 *.trouw.nl
