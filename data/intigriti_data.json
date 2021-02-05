@@ -114,29 +114,6 @@
     }
   },
   {
-    "id": "ee80a696-d6b1-4f77-883b-bd18b0deebd5",
-    "name": "Bpost2",
-    "company_handle": "bpost",
-    "handle": "bpost2",
-    "url": "https://www.intigriti.com/programs/bpost/bpost2/detail",
-    "status": "open",
-    "confidentiality_level": "public",
-    "min_bounty": 0.0,
-    "max_bounty": 0.0,
-    "targets": {
-      "in_scope": [
-        {
-          "type": "url",
-          "endpoint": "*.bpost2.be",
-          "description": null
-        }
-      ],
-      "out_of_scope": [
-
-      ]
-    }
-  },
-  {
     "id": "d201f8e6-23ea-4a74-b3c6-9ca2026a5be6",
     "name": "Brussels Airlines",
     "company_handle": "brusselsairlines",
@@ -161,29 +138,6 @@
         {
           "type": "url",
           "endpoint": "www.brusselsairlines.com",
-          "description": null
-        }
-      ],
-      "out_of_scope": [
-
-      ]
-    }
-  },
-  {
-    "id": "70ebff77-e13d-4815-b997-e890b34d1654",
-    "name": "Challenge 0121",
-    "company_handle": "intigriti",
-    "handle": "challenge0121",
-    "url": "https://www.intigriti.com/programs/intigriti/challenge0121/detail",
-    "status": "open",
-    "confidentiality_level": "public",
-    "min_bounty": 0.0,
-    "max_bounty": 0.0,
-    "targets": {
-      "in_scope": [
-        {
-          "type": "url",
-          "endpoint": "*.challenge-0121.intigriti.io",
           "description": null
         }
       ],
@@ -1533,7 +1487,7 @@
       "in_scope": [
         {
           "type": "url",
-          "endpoint": "*.phished.be",
+          "endpoint": "*.phished.io",
           "description": null
         }
       ],
@@ -2209,29 +2163,6 @@
           "type": "url",
           "endpoint": "*.tweakimg.net",
           "description": null
-        }
-      ],
-      "out_of_scope": [
-
-      ]
-    }
-  },
-  {
-    "id": "2cf03670-6a2d-4ac7-8b1e-2e0d84338204",
-    "name": "UZ Leuven",
-    "company_handle": "uz leuven",
-    "handle": "uzleuven",
-    "url": "https://www.intigriti.com/programs/uz%20leuven/uzleuven/detail",
-    "status": "open",
-    "confidentiality_level": "public",
-    "min_bounty": 0.0,
-    "max_bounty": 2500.0,
-    "targets": {
-      "in_scope": [
-        {
-          "type": "url",
-          "endpoint": "www.uzleuven.be/en",
-          "description": "🇬🇧🇫🇷🇳🇱"
         }
       ],
       "out_of_scope": [

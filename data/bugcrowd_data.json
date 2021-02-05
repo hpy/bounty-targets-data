@@ -734,174 +734,6 @@
     }
   },
   {
-    "name": "Bigbank",
-    "url": "https://bugcrowd.com/bigbank",
-    "allows_disclosure": false,
-    "managed_by_bugcrowd": true,
-    "safe_harbor": "full",
-    "max_payout": 0,
-    "targets": {
-      "in_scope": [
-        {
-          "type": "other",
-          "target": "apm.bigbank.eu"
-        },
-        {
-          "type": "website testing",
-          "target": "apvieno.bigbank.lv"
-        },
-        {
-          "type": "website testing",
-          "target": "auth.bigbank.eu"
-        },
-        {
-          "type": "website testing",
-          "target": "banking.bigbank.lv"
-        },
-        {
-          "type": "website testing",
-          "target": "calculations.bigbank.fi"
-        },
-        {
-          "type": "website testing",
-          "target": "feedback.bigbank.eu"
-        },
-        {
-          "type": "website testing",
-          "target": "login.bigbank.eu"
-        },
-        {
-          "type": "website testing",
-          "target": "refinansavimas.bigbank.lt"
-        },
-        {
-          "type": "website testing",
-          "target": "uilab.bigbank.ee"
-        },
-        {
-          "type": "website testing",
-          "target": "verkkopankki.bigbank.fi"
-        }
-      ],
-      "out_of_scope": [
-        {
-          "type": "website testing",
-          "target": "Any sites which resolve to 185.235.160.18"
-        },
-        {
-          "type": "website testing",
-          "target": "Any subdomain of bigbank.* not explicitly listed as \"In Scope\""
-        },
-        {
-          "type": "other",
-          "target": "DMARC // SPF"
-        },
-        {
-          "type": "other",
-          "target": "any Github asset under https://github.com/bigbank-as"
-        },
-        {
-          "type": "website testing",
-          "target": "bigbank.at"
-        },
-        {
-          "type": "website testing",
-          "target": "bigbank.de"
-        },
-        {
-          "type": "website testing",
-          "target": "bigbank.ee"
-        },
-        {
-          "type": "website testing",
-          "target": "bigbank.fi"
-        },
-        {
-          "type": "website testing",
-          "target": "bigbank.lt"
-        },
-        {
-          "type": "website testing",
-          "target": "bigbank.lv"
-        },
-        {
-          "type": "website testing",
-          "target": "bigbank.nl"
-        },
-        {
-          "type": "website testing",
-          "target": "bigbank.se"
-        }
-      ]
-    }
-  },
-  {
-    "name": "Bigbank",
-    "url": "https://bugcrowd.com/bigbank-mbb",
-    "allows_disclosure": false,
-    "managed_by_bugcrowd": true,
-    "safe_harbor": "partial",
-    "max_payout": 0,
-    "targets": {
-      "in_scope": [
-        {
-          "type": "website testing",
-          "target": "auth.bigbank.eu"
-        },
-        {
-          "type": "website testing",
-          "target": "banking.bigbank.at"
-        },
-        {
-          "type": "website testing",
-          "target": "banking.bigbank.ee"
-        },
-        {
-          "type": "website testing",
-          "target": "bigbank.bg"
-        },
-        {
-          "type": "website testing",
-          "target": "bigbank.eu"
-        },
-        {
-          "type": "api testing",
-          "target": "brokers.bigbank.fi"
-        },
-        {
-          "type": "website testing",
-          "target": "ca.bigbank.eu"
-        },
-        {
-          "type": "website testing",
-          "target": "partner-api.bigbank.ee"
-        },
-        {
-          "type": "website testing",
-          "target": "partnerid.bigbank.ee"
-        }
-      ],
-      "out_of_scope": [
-        {
-          "type": "website testing",
-          "target": "Any sites which resolve to 185.235.160.18"
-        },
-        {
-          "type": "website testing",
-          "target": "Any subdomain of bigbank.* not explicitly listed as \"In Scope\""
-        },
-        {
-          "type": "other",
-          "target": "DMARC // SPF"
-        },
-        {
-          "type": "other",
-          "target": "any Github asset under https://github.com/bigbank-as"
-        }
-      ]
-    }
-  },
-  {
     "name": "Binance",
     "url": "https://bugcrowd.com/binance",
     "allows_disclosure": false,
@@ -1157,6 +989,68 @@
     }
   },
   {
+    "name": "block.one",
+    "url": "https://bugcrowd.com/blockone",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "full",
+    "max_payout": 12000,
+    "targets": {
+      "in_scope": [
+        {
+          "type": "website testing",
+          "target": "Block.one.com main website (https://block.one)"
+        },
+        {
+          "type": "other",
+          "target": "EOSIO CDT (Contract Development Toolkit) (https://github.com/EOSIO/eosio.cdt)"
+        },
+        {
+          "type": "website testing",
+          "target": "EOSIO Developer Site (https://developers.eos.io/)"
+        },
+        {
+          "type": "other",
+          "target": "EOSIO JavaScript Client LIbrary (https://github.com/EOSIO/eosjs)"
+        },
+        {
+          "type": "other",
+          "target": "EOSIO SDK for Java (https://github.com/EOSIO/eosio-java)"
+        },
+        {
+          "type": "website testing",
+          "target": "EOSIO Site (https://eos.io)"
+        },
+        {
+          "type": "other",
+          "target": "EOSIO blockchain software (https://github.com/EOSIO/eos)"
+        }
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
+    "name": "Block.one EOSIO Software and System Contracts",
+    "url": "https://bugcrowd.com/blockone-smart-contracts",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "full",
+    "max_payout": 12000,
+    "targets": {
+      "in_scope": [
+        {
+          "type": "other",
+          "target": "Resource model contract software (see brief below)"
+        }
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
     "name": "Blue Jeans Network",
     "url": "https://bugcrowd.com/bluejeans",
     "allows_disclosure": false,
@@ -1262,6 +1156,14 @@
         {
           "type": "ios",
           "target": "Boozt iOS App"
+        },
+        {
+          "type": "android",
+          "target": "Booztlet Android App"
+        },
+        {
+          "type": "ios",
+          "target": "Booztlet iOS app"
         }
       ],
       "out_of_scope": [
@@ -1710,10 +1612,6 @@
     "targets": {
       "in_scope": [
         {
-          "type": "website testing",
-          "target": "Support.cloudways.com"
-        },
-        {
           "type": "api testing",
           "target": "api.cloudways.com"
         },
@@ -1723,11 +1621,15 @@
         },
         {
           "type": "website testing",
-          "target": "platform.cloudways.com"
+          "target": "https://support.cloudways.com/"
         },
         {
           "type": "website testing",
-          "target": "www.cloudways.com"
+          "target": "https://www.cloudways.com/"
+        },
+        {
+          "type": "website testing",
+          "target": "platform.cloudways.com"
         }
       ],
       "out_of_scope": [
@@ -2895,10 +2797,6 @@
         },
         {
           "type": "website testing",
-          "target": "graphql.gusto-demo.com"
-        },
-        {
-          "type": "website testing",
           "target": "https://github.com/Gusto/apollo-federation-ruby"
         },
         {
@@ -2914,6 +2812,10 @@
         {
           "type": "website testing",
           "target": "*.gusto.com"
+        },
+        {
+          "type": "website testing",
+          "target": "graphql.gusto-demo.com"
         },
         {
           "type": "website testing",
@@ -4154,6 +4056,29 @@
     }
   },
   {
+    "name": "Memsource Vulnerability Disclosure Program",
+    "url": "https://bugcrowd.com/memsource-vdp",
+    "allows_disclosure": false,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "partial",
+    "max_payout": 0,
+    "targets": {
+      "in_scope": [
+        {
+          "type": "website testing",
+          "target": "https://cloud9.memsource.com/"
+        },
+        {
+          "type": "api testing",
+          "target": "https://cloud9.memsource.com/web/docs/api"
+        }
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
     "name": "Moneytree KK",
     "url": "https://bugcrowd.com/moneytreekkog",
     "allows_disclosure": true,
@@ -4390,6 +4315,10 @@
           "target": "*.prod.ftl.netflix.com"
         },
         {
+          "type": "website testing",
+          "target": "Content Authorization Findings"
+        },
+        {
           "type": "other",
           "target": "Corporate Targets"
         },
@@ -4415,6 +4344,10 @@
         },
         {
           "type": "website testing",
+          "target": "Open Source - Consoleme"
+        },
+        {
+          "type": "website testing",
           "target": "Open Source - Dispatch"
         },
         {
@@ -4424,6 +4357,14 @@
         {
           "type": "website testing",
           "target": "Open Source - Spectator"
+        },
+        {
+          "type": "website testing",
+          "target": "Open Source - Weep"
+        },
+        {
+          "type": "website testing",
+          "target": "Open Source - Zuul"
         },
         {
           "type": "other",
@@ -6112,6 +6053,29 @@
     }
   },
   {
+    "name": "Step Public Applications",
+    "url": "https://bugcrowd.com/step-public",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "full",
+    "max_payout": 4500,
+    "targets": {
+      "in_scope": [
+        {
+          "type": "android",
+          "target": "Step Android App"
+        },
+        {
+          "type": "ios",
+          "target": "Step iOS app"
+        }
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
     "name": "Takeaway.com",
     "url": "https://bugcrowd.com/takeaway",
     "allows_disclosure": false,
@@ -6236,10 +6200,6 @@
         },
         {
           "type": "website testing",
-          "target": "*.k-classic-mobil.de"
-        },
-        {
-          "type": "website testing",
           "target": "*.mediamarkt.o2service.de"
         },
         {
@@ -6261,6 +6221,10 @@
         {
           "type": "website testing",
           "target": "*.norma-mobil.de"
+        },
+        {
+          "type": "website testing",
+          "target": "*.nova-mobil.de"
         },
         {
           "type": "website testing",
@@ -6336,6 +6300,10 @@
         }
       ],
       "out_of_scope": [
+        {
+          "type": "website testing",
+          "target": "*.k-classic-mobil.de"
+        },
         {
           "type": "website testing",
           "target": "https://mobilfunk.tchibo.de"
@@ -7344,6 +7312,33 @@
           "type": "website testing",
           "target": "nvmtest.net"
         }
+      ]
+    }
+  },
+  {
+    "name": "Web.com VDP",
+    "url": "https://bugcrowd.com/webdotcom-vdp",
+    "allows_disclosure": true,
+    "managed_by_bugcrowd": true,
+    "safe_harbor": "partial",
+    "max_payout": 0,
+    "targets": {
+      "in_scope": [
+        {
+          "type": "website testing",
+          "target": "*.networksolutions.com"
+        },
+        {
+          "type": "website testing",
+          "target": "*.register.com"
+        },
+        {
+          "type": "website testing",
+          "target": "*.web.com"
+        }
+      ],
+      "out_of_scope": [
+
       ]
     }
   },
