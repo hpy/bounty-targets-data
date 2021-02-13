@@ -1573,6 +1573,39 @@
     }
   },
   {
+    "id": "e1dc7326-0466-4c06-bd52-3c6df82370be",
+    "name": "Red Bull",
+    "company_handle": "redbull",
+    "handle": "redbull",
+    "url": "https://www.intigriti.com/programs/redbull/redbull/detail",
+    "status": "open",
+    "confidentiality_level": "public",
+    "min_bounty": 0.0,
+    "max_bounty": 0.0,
+    "targets": {
+      "in_scope": [
+        {
+          "type": "url",
+          "endpoint": "*.redbull.com",
+          "description": null
+        },
+        {
+          "type": "other",
+          "endpoint": "+ ~ 2300 other domains - if it is confirmed to be Red Bull related domain then it's in scope",
+          "description": "Easy way to verify if a domain belongs to Red Bull is to have a look-up on the whois record. \n\nInformation you need to look for: \nRed Bull GmbH, \nAm Brunnen 1,\n5330,\nFuschl am See,\nAustria"
+        },
+        {
+          "type": "other",
+          "endpoint": "IOS and Android apps related to Red Bull",
+          "description": null
+        }
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
     "id": "e1845bab-be93-43d9-b040-462f886235ef",
     "name": "Sentiance",
     "company_handle": "sentiance",
@@ -2163,6 +2196,29 @@
           "type": "url",
           "endpoint": "*.tweakimg.net",
           "description": null
+        }
+      ],
+      "out_of_scope": [
+
+      ]
+    }
+  },
+  {
+    "id": "2cf03670-6a2d-4ac7-8b1e-2e0d84338204",
+    "name": "UZ Leuven",
+    "company_handle": "uz leuven",
+    "handle": "uzleuven",
+    "url": "https://www.intigriti.com/programs/uz%20leuven/uzleuven/detail",
+    "status": "open",
+    "confidentiality_level": "public",
+    "min_bounty": 0.0,
+    "max_bounty": 2500.0,
+    "targets": {
+      "in_scope": [
+        {
+          "type": "url",
+          "endpoint": "www.uzleuven.be/en",
+          "description": "🇬🇧🇫🇷🇳🇱"
         }
       ],
       "out_of_scope": [
